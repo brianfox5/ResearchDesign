@@ -1,5 +1,5 @@
 ---
-title: "ResearchDesign"
+title: "Research Design"
 ---
 
 **Welcome to the homepage for Research Design (PHD1506)**!

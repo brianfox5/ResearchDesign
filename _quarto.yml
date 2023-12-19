@@ -3,7 +3,7 @@ project:
   output-dir: 
 
 website:
-  title: "Quantitative Analysis 1"
+  title: "Research Design"
   
   navbar:
     left:
@@ -13,11 +13,10 @@ website:
         text: Schedule
       - href: assignment.qmd
         text: Assignments
-  search: false
 
 format:
   html:
-    theme: [cosmo, theme.scss]
+    theme: cosmo
     css: styles.css
     toc: true
 
