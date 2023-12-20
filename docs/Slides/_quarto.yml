@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "PhD 1506 - Research Design"
+  title: "Research Design"
   site-url: https://briancfox.com/ResearchDesign/
   description: "This is the site for PhD 1506."
   
@@ -12,8 +12,10 @@ website:
     left:
       - href: syllabus.qmd
         text: Syllabus
-      - href: classes.qmd
-        text: Classes
+      - href: schedule.qmd
+        text: Schedule
+      - href: assignment.qmd
+        text: Assignments
 
 format:
   html:

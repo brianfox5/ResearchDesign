@@ -1,0 +1,27 @@
+---
+format: 
+  html:
+    page-layout: custom
+---
+
+::: page-schedule
+The tentative Fall 2023 schedule for Quantiative Analysis 1. Use the reading links to see the required and supplementary readings for each week. Use the assignment links to see the assignment for each week. Use the lecture links to see the lecture for each week.
+
+| Date                  | Topic                                                 | Reading                                                    | Assignment                                                               | Lecture                                                         |
+|-----------------------|-------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------|
+| 8/25 - Stats Bootcamp | Basics of data analysis & R                           | [![](assets/reading-icon-1.png)](readings/reading-1.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/01-lecture-page.html) |
+| 9/5                   | Bivariate measures of association & simple regression | [![](assets/reading-icon-1.png)](readings/reading-2.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/02-lecture-page.html) |
+| 9/12                  | Measures of partial association & multiple regression | [![](assets/reading-icon-1.png)](readings/reading-3.html)  | [![](assets/assignment-icon-1.png)](assignments/01-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/03-lecture-page.html) |
+| 9/19                  | Review of statistical concepts & R                    | [![](assets/reading-icon-1.png)](readings/reading-4.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/04-lecture-page.html) |
+| 9/29 - Immersion Day  | Statistical inference & Categorical predictors        | [![](assets/reading-icon-1.png)](readings/reading-5.html)  | [![](assets/assignment-icon-1.png)](assignments/02-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/05-lecture-page.html) |
+| 10/3                  | Multicategorical predictors                           | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/06-lecture-page.html) |
+| 10/10                 | Fall Break - No Class                                 | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
+| 10/17                 | Model building                                        | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/07-lecture-page.html) |
+| 10/24                 | Moderation (Interactions)                             | [![](assets/reading-icon-1.png)](readings/reading-7.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
+| 11/3 - Immersion Day  | Moderation & Mediation                                | [![](assets/reading-icon-1.png)](readings/reading-8.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/08-lecture-page.html) |
+| 11/7                  | More on Mediation                                     | [![](assets/reading-icon-1.png)](readings/reading-9.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
+| 11/14                 | Regression diagnostics                                | [![](assets/reading-icon-1.png)](readings/reading-10.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/10-lecture-page.html) |
+| 11/28                 | Regression diagnostics                                | [![](assets/reading-icon-1.png)](readings/reading-11.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/10-lecture-page.html) |
+| 12/5                  | Miscellaneous Topics                                  | [![](assets/reading-icon-1.png)](readings/reading-12.html) | [![](assets/assignment-icon-1.png)](assignments/04-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/11-lecture-page.html) |
+| 12/12                 | Review & Questions                                    | [![](assets/reading-icon-1.png)](readings/reading-13.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/12-lecture-page.html) |
+:::

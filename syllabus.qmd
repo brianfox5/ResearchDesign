@@ -1,245 +1,464 @@
 ---
 title: "Course Syllabus"
+author: "Brian Fox"
+format: 
+  html: default
+  pdf: 
+      include-in-header: 
+        text: |
+          \usepackage{lscape}
+          \newcommand{\blandscape}{\begin{landscape}}
+          \newcommand{\elandscape}{\end{landscape}}
 ---
 
-To download a pdf version of this syllabus, click <a href="assets/pdf/quant-1-syllabus-2023.pdf" download target="_blank" rel="noopener noreferrer"><strong>here</strong></a>.
+# PhD 1506 -- Research Design (Quant Research Methods I)
+
+Dr. Brian Fox
+
+**Office:** AAC G313
+
+**Office Hours:** By appointment
+
+**Email:** BFOX\@bentley.edu
 
 **Meeting Time:** Tuesdays, 5 PM to 7 PM ET
 
 **Location:** Zoom Meeting and Smith 307 when in person
 
-**Email:** alex.lopilato\@gmail.com (for quick responses) or alopilato\@bentley.edu (for discussions about grades, personal info, etc.)
-
-**Office Hours:** By request (will likely be virtual as I do not have an office on campus)
-
 **Course Format:** Hybrid Synchronous
 
-### Course Description
+Note: To download a pdf version of this syllabus, use the link provided to the right of this page.
 
-This course focuses on applications of linear regression to model data collected from observational, quasi-experimental, and experimental study designs. This course will introduce students to the basics of linear regression and its applications to model and theory building.
+## I. Course Description
 
-### Course Objectives
+This is an introductory seminar to research design for management science. Seminar participants will learn how to develop a research project and apply quantitative methods drawn from across the social sciences to achieve their aims.
 
-By the end of this course, you will:
+## II. Course Objectives
 
--   Have an understanding of the general linear model.
--   Have an understanding of how to use linear models to empirically test theoretical models.
--   Have an understanding of how to use linear regression in your own research.
--   Feel comfortable using R to estimate linear models.
+This primary function of this course is to help advance your dissertation research. You will learn how to identify and articulate research questions, build models, develop hypotheses, and determine appropriate methods to address your research question. At a more granular level, my objectives are as follows:
 
-### Textbooks
+-   Acquaint you with the research process
 
--   Darlington, A. B. & Hayes, A. F. (2016). Regression Analysis and Linear Models: Concepts, Applications, and Implementation (Referred to as RAGLM)
--   Békés, G. & Kézdi, G. (2021). Data Analysis for Business Economics, and Policy. (Referred to as DBEP)
+-   Facilitate your understanding of the management research context
 
-### Course Technology
+-   Familiarize you with commonly employed quantitative methodologies and techniques
 
-This course will use Brightspace to post important updates and Zoom recordings. Please do not use Brightspace to email me! Use either of the emails listed above.
+-   Demonstrate the need for theory-empiric fit in high-quality management research
 
-#### Course Website
+-   Provide examples of specific research applications as toy models for your own work
 
-The website for the course is: <https://alopilato88.github.io/quantitative-analysis-1/>. All of the lectures can be found there and will be made publicly available on the day of the lecture.
+-   Help you appreciate the subtle nature of research design
 
-#### Statistical Computing
+## III. Means and Methods
 
-This course will rely solely on the R programming language for all statistical computing. At the very least, you will need to download R to your local machine (or use your lab computer), and I highly recommend also downloading RStudio, which is an Integrated Development Environment (IDE) that makes programming in R (and other programming languages) much easier. **Please reach out to me if you are unable to install R.**
+In support of these goals, we will employ the following format for the majority of our classes:
 
-While you can use another statistical software program such as SPSS, SAS, or STATA, I will not be providing example code for those different programs. I will only be providing example R code.
+-   *Part I:* Conceptual grounding and agenda setting (10 minutes)
 
-### Grading Criteria
+-   *Part II:* Core paper discussion (40 minutes):
 
-A combination of homework and a final research project will be used to determine your grade for this course. Homework will account for 90% of your grade and the research project will account for 10%. While I encourage you to consult with your colleagues (your instructor, classmates, professors, etc.) when you are struggling with any of the homework assignments or the research project, your final products must be your own.
+    -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
-#### Homework
+    -   These papers typically will provide a mix of conceptual background and how-to guides
 
-I will send out periodic homework assignments in order to give you students experience applying the methods we discuss in class. These assignments will be a mix of conceptual, statistical, and computational exercises. **Please reach out to me if you find yourself struggling or overly stressing with these assignments. They are meant to be a learning tool not a major stressor!**
+-   *Part III:* Summative lecture on concepts (15 minutes):
 
-#### Research Project
+    -   I will make a brief presentation to tie together and highlight key concepts
 
-One of the more exciting things about being a graduate student is that you are able to explore the topics you find interesting. Use this research project to apply the methods we learn to any topic of your choice. Alternatively, I have fictitious data you can use if you do not have access to data of your own. Please talk to me by October 17th about your research project, even if your not 100% sure about it.
+    -   Elements missed in the general discussion will be given greater focus
 
-Your final product should include four components:
+-   *Part IV:* Activity period (40 minutes):
 
-1.  A brief introduction to your topic, the theory you are testing, and your hypotheses.
-2.  A methods section write-up that parallels methods sections found in published articles.
-3.  A results secection write-up that parallels methods sections found in published articles.
-4.  The code you used to analyze your data along with the dataset (assuming you are allowed to share the data).
+    -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
-### University Honor Code, Academic Honesty Policy, Bentley Core Values
+    -   (Weeks 8 -- 14) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and show the class the process
 
-This class will be conducted in full accordance with The Bentley Core Values. Please reread the Values, which can be found at https://www.bentley.edu/about/mission-and-values.
+-   *Part V:* Open discussion and applications to your work (15 minutes)
 
-**Bentley College Honor Code**: The Bentley College Honor Code formally recognized the responsibility of students to act in an ethical manner. It expects all students to maintain academic honesty in their own work, recognizing that most students will maintain academic honesty because of their own high standards. The Honor Code expects students to promote ethical behavior throughout the Bentley community and to take responsible action when there is a reason to suspect dishonesty.
+-   *Part VI:* Workshop (4 hours, in-person meetings only):
 
-**Personal Academic Behavior**: A student acknowledges that all submitted work (e.g., examination, papers, cases homework assignments) must be his or her own. The exception is the case in which an instructor permits or encourages students to work together on some or all assignments. When a student is in doubt, he or she should consult the instructor for clarification.
+    -   This is your opportunity to work with me and colleagues to advance your final project
 
-**Responsible Actions**: Each student, as an integral member of the academic community, is expected to make a commitment to act honestly and to reject dishonesty on the part of other students. The students as a community are responsible for maintaining an ethical environment. Policies may be found at: http://www.bentley.edu/centers/alliance/academic-integrity
+## IV. Assignments and Grading
 
-### Bias Incident Reporting
+Everyone must read all required materials prior to class. Each student is expected to fully participate. All material due should be completed on Brightspace, sent to my email, or submitted via Turnitin, depending on assignment requirements. Details on these assignments can be found in Appendix A.
 
-The Bias Incident Response Team (BIRT) provides students affected by bias or bias-related incidents with access to appropriate resources. Where appropriate, BIRT assists the University in its response to situations that may impact the overall campus climate related to diversity and inclusion. Working closely with appropriate students, faculty, committees, organizations, and staff, BIRT plays an educational role in fostering an inclusive campus community and supporting targeted individuals when bias or bias-related incidents occur. More information about BIRT and how to file a bias incident report can be found at: https://www.bentley.edu/offices/student-affairs/birt.
+| Task                                     | \% of Grade |
+|------------------------------------------|-------------|
+| Class participation -- paper discussions | 20          |
+| Compare - contrast presentation          | 15          |
+| Replication presentation                 | 15          |
+| Concept checks (2)                       | 10          |
+| Interim work on proposal                 | 15          |
+| Final research proposal                  | 25          |
+| **Total**                                | **100**     |
 
-### Special Accommodations
+## V. Course Materials
 
-**Statement of Disabilities**: Bentley University abides by Section 504 of the Rehabilitation Act of 1973 and the Americans with Disabilities Act of 1990 which stipulate no student shall be denied the benefits of an education solely by reason of a disability. If you have a hidden or visible disability which may require classroom accommodations, please call (if you are a residential student or on online student) Disability Services within the first 4 weeks of the semester to schedule an appointment. Disability Services is located in the Office of Academic Services (JEN 336, 781.891.2004). Disability Services is responsible for managing accommodations and services for all students with disabilities.
+### Reading List
 
-### Writing Center
+Appendix B includes a list of required readings for the topics that we discuss. Supplemental reading materials are available, too -- I have omitted them from the reading list for your ease of reference, but I can send you a more complete version of the syllabus with the supplemental readings included if you are interested. I will also provide a number of good reference texts below -- again, none are required for the purpose of this class, but some will be invaluable as you continue your research methods journey, depending on your areas of interest and focus.
 
-The Writing Center offers one-on-one tutoring to students of all years and skill levels. Located on the lower level of the Bentley library (room 023), the Writing Center provides a welcoming and supportive environment in which students can work on writing from any class or discipline. Writers are encouraged to visit at all stages of the writing process; they can come with a draft, an outline, or just some initial thoughts and questions.
+### Optional Text References
 
-Staffed by highly skilled student tutors, the Writing Center is open six days a week. Most conferences will be conducted online, but limited in-person hours will be held by appointment only. Appointments can be made at bentley.mywconline.net. For specific hours and additional information, please visit the Writing Center SharePoint site.
+(Note: all provided for reference only, none of these texts are required).
 
-### ESOL
+#### *Research design texts*
 
-The ESOL Center offers online appointments for helping undergraduate and graduate students strengthen their writing and English language skills. Our ESOL faculty tutors specialize in working with international and multilingual students to provide one-on-one support for all courses writing at any stage in the writing process. Along with individualized help for writing, the ESOL tutors provide guidance and feedback for documenting sources, oral presentation practice, and pronunciation/fluency enrichment.
+-   Creswell, J.W. 2009. Research Design: Qualitative, Quantitative, and Mixed Methods Approaches, 3rd edition. Thousand Oaks, CA: Sage Publications).
 
-The ESOL Center offers real-time video appointments Monday through Friday between 7:30 a.m. and 10:00 p.m. These can be reserved through our website: https://bentleyesol.mywconline.net. The complete information about booking appointments and uploading papers is clarified on the website's announcement page.
+-   Joseph Hair, Mary Wolfinbarger Celsi, Arthur Money, Phillip Samouel and Michael Page. 2011. Essentials of Business Research Methods, Hoboken, NJ: Wiley
 
-### Course Style
+-   Aguinis, H. 2024. Research Methodology: Best Practices for Rigorous, Credible, and Impactful Research. Sage Publications, Incorporated.
 
-I want this course to be an enjoyable and engaging experience for all, so although I will have lecture slides to talk through, I will also be using this course more as a discussion about statistical topics, not a lecture about them.
+#### *Research methods texts*
 
-In order to meaningfully engage in this discussion, I encourage you to read through the required readings and skim through the supplemental readings (although I think they are all interesting reads!). I understand everyone is busy, so, despite being labeleled "Required Readings", I will not make the readings required, but to make this course useful you will need to engage with the material and come with questions!
+-   Kennedy, P. 2008. A Guide to Econometrics (6th Edition ed.). Malden, MA: Blackwell.
 
-To be successful in this course, you will need to:
+-   Pearl, J. 2001. Causality- Models, Reasoning, and Inference.
 
--   Do the required readings and skim the supplemental readings
--   Come to class and bring questions
--   Engage in the course discussions
--   Most importantly, **ASK QUESTIONS**
+-   Angrist, J. D., & Pischke, J. S. 2008. Mostly harmless econometrics: An empiricist's companion. Princeton, NJ: Princeton University Press.
 
-### Tentative Course Schedule
+-   Greene, W. H. 2012. Econometric Analysis.
 
-**NOTE:** The course syllabus is a general plan for the course and as such there may be deviations throughout the semester. Supplemental readings are any readings that are italicized or hyperlinked.
+-   Hox, J. J., Moerbeek, M., & Schoot, R. V. D. 2017. Multilevel Analysis: Techniques and Applications. Quantitative Methodology Series.
 
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| Date  | Topic                                                 | Readings                                                                                                             |
-+:======+:======================================================+:=====================================================================================================================+
-| 9/5   | Bivariate Measures of Association & Simple Regression | -   RAGLM -- Chapter 1: Statistical Control & Linear Models                                                          |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- Chapter 2: The Simple Regression Model                                                                  |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *DBEP -- Chapter 4.6: Dependence, Covariance, & Correlation*                                                     |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 2: Data Visualization](https://r4ds.hadley.nz/data-visualize.html)                |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 3: Workflow: Basics](https://r4ds.hadley.nz/workflow-basics)                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 9/12  | Measures of Partial Association & Multiple Regression | -   RAGLM -- Chapter 3: Partial Relationship & the Multiple Regression Model                                         |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 4: Data Transformation](https://r4ds.hadley.nz/data-transform)                    |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 5: Workflow: Code Style](https://r4ds.hadley.nz/workflow-style)                   |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 6: Data Tidying](https://r4ds.hadley.nz/data-tidy)                                |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 9/19  | Statistical Inference for Regression                  | -   RAGLM -- Chapter 4: Statistical Inference in Regression                                                          |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *DBEP -- Chapter 9: Generalizing Results of a Regression*                                                        |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [ModernDive - Chapter 10.1 to 10.3](https://moderndive.com/10-inference-for-regression.html)                     |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 9/29  | Categorical Predictors & Model Building               | -   RAGLM -- Chapter 5: Extending Regression Analysis & Principles                                                   |
-|       |                                                       |                                                                                                                      |
-|       | **Immersion Day**                                     | -   RAGLM -- Chapter 8: Assessing the Importance of Regressors                                                       |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- Chapter 9: Multicategorical Regressors                                                                  |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [ModernDive -- Chapter 5: Basic Regression](https://moderndive.com/5-regression.html)                            |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [ModernDive -- Chapter 6: Multiple Regression](https://moderndive.com/6-multiple-regression.html)                |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 10/10 | Fall Break - No Class                                 |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 10/17 | Nonlinear Effects, Interactions, & Model Building     | -   RAGLM -- Chapter 12.1 & 12.2: Nonlinear Relationships                                                            |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- Chapter 13: Linear Interaction                                                                          |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- 10: Layers](https://r4ds.hadley.nz/layers)                                                |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   [R for Data Science -- Chapter 11: Exploratory Data Analysis](https://r4ds.hadley.nz/eda)                        |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 10/24 | More on Interactions                                  | -   RAGLM -- Chapter 14: Probing Interactions & Various Complexities                                                 |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- Chapter 11: Mutliple Tests                                                                              |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Dawson (2014). Moderation in management research: What, why, when, and how.*                                    |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Haans et al. (2016). Thinking about U: Theorizing and testing U- and inverted U-shaped relationships*           |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 11/3  | Mediation, Path Analysis, & and Diagnostics           | -   RAGLM -- Chapter 15: Mediation & Path Analysis                                                                   |
-|       |                                                       |                                                                                                                      |
-|       | **Immersion Day**                                     | -   RAGLM -- 16: Detecting & Managing Irregularities                                                                 |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- 17.3: An Assortment of Problems                                                                         |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   Aguinis et al. (2017). Improving our understanding of moderation and mediation in strategic management research. |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *VanderWeele (2016). Mediation analysis: A practitioner's guide.*                                                |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Chatterjee & Yilmaz (1992). A review of regression diagnostics for behavioral research.*                        |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 11/7  | Power, Precision, & Measurement Error                 | -   RAGLM -- 17.1: Power & Precision of Estimation                                                                   |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- 17.2: Measurement Error                                                                                 |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   Ree & Caretta (2006). The role of measurement error in familiar statistics.                                      |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Cortina (1993). What is coefficient alpha: An examination of theory and application*                            |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 11/14 | Introduction to Causation                             | -   DBEP -- Chapter 19: A Framework for Causal Analysis                                                              |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *West & Thoemmes (2010). Campbell's and Rubin's perspectives on causal inference.*                               |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 11/21 | Thanksgiving Break - No Class                         |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 11/28 | Experimental Design & Analysis                        | -   DBEP -- Chapter 20: Designing & Analyzing Experiments                                                            |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   RAGLM -- Chapter 6: Statistical versus Experimental Control                                                      |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Posakoff & Podsakoff (2019). Experimental designs in management and leadership research*                        |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Eden (2017). Field experiments in organizations.*                                                               |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Luca & Bazerman (2020). Want to make better decisions? Start experimenting.*                                    |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 12/5  | Causal Inference with Observational Data              | -   DBEP -- Chapter 21: Regression & Matching with Observational Data                                                |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   Narita et al. (2023). Causal inference with observational data: A tutorial on propensity score analysis.         |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Hernan (2018). The C-word: Scientific euphemisms do not improve causal inference from observational data.*      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|       |                                                       |                                                                                                                      |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| 12/12 | Causal Mediation                                      | -   Cuartas & McCoy (2021). Causal mediation in developmental science: A primer.                                     |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   Nguyen et al. (2021). Clarifying causal mediation analysis for the applied researcher                            |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Imai et al. (2010). A general approach to causal mediation analysis.*                                           |
-|       |                                                       |                                                                                                                      |
-|       |                                                       | -   *Bullock et al. (2010). Yes, but what's the mechanism? (Don't expect an easy answer).*                           |
-+-------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+-   Shadish, W. R., Cook, T. D., & Campbell, D. T. 2002. Experimental and Quasi-experimental Designs for Generalized Causal Inference. Cengage Learning.
+
+-   Hastie, T., Tibshirani, R., & Friedman, J. 2016. The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd Edition ed.). Springer.
+
+-   Mershon, C., & Shvetsova, O. 2019. Formal Modeling in Social Science. University of Michigan Press.
+
+#### *Electronic textbooks built with R Markdown (nice quick-access references):*
+
+-   https://bookdown.org/ejvanholm/Textbook/
+
+-   https://book.declaredesign.org/declaration-diagnosis-redesign/specifying-model.html
+
+-   https://www.econometrics-with-r.org/
+
+### VI. SCHOOL POLICIES
+
+All courses offered at Bentley University reflect our institution's commitment to a set of core values and practices.  The links below will take you to full explanations of our policies and procedures related to accommodations and equitable learning environments. As a student, you are expected to review and be familiar with each of these policies:
+
+-   [Bentley's honor code and academic integrity system](https://catalog.bentley.edu/graduate/academic-policies-procedures/academic-integrity/)
+
+-   [Equity and bias reporting forms and procedures](https://www.bentley.edu/equity-reporting)
+
+-   [Student Disability Accommodations](https://www.bentley.edu/offices/disability-services)
+
+-   [Religious observances](https://catalog.bentley.edu/undergraduate/academic-policies-procedures/#Religious_Observances_Policy)
+
+-   [Bentley's core values](https://www.bentley.edu/about/mission-and-values)
+
+\blandscape
+
+### VII. COURSE SCHEDULE
+
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Week**                            | **Date** | **Topics**                     | **Key question** | **Tools**                  | **Deliverables**                     |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Research Process**            |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 1                                   | 23-Jan   | Research I: Principles         | In what way?     |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 2                                   | 30-Jan   | Research II: Practices         | With what tools? |                            | Compare / contrast: 1-4              |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 3                                   | 9-Feb    | Research III: Problems         | To what end?     |                            | Compare / contrast: 5-8\             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | \                              |                  |                            | **Research questions**               |
+|                                     |          | *Workshop*                     |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Elements of Research Design** |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 4                                   | 13-Feb   | Elements I:\                   | Why?             | Nomological networks       | Compare / contrast: 9-12             |
+|                                     |          | Theory and phenomena           |                  |                            |                                      |
+|                                     |          |                                |                  |                            | **Concept check 1\                   |
+|                                     |          |                                |                  |                            | (due next class)**                   |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 5                                   | 27-Feb   | Elements II:\                  | Testable?        | Formal models, DAGs        | Compare / contrast: 13-16            |
+|                                     |          | Models and hypotheses          |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 6                                   | 5-Mar    | Elements III:\                 | What?            | Validity assessments       | Compare / contrast: 17-20            |
+|                                     |          | Constructs and variables       |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 7                                   | 22-Mar   | Elements IV: Data and measures | Observable?      | Descriptive statistics     | Compare / contrast: 21-24\           |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | *Workshop*                     |                  |                            | **Draft model**                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Core models and techniques**      |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 8                                   | 26-Mar   | Techniques I: Regression       | Valid?           | OLS, Statistical inference | Replication: 1,3,5,7\                |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          |                                |                  |                            | **Concept check 2 (due next class)** |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 9                                   | 2-Apr    | Techniques II: Moderation      | When?            | HLM, Interaction plots     | Replication: 2,4,6,8                 |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 10                                  | 9-Apr    | Techniques III: Mediation      | How?             | SEM, Indirect effects      | Replication: 9,11,13,15              |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 11                                  | 16-Apr   | Techniques IV: Endogeneity     | Alternatives?    | 2SLS, Instruments          | Replication: 10,12,14,16             |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Theory-empiric fit**              |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 12                                  | 26-Apr   | Design I: (Quasi)-experimental | Causal?          | D-i-D                      | Replication: 17,19,21,23             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | Design II: Longitudinal data   | Dynamic?         | Panel data estimators      | Replication: 18,20,22,24             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | *Workshop*                     |                  |                            | **Draft paper deliverable**          |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 13                                  | 3-May    | *No class*                     |                  |                            | **Final deliverable due 5/3**        |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+
+\elandscape
+
+## APPENDIX A -- ASSIGNMENT DETAILS
+
+### Class participation -- paper discussions
+
+It is expected that students will have done the assigned readings in advance and be prepared to discuss them. As part of this preparation, I recommend that you put together an outline for each reading that captures (for example) key points of the paper, questions you would like to raise during the class, connections you have noted between this paper and others in the class and elsewhere, and so on. The assigned readings for each week (see Appendix B) are all those items above the heading "Further reading (not required)".
+
+### Compare -- contrast presentations
+
+You have been assigned a number (see the table at the end of this section for your assignment. Based on this number, you will be allocated to a group of students (see the "Deliverables" column in the Course Schedule above).
+
+Collectively, your group will work together to perform a deeper reading of the two articles bulleted under the "Compare/Contrast" section of the week's reading. You will make a presentation regarding these two papers: their points of intersection and divergence, how they fit with the other readings assigned for the week, and their place within your broader understanding of management research to date.
+
+It is expected that your group will lead a discussion of these concepts in class. During that period, I will take the role of an informed participant except in cases when I need to clarify points of potential confusion.
+
+### Replication presentations
+
+As discussed above, you have been assigned a number (see the table at the end of this section for your assignment). Based on this number, you will be allocated to a different group of students (please note that the group assignments differ from the compare / contrast presentations, so that we can mix up group composition).
+
+Collectively, your group will work together to re-analyze the data for an in-progress or completed paper of mine. The objective here is for you to get hands-on experience with using the analytical tools that support these analyses and report your experience to the class. The paper will be provided to you as part of the packet of readings.
+
+I can also provide your group with the underlying data to complete your analyses, on an as-needed basis. I am also happy to work with your group to walk through questions and concerns that you have in performing the assignment.
+
+It is expected that your group will lead a discussion of this effort in class and to explain what went well, what didn't go as well, and what analyses and conclusions of the paper you were able to replicate and which you could not.
+
+### Concept checks
+
+There will be two "concept checks" during the course of the semester -- they will be administered online, outside of class. They serve two purposes: a) identifying areas where I have not communicated concepts adequately, and b) giving you an incentive to keep up with the readings. The typical format is 10-15 multiple choice questions that call upon you to apply the lessons of the classes that we have covered up until that point.
+
+### Research proposals
+
+#### Interim work - Research questions
+
+During our first in-person meeting, we will have a workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about their research topic/idea for their dissertation. This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. The purpose of the presentation is to introduce this research to the class at the beginning of the seminar and to get you thinking about it. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.\\
+
+#### Interim work -- Draft model
+
+During our second in-person meeting, we will have another workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea. Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
+
+#### Interim work --Draft deliverable
+
+This is your opportunity to submit a first draft of your paper to receive feedback from me and your colleagues. Our final workshop will be structured as two sets of working sessions where you will be working with two different classmates to review and advance elements your draft. I will be going from group to group in order to answer questions and get read-outs of progress from each group. My expectation is that you will have the "front end" of the paper (introduction, hypotheses) more progressed than the methods section given the order of the content we are covering in class. As for the content that should be coming together in this first draft, please see the discussion of the final deliverable below.
+
+#### Final deliverable
+
+Your final deliverable is a drafted introduction, model development, and methods section that supports the research model you seek to examine. The purpose of the assignment is twofold:
+
+-   to make forward progress on your dissertation work that incorporates some of the skills you have acquired during the course
+-   to apply and integrate the concepts and issues being studied in this course regarding quantitative research design and method Ideally, this proposal, once converted to a complete paper, would be of publishable standard, either as a conference paper, or for subsequent submission to a peer-reviewed journal. In terms of the format, here is a suggested structure for you to follow:
+    1.  Cover page (include a title, your name, and an abstract)
+    2.  Introduction (2-4 pages)
+    3.  Theory and Hypotheses (5-10 pages)
+    4.  Methods (5-10 pages)\
+        I would encourage you to draw upon the existing empirical papers that you have read in this class and previous classes as models for how to structure these various sections, in addition to the explicit guidance provided in the readings from the course. To provide a few examples:
+        -   Lange and Pfarrer, (2017) \[Week: Research III: Practices\] provide some nice suggestions for how to structure introductions
+        -   Suddaby (2010) \[Week Elements III: Constructs and variables\] shares guidance on how to make sure that your constructs are sufficiently articulated in your theory development
+        -   Mathieu and Taylor (2006) \[Week Techniques III: Mediation\] develops a checklist of steps to perform in order to draw particular mediational inferences and rule out alternative configurations
+
+Please feel free to reach out to me with questions as you work on this assignment. If a question comes to my attention that would be useful for the whole class to talk about, I will set aside time during the following session to discuss it.
+
+### Assignment table for group composition
+
+| Number | Name |
+|--------|------|
+| 1      |      |
+| 2      |      |
+| 3      |      |
+| 4      |      |
+| 5      |      |
+| 6      |      |
+| 7      |      |
+| 8      |      |
+| 9      |      |
+| 10     |      |
+| 11     |      |
+| 12     |      |
+| 13     |      |
+| 14     |      |
+| 15     |      |
+| 16     |      |
+| 17     |      |
+| 18     |      |
+| 19     |      |
+| 20     |      |
+| 21     |      |
+| 22     |      |
+| 23     |      |
+| 24     |      |
+
+## APPENDIX B -- READINGS BY TOPIC
+
+### Research I: Principles
+
+1.  Popper, K. R. (2002). The Logic of Scientific Discovery. Routledge. \[Ch .1\] </readings/Popper 2002.pdf>
+
+2.  Mantere, S., & Ketokivi, M. 2013. Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
+
+3.  Nosek, B. A. & Errington, T. M. 2020. What is replication? PLOS Biology: 1-8.
+
+4.  Rynes, S. L., & Bartunek, J. M. (2017). Evidence-Based Management: Foundations, Development, Controversies and Future. Annual Review of Organizational Psychology and Organizational Behavior, 4(1), 235-261. <https://doi.org/10.1146/annurev-orgpsych-032516-113306>
+
+### Research II: Problems
+
+1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Ch. 1\]
+
+2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
+
+3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
+
+4.  Compare / Contrast
+
+-   Daft, R. L., & Lewin, A. Y. 2008. Rigor and relevance in organization studies: Idea migration and academic journal evolution. Organization Science, 19: 177-183.
+
+-   Tushman, M., & O'Reilly, C. (2007). Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
+
+### Research III: Practices
+
+1.  Lange, D., & Pfarrer, M. D. (2017). Editors' Comments: Sense and Structure---The Core Building Blocks of an AMR Article. Academy of Management Review, 42(3), 407-416. https://doi.org/10.5465/amr.2016.0225
+
+2.  Tobi, H., & Kampen, J. K. 2018. Research design: the methodology for interdisciplinary research framework. Qual Quant, 52(3), 1209-1225.
+
+3.  Aguinis, H. & Vandenberg, R. J. (2014). An ounce of prevention is worth a pound of cure: improving research quality before data collection. Annual Review of Organizational Psychology and Organizational Behavior, 1: 569-595.
+
+4.  Compare / Contrast
+
+-   Corley, K. G., & Gioia, D. A. (2011). Building Theory about Theory Building: What Constitutes a Theoretical Contribution. Academy of Management Review, 36(1), 12-32. https://doi.org/10.5465/amr.2009.0486
+
+-   David A. Whetten, 1989. What constitutes a theoretical contribution? Academy of Management Review, 14: 490-495
+
+### Elements I: Theory and phenomena
+
+1.  Bacharach, S. B. (1989). Organizational Theories: Some Criteria for Evaluation. The Academy of Management Review, 14(4), 496-515. https://doi.org/10.2307/258555
+
+2.  Makadok, R., Burton, R., & Barney, J. (2018). A practical guide for making theory contributions in strategic management. Strategic Management Journal, 39(6), 1530-1545. <https://doi.org/10.1002/smj.2789>
+
+3.  Johns, G. 2006. The Essential Impact of Context on Organizational Behavior. The Academy of Management Review, 31, No. 2, 386-408.
+
+4.  Compare / contrast
+
+-   Sutton, R. I., & Staw, B. M. (1995). What Theory is Not. Administrative Science Quarterly, 40(3), 371. <https://doi.org/10.2307/2393788>
+
+-   Hambrick, D. C. 2007. The field of management's devotion to theory: Too much of a good thing? Academy of Management Journal, 50, 1346-1352.
+
+### Elements II: Models and hypotheses
+
+1.  Harris, J. D., Johnson, S. G., & Souder, D. 2013. Model-Theoretic Knowledge Accumulation: The Case of Agency Theory and Incentive Alignment. Academy of Management Review, 38(3), 442-454.
+
+2.  Chamberlin, T. C. (1965). The Method of Multiple Working Hypotheses. Science, 148(3671), 754-759. https://doi.org/10.1126/science.148.3671.754
+
+3.  Pearl, J. 2010. 3. The Foundations of Causal Inference. Sociological Methodology, 40(1), 75-149.
+
+4.  Compare / contrast
+
+-   Adner, R., Pólos, L., Ryall, M., & Sorenson, O. 2009. The Case for Formal Theory. Academy of Management Review, 34(2), 201-208.
+
+-   Miller, K. D. & Tsang, E. W. K. 2011. Testing management theories: Critical realist philosophy and research methods. Strategic Management Journal, 32(2): 139-158.
+
+### Elements III: Constructs and variables
+
+1.  Suddaby, R. (2010). Editor's Comments: Construct Clarity in Theories of Management and Organization. Academy of Management Review, 35(3), 346-357. https://doi.org/10.5465/amr.35.3.zok346
+
+2.  Van Maanen, J., Sorensen, J. B., & Mitchell, T. R. 2007. The interplay between theory and method. Academy of Management Review 32(4): 1145-1154.
+
+3.  Bagozzi, R. P., Yi, Y., & Phillips, L. W. (1991). Assessing Construct Validity in Organizational Research. Administrative Science Quarterly, 36, No. 3, 421-458. https://doi.org/10.2307/2393203
+
+4.  Compare / contrast
+
+-   Schaffer, J. A., DeGeest, D., & Li, A. 2016. Tackling the problem of construct proliferation: A guide to assessing discriminant validity of conceptually related constructs. Organizational Research Methods, 19: 80- 110.
+
+-   Law, K. S., Wong, C.-S., & Mobley, W. H. (1998). Toward a Taxonomy of Multidimensional Constructs. The Academy of Management Review, 23(4), 741. https://doi.org/10.2307/259060
+
+### Elements IV: Data and measures
+
+1.  Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+
+2.  Bedian, A. G. 2014. "More Than Meets the Eye": A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+
+3.  Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+
+4.  Compare / contrast
+
+-   Combs, J. G. 2010. Big samples and small effects: Let's not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+
+-   Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+
+### Techniques I: Regression
+
+1.  Kennedy, P. 2008. A Guide to Econometrics (6th Edition ed.). Malden, MA: Blackwell. \[Chs. 3 and 4\]
+
+2.  Carlson, K. D., & Wu, J. 2012. The illusion of statistical control: Control variable practice in management.
+
+Applications:
+
+3.  Replication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+
+4.  Katila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.
+
+### Techniques II: Moderation
+
+1.  Dawson, J. F. 2014. Moderation in Management Research: What, Why, When, and How. Journal of Business and Psychology, 29(1), 1-19.
+
+2.  Hitt, M. A., Beamish, P. W., Jackson, S. E., & Mathieu, J. E. 2007. Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management. Academy of Management Journal, 50(6), 1385-1399.
+
+Applications:
+
+3.  Replication: Heavey, C., Simsek, Z., & Fox, B. C. 2015. Managerial Social Networks and Ambidexterity of SMEs: The Moderating Role of a Proactive Commitment to Innovation. Human Resource Management, 54(S1).
+
+4.  Wolfson, M. A., & Mathieu, J. E. 2018. Sprinting to the finish: Toward a theory of Human Capital Resource Complementarity. J Appl Psychol, 103(11), 1165-1180.
+
+### Techniques III: Mediation
+
+1.  Mathieu, J. E., & Taylor, S. R. 2006. Clarifying conditions and decision points for mediational type inferences in Organizational Behavior. Journal of Organizational Behavior, 27(8), 1031-1056.
+
+2.  Williams, L. J., Vandenberg, R. J., & Edwards, J. R. 2009. 12 Structural Equation Modeling in Management Research: A Guide for Improved Analysis. Academy of Management Annals, 3(1), 543-604.
+
+Applications:
+
+3.  Ling, Y., Simsek, Z., Lubatkin, M. H., & Veiga, J. F. 2008. Transformational Leadership's Role in Promoting Corporate Entrepreneurship: Examining the CEO-TMT Interface. Academy of Management Journal, 51(3), 557-576.
+
+4.  Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986--2017). Academy of Management Journal, 65(2), 545-576.
+
+### Techniques IV: Endogeneity
+
+1.  Cuervo-Cazurra, A., Andersson, U., Brannen, M. Y., Nielsen, B. B., & Reuber, R. A. 2016. From the Editors: Can I trust your findings? Ruling out alternative explanations in international business research. Journal of International Business Studies, 47(8), 881-897.
+
+2.  Hamilton, B. H., & Nickerson, J. A. 2003. Correcting for endogeneity in strategic management research. Strategic Organization, 1(1): 51-78. Applications:
+
+3.  Angrist, J. D., & Krueger, A. B. 1991. Does Compulsory School Attendance Affect Schooling and Earnings. The Quarterly Journal of Economics, 106(4), 979-1014.
+
+4.  Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
+
+### Design I: (Quasi-)experimental data
+
+1.  Grant, A. M., & Wall, T. D. 2009. The Neglected Science and Art of Quasi-Experimentation. Organizational Research Methods, 12(4), 653-686.
+
+2.  Shadish, W. R., & Cook, T. D. 2009. The renaissance of field experimentation in evaluating interventions. Annu Rev Psychol, 60, 607-629.
+
+Applications:
+
+3.  Shu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197--15200. doi:10.1073/pnas.1209746109 (see also https://datacolada.org/109)
+
+4.  Replication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)
+
+### Design II: Longitudinal data
+
+1.  Ployhart, R.E. and R.J. Vandenberg. 2010. Longitudinal Research: The Theory, Design and Analysis of Change. Journal of Management, 36(1): 94-120.
+
+2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548. Applications:
+
+3.  Certo, S. T., Withers, M. C., & Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.
+
+4.  Replication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)
