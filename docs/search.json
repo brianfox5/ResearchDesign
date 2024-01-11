@@ -74,14 +74,14 @@
     "href": "class1.html",
     "title": "Class 1",
     "section": "",
-    "text": "Introductions\nSyllabus Review\nBreak\nReadings for Today\nIntegration"
+    "text": "Introductions\n\nGetting to Know Each Other\nSyllabus Review\nGeneral Course Flow\nBreak\n\nReadings for Today\nIntegration\n\nKey principles\nSome alternatives"
   },
   {
     "objectID": "class1.html#agenda",
     "href": "class1.html#agenda",
     "title": "Class 1",
     "section": "",
-    "text": "Introductions\nSyllabus Review\nBreak\nReadings for Today\nIntegration"
+    "text": "Introductions\n\nGetting to Know Each Other\nSyllabus Review\nGeneral Course Flow\nBreak\n\nReadings for Today\nIntegration\n\nKey principles\nSome alternatives"
   },
   {
     "objectID": "class1.html#readings-for-today",
@@ -123,7 +123,7 @@
     "href": "class1.html#falsifiability",
     "title": "Class 1",
     "section": "Falsifiability",
-    "text": "Falsifiability\n\nMy proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. - Popper (1962: 19)\n\n\\end{frame}\n% Presentation structure"
+    "text": "Falsifiability\n\nMy proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. - Popper (1962: 19)"
   },
   {
     "objectID": "classes.html",
@@ -131,5 +131,89 @@
     "title": "PhD 1506 - Research Design",
     "section": "",
     "text": "Links to the lecture notes, in-class activity details, and deliverables are provided below.\nNote that the Dropbox link for access to the readings to prepare for each week is available on the Brightspace site for your convenience.\n\n\n\nDate\nTopic\nLecture notes\nIn-class activity\nDeliverables\n\n\n\n\n23-Jan\nResearch I: Principles\n\n\n\n\n\n30-Jan\nResearch II: Practices\n\n\n\n\n\n\n9-Feb\nResearch III: Problems\n\nWorkshop\n\n\n\n\n\n\n\n13-Feb\nElements I:\nTheory and phenomena\n\n\n\n\n\n\n27-Feb\nElements II:\nModels and hypotheses\n\n\n\n\n\n\n5-Mar\nElements III:\nConstructs and variables\n\n\n\n\n\n\n22-Mar\nElements IV: Data and measures\nWorkshop\n\n\n\n\n\n\n\n26-Mar\nTechniques I: Regression\n\n\n\n\n\n2-Apr\nTechniques II: Moderation\n\n\n\n\n\n9-Apr\nTechniques III: Mediation\n\n\n\n\n\n16-Apr\nTechniques IV: Endogeneity\n\n\n\n\n\n26-Apr\nDesign I: (Quasi)-experimental\n\n\n\n\n\n\nDesign II: Longitudinal data\nWorkshop\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopics\nKey question\nTools\nDeliverables\n\n\nThe Research Process\n\n\n\n\n\n\n\n1\n23-Jan\n\nIn what way?\n\n\n\n\n2\n30-Jan\nResearch II: Practices\nWith what tools?\n\nCompare / contrast: 1-4\n\n\n3\n9-Feb\nResearch III: Problems\n\nWorkshop\nTo what end?\n\nCompare / contrast: 5-8\n\nResearch questions\n\n\nThe Elements of Research Design\n\n\n\n\n\n\n\n4\n13-Feb\nElements I:\nTheory and phenomena\nWhy?\nNomological networks\nCompare / contrast: 9-12\nConcept check 1\n(due next class)\n\n\n5\n27-Feb\nElements II:\nModels and hypotheses\nTestable?\nFormal models, DAGs\nCompare / contrast: 13-16\n\n\n6\n5-Mar\nElements III:\nConstructs and variables\nWhat?\nValidity assessments\nCompare / contrast: 17-20\n\n\n7\n22-Mar\nElements IV: Data and measures\nWorkshop\nObservable?\nDescriptive statistics\nCompare / contrast: 21-24\n\nDraft model\n\n\nCore models and techniques\n\n\n\n\n\n\n\n8\n26-Mar\nTechniques I: Regression\nValid?\nOLS, Statistical inference\nReplication: 1,3,5,7\n\nConcept check 2 (due next class)\n\n\n9\n2-Apr\nTechniques II: Moderation\nWhen?\nHLM, Interaction plots\nReplication: 2,4,6,8\n\n\n10\n9-Apr\nTechniques III: Mediation\nHow?\nSEM, Indirect effects\nReplication: 9,11,13,15\n\n\n11\n16-Apr\nTechniques IV: Endogeneity\nAlternatives?\n2SLS, Instruments\nReplication: 10,12,14,16\n\n\nTheory-empiric fit\n\n\n\n\n\n\n\n12\n26-Apr\nDesign I: (Quasi)-experimental\nDesign II: Longitudinal data\nWorkshop\nCausal?\nDynamic?\nD-i-D\nPanel data estimators\nReplication: 17,19,21,23\nReplication: 18,20,22,24\nDraft paper deliverable\n\n\n13\n3-May\nNo class\n\n\nFinal deliverable due 5/3"
+  },
+  {
+    "objectID": "class1.html#a-little-about-me",
+    "href": "class1.html#a-little-about-me",
+    "title": "Class 1",
+    "section": "A little about me",
+    "text": "A little about me\n\n\n\nA little about me"
+  },
+  {
+    "objectID": "class1.html#a-little-about-me-1",
+    "href": "class1.html#a-little-about-me-1",
+    "title": "Class 1",
+    "section": "A little about me",
+    "text": "A little about me"
+  },
+  {
+    "objectID": "class1.html#a-little-about-me-2",
+    "href": "class1.html#a-little-about-me-2",
+    "title": "Class 1",
+    "section": "A little about me",
+    "text": "A little about me"
+  },
+  {
+    "objectID": "class1.html#a-little-about-you",
+    "href": "class1.html#a-little-about-you",
+    "title": "Class 1",
+    "section": "A little about you",
+    "text": "A little about you\nLet’s fill out an introductory survey: Pollev.com/drfox"
+  },
+  {
+    "objectID": "class1.html#syllabus-review",
+    "href": "class1.html#syllabus-review",
+    "title": "Class 1",
+    "section": "Syllabus Review",
+    "text": "Syllabus Review\n\nSyllabus\nBrightspace"
+  },
+  {
+    "objectID": "class1.html#break",
+    "href": "class1.html#break",
+    "title": "Class 1",
+    "section": "Break",
+    "text": "Break"
+  },
+  {
+    "objectID": "class1.html#popper-k.-r.-2002",
+    "href": "class1.html#popper-k.-r.-2002",
+    "title": "Class 1",
+    "section": "Popper, K. R. (2002)",
+    "text": "Popper, K. R. (2002)\nThe Logic of Scientific Discovery. [Ch .1]"
+  },
+  {
+    "objectID": "class1.html#mantere-s.-and-ketokivi-m.-2013.",
+    "href": "class1.html#mantere-s.-and-ketokivi-m.-2013.",
+    "title": "Class 1",
+    "section": "Mantere, S., and Ketokivi, M. 2013.",
+    "text": "Mantere, S., and Ketokivi, M. 2013.\nReasoning in Organization Science. Academy of Management Review, 38(1), 70-89."
+  },
+  {
+    "objectID": "class1.html#nosek-b.-a.-and-errington-t.-m.-2020.",
+    "href": "class1.html#nosek-b.-a.-and-errington-t.-m.-2020.",
+    "title": "Class 1",
+    "section": "Nosek, B. A. and Errington, T. M. 2020.",
+    "text": "Nosek, B. A. and Errington, T. M. 2020.\nWhat is replication? PLOS Biology: 1-8."
+  },
+  {
+    "objectID": "class1.html#rynes-s.-l.-and-bartunek-j.-m.-2017.",
+    "href": "class1.html#rynes-s.-l.-and-bartunek-j.-m.-2017.",
+    "title": "Class 1",
+    "section": "Rynes, S. L., and Bartunek, J. M. (2017).",
+    "text": "Rynes, S. L., and Bartunek, J. M. (2017).\nEvidence-Based Management: Foundations, Development, Controversies and Future. Annual Review of Organizational Psychology and Organizational Behavior, 4(1), 235-261."
+  },
+  {
+    "objectID": "class1.html#falsifiability-1",
+    "href": "class1.html#falsifiability-1",
+    "title": "Class 1",
+    "section": "Falsifiability",
+    "text": "Falsifiability\n\nFalsifiability provides a basis for abductive reasoning pure deductive reasoning is true a priori if the premises and statements are valid. We can transform our understanding of the system but generate additional truths - we may uncover them.\nWe worry about the defensibility of our arguments to be able to act upon the conclusions with confidence\nBut our arguments and conclusions are irrelevant if they aren’t applcable to real-world problems; worries about inside baseball.\nFinally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. This gets to the idea of trust but verify and the need to construct “stylized facts” (Kaldor, 1957, 1961; Helfat, 2007)"
+  },
+  {
+    "objectID": "class1.html#an-alternative-bayesian-reasoning-and-degrees-of-belief",
+    "href": "class1.html#an-alternative-bayesian-reasoning-and-degrees-of-belief",
+    "title": "Class 1",
+    "section": "An alternative: Bayesian reasoning and degrees of belief",
+    "text": "An alternative: Bayesian reasoning and degrees of belief"
   }
 ]
