@@ -1,27 +1,105 @@
 ---
 format: 
-  html:
-    page-layout: custom
+  html: default
 ---
 
 ::: page-schedule
-The tentative Fall 2023 schedule for Quantiative Analysis 1. Use the reading links to see the required and supplementary readings for each week. Use the assignment links to see the assignment for each week. Use the lecture links to see the lecture for each week.
+Links to the lecture notes, in-class activity details, and deliverables are provided below.
 
-| Date                  | Topic                                                 | Reading                                                    | Assignment                                                               | Lecture                                                         |
-|-----------------------|-------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------|
-| 8/25 - Stats Bootcamp | Basics of data analysis & R                           | [![](assets/reading-icon-1.png)](readings/reading-1.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/01-lecture-page.html) |
-| 9/5                   | Bivariate measures of association & simple regression | [![](assets/reading-icon-1.png)](readings/reading-2.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/02-lecture-page.html) |
-| 9/12                  | Measures of partial association & multiple regression | [![](assets/reading-icon-1.png)](readings/reading-3.html)  | [![](assets/assignment-icon-1.png)](assignments/01-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/03-lecture-page.html) |
-| 9/19                  | Review of statistical concepts & R                    | [![](assets/reading-icon-1.png)](readings/reading-4.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/04-lecture-page.html) |
-| 9/29 - Immersion Day  | Statistical inference & Categorical predictors        | [![](assets/reading-icon-1.png)](readings/reading-5.html)  | [![](assets/assignment-icon-1.png)](assignments/02-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/05-lecture-page.html) |
-| 10/3                  | Multicategorical predictors                           | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/06-lecture-page.html) |
-| 10/10                 | Fall Break - No Class                                 | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
-| 10/17                 | Model building                                        | [![](assets/reading-icon-1.png)](readings/reading-6.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/07-lecture-page.html) |
-| 10/24                 | Moderation (Interactions)                             | [![](assets/reading-icon-1.png)](readings/reading-7.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
-| 11/3 - Immersion Day  | Moderation & Mediation                                | [![](assets/reading-icon-1.png)](readings/reading-8.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/08-lecture-page.html) |
-| 11/7                  | More on Mediation                                     | [![](assets/reading-icon-1.png)](readings/reading-9.html)  | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](index.html)                    |
-| 11/14                 | Regression diagnostics                                | [![](assets/reading-icon-1.png)](readings/reading-10.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/10-lecture-page.html) |
-| 11/28                 | Regression diagnostics                                | [![](assets/reading-icon-1.png)](readings/reading-11.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/10-lecture-page.html) |
-| 12/5                  | Miscellaneous Topics                                  | [![](assets/reading-icon-1.png)](readings/reading-12.html) | [![](assets/assignment-icon-1.png)](assignments/04-assignment-page.html) | [![](assets/lecture-icon-1.png)](lectures/11-lecture-page.html) |
-| 12/12                 | Review & Questions                                    | [![](assets/reading-icon-1.png)](readings/reading-13.html) | [![](assets/assignment-icon-1.png)](index.html)                          | [![](assets/lecture-icon-1.png)](lectures/12-lecture-page.html) |
+Note that the Dropbox link for access to the readings to prepare for each week is available on the Brightspace site for your convenience.
+
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| Date       | Topic                          | Lecture notes                                             | In-class activity                           | Deliverables                                   |
++============+================================+===========================================================+=============================================+================================================+
+| 23-Jan     | Research I: Principles         | [![](assets/reading-icon-1.png){width="100"}](class1.pdf) |                                             |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 30-Jan     | Research II: Practices         | ![](assets/reading-icon-1.png){width="100"}               | \                                           |                                                |
+|            |                                |                                                           | ![](assets/activity.png){width="61"}        |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 9-Feb      | Research III: Problems         | ![](assets/reading-icon-1.png){width="100"}               | \                                           | \                                              |
+|            |                                |                                                           | ![](assets/activity.png){width="61"}        | ![](assets/workshop.png){width="61"}           |
+|            | \                              |                                                           |                                             |                                                |
+|            | *Workshop*                     |                                                           |                                             |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 13-Feb     | Elements I:\                   | ![](assets/reading-icon-1.png){width="100"}               | \                                           | ![](assets/assignment-icon-1.png){width="100"} |
+|            | Theory and phenomena           |                                                           | ![](assets/activity.png){width="61"}        |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 27-Feb     | Elements II:\                  | ![](assets/reading-icon-1.png){width="100"}               | \                                           |                                                |
+|            | Models and hypotheses          |                                                           | ![](assets/activity.png){width="61"}        |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 5-Mar      | Elements III:\                 | ![](assets/reading-icon-1.png){width="100"}               | \                                           |                                                |
+|            | Constructs and variables       |                                                           | ![](assets/activity.png){width="61"}        |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 22-Mar     | Elements IV: Data and measures | ![](assets/reading-icon-1.png){width="100"}               | \                                           | \                                              |
+|            |                                |                                                           | ![](assets/activity.png){width="61"}        | ![](assets/workshop.png){width="61"}           |
+|            | *Workshop*                     |                                                           |                                             |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 26-Mar     | Techniques I: Regression       | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} | ![](assets/assignment-icon-1.png){width="100"} |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 2-Apr      | Techniques II: Moderation      | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 9-Apr      | Techniques III: Mediation      | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 16-Apr     | Techniques IV: Endogeneity     | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+| 26-Apr     | Design I: (Quasi)-experimental | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+|            | Design II: Longitudinal data   | ![](assets/reading-icon-1.png){width="100"}               | ![](assets/lecture-icon-1.png){width="100"} | \                                              |
+|            |                                |                                                           |                                             | ![](assets/workshop.png){width="61"}           |
+|            | *Workshop*                     |                                                           |                                             |                                                |
++------------+--------------------------------+-----------------------------------------------------------+---------------------------------------------+------------------------------------------------+
+
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Week**                            | **Date** | **Topics**                     | **Key question** | **Tools**                  | **Deliverables**                     |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Research Process**            |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 1                                   | 23-Jan   |                                | In what way?     |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 2                                   | 30-Jan   | Research II: Practices         | With what tools? |                            | Compare / contrast: 1-4              |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 3                                   | 9-Feb    | Research III: Problems         | To what end?     |                            | Compare / contrast: 5-8\             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | \                              |                  |                            | **Research questions**               |
+|                                     |          | *Workshop*                     |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Elements of Research Design** |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 4                                   | 13-Feb   | Elements I:\                   | Why?             | Nomological networks       | Compare / contrast: 9-12             |
+|                                     |          | Theory and phenomena           |                  |                            |                                      |
+|                                     |          |                                |                  |                            | **Concept check 1\                   |
+|                                     |          |                                |                  |                            | (due next class)**                   |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 5                                   | 27-Feb   | Elements II:\                  | Testable?        | Formal models, DAGs        | Compare / contrast: 13-16            |
+|                                     |          | Models and hypotheses          |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 6                                   | 5-Mar    | Elements III:\                 | What?            | Validity assessments       | Compare / contrast: 17-20            |
+|                                     |          | Constructs and variables       |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 7                                   | 22-Mar   | Elements IV: Data and measures | Observable?      | Descriptive statistics     | Compare / contrast: 21-24\           |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | *Workshop*                     |                  |                            | **Draft model**                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Core models and techniques**      |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 8                                   | 26-Mar   | Techniques I: Regression       | Valid?           | OLS, Statistical inference | Replication: 1,3,5,7\                |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          |                                |                  |                            | **Concept check 2 (due next class)** |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 9                                   | 2-Apr    | Techniques II: Moderation      | When?            | HLM, Interaction plots     | Replication: 2,4,6,8                 |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 10                                  | 9-Apr    | Techniques III: Mediation      | How?             | SEM, Indirect effects      | Replication: 9,11,13,15              |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 11                                  | 16-Apr   | Techniques IV: Endogeneity     | Alternatives?    | 2SLS, Instruments          | Replication: 10,12,14,16             |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| **Theory-empiric fit**              |          |                                |                  |                            |                                      |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 12                                  | 26-Apr   | Design I: (Quasi)-experimental | Causal?          | D-i-D                      | Replication: 17,19,21,23             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | Design II: Longitudinal data   | Dynamic?         | Panel data estimators      | Replication: 18,20,22,24             |
+|                                     |          |                                |                  |                            |                                      |
+|                                     |          | *Workshop*                     |                  |                            | **Draft paper deliverable**          |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
+| 13                                  | 3-May    | *No class*                     |                  |                            | **Final deliverable due 5/3**        |
++-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 :::
