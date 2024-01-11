@@ -55,25 +55,25 @@ In support of these goals, we will employ the following format for the majority 
 
 -   *Part I:* Conceptual grounding and agenda setting (10 minutes)
 
--   *Part II:* Core paper discussion (40 minutes):
+-   *Part II:* Core paper discussion (50 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
     -   These papers typically will provide a mix of conceptual background and how-to guides
 
--   *Part III:* Summative lecture on concepts (15 minutes):
-
-    -   I will make a brief presentation to tie together and highlight key concepts
-
-    -   Elements missed in the general discussion will be given greater focus
-
--   *Part IV:* Activity period (40 minutes):
+-   *Part III:* Activity period (40 minutes):
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
     -   (Weeks 8 -- 14) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and show the class the process
 
--   *Part V:* Open discussion and applications to your work (15 minutes)
+-   *Part IV:* Summative lecture on concepts (15 minutes):
+
+    -   I will make a brief presentation to tie together and highlight key concepts
+
+    -   Elements missed in the general discussion will be given greater focus
+    
+-   *Part V:* Open discussion (5 minutes)
 
 -   *Part VI:* Workshop (4 hours, in-person meetings only):
 
@@ -215,7 +215,18 @@ All courses offered at Bentley University reflect our institution's commitment t
 
 ### Class participation -- paper discussions
 
-It is expected that students will have done the assigned readings in advance and be prepared to discuss them. As part of this preparation, I recommend that you put together an outline for each reading that captures (for example) key points of the paper, questions you would like to raise during the class, connections you have noted between this paper and others in the class and elsewhere, and so on. The assigned readings for each week (see Appendix B) are all those items above the heading "Further reading (not required)".
+It is expected that students will have done the assigned readings in advance and be prepared to discuss them. As part of this preparation, I recommend that you put together an outline for each reading that captures (the below are illustrative examples):
+
+- key points of the paper
+- what insights you gained from reading the piece
+- questions to raise during the class
+- points of potential conflict between this work and others you have seen in the past
+- connections noted between this paper and others in the class and elsewhere
+- specific tools and techniques you can apply in the future (if applicable, will not always be the case)
+
+The assigned readings for each week are provided in Appendix B.
+
+I will also have a few questions written down for each paper for us to consider in case we need to get the ball rolling on the discussion; we may or may not discuss those questions depending on the flow of the class. 
 
 ### Compare -- contrast presentations
 

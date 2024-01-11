@@ -1,118 +1,290 @@
 ---
 title: "Class 1"
 format: 
+    html: default
     beamer: 
      theme: Berlin
+css: style.css     
+
 ---
+
+<!--- To-Dos 
+
+Introductory survey in Poll-ev
+clean up the back end of the slides
+general QC and render
+
+
+--->
+
+
 
 ## Agenda
 
-- Introductions
-  - Getting to Know Each Other
-  - Syllabus Review
-  - General Course Flow
-  - Break
+-   Introductions (20 minutes)
 
-- Readings for Today
+    -   Getting to know each other
+    -   Syllabus and materials overview
+    -   Typical class flow
   
-- Integration
-  - Key principles
-  - Some alternatives
-  
+-   Readings for today (80 minutes)
+
+-   Summative lecture and open discussion (20 minutes)
+
+    -   Key principles
+    -   Additional thoughts
+
 # Introductions
 
 ## A little about me
-
 
 ![A little about me](assets/alittleaboutme.png)
 
 ## A little about me
 
-::: {layout-ncol=2} 
+:::: {.columns}
 
-![](assets/alittleaboutme1.jpeg)
-![](assets/alittleaboutme2.jpeg)
+::: {.column width="100%"}
 
-::: 
+![](assets/alittleaboutme1.png) 
+
+:::
+
+
+::::
 
 ## A little about me
 
-::: {layout-ncol=2} 
+:::: {.columns}
+
+::: {.column width="45%"}
 
 ![](assets/alittleaboutme3.jpeg)
+:::
+
+::: {.column width="45%"}
 
 ![](assets/alittleaboutme4.jpeg)
 
-::: 
+:::
 
+:::: 
 
 ## A little about you
 
 Let's fill out an introductory survey: [Pollev.com/drfox](https://PollEv.com/drfox)
 
-## Syllabus Review
+##  Syllabus and materials overview
 
-- [Syllabus](https://briancfox.com/ResearchDesign/docs/syllabus.html)
-- [Brightspace](https://brightspace.bentley.edu)
+-   [Syllabus](https://briancfox.com/ResearchDesign/docs/syllabus.html)
+-   [Brightspace](https://brightspace.bentley.edu)
+-   [Dropbox](https://www.dropbox.com/scl/fo/ny0hiyu93bep31udth6ot/h?rlkey=or2mfwzqbdzkwbv8ky4yws5h7&dl=0)
 
-## Break
+## Typical class flow
 
-![](assets/break.png)
+-   *Part I:* Conceptual grounding and agenda setting (10 minutes)
+
+-   *Part II:* Core paper discussion (50 minutes):
+
+    -   We will discuss the 2-3 papers that all students have been assigned to read in detail
+
+    -   These papers typically will provide a mix of conceptual background and how-to guides
+
+## Typical class flow
+
+-   *Part III:* Activity period (40 minutes):
+
+    -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
+
+    -   (Weeks 8 -- 14) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and show the class the process
+
+## Typical class flow
+
+-   *Part IV:* Summative lecture on concepts (15 minutes):
+
+    -   I will make a brief presentation to tie together and highlight key concepts
+
+    -   Elements missed in the general discussion will be given greater focus
+  
+-   *Part V:* Open discussion (5 minutes)
+
 
 # Readings for Today
 
-## Popper, K. R. (2002)
+## Preamble
 
-The Logic of Scientific Discovery. [Ch .1] 
+I have provided some discussion questions for us to consider in case we need to get the ball rolling. 
 
-> 
+We may or may not discuss those questions depending on the flow of the class. 
 
-## Mantere, S., and Ketokivi, M. 2013. 
+In general, I would rather talk about your ideas and questions rather than these "canned" items.   
 
-Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
-
-## Nosek, B. A. and Errington, T. M. 2020. 
-
-What is replication? PLOS Biology: 1-8. 
-
-## Rynes, S. L., and Bartunek, J. M. (2017). 
-
-Evidence-Based Management: Foundations, Development, Controversies and Future. Annual Review of Organizational Psychology and Organizational Behavior, 4(1), 235-261.
 
 ## Popper (2002)
 
+The Logic of Scientific Discovery. \[Ch .1\]
+
+> According to the view that will be put forward here, the method of critically testing theories, and selecting them according to the results of tests, always proceeds on the following lines. From a new idea, put up tentatively, and not yet justified in any way—an anticipation, a hypoth- esis, a theoretical system, or what you will—conclusions are drawn by means of logical deduction [...]
+
+> \[Then,\] there is the testing of the theory by way of empirical applications of the conclusions which can be derived from it. \[p. 9\]
+
+
+## Popper (2002)
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+Discussion Questions 
+
+- Reactions? Insights? Disagreements?
+
+- In your view, what is the main point?
+
+- Do this worldview currently inform your work? How might it?
+
+::: 
+
+::: {.column width="30%"}
+
+[![](assets/Popper 2002.png)](https://briancfox.com/ResearchDesign/assets/Popper 2002 16883.pdf) 
+:::
+
+::::
+
 ## Mantere and Ketokivi (2013)
 
-## 4 levels of research - basic disciplines, management, applied - lit review data-driven decision making, HBR
+Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
 
-# Integration
+> Labels aside, a closer look at research practice reveals that researchers across research traditions use all three forms of reasoning. It is hardly surprising to observe that we all make inferences to a case (use deduction), inferences to generalizations (use induction), and infer ences to explanations (use abduction). Thus, using reasoning types as labels to describe entire research designs is misleading. Instead, differences between research approaches, whatever they may be, are found not in the types of rea soning used but, rather, in how the three reasoning types are used in conjunction with one an other. (p. 76)
+
+## Mantere and Ketokivi (2013)
+
+Discussion Questions 
+
+- What the hell are they talking about?
+
+- What mode(s) of reasoning do you tend to rely on in your current work?
+
+- What concrete practices did you draw from this paper, if any?
+
+## Nosek and Errington (2020)
+
+What is replication? PLOS Biology: 1-8.
+
+>To be a replication, 2 things must be true: outcomes consistent with a prior claim would increase confidence in the claim, and outcomes inconsistent with a prior claim would decrease confidence in the claim. The symmetry promotes replication as a mechanism for confronting prior claims with new evidence. Therefore, declaring that a study is a replication is a theoretical commitment. Replication provides the opportunity to test whether existing theories, hypothe- ses, or models are able to predict outcomes that have not yet been observed. Successful replica- tions increase confidence in those models; unsuccessful replications decrease confidence and spur theoretical innovation to improve or discard the model. (p. 2)
+
+## Nosek and Errington (2020)
+
+Discussion Questions 
+
+- Do you agree with their definition of replication?  
+
+- What are the benefits and drawbacks of applying such a definition?
+
+- How does this fit in with the [replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)? 
+
+## Rynes and Bartunek (2017)
+
+Evidence-Based Management: Foundations, Development, Controversies and Future. 
+
+> Management academics have long noted a large gap between academic research and managerial practice. [...] Some have viewed the causes of the gap as lying primarily with academic researchers, who are characterized (perhaps caricatured) as having become overspecialized, self-referential, obsessed with theory, excessively mathematical, jargonladen, unconcerned about practical problems, and dismissive of practitioners [...] Others have focused on practitioners, who are sometimes characterized or caricatured as research phobic, anti-intellectual, susceptible to unproven fads and fashions... (p. 236)
+
+
+## Rynes and Bartunek (2017)
+
+Discussion Questions 
+
+- Are you familiar with evidence-based practice from your current work?  
+
+- In your PhD studies so far, have you seen a concerted effort to move towards evidence-based management?
+
+- Where might you fit in helping to advance evidence-based management?  How might you do about doing it?
+
+# Summative lecture
+
+## Preamble
+
+What follows is my personal, idiosyncratic observations and interpretations of the pieces that we have read to date. To be clear, there are many interpretations of this material due to their collective:
+
+- richness 
+- overlap
+- distinctive features
+- lack of universal acceptance
+
+Thus, for this and all future "lecture" components, consider this my interpretation and synthesis of the material.  In many cases, it will be well-aligned with generally accepted understanding, but I can make no guarantees. 
 
 ## Some key principles
 
+-   Falsifiability
 
-- Falsifiability: Popper, K. R. (2002)
-- Defensibility: Mantere, S., and Ketokivi, M. (2013)
-- Replicability: Nosek, B. A. and Errington, T. M. (2020) 
-- Applicability: Rynes, S. L., and Bartunek, J. M. (2017)
+-   Defensibility
 
- 
+-   Applicability
+
+-   Replicability
+
 ## Falsifiability
 
+-   Falsifiability provides a basis for abductive reasoning pure deductive reasoning is true a priori if the premises and statements are valid. We can transform our understanding of the system but generate additional truths - we may uncover them.
+
+## Falsifiability
 
 > My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. - Popper (1962: 19)
 
-## Falsifiability
+## Defensibility
 
-- Falsifiability provides a basis for abductive reasoning
-pure deductive reasoning is true a priori if the premises and statements are valid.  We can transform our understanding of the system but generate additional truths - we may uncover them.
+-   We worry about the defensibility of our arguments to be able to act upon the conclusions with confidence.
 
-- We worry about the defensibility of our arguments to be able to act upon the conclusions with confidence
+## Defensibility
 
-- But our arguments and conclusions are irrelevant if they aren't applcable to real-world problems; worries about inside baseball.
+<!--- pic from simsek and fox big data paper -->
 
-- Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability.  This gets to the idea of trust but verify and the need to construct "stylized facts" (Kaldor, 1957, 1961; Helfat, 2007)
+## Applicability
+
+-   But our arguments and conclusions, even if correct, are irrelevant if they aren't applicable to real-world problems; worries about inside baseball.
+
+## Applicability
+
+<!--- hambrick quote -->
+
+## Replicability 
+
+-   Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. 
+
+## Replicability 
+
+<!--- This gets to the idea of trust but verify and the need to construct "stylized facts" (Kaldor, 1957, 1961; Helfat, 2007) ---> 
+
+## Research classes and relative importance of principles
+
+We can consider four basic "classes" of research in management: 
+
+- basic disciplinary research (primary studies in AER, AJS)
+- applied research conducted in a management context (primary studies in AMJ)
+- data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)
+- practitioner-focused outlets (articles in HBR, CMR, popular press)
+
+Where might, for example, applicability be more highly valued?  Falsifiability?
+
+## An alternative: Bayesian reasoning and degrees of belief
+
+Implicit in the discussions above is a question of degree of belief.
+
+- Nosek and Errington talk about how replication increases or decreases our degree of belief.
+
+- Popper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.
+
+- But couldn't we be more subtle in our treatment of beliefs?
+
+Indeed, we can through the application of Bayesian logic and Baye's Rule.
+
+- I will not be teaching you the statistical methods that follow from this, but you can find them.
 
 
 ## An alternative: Bayesian reasoning and degrees of belief
+
+[![A Primer on Bayesian Thinking](assets/bayes.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+
 
 

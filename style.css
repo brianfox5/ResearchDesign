@@ -3,6 +3,10 @@
   background-color: #112D4E;
 }
 
+.rotate-img img {
+  transform: rotate(90deg);
+}
+
 .title {
   font-weight: 700;
   font-style: bold;
