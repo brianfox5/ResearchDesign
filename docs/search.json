@@ -298,28 +298,28 @@
     "href": "class1.html#preamble-1",
     "title": "Class 1",
     "section": "Preamble",
-    "text": "Preamble\nWhat follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles’ collective:\n\nrichness\noverlap\ndistinctive features\n\nFurthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations\nThis is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and my unique lens that necessarily abstracts away features from complex topics."
+    "text": "Preamble\nWhat follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles’ collective:\n\nrichness\noverlap\ndistinctive features\n\nFurthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.\nThis is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and my unique lens that necessarily abstracts away features from complex topics."
   },
   {
     "objectID": "class1.html#defensibility",
     "href": "class1.html#defensibility",
     "title": "Class 1",
     "section": "Defensibility",
-    "text": "Defensibility\n\nIf the logist of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence.\nWe rely on multiple modes of inference to assert our claims credibility - my coauthors and I argue that the relative importance of each depends on the type of research design employed and intended contribution."
+    "text": "Defensibility\n\nIf the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence.\nWe rely on multiple modes of inference to assert our claims credibility - my coauthors and I argue that the relative importance of each depends on the type of research design employed and intended contribution."
   },
   {
     "objectID": "class1.html#defensibility-1",
     "href": "class1.html#defensibility-1",
     "title": "Class 1",
     "section": "Defensibility",
-    "text": "Defensibility\n ## Defensibility\nOne way to map out the defensibility of an argument is with a Toulmin diagram:\n\n\n\nA Tolumin argument structure"
+    "text": "Defensibility\n\n\n\nFigure 1: The relative importance of inference modes by type of research design"
   },
   {
     "objectID": "class1.html#applicability",
     "href": "class1.html#applicability",
     "title": "Class 1",
     "section": "Applicability",
-    "text": "Applicability\nBut our arguments and conclusions, even if correct, are irrelevant if they aren’t applicable to real-world problems."
+    "text": "Applicability\nBut our arguments and conclusions, even if correct, are irrelevant if they aren’t applicable to real-world problems.\nThere are two corollaries to this:\n\nWe should pick problems that actually matter, not just intellectual curiosities.\nWe should not be hamstrung by our ability to tackle important problems."
   },
   {
     "objectID": "class1.html#applicability-1",
@@ -340,7 +340,7 @@
     "href": "class1.html#replicability-1",
     "title": "Class 1",
     "section": "Replicability",
-    "text": "Replicability\n\nIn contrast, an accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. - Helfat (2007)"
+    "text": "Replicability\n\n[A]n accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. - Helfat (2007)"
   },
   {
     "objectID": "class1.html#research-classes-and-relative-importance-of-principles",
@@ -620,14 +620,14 @@
     "href": "class1.html#skeptical-thinking-1",
     "title": "Class 1",
     "section": "Skeptical thinking",
-    "text": "Skeptical thinking\n https://www.youtube.com/watch?v=io6QdGcoWMU"
+    "text": "Skeptical thinking\n https://www.youtube.com/watch?v=io6QdGcoWMU)"
   },
   {
     "objectID": "class1.html#bayesian-thinking",
     "href": "class1.html#bayesian-thinking",
     "title": "Class 1",
     "section": "Bayesian thinking",
-    "text": "Bayesian thinking\nImplicit in the discussions above is a question of degree of belief.\n\nNosek and Errington talk about how replication increases or decreases our degree of belief.\nPopper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.\nBut couldn’t we be more subtle in our treatment of beliefs?\nIndeed, we can through the application of Bayesian logic and Baye’s Rule.\nI will not be teaching you the statistical methods that follow from this, but you can find them."
+    "text": "Bayesian thinking\nImplicit in the discussions above is a question of degree of belief.\n\nNosek and Errington talk about how replication increases or decreases our degree of belief.\nPopper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.\nBut couldn’t we be more subtle in our treatment of beliefs?\n\nIndeed, we can through the application of Bayesian logic and Bayes’ Rule.\nI will not be teaching you the statistical methods that follow from this, but you can find them."
   },
   {
     "objectID": "class1.html#bayesian-thinking-1",
@@ -662,7 +662,7 @@
     "href": "class1.html#strategic-thinking-3",
     "title": "Class 1",
     "section": "Strategic thinking",
-    "text": "Strategic thinking\n\nAmbiguity\n\nUnstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context\nUnforeseeable – many research projects are a full reinforcment learning problem, learning while doing is necessary to reveal the evolving state of the world"
+    "text": "Strategic thinking\n\nAmbiguity\n\nUnstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context\nUnforeseeable – many research projects are a full reinforcement learning problem, learning while doing is necessary to reveal the evolving state of the world"
   },
   {
     "objectID": "class1.html#next-class",
@@ -684,5 +684,19 @@
     "title": "Class 1",
     "section": "References",
     "text": "References\n\n\nHambrick, Donald C. 2007. “The Field of Management’s Devotion to Theory: Too Much of a Good Thing.” The Academy of Management Journal 50, No. 6: 1346–52.\n\n\nHelfat, Constance E. 2007. “Stylized Facts, Empirical Research and Theory Development in Management.” Strategic Organization 5 (2): 185–92.\n\n\nPopper, Karl R. 2002. The Logic of Scientific Discovery. Routledge."
+  },
+  {
+    "objectID": "class1.html#defensibility-2",
+    "href": "class1.html#defensibility-2",
+    "title": "Class 1",
+    "section": "Defensibility",
+    "text": "Defensibility\nOne way to map out the defensibility of an argument is with a Toulmin diagram:\n\n\n\nA Tolumin argument structure"
+  },
+  {
+    "objectID": "class1.html#other-thoughts-useful-types-of-thinking-when-conducting-research",
+    "href": "class1.html#other-thoughts-useful-types-of-thinking-when-conducting-research",
+    "title": "Class 1",
+    "section": "Other thoughts: Useful types of thinking when conducting research",
+    "text": "Other thoughts: Useful types of thinking when conducting research\n\nSkeptical thinking\nBayesian thinking\nStrategic thinking"
   }
 ]

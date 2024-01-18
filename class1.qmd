@@ -247,7 +247,7 @@ What follows is my personal, idiosyncratic synthesis of the pieces that we have 
 - overlap
 - distinctive features
 
-Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations
+Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.
 
 This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and my unique lens that necessarily abstracts away features from complex topics.  
 
@@ -273,7 +273,7 @@ This is not to say anything goes; rather, I am trying to highlight the limits of
 
 ## Defensibility
 
-- If the logist of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
+- If the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
 
 - We rely on multiple modes of inference to assert our claims credibility - my coauthors and I argue that the relative importance of each depends on the type of research design employed and intended contribution.
 
@@ -293,7 +293,7 @@ But our arguments and conclusions, even if correct, are irrelevant if they aren'
 
 There are two corollaries to this:
 
-- We should pick problems that actually matter, not just intellectual curiousities.
+- We should pick problems that actually matter, not just intellectual curiosities.
 
 - We should not be hamstrung by our ability to tackle important problems. 
 
@@ -363,7 +363,7 @@ Implicit in the discussions above is a question of degree of belief.
 
 - But couldn't we be more subtle in our treatment of beliefs?
   
-  - Indeed, we can through the application of Bayesian logic and Baye's Rule.
+  - Indeed, we can through the application of Bayesian logic and Bayes' Rule.
 
   - I will not be teaching you the statistical methods that follow from this, but        you can find them.
 
@@ -409,7 +409,7 @@ Finally, it helps to be strategic when thinking about designing and evaluating r
   
   - Unstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context
   
-  - Unforeseeable – many research projects are a full reinforcment learning problem, learning while doing is necessary to reveal the evolving state of the world
+  - Unforeseeable – many research projects are a full reinforcement learning problem, learning while doing is necessary to reveal the evolving state of the world
 
 ## Next class
 
