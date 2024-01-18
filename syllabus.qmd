@@ -256,7 +256,7 @@ There will be two "concept checks" during the course of the semester -- they wil
 
 #### Interim work - Research questions
 
-During our first in-person meeting, we will have a workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about their research topic/idea for their dissertation. This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. The purpose of the presentation is to introduce this research to the class at the beginning of the seminar and to get you thinking about it. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.\\
+During our first in-person meeting, we will have a workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about their research topic/idea for their dissertation. This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. The purpose of the presentation is to introduce this research to the class at the beginning of the seminar and to get you thinking about it. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
 
 #### Interim work -- Draft model
 
@@ -285,32 +285,31 @@ Please feel free to reach out to me with questions as you work on this assignmen
 
 ### Assignment table for group composition
 
-| Number | Name |
-|--------|------|
-| 1      |      |
-| 2      |      |
-| 3      |      |
-| 4      |      |
-| 5      |      |
-| 6      |      |
-| 7      |      |
-| 8      |      |
-| 9      |      |
-| 10     |      |
-| 11     |      |
-| 12     |      |
-| 13     |      |
-| 14     |      |
-| 15     |      |
-| 16     |      |
-| 17     |      |
-| 18     |      |
-| 19     |      |
-| 20     |      |
-| 21     |      |
-| 22     |      |
-| 23     |      |
-| 24     |      |
+|            |                          |
+|------------|--------------------------|
+| **Number** | **Name**                 |
+| 1          | Shardul Wartikar         |
+| 2          | Ed Wogan                 |
+| 3          | Lakia Rutherford-Sargent |
+| 4          | Conor Long               |
+| 5          | Esteban Lopez Meneses    |
+| 6          | Kay Anifowose            |
+| 7          | Nicholas Svizzero        |
+| 8          | Yulu Du                  |
+| 9          | Ike Okonkwo              |
+| 10         | Sheila Ruth              |
+| 11         | Reuben Brefo Marfo       |
+| 12         | Dan Berlin               |
+| 13         | Esel Shemmeri            |
+| 14         | Kevin Bechard            |
+| 15         | Kali Maltese             |
+| 16         | Tammy Rose               |
+| 17         | Scott Keaney             |
+| 18         | Tarry Gutzmore           |
+| 19         | Bryan Drake              |
+| 20         | Cynthia Fernandes        |
+| 21         | Ralph Faber              |
+| 22         | Booma Yandava            |
 
 ## APPENDIX B -- READINGS BY TOPIC
 
@@ -318,7 +317,7 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 ### Research I: Principles
 
-1.  Popper, K. R. (2002). The Logic of Scientific Discovery. Routledge. \[Ch .1\] </readings/Popper 2002.pdf>
+1.  Popper, K. R. (2002). The Logic of Scientific Discovery. Routledge. \[Ch .1\]
 
 2.  Mantere, S., & Ketokivi, M. 2013. Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
 
@@ -326,7 +325,7 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 4.  Rynes, S. L., & Bartunek, J. M. (2017). Evidence-Based Management: Foundations, Development, Controversies and Future. Annual Review of Organizational Psychology and Organizational Behavior, 4(1), 235-261. <https://doi.org/10.1146/annurev-orgpsych-032516-113306>
 
-### Research II: Problems
+### Research II: Positions
 
 1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Ch. 1\]
 
