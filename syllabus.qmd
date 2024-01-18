@@ -62,7 +62,7 @@ In support of these goals, we will employ the following format for the majority 
     -   These papers typically will provide a mix of conceptual background and how-to guides
 
 -   *Break* (5 minutes)
-    
+
 -   *Part III:* Activity period (40 minutes):
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
@@ -74,7 +74,7 @@ In support of these goals, we will employ the following format for the majority 
     -   I will make a brief presentation to tie together and highlight key concepts
 
     -   Elements missed in the general discussion will be given greater focus
-    
+
 -   *Part V:* Open discussion (5 minutes)
 
 -   *Part VI:* Workshop (4 hours, in-person meetings only):
@@ -162,11 +162,11 @@ All courses offered at Bentley University reflect our institution's commitment t
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 | **The Research Process**            |          |                                |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 1                                   | 23-Jan   | Research I: Principles         | In what way?     |                            |                                      |
+| 1                                   | 23-Jan   | Research I: Principles         | To what end?     |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 2                                   | 30-Jan   | Research II: Practices         | With what tools? |                            | Compare / contrast: 1-4              |
+| 2                                   | 30-Jan   | Research II: Positions         | In what way?     |                            | Compare / contrast: 1-4              |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 3                                   | 9-Feb    | Research III: Problems         | To what end?     |                            | Compare / contrast: 5-8\             |
+| 3                                   | 9-Feb    | Research III: Practices        | With what tools? |                            | Compare / contrast: 5-8\             |
 |                                     |          |                                |                  |                            |                                      |
 |                                     |          | \                              |                  |                            | **Research questions**               |
 |                                     |          | *Workshop*                     |                  |                            |                                      |
@@ -219,16 +219,16 @@ All courses offered at Bentley University reflect our institution's commitment t
 
 It is expected that students will have done the assigned readings in advance and be prepared to discuss them. As part of this preparation, I recommend that you put together an outline for each reading that captures (the below are illustrative examples):
 
-- key points of the paper
-- what insights you gained from reading the piece
-- questions to raise during the class
-- points of potential conflict between this work and others you have seen in the past
-- connections noted between this paper and others in the class and elsewhere
-- specific tools and techniques you can apply in the future (if applicable, will not always be the case)
+-   key points of the paper
+-   what insights you gained from reading the piece
+-   questions to raise during the class
+-   points of potential conflict between this work and others you have seen in the past
+-   connections noted between this paper and others in the class and elsewhere
+-   specific tools and techniques you can apply in the future (if applicable, will not always be the case)
 
 The assigned readings for each week are provided in Appendix B.
 
-I will also have a few questions written down for each paper for us to consider in case we need to get the ball rolling on the discussion; we may or may not discuss those questions depending on the flow of the class. 
+I will also have a few questions written down for each paper for us to consider in case we need to get the ball rolling on the discussion; we may or may not discuss those questions depending on the flow of the class.
 
 ### Compare -- contrast presentations
 
@@ -314,7 +314,7 @@ Please feel free to reach out to me with questions as you work on this assignmen
 
 ## APPENDIX B -- READINGS BY TOPIC
 
-A Dropbox link is available on Brightspace, which provides access to all of these readings by class, including book chapters (where applicable). 
+A Dropbox link is available on Brightspace, which provides access to all of these readings by class, including book chapters (where applicable).
 
 ### Research I: Principles
 
