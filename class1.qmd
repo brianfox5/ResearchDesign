@@ -279,13 +279,30 @@ This is not to say anything goes; rather, I am trying to highlight the limits of
 
 ## Defensibility
 
+:::: {.columns}
+
+::: {.column width="90%"}
+
 ![The relative importance of inference modes by type of research design](assets/Simsek and Fox WIP.png){#fig-defensibility}
+
+:::
+
+::::
 
 ## Defensibility
 
+:::: {.columns}
+
+::: {.column height="90%"}
+
 One way to map out the defensibility of an argument is with a Toulmin diagram:
 
-[![A Tolumin argument structure](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
+
+[![An example Toulmin diagram](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
+
+::: 
+
+::::
 
 ## Applicability
 
@@ -335,6 +352,8 @@ Where might, for example, applicability be more highly valued?  Falsifiability?
 
 - Strategic thinking
 
+- First principles thinking
+
 ## Skeptical thinking
 
 > “Science depends on organized skepticism, that is, on continual, methodical doubting. Few of us doubt our own conclusions, so science embraces its skeptical approach by rewarding those who doubt someone else’s.”
@@ -342,8 +361,7 @@ Where might, for example, applicability be more highly valued?  Falsifiability?
 
 ## Skeptical thinking
 
-[![Skepticism as weighing evidence](assets/skepticism.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
-https://www.youtube.com/watch?v=io6QdGcoWMU)
+[![Tyson on Skepticism](assets/skepticism.png)](https://www.youtube.com/watch?v=io6QdGcoWMU)
 
 
 <!--- https://masterclass-notes.medium.com/summary-of-neil-degrasse-tysons-masterclass-on-scientific-thinking-and-communication-d55cba5a3843
@@ -393,7 +411,6 @@ Finally, it helps to be strategic when thinking about designing and evaluating r
   
   - Inferential – moving from what is known to what can be reasonably inferred
 
-
 ## Strategic thinking
 
 - Complexity
@@ -410,6 +427,19 @@ Finally, it helps to be strategic when thinking about designing and evaluating r
   - Unstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context
   
   - Unforeseeable – many research projects are a full reinforcement learning problem, learning while doing is necessary to reveal the evolving state of the world
+
+## Strategic thinking
+
+[![Bremmer's view of strategic thinking](assets/bremmer.png)](https://www.youtube.com/watch?v=AkgsYA-LYxo)
+
+## First principles thinking
+
+> A first principle is a basic assumption that cannot be deduced any further. Over two thousand years ago, Aristotle defined a first principle as “the first basis from which a thing is known.”
+First principles thinking is a fancy way of saying “think like a scientist.” Scientists don’t assume anything. They start with questions like, What are we absolutely sure is true? What has been proven? - James Clear
+
+<!--- https://jamesclear.com/first-principles#:~:text=A%20first%20principle%20is%20a,Scientists%20don't%20assume%20anything. --->
+
+# Preparation for Next Class
 
 ## Next class
 
