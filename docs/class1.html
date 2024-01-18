@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -61,8 +80,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="nav-fixed">
@@ -89,10 +106,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./classes.html" rel="" target="">
  <span class="menu-text">Classes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./assignment.qmd" rel="" target="">
- <span class="menu-text">Assignments</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -137,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summative-lecture" id="toc-summative-lecture" class="nav-link" data-scroll-target="#summative-lecture">Summative lecture</a>
   <ul class="collapse">
   <li><a href="#preamble-1" id="toc-preamble-1" class="nav-link" data-scroll-target="#preamble-1">Preamble</a></li>
-  <li><a href="#some-key-principles" id="toc-some-key-principles" class="nav-link" data-scroll-target="#some-key-principles">Some key principles</a></li>
+  <li><a href="#some-key-principles-of-research-design" id="toc-some-key-principles-of-research-design" class="nav-link" data-scroll-target="#some-key-principles-of-research-design">Some key principles of research design</a></li>
   <li><a href="#falsifiability" id="toc-falsifiability" class="nav-link" data-scroll-target="#falsifiability">Falsifiability</a></li>
   <li><a href="#falsifiability-1" id="toc-falsifiability-1" class="nav-link" data-scroll-target="#falsifiability-1">Falsifiability</a></li>
   <li><a href="#defensibility" id="toc-defensibility" class="nav-link" data-scroll-target="#defensibility">Defensibility</a></li>
@@ -146,9 +159,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#applicability-1" id="toc-applicability-1" class="nav-link" data-scroll-target="#applicability-1">Applicability</a></li>
   <li><a href="#replicability" id="toc-replicability" class="nav-link" data-scroll-target="#replicability">Replicability</a></li>
   <li><a href="#replicability-1" id="toc-replicability-1" class="nav-link" data-scroll-target="#replicability-1">Replicability</a></li>
-  <li><a href="#research-classes-and-relative-importance-of-principles" id="toc-research-classes-and-relative-importance-of-principles" class="nav-link" data-scroll-target="#research-classes-and-relative-importance-of-principles">Research classes and relative importance of principles</a></li>
-  <li><a href="#an-alternative-bayesian-reasoning-and-degrees-of-belief" id="toc-an-alternative-bayesian-reasoning-and-degrees-of-belief" class="nav-link" data-scroll-target="#an-alternative-bayesian-reasoning-and-degrees-of-belief">An alternative: Bayesian reasoning and degrees of belief</a></li>
-  <li><a href="#an-alternative-bayesian-reasoning-and-degrees-of-belief-1" id="toc-an-alternative-bayesian-reasoning-and-degrees-of-belief-1" class="nav-link" data-scroll-target="#an-alternative-bayesian-reasoning-and-degrees-of-belief-1">An alternative: Bayesian reasoning and degrees of belief</a></li>
+  <li><a href="#the-relative-importance-of-each-principle" id="toc-the-relative-importance-of-each-principle" class="nav-link" data-scroll-target="#the-relative-importance-of-each-principle">The relative importance of each principle</a></li>
+  <li><a href="#aside-useful-types-of-thinking-when-conducting-research" id="toc-aside-useful-types-of-thinking-when-conducting-research" class="nav-link" data-scroll-target="#aside-useful-types-of-thinking-when-conducting-research">Aside: Useful types of thinking when conducting research</a></li>
+  <li><a href="#skeptical-thinking" id="toc-skeptical-thinking" class="nav-link" data-scroll-target="#skeptical-thinking">Skeptical thinking</a></li>
+  <li><a href="#skeptical-thinking-1" id="toc-skeptical-thinking-1" class="nav-link" data-scroll-target="#skeptical-thinking-1">Skeptical thinking</a></li>
+  <li><a href="#bayesian-thinking" id="toc-bayesian-thinking" class="nav-link" data-scroll-target="#bayesian-thinking">Bayesian thinking</a></li>
+  <li><a href="#bayesian-thinking-1" id="toc-bayesian-thinking-1" class="nav-link" data-scroll-target="#bayesian-thinking-1">Bayesian thinking</a></li>
+  <li><a href="#strategic-thinking" id="toc-strategic-thinking" class="nav-link" data-scroll-target="#strategic-thinking">Strategic thinking</a></li>
+  <li><a href="#strategic-thinking-1" id="toc-strategic-thinking-1" class="nav-link" data-scroll-target="#strategic-thinking-1">Strategic thinking</a></li>
+  <li><a href="#strategic-thinking-2" id="toc-strategic-thinking-2" class="nav-link" data-scroll-target="#strategic-thinking-2">Strategic thinking</a></li>
+  <li><a href="#strategic-thinking-3" id="toc-strategic-thinking-3" class="nav-link" data-scroll-target="#strategic-thinking-3">Strategic thinking</a></li>
+  <li><a href="#next-class" id="toc-next-class" class="nav-link" data-scroll-target="#next-class">Next class</a></li>
+  <li><a href="#next-class-1" id="toc-next-class-1" class="nav-link" data-scroll-target="#next-class-1">Next class</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="class1.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
@@ -173,24 +196,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!--- To-Dos 
-
-Introductory survey in Poll-ev
-clean up the back end of the slides
-general QC and render
-
-
---->
 <section id="agenda" class="level2">
 <h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
 <ul>
-<li><p>Introductions (20 minutes)</p>
+<li><p>Introductions (30 minutes)</p>
 <ul>
 <li>Getting to know each other</li>
 <li>Syllabus and materials overview</li>
 <li>Typical class flow</li>
 </ul></li>
-<li><p>Readings for today (80 minutes)</p></li>
+<li><p>Readings for today (70 minutes, with 5 min break)</p></li>
 <li><p>Summative lecture and open discussion (20 minutes)</p>
 <ul>
 <li>Key principles</li>
@@ -211,11 +226,7 @@ general QC and render
 </section>
 <section id="a-little-about-me-1" class="level2">
 <h2 class="anchored" data-anchor-id="a-little-about-me-1">A little about me</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <p><img src="assets/alittleaboutme1.png" class="img-fluid"></p>
-</div>
-</div>
 </section>
 <section id="a-little-about-me-2" class="level2">
 <h2 class="anchored" data-anchor-id="a-little-about-me-2">A little about me</h2>
@@ -229,7 +240,7 @@ general QC and render
 </section>
 <section id="a-little-about-you" class="level2">
 <h2 class="anchored" data-anchor-id="a-little-about-you">A little about you</h2>
-<p>Let’s fill out an introductory survey: <a href="https://PollEv.com/drfox">Pollev.com/drfox</a></p>
+<p>Let’s fill out some introductory surveys: <a href="https://PollEv.com/drfox">Pollev.com/drfox</a></p>
 </section>
 <section id="syllabus-and-materials-overview" class="level2">
 <h2 class="anchored" data-anchor-id="syllabus-and-materials-overview">Syllabus and materials overview</h2>
@@ -243,11 +254,12 @@ general QC and render
 <h2 class="anchored" data-anchor-id="typical-class-flow">Typical class flow</h2>
 <ul>
 <li><p><em>Part I:</em> Conceptual grounding and agenda setting (10 minutes)</p></li>
-<li><p><em>Part II:</em> Core paper discussion (50 minutes):</p>
+<li><p><em>Part II:</em> Core paper discussion (45 minutes):</p>
 <ul>
 <li><p>We will discuss the 2-3 papers that all students have been assigned to read in detail</p></li>
 <li><p>These papers typically will provide a mix of conceptual background and how-to guides</p></li>
 </ul></li>
+<li><p><em>Break</em></p></li>
 </ul>
 </section>
 <section id="typical-class-flow-1" class="level2">
@@ -303,7 +315,7 @@ general QC and render
 </div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://briancfox.com/ResearchDesign/assets/Popper%202002%2016883.pdf"><img src="assets/Popper 2002.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/45sn8qzoozrk78ecqhkm3/Popper-2002-16883.pdf?rlkey=gydn6gc0goixtyg6sglv9tpop&amp;dl=0"><img src="assets/Popper 2002.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -318,12 +330,22 @@ general QC and render
 </section>
 <section id="mantere-and-ketokivi-2013-1" class="level2">
 <h2 class="anchored" data-anchor-id="mantere-and-ketokivi-2013-1">Mantere and Ketokivi (2013)</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <p>Discussion Questions</p>
 <ul>
 <li><p>What the hell are they talking about?</p></li>
 <li><p>What mode(s) of reasoning do you tend to rely on in your current work?</p></li>
 <li><p>What concrete practices did you draw from this paper, if any?</p></li>
 </ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.dropbox.com/scl/fi/xvorqwk6u47kp49z5tb7y/Mantere-and-Ketokivi-2013-47636.pdf?rlkey=u303k8llz8qma053nchn7ncfb&amp;dl=0"><img src="assets/Mantere and Ketokivi 2013.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="nosek-and-errington-2020" class="level2">
 <h2 class="anchored" data-anchor-id="nosek-and-errington-2020">Nosek and Errington (2020)</h2>
@@ -334,12 +356,24 @@ general QC and render
 </section>
 <section id="nosek-and-errington-2020-1" class="level2">
 <h2 class="anchored" data-anchor-id="nosek-and-errington-2020-1">Nosek and Errington (2020)</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <p>Discussion Questions</p>
 <ul>
-<li><p>Do you agree with their definition of replication?</p></li>
+<li><p>Do you agree with their definition of replication?</p>
+<ul>
 <li><p>What are the benefits and drawbacks of applying such a definition?</p></li>
 <li><p>How does this fit in with the <a href="https://en.wikipedia.org/wiki/Replication_crisis">replication crisis</a>?</p></li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.dropbox.com/scl/fi/30uiw2vtvsk6fvfnkgn0j/Nosek-and-Errington-2020-236800.pdf?rlkey=mnlwdyu57el5ufdmjwd6izx4j&amp;dl=0"><img src="assets/Nosek and Errington 2020.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="rynes-and-bartunek-2017" class="level2">
 <h2 class="anchored" data-anchor-id="rynes-and-bartunek-2017">Rynes and Bartunek (2017)</h2>
@@ -350,29 +384,39 @@ general QC and render
 </section>
 <section id="rynes-and-bartunek-2017-1" class="level2">
 <h2 class="anchored" data-anchor-id="rynes-and-bartunek-2017-1">Rynes and Bartunek (2017)</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <p>Discussion Questions</p>
 <ul>
 <li><p>Are you familiar with evidence-based practice from your current work?</p></li>
 <li><p>In your PhD studies so far, have you seen a concerted effort to move towards evidence-based management?</p></li>
 <li><p>Where might you fit in helping to advance evidence-based management? How might you do about doing it?</p></li>
 </ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.dropbox.com/scl/fi/71tkfjk6fdbv69jnllc28/Rynes-and-Bartunek-2017-42.pdf?rlkey=p421n3a286wmwa90bpzc7uryi&amp;dl=0"><img src="assets/Rynes and Bartunek 2017.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="summative-lecture" class="level1">
 <h1>Summative lecture</h1>
 <section id="preamble-1" class="level2">
 <h2 class="anchored" data-anchor-id="preamble-1">Preamble</h2>
-<p>What follows is my personal, idiosyncratic observations and interpretations of the pieces that we have read to date. To be clear, there are many interpretations of this material due to their collective:</p>
+<p>What follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles’ collective:</p>
 <ul>
 <li>richness</li>
 <li>overlap</li>
 <li>distinctive features</li>
-<li>lack of universal acceptance</li>
 </ul>
-<p>Thus, for this and all future “lecture” components, consider this my interpretation and synthesis of the material. In many cases, it will be well-aligned with generally accepted understanding, but I can make no guarantees.</p>
+<p>Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations</p>
+<p>This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and my unique lens that necessarily abstracts away features from complex topics.</p>
 </section>
-<section id="some-key-principles" class="level2">
-<h2 class="anchored" data-anchor-id="some-key-principles">Some key principles</h2>
+<section id="some-key-principles-of-research-design" class="level2">
+<h2 class="anchored" data-anchor-id="some-key-principles-of-research-design">Some key principles of research design</h2>
 <ul>
 <li><p>Falsifiability</p></li>
 <li><p>Defensibility</p></li>
@@ -383,34 +427,42 @@ general QC and render
 <section id="falsifiability" class="level2">
 <h2 class="anchored" data-anchor-id="falsifiability">Falsifiability</h2>
 <ul>
-<li>Falsifiability provides a basis for abductive reasoning pure deductive reasoning is true a priori if the premises and statements are valid. We can transform our understanding of the system but generate additional truths - we may uncover them.</li>
+<li>Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning. The latter is true a priori if the premises and statements are valid. Thus, pure deduction an transform our understanding of the system, but cannot generate truth from outside the established system - this must be uncovered by other means.</li>
 </ul>
 </section>
 <section id="falsifiability-1" class="level2">
 <h2 class="anchored" data-anchor-id="falsifiability-1">Falsifiability</h2>
 <blockquote class="blockquote">
-<p>My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. - Popper (1962: 19)</p>
+<p>My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. - <span class="citation" data-cites="popper2002">Popper (<a href="#ref-popper2002" role="doc-biblioref">2002, 19</a>)</span></p>
 </blockquote>
 </section>
 <section id="defensibility" class="level2">
 <h2 class="anchored" data-anchor-id="defensibility">Defensibility</h2>
 <ul>
-<li>We worry about the defensibility of our arguments to be able to act upon the conclusions with confidence.</li>
+<li><p>If the logist of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence.</p></li>
+<li><p>We rely on multiple modes of inference to assert our claims credibility - my coauthors and I argue that the relative importance of each depends on the type of research design employed and intended contribution.</p></li>
 </ul>
 </section>
 <section id="defensibility-1" class="level2">
 <h2 class="anchored" data-anchor-id="defensibility-1">Defensibility</h2>
-<!--- pic from simsek and fox big data paper -->
+<p><img src="assets/Simsek and Fox WIP.png" id="fig-defensibility" class="img-fluid" alt="The relative importance of inference modes by type of research design"> ## Defensibility</p>
+<p>One way to map out the defensibility of an argument is with a Toulmin diagram:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html"><img src="assets/toulmin.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">A Tolumin argument structure</figcaption>
+</figure>
+</div>
 </section>
 <section id="applicability" class="level2">
 <h2 class="anchored" data-anchor-id="applicability">Applicability</h2>
-<ul>
-<li>But our arguments and conclusions, even if correct, are irrelevant if they aren’t applicable to real-world problems; worries about inside baseball.</li>
-</ul>
+<p>But our arguments and conclusions, even if correct, are irrelevant if they aren’t applicable to real-world problems.</p>
 </section>
 <section id="applicability-1" class="level2">
 <h2 class="anchored" data-anchor-id="applicability-1">Applicability</h2>
-<!--- hambrick quote -->
+<blockquote class="blockquote">
+<p>I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research ques- tion was fascinating. It addressed an extremely in- teresting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collec- tive mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” - <span class="citation" data-cites="hambrick2007">Hambrick (<a href="#ref-hambrick2007" role="doc-biblioref">2007</a>)</span></p>
+</blockquote>
 </section>
 <section id="replicability" class="level2">
 <h2 class="anchored" data-anchor-id="replicability">Replicability</h2>
@@ -420,39 +472,134 @@ general QC and render
 </section>
 <section id="replicability-1" class="level2">
 <h2 class="anchored" data-anchor-id="replicability-1">Replicability</h2>
-<!--- This gets to the idea of trust but verify and the need to construct "stylized facts" (Kaldor, 1957, 1961; Helfat, 2007) --->
+<blockquote class="blockquote">
+<p>In contrast, an accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. - <span class="citation" data-cites="helfat2007">Helfat (<a href="#ref-helfat2007" role="doc-biblioref">2007</a>)</span></p>
+</blockquote>
 </section>
-<section id="research-classes-and-relative-importance-of-principles" class="level2">
-<h2 class="anchored" data-anchor-id="research-classes-and-relative-importance-of-principles">Research classes and relative importance of principles</h2>
+<section id="the-relative-importance-of-each-principle" class="level2">
+<h2 class="anchored" data-anchor-id="the-relative-importance-of-each-principle">The relative importance of each principle</h2>
 <p>We can consider four basic “classes” of research in management:</p>
 <ul>
-<li>basic disciplinary research (primary studies in AER, AJS)</li>
-<li>applied research conducted in a management context (primary studies in AMJ)</li>
-<li>data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)</li>
-<li>practitioner-focused outlets (articles in HBR, CMR, popular press)</li>
+<li><p>basic disciplinary research (primary studies in AER, AJS)</p></li>
+<li><p>applied research conducted in a management context (primary studies in AMJ)</p></li>
+<li><p>data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)</p></li>
+<li><p>practitioner-focused outlets (articles in HBR, CMR, popular press)</p></li>
 </ul>
 <p>Where might, for example, applicability be more highly valued? Falsifiability?</p>
 </section>
-<section id="an-alternative-bayesian-reasoning-and-degrees-of-belief" class="level2">
-<h2 class="anchored" data-anchor-id="an-alternative-bayesian-reasoning-and-degrees-of-belief">An alternative: Bayesian reasoning and degrees of belief</h2>
+<section id="aside-useful-types-of-thinking-when-conducting-research" class="level2">
+<h2 class="anchored" data-anchor-id="aside-useful-types-of-thinking-when-conducting-research">Aside: Useful types of thinking when conducting research</h2>
+</section>
+<section id="skeptical-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="skeptical-thinking">Skeptical thinking</h2>
+<blockquote class="blockquote">
+<p>“Science depends on organized skepticism, that is, on continual, methodical doubting. Few of us doubt our own conclusions, so science embraces its skeptical approach by rewarding those who doubt someone else’s.” ― Neil deGrasse Tyson, Origins: Fourteen Billion Years of Cosmic Evolution</p>
+</blockquote>
+</section>
+<section id="skeptical-thinking-1" class="level2">
+<h2 class="anchored" data-anchor-id="skeptical-thinking-1">Skeptical thinking</h2>
+<p><a href="https://www.youtube.com/watch?v=HZGCoVF3YvM"><img src="assets/skepticism.png" class="img-fluid" alt="Skepticism as weighing evidence"></a> https://www.youtube.com/watch?v=io6QdGcoWMU</p>
+<!--- https://masterclass-notes.medium.com/summary-of-neil-degrasse-tysons-masterclass-on-scientific-thinking-and-communication-d55cba5a3843
+
+> Skepticism is not outright rejection of something just because you don’t want it to be true or you don’t think it’s true. A proper skeptic questions what they’re unsure of, but recognizes when valid evidence is presented. 
+― Neil deGrasse Tyson, Masterclass on Scientific Thinking and Communication
+
+--->
+</section>
+<section id="bayesian-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-thinking">Bayesian thinking</h2>
 <p>Implicit in the discussions above is a question of degree of belief.</p>
 <ul>
 <li><p>Nosek and Errington talk about how replication increases or decreases our degree of belief.</p></li>
 <li><p>Popper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.</p></li>
-<li><p>But couldn’t we be more subtle in our treatment of beliefs?</p></li>
-</ul>
-<p>Indeed, we can through the application of Bayesian logic and Baye’s Rule.</p>
-<ul>
-<li>I will not be teaching you the statistical methods that follow from this, but you can find them.</li>
+<li><p>But couldn’t we be more subtle in our treatment of beliefs?</p>
+<p>Indeed, we can through the application of Bayesian logic and Baye’s Rule.</p></li>
+<li><p>I will not be teaching you the statistical methods that follow from this, but you can find them.</p></li>
 </ul>
 </section>
-<section id="an-alternative-bayesian-reasoning-and-degrees-of-belief-1" class="level2">
-<h2 class="anchored" data-anchor-id="an-alternative-bayesian-reasoning-and-degrees-of-belief-1">An alternative: Bayesian reasoning and degrees of belief</h2>
+<section id="bayesian-thinking-1" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-thinking-1">Bayesian thinking</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.youtube.com/watch?v=HZGCoVF3YvM"><img src="assets/bayes.png" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">A Primer on Bayesian Thinking</figcaption>
 </figure>
+</div>
+</section>
+<section id="strategic-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-thinking">Strategic thinking</h2>
+<p>Finally, it helps to be strategic when thinking about designing and evaluating research. By this I mean thinking that embraces three characteristics:</p>
+<ul>
+<li><p>Rigor</p></li>
+<li><p>Complexity</p></li>
+<li><p>Ambiguity</p></li>
+</ul>
+</section>
+<section id="strategic-thinking-1" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-thinking-1">Strategic thinking</h2>
+<ul>
+<li><p>Rigor</p>
+<ul>
+<li><p>Comprehensive – focusing attention on both the forest (a research program) and the trees (discrete methods or studies)</p></li>
+<li><p>Adaptive – balancing multiple goals and knowing what progress can be made against one or more of them simultaneously</p></li>
+<li><p>Inferential – moving from what is known to what can be reasonably inferred</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="strategic-thinking-2" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-thinking-2">Strategic thinking</h2>
+<ul>
+<li><p>Complexity</p>
+<ul>
+<li><p>Dynamics – accounting for first and second order effects that are material across actors, choices, and time</p></li>
+<li><p>Allocentricity – outcomes often jointly determined by internal and external factors, often other parties or agents</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="strategic-thinking-3" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-thinking-3">Strategic thinking</h2>
+<ul>
+<li><p>Ambiguity</p>
+<ul>
+<li><p>Unstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context</p></li>
+<li><p>Unforeseeable – many research projects are a full reinforcment learning problem, learning while doing is necessary to reveal the evolving state of the world</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="next-class" class="level2">
+<h2 class="anchored" data-anchor-id="next-class">Next class</h2>
+<p><strong>Research II: Problems</strong></p>
+<ol type="1">
+<li><p>Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. [Ch. 1]</p></li>
+<li><p>McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210</p></li>
+<li><p>Simsek, Z., Heavey, C., Fox, B. C., &amp; Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.</p></li>
+</ol>
+</section>
+<section id="next-class-1" class="level2">
+<h2 class="anchored" data-anchor-id="next-class-1">Next class</h2>
+<p><strong>Research II: Problems</strong></p>
+<p>Our first compare and contrast discussion will take place.</p>
+<p>Presenters, please reach out if you have questions or concerns!</p>
+<ol start="4" type="1">
+<li>Compare / Contrast</li>
+</ol>
+<ul>
+<li><p>Daft, R. L., &amp; Lewin, A. Y. 2008. Rigor and relevance in organization studies: Idea migration and academic journal evolution. Organization Science, 19: 177-183.</p></li>
+<li><p>Tushman, M., &amp; O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No.&nbsp;4, 769-774. <a href="https://doi.org/10.2307/20159888" class="uri">https://doi.org/10.2307/20159888</a></p></li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hambrick2007" class="csl-entry" role="listitem">
+Hambrick, Donald C. 2007. <span>“The Field of Management’s Devotion to Theory: Too Much of a Good Thing.”</span> <em>The Academy of Management Journal</em> 50, No. 6: 1346–52.
+</div>
+<div id="ref-helfat2007" class="csl-entry" role="listitem">
+Helfat, Constance E. 2007. <span>“Stylized Facts, Empirical Research and Theory Development in Management.”</span> <em>Strategic Organization</em> 5 (2): 185–92.
+</div>
+<div id="ref-popper2002" class="csl-entry" role="listitem">
+Popper, Karl R. 2002. <em>The Logic of Scientific Discovery</em>. Routledge.
+</div>
 </div>
 
 

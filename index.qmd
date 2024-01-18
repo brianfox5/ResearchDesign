@@ -1,11 +1,27 @@
 ---
 title: "PhD 1506 - Research Design"
+
 ---
 
-**Welcome to the homepage for Research Design (PHD1506)**!
+::: {#fig-rd layout-ncol=2 layout-valign="bottom" fig-align="left"}
+
+![Qualitative vs. quantitative designs[^1]](assets/research-design-example-1.png)
+
+
+![Observational vs. Experimental Quantitative Designs[^2]](assets/research-design-example-2.jpg)
+
+Representative Taxonomies of Research Design
+
+:::
+
+![A typical regression discontinuity design output[^3]](assets/rdd_hoekstra1.jpg){#fig-rdd}
+
 
 ```{r}
 #| echo: false
+#| label: fig-charts
+#| fig-cap: "An example of a conditional expectation function"
+
 library(ggplot2)
 set.seed(4352)
 
@@ -158,3 +174,23 @@ ggplot2::ggplot(
   )
 
 ```
+
+
+
+[^1]: https://www.qualtrics.com/experience-management/research/research-design/
+
+[^2]: https://www.researchgate.net/publication/355488145_Writing_the_Research_Proposal_The_Art_and_the_Science 
+
+[^3]: https://mixtape.scunning.com/06-regression_discontinuity (A great book!)
+
+<!--- To-Dos 
+
+Class 1 
+clean up back end of slides and references
+general QC and render
+note to students 
+
+Class 2
+
+
+--->

@@ -14,13 +14,11 @@ website:
         text: Syllabus
       - href: classes.qmd
         text: Classes
-      - href: assignment.qmd
-        text: Assignments
+
 
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
 
 editor: source

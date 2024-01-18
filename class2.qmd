@@ -1,0 +1,40 @@
+
+ 
+
+---
+title: "Class 2"
+format: 
+    html: default
+    beamer: 
+     theme: Berlin
+css: style.css     
+
+---
+
+## Agenda
+
+-   Introductions (30 minutes)
+
+    -   Getting to know each other
+    -   Syllabus and materials overview
+    -   Typical class flow
+  
+-   Readings for today (70 minutes, with 5 min break)
+
+-   Summative lecture and open discussion (20 minutes)
+
+    -   Key principles
+    -   Additional thoughts
+
+# Introductions
+
+## A little about me
+
+![A little about me](assets/alittleaboutme.png)
+
+## An alternative: Bayesian reasoning and degrees of belief
+
+[![A Primer on Bayesian Thinking](assets/bayes.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+
+
+
