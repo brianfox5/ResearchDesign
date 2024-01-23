@@ -1,40 +1,101 @@
 
  
-
 ---
-title: "Class 2"
+title: "Class 1 - Research II: Positions"
 format: 
-    html: default
     beamer: 
      theme: Berlin
-css: style.css     
-
+bibliography: references.bib
 ---
+
+# Class 2: 
 
 ## Agenda
 
--   Introductions (30 minutes)
+-   Conceptual grounding (10 minutes)
 
-    -   Getting to know each other
-    -   Syllabus and materials overview
-    -   Typical class flow
-  
--   Readings for today (70 minutes, with 5 min break)
+-   Core paper discussion (45 minutes):
 
--   Summative lecture and open discussion (20 minutes)
+-   *Break*
 
-    -   Key principles
-    -   Additional thoughts
 
-# Introductions
+-   Compare / Contrast (40 minutes):
 
-## A little about me
+-   Summative lecture on concepts (15 minutes):
 
-![A little about me](assets/alittleaboutme.png)
+-   Open discussion (5 minutes)   
 
-## An alternative: Bayesian reasoning and degrees of belief
+# Conceptual grounding
 
-[![A Primer on Bayesian Thinking](assets/bayes.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+## Last class - Some key principles of research design
+
+-   Falsifiability: Can we modify our state of knowledge based on the result of our study?
+
+-   Defensibility: Do our arguments appropriately employ modes of inference?
+
+-   Applicability: Does our study actually impact the state of practice? 
+
+-   Replicability: Will our work bear re-examination in a similar or new context?
+
+## Today - Some key tensions and choices for a research design
+
+- The trilemma: generalizability, precision, and realism
+
+- A related lens: rigor vs. relevance
+
+- Picking a conversation topic: what you want to say vs. what the audience wants to know
+
+- Asserting a knowledge claim: stylized facts, assumptions, critiques, and omissions
+
+## Readings
+
+1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
+
+2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
+
+3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
+
+## Readings
+
+4.  Compare / Contrast
+
+-   Daft, R. L., & Lewin, A. Y. 2008. Rigor and relevance in organization studies: Idea migration and academic journal evolution. Organization Science, 19: 177-183.
+
+-   Tushman, M., & O'Reilly, C. (2007). Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
+
+
+## Popper (2002)
+
+The Logic of Scientific Discovery. \[Ch .1\]
+
+> According to the view that will be put forward here, the method of critically testing theories, and selecting them according to the results of tests, always proceeds on the following lines. From a new idea, put up tentatively, and not yet justified in any way—an anticipation, a hypoth- esis, a theoretical system, or what you will—conclusions are drawn by means of logical deduction [...]
+
+> \[Then,\] there is the testing of the theory by way of empirical applications of the conclusions which can be derived from it. \[p. 9\]
+
+
+## Popper (2002)
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+Discussion Questions 
+
+- Reactions? Insights? Disagreements?
+
+- In your view, what is the main point?
+
+- Do this worldview currently inform your work? How might it?
+
+::: 
+
+::: {.column width="30%"}
+
+[![](assets/Popper 2002.png)](https://www.dropbox.com/scl/fi/45sn8qzoozrk78ecqhkm3/Popper-2002-16883.pdf?rlkey=gydn6gc0goixtyg6sglv9tpop&dl=0) 
+
+:::
+
+::::
 
 
 
