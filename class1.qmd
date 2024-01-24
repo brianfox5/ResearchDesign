@@ -1,7 +1,8 @@
 
 ---
 title: "Class 1 - Research I: Principles"
-format: 
+format:
+    html: default
     beamer: 
      theme: Berlin
 bibliography: references.bib
@@ -9,18 +10,20 @@ bibliography: references.bib
 
 ## Agenda
 
--   Introductions (30 minutes)
+-   Introductions (40 minutes)
 
     -   Getting to know each other
     -   Syllabus and materials overview
     -   Typical class flow
   
--   Readings for today (70 minutes, with 5 min break)
+-   Break (5 minutes)
 
--   Summative lecture and open discussion (20 minutes)
+-   Readings for today (60 minutes)
+
+-   Summative lecture and open discussion (15 minutes)
 
     -   Key principles
-    -   Additional thoughts
+    -   Relative importance across different research classes
 
 # Introductions
 
@@ -54,10 +57,11 @@ bibliography: references.bib
 ::::
 
 
-
 ## A little about you
 
-Let's fill out some introductory surveys: [Pollev.com/drfox](https://PollEv.com/drfox)
+Please remember to fill out your introductory [Qualtrics survey](https://bentley.co1.qualtrics.com/jfe/form/SV_erJWo8SYdrte2p0) so that I can learn a  bit about you and your goals for the class!
+
+Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfox](https://PollEv.com/drfox)
 
 ##  Syllabus and materials overview
 
@@ -120,7 +124,7 @@ In general, I would rather talk about your ideas and questions rather than these
 
 The Logic of Scientific Discovery. \[Ch .1\]
 
-> According to the view that will be put forward here, the method of critically testing theories, and selecting them according to the results of tests, always proceeds on the following lines. From a new idea, put up tentatively, and not yet justified in any way—an anticipation, a hypoth- esis, a theoretical system, or what you will—conclusions are drawn by means of logical deduction [...]
+> According to the view that will be put forward here, the method of critically testing theories, and selecting them according to the results of tests, always proceeds on the following lines. From a new idea, put up tentatively, and not yet justified in any way — an anticipation, a hypothesis, a theoretical system, or what you will—conclusions are drawn by means of logical deduction [...]
 
 > \[Then,\] there is the testing of the theory by way of empirical applications of the conclusions which can be derived from it. \[p. 9\]
 
@@ -132,8 +136,6 @@ The Logic of Scientific Discovery. \[Ch .1\]
 ::: {.column width="70%"}
 
 Discussion Questions 
-
-- Reactions? Insights? Disagreements?
 
 - In your view, what is the main point?
 
@@ -153,7 +155,7 @@ Discussion Questions
 
 Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
 
-> Labels aside, a closer look at research practice reveals that researchers across research traditions use all three forms of reasoning. It is hardly surprising to observe that we all make inferences to a case (use deduction), inferences to generalizations (use induction), and infer ences to explanations (use abduction). Thus, using reasoning types as labels to describe entire research designs is misleading. Instead, differences between research approaches, whatever they may be, are found not in the types of rea soning used but, rather, in how the three reasoning types are used in conjunction with one an other. (p. 76)
+> Labels aside, a closer look at research practice reveals that researchers across research traditions use all three forms of reasoning. It is hardly surprising to observe that we all make inferences to a case (use deduction), inferences to generalizations (use induction), and inferences to explanations (use abduction). Thus, using reasoning types as labels to describe entire research designs is misleading. Instead, differences between research approaches, whatever they may be, are found not in the types of reasoning used but, rather, in how the three reasoning types are used in conjunction with one an other. (p. 76)
 
 
 ## Mantere and Ketokivi (2013)
@@ -163,8 +165,6 @@ Reasoning in Organization Science. Academy of Management Review, 38(1), 70-89.
 
 ::: {.column width="70%"}
 Discussion Questions 
-
-- What the hell are they talking about?
 
 - What mode(s) of reasoning do you tend to rely on in your current work?
 
@@ -187,7 +187,7 @@ Discussion Questions
 
 What is replication? PLOS Biology: 1-8.
 
->To be a replication, 2 things must be true: outcomes consistent with a prior claim would increase confidence in the claim, and outcomes inconsistent with a prior claim would decrease confidence in the claim. The symmetry promotes replication as a mechanism for confronting prior claims with new evidence. Therefore, declaring that a study is a replication is a theoretical commitment. Replication provides the opportunity to test whether existing theories, hypothe- ses, or models are able to predict outcomes that have not yet been observed. Successful replica- tions increase confidence in those models; unsuccessful replications decrease confidence and spur theoretical innovation to improve or discard the model. (p. 2)
+>To be a replication, 2 things must be true: outcomes consistent with a prior claim would increase confidence in the claim, and outcomes inconsistent with a prior claim would decrease confidence in the claim. The symmetry promotes replication as a mechanism for confronting prior claims with new evidence. Therefore, declaring that a study is a replication is a theoretical commitment. Replication provides the opportunity to test whether existing theories, hypotheses, or models are able to predict outcomes that have not yet been observed. (p. 2)
 
 ## Nosek and Errington (2020)
 
@@ -199,9 +199,7 @@ Discussion Questions
 
 - Do you agree with their definition of replication?  
   
-  - What are the benefits and drawbacks of applying such a definition?
-  
-  - How does this fit in with the [replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)? 
+- How does this fit in with the [replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)? 
   
 ::: 
   
@@ -231,9 +229,7 @@ Discussion Questions
 
 - Are you familiar with evidence-based practice from your current work?  
   
-- In your PhD studies so far, have you seen a concerted effort to move towards evidence-based management?
-  
-- Where might you fit in helping to advance evidence-based management?  How might you do about doing it?
+- Where might you fit in helping to advance evidence-based management?  How might you go about doing it?
   
 :::
   
@@ -256,9 +252,11 @@ What follows is my personal, idiosyncratic synthesis of the pieces that we have 
 - overlap
 - distinctive features
 
+## Preamble
+
 Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.
 
-This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and my unique lens that necessarily abstracts away features from complex topics.  
+This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and that my unique (quantitative, [positivist](https://en.wikipedia.org/wiki/Positivism), deductive) lens necessarily abstracts away features from these complex discussions.[^1]  
 
 ## Some key principles of research design
 
@@ -273,7 +271,14 @@ This is not to say anything goes; rather, I am trying to highlight the limits of
 
 ## Falsifiability
 
--   Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning.  The latter is true a priori if the premises and statements are valid. Thus, pure deduction an transform our understanding of the system, but cannot generate truth from outside the established system - this must be uncovered by other means. 
+- Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning.  
+
+  - The latter is true a priori if the premises are valid. 
+  - Pure deduction can transform our understanding of the system (think theorems in math). 
+  
+  - But deduction cannot uncover truth beyond the system's universe of premises.
+
+- We must use other means (such as abduction) to draw conclusions about what our data is telling us (i.e., concluding a theory is supported or not) to determine whether our deductive premises are valid by comparing our observation to our expectation (i.e., a proof by contradiction or falsification)
 
 ## Falsifiability
 
@@ -284,7 +289,7 @@ This is not to say anything goes; rather, I am trying to highlight the limits of
 
 - If the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
 
-- We rely on multiple modes of inference to assert our claims credibility - my coauthors and I argue that the relative importance of each depends on the type of research design employed and intended contribution.
+- Like Mantere and Ketokivi (2013), my coauthor Zeki and I argue that the relative importance of each reasoning mode varies based on the research design employed and intended contribution.
 
 ## Defensibility
 
@@ -302,10 +307,13 @@ This is not to say anything goes; rather, I am trying to highlight the limits of
 
 :::: {.columns}
 
-::: {.column height="90%"}
+::: {.column width="40%"}
 
-One way to map out the defensibility of an argument is with a Toulmin diagram:
+Toulin diagrams provide one way to map out any argument, regardless of the method of inference:
 
+:::
+
+::: {.column width="60%"}
 
 [![An example Toulmin diagram](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
 
@@ -315,9 +323,9 @@ One way to map out the defensibility of an argument is with a Toulmin diagram:
 
 ## Applicability
 
-But our arguments and conclusions, even if correct, are irrelevant if they aren't applicable to real-world problems.
+But our arguments and conclusions, even if correct, are not that helpful if they aren't applicable to real-world problems.
 
-There are two corollaries to this:
+There are two corollaries to this observation:
 
 - We should pick problems that actually matter, not just intellectual curiosities.
 
@@ -325,13 +333,15 @@ There are two corollaries to this:
 
 ## Applicability
 
-> I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research ques- tion was fascinating. It addressed an extremely in- teresting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collec- tive mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” 
+> I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research question was fascinating. It addressed an extremely interesting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collective mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” 
 - @hambrick2007
 
 
 ## Replicability 
 
 -   Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. 
+
+-  Said differently, if we are to make deductive inferences based on extant literature (i.e., to test and build upon that theory), we want to feel comfortable that is well-founded and that we can make inferences about specific cases from the general rules encoded by existing theory.
 
 ## Replicability 
 
@@ -352,127 +362,21 @@ We can consider four basic "classes" of research in management:
 
 Where might, for example, applicability be more highly valued?  Falsifiability?
 
-
-## Other thoughts: Useful types of thinking when conducting research
-
-- Skeptical thinking
-
-- Bayesian thinking
-
-- Strategic thinking
-
-- First principles thinking
-
-## Skeptical thinking
-
-> “Science depends on organized skepticism, that is, on continual, methodical doubting. Few of us doubt our own conclusions, so science embraces its skeptical approach by rewarding those who doubt someone else’s.”
-― Neil deGrasse Tyson, Origins: Fourteen Billion Years of Cosmic Evolution
-
-## Skeptical thinking
-
-[![Tyson on Skepticism](assets/skepticism.png)](https://www.youtube.com/watch?v=io6QdGcoWMU)
-
-
-<!--- https://masterclass-notes.medium.com/summary-of-neil-degrasse-tysons-masterclass-on-scientific-thinking-and-communication-d55cba5a3843
-
-> Skepticism is not outright rejection of something just because you don’t want it to be true or you don’t think it’s true. A proper skeptic questions what they’re unsure of, but recognizes when valid evidence is presented. 
-― Neil deGrasse Tyson, Masterclass on Scientific Thinking and Communication
-
---->
-
-## Bayesian thinking
-
-Implicit in the discussions above is a question of degree of belief.
-
-- Nosek and Errington talk about how replication increases or decreases our degree of belief.
-
-- Popper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.
-
-- But couldn't we be more subtle in our treatment of beliefs?
-  
-  - Indeed, we can through the application of Bayesian logic and Bayes' Rule.
-
-  - I will not be teaching you the statistical methods that follow from this, but        you can find them.
-
-
-## Bayesian thinking
-
-[![A Primer on Bayesian Thinking](assets/bayes.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
-
-
-## Strategic thinking
-
-Finally, it helps to be strategic when thinking about designing and evaluating research.  By this I mean thinking that embraces three characteristics:
-
-- Rigor
-
-- Complexity
-
-- Ambiguity
-
-## Strategic thinking
-
-- Rigor
-
-  - Comprehensive – focusing attention on both the forest (a research program) and the trees (discrete methods or studies)  
-  
-  - Adaptive – balancing multiple goals and knowing what progress can be made against one or more of them simultaneously 
-  
-  - Inferential – moving from what is known to what can be reasonably inferred
-
-## Strategic thinking
-
-- Complexity
-  
-  - Dynamics – accounting for first and second order effects that are material across actors, choices, and time
-
-  - Allocentricity – outcomes often jointly determined by internal and external factors, often other parties or agents 
-  
-  
-## Strategic thinking
-
-- Ambiguity
-  
-  - Unstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context
-  
-  - Unforeseeable – many research projects are a full reinforcement learning problem, learning while doing is necessary to reveal the evolving state of the world
-
-## Strategic thinking
-
-[![Bremmer's view of strategic thinking](assets/bremmer.png)](https://www.youtube.com/watch?v=AkgsYA-LYxo)
-
-## First principles thinking
-
-> A first principle is a basic assumption that cannot be deduced any further. Over two thousand years ago, Aristotle defined a first principle as “the first basis from which a thing is known.”
-First principles thinking is a fancy way of saying “think like a scientist.” Scientists don’t assume anything. They start with questions like, What are we absolutely sure is true? What has been proven? - James Clear
-
-<!--- https://jamesclear.com/first-principles#:~:text=A%20first%20principle%20is%20a,Scientists%20don't%20assume%20anything. --->
-
 # Preparation for Next Class
 
 ## Next class
 
 **Research II: Positions**
 
-1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3 \]
+1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
 
 2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
 
-3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
+3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research. Journal of Management, 48(6), 1347-1365.
 
-## Next class
+4.   Tushman, M., & O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. https://doi.org/10.2307/20159888
 
-**Research II: Positions**
-
-Our first compare and contrast discussion will take place.
-
-Presenters, please reach out if you have questions or concerns!
-
-4.  Compare / Contrast
-
--   Daft, R. L., & Lewin, A. Y. 2008. Rigor and relevance in organization studies: Idea migration and academic journal evolution. Organization Science, 19: 177-183.
-
--   Tushman, M., & O'Reilly, C. (2007). Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
+[^1]: My stance is probably better captured with the idea of post-positivism, but I don't have a great reference to share here - but here is an overview: https://en.wikipedia.org/wiki/Postpositivism.
 
 ## References
 

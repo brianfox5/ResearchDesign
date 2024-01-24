@@ -83,7 +83,7 @@ In support of these goals, we will employ the following format for the majority 
 
 ## IV. Assignments and Grading
 
-Everyone must read all required materials prior to class. Each student is expected to fully participate. All material due should be completed on Brightspace, sent to my email, or submitted via Turnitin, depending on assignment requirements. Details on these assignments can be found in Appendix A.
+Everyone must read all required materials prior to class. Each student is expected to fully participate. All material due should be completed on Brightspace or sent to my email, depending on assignment requirements. Details on these assignments can be found in Appendix A.
 
 | Task                                     | \% of Grade |
 |------------------------------------------|-------------|
@@ -115,7 +115,7 @@ Appendix B includes a list of required readings for the topics that we discuss. 
 
 #### *Research methods texts*
 
--   Kennedy, P. 2008. A Guide to Econometrics (6th Edition ed.). Malden, MA: Blackwell.
+-   Kennedy, P. 2008. A Guide to Econometrics (6th Edition). Malden, MA: Blackwell.
 
 -   Pearl, J. 2001. Causality- Models, Reasoning, and Inference.
 
@@ -164,47 +164,47 @@ All courses offered at Bentley University reflect our institution's commitment t
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 | 1                                   | 23-Jan   | Research I: Principles         | To what end?     |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 2                                   | 30-Jan   | Research II: Positions         | In what way?     |                            | Compare / contrast: 1-4              |
+| 2                                   | 30-Jan   | Research II: Positions         | In what way?     |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 3                                   | 9-Feb    | Research III: Practices        | With what tools? |                            | Compare / contrast: 5-8\             |
+| 3                                   | 9-Feb    | Research III: Practices        | With what tools? |                            | Compare / contrast: 1-4\             |
 |                                     |          |                                |                  |                            |                                      |
 |                                     |          | \                              |                  |                            | **Research questions**               |
 |                                     |          | *Workshop*                     |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 | **The Elements of Research Design** |          |                                |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 4                                   | 13-Feb   | Elements I:\                   | Why?             | Nomological networks       | Compare / contrast: 9-12             |
+| 4                                   | 13-Feb   | Elements I:\                   | Why?             | Nomological networks       | Compare / contrast: 5-8              |
 |                                     |          | Theory and phenomena           |                  |                            |                                      |
 |                                     |          |                                |                  |                            | **Concept check 1\                   |
 |                                     |          |                                |                  |                            | (due next class)**                   |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 5                                   | 27-Feb   | Elements II:\                  | Testable?        | Formal models, DAGs        | Compare / contrast: 13-16            |
+| 5                                   | 27-Feb   | Elements II:\                  | Testable?        | Formal models, DAGs        | Compare / contrast: 9-12             |
 |                                     |          | Models and hypotheses          |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 6                                   | 5-Mar    | Elements III:\                 | What?            | Validity assessments       | Compare / contrast: 17-20            |
+| 6                                   | 5-Mar    | Elements III:\                 | What?            | Validity assessments       | Compare / contrast: 13-16            |
 |                                     |          | Constructs and variables       |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 7                                   | 22-Mar   | Elements IV: Data and measures | Observable?      | Descriptive statistics     | Compare / contrast: 21-24\           |
+| 7                                   | 22-Mar   | Elements IV: Data and measures | Observable?      | Descriptive statistics     | Compare / contrast: 17-20\           |
 |                                     |          |                                |                  |                            |                                      |
 |                                     |          | *Workshop*                     |                  |                            | **Draft model**                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 | **Core models and techniques**      |          |                                |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 8                                   | 26-Mar   | Techniques I: Regression       | Valid?           | OLS, Statistical inference | Replication: 1,3,5,7\                |
+| 8                                   | 26-Mar   | Techniques I: Regression       | Valid?           | OLS, Statistical inference | Replication: 1,3,5\                  |
 |                                     |          |                                |                  |                            |                                      |
 |                                     |          |                                |                  |                            | **Concept check 2 (due next class)** |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 9                                   | 2-Apr    | Techniques II: Moderation      | When?            | HLM, Interaction plots     | Replication: 2,4,6,8                 |
+| 9                                   | 2-Apr    | Techniques II: Moderation      | When?            | HLM, Interaction plots     | Replication: 2,4,6                   |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 10                                  | 9-Apr    | Techniques III: Mediation      | How?             | SEM, Indirect effects      | Replication: 9,11,13,15              |
+| 10                                  | 9-Apr    | Techniques III: Mediation      | How?             | SEM, Indirect effects      | Replication: 7,9,11                  |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 11                                  | 16-Apr   | Techniques IV: Endogeneity     | Alternatives?    | 2SLS, Instruments          | Replication: 10,12,14,16             |
+| 11                                  | 16-Apr   | Techniques IV: Endogeneity     | Alternatives?    | 2SLS, Instruments          | Replication: 8,10,12                 |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
 | **Theory-empiric fit**              |          |                                |                  |                            |                                      |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
-| 12                                  | 26-Apr   | Design I: (Quasi)-experimental | Causal?          | D-i-D                      | Replication: 17,19,21,23             |
+| 12                                  | 26-Apr   | Design I: (Quasi)-experimental | Causal?          | D-i-D                      | Replication: 13,15,17,19             |
 |                                     |          |                                |                  |                            |                                      |
-|                                     |          | Design II: Longitudinal data   | Dynamic?         | Panel data estimators      | Replication: 18,20,22,24             |
+|                                     |          | Design II: Longitudinal data   | Dynamic?         | Panel data estimators      | Replication: 14,16,18,20             |
 |                                     |          |                                |                  |                            |                                      |
 |                                     |          | *Workshop*                     |                  |                            | **Draft paper deliverable**          |
 +-------------------------------------+----------+--------------------------------+------------------+----------------------------+--------------------------------------+
@@ -258,11 +258,11 @@ There will be two "concept checks" during the course of the semester -- they wil
 
 During our first in-person meeting, we will have a workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about their research topic/idea for their dissertation. This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. The purpose of the presentation is to introduce this research to the class at the beginning of the seminar and to get you thinking about it. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
 
-#### Interim work -- Draft model
+#### Interim work - Draft model
 
 During our second in-person meeting, we will have another workshop session about four hours long. For the first two hours or so, students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea. Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
 
-#### Interim work --Draft deliverable
+#### Interim work - Draft deliverable
 
 This is your opportunity to submit a first draft of your paper to receive feedback from me and your colleagues. Our final workshop will be structured as two sets of working sessions where you will be working with two different classmates to review and advance elements your draft. I will be going from group to group in order to answer questions and get read-outs of progress from each group. My expectation is that you will have the "front end" of the paper (introduction, hypotheses) more progressed than the methods section given the order of the content we are covering in class. As for the content that should be coming together in this first draft, please see the discussion of the final deliverable below.
 
@@ -271,7 +271,7 @@ This is your opportunity to submit a first draft of your paper to receive feedba
 Your final deliverable is a drafted introduction, model development, and methods section that supports the research model you seek to examine. The purpose of the assignment is twofold:
 
 -   to make forward progress on your dissertation work that incorporates some of the skills you have acquired during the course
--   to apply and integrate the concepts and issues being studied in this course regarding quantitative research design and method Ideally, this proposal, once converted to a complete paper, would be of publishable standard, either as a conference paper, or for subsequent submission to a peer-reviewed journal. In terms of the format, here is a suggested structure for you to follow:
+-   to apply and integrate the concepts and issues being studied in this course regarding quantitative research design and method. Ideally, this proposal, once converted to a complete paper, would be of publishable standard, either as a conference paper, or for subsequent submission to a peer-reviewed journal. In terms of the format, here is a suggested structure for you to follow:
     1.  Cover page (include a title, your name, and an abstract)
     2.  Introduction (2-4 pages)
     3.  Theory and Hypotheses (5-10 pages)
@@ -295,21 +295,19 @@ Please feel free to reach out to me with questions as you work on this assignmen
 | 5          | Esteban Lopez Meneses    |
 | 6          | Kay Anifowose            |
 | 7          | Nicholas Svizzero        |
-| 8          | Yulu Du                  |
-| 9          | Ike Okonkwo              |
-| 10         | Sheila Ruth              |
-| 11         | Reuben Brefo Marfo       |
-| 12         | Dan Berlin               |
-| 13         | Esel Shemmeri            |
-| 14         | Kevin Bechard            |
-| 15         | Kali Maltese             |
-| 16         | Tammy Rose               |
-| 17         | Scott Keaney             |
-| 18         | Tarry Gutzmore           |
-| 19         | Bryan Drake              |
-| 20         | Cynthia Fernandes        |
-| 21         | Ralph Faber              |
-| 22         | Booma Yandava            |
+| 8          | Ike Okonkwo              |
+| 9          | Reuben Brefo Marfo       |
+| 10         | Dan Berlin               |
+| 11         | Esel Shemmeri            |
+| 12         | Yulu Du                  |
+| 13         | Kali Maltese             |
+| 14         | Tammy Rose               |
+| 15         | Scott Keaney             |
+| 16         | Tarry Gutzmore           |
+| 17         | Bryan Drake              |
+| 18         | Cynthia Fernandes        |
+| 19         | Ralph Faber              |
+| 20         | Booma Yandava            |
 
 ## APPENDIX B -- READINGS BY TOPIC
 
@@ -333,11 +331,7 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
 
-4.  Compare / Contrast
-
--   Daft, R. L., & Lewin, A. Y. 2008. Rigor and relevance in organization studies: Idea migration and academic journal evolution. Organization Science, 19: 177-183.
-
--   Tushman, M., & O'Reilly, C. (2007). Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
+4.  Tushman, M., & O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
 
 ### Research III: Practices
 
@@ -449,10 +443,11 @@ Applications:
 
 1.  Cuervo-Cazurra, A., Andersson, U., Brannen, M. Y., Nielsen, B. B., & Reuber, R. A. 2016. From the Editors: Can I trust your findings? Ruling out alternative explanations in international business research. Journal of International Business Studies, 47(8), 881-897.
 
-2.  Hamilton, B. H., & Nickerson, J. A. 2003. Correcting for endogeneity in strategic management research. Strategic Organization, 1(1): 51-78. Applications:
+2.  Hamilton, B. H., & Nickerson, J. A. 2003. Correcting for endogeneity in strategic management research. Strategic Organization, 1(1): 51-78.
+
+Applications:
 
 3.  Angrist, J. D., & Krueger, A. B. 1991. Does Compulsory School Attendance Affect Schooling and Earnings. The Quarterly Journal of Economics, 106(4), 979-1014.
-
 4.  Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
 ### Design I: (Quasi-)experimental data
@@ -473,6 +468,7 @@ Applications:
 
 2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548. Applications:
 
-3.  Certo, S. T., Withers, M. C., & Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.
+Applications:
 
+3.  Certo, S. T., Withers, M. C., & Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.
 4.  Replication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)
