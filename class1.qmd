@@ -10,7 +10,7 @@ bibliography: references.bib
 
 ## Agenda
 
--   Introductions (40 minutes)
+-   Introductions (45 minutes)
 
     -   Getting to know each other
     -   Syllabus and materials overview
@@ -18,12 +18,7 @@ bibliography: references.bib
   
 -   Break (5 minutes)
 
--   Readings for today (60 minutes)
-
--   Summative lecture and open discussion (15 minutes)
-
-    -   Key principles
-    -   Relative importance across different research classes
+-   Readings for today (70 minutes)
 
 # Introductions
 
@@ -73,17 +68,17 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
 -   *Part I:* Conceptual grounding and agenda setting (10 minutes)
 
--   *Part II:* Core paper discussion (45 minutes):
+-   *Part II:* Core paper discussion (50 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
     -   These papers typically will provide a mix of conceptual background and how-to guides
     
--   *Break*
+-   *Break* (5 minutes)
 
 ## Typical class flow
 
--   *Part III:* Activity period (40 minutes):
+-   *Part III:* Activity period (35 minutes):
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
@@ -242,141 +237,19 @@ Discussion Questions
 ::::
 
 
-# Summative lecture
-
-## Preamble
-
-What follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles' collective:
-  
-- richness 
-- overlap
-- distinctive features
-
-## Preamble
-
-Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.
-
-This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and that my unique (quantitative, [positivist](https://en.wikipedia.org/wiki/Positivism), deductive) lens necessarily abstracts away features from these complex discussions.[^1]  
-
-## Some key principles of research design
-
--   Falsifiability
-
--   Defensibility
-
--   Applicability
-
--   Replicability
-
-
-## Falsifiability
-
-- Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning.  
-
-  - The latter is true a priori if the premises are valid. 
-  - Pure deduction can transform our understanding of the system (think theorems in math). 
-  
-  - But deduction cannot uncover truth beyond the system's universe of premises.
-
-- We must use other means (such as abduction) to draw conclusions about what our data is telling us (i.e., concluding a theory is supported or not) to determine whether our deductive premises are valid by comparing our observation to our expectation (i.e., a proof by contradiction or falsification)
-
-## Falsifiability
-
-> My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. 
-- @popper2002 [p. 19]
-
-## Defensibility
-
-- If the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
-
-- Like Mantere and Ketokivi (2013), my coauthor Zeki and I argue that the relative importance of each reasoning mode varies based on the research design employed and intended contribution.
-
-## Defensibility
-
-:::: {.columns}
-
-::: {.column width="90%"}
-
-![The relative importance of inference modes by type of research design](assets/Simsek and Fox WIP.png){#fig-defensibility}
-
-:::
-
-::::
-
-## Defensibility
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-Toulin diagrams provide one way to map out any argument, regardless of the method of inference:
-
-:::
-
-::: {.column width="60%"}
-
-[![An example Toulmin diagram](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
-
-::: 
-
-::::
-
-## Applicability
-
-But our arguments and conclusions, even if correct, are not that helpful if they aren't applicable to real-world problems.
-
-There are two corollaries to this observation:
-
-- We should pick problems that actually matter, not just intellectual curiosities.
-
-- We should not be hamstrung by our ability to tackle important problems. 
-
-## Applicability
-
-> I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research question was fascinating. It addressed an extremely interesting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collective mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” 
-- @hambrick2007
-
-
-## Replicability 
-
--   Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. 
-
--  Said differently, if we are to make deductive inferences based on extant literature (i.e., to test and build upon that theory), we want to feel comfortable that is well-founded and that we can make inferences about specific cases from the general rules encoded by existing theory.
-
-## Replicability 
-
-> [A]n accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. 
-- @helfat2007
-
-## The relative importance of each principle
-
-We can consider four basic "classes" of research in management: 
-
-- basic disciplinary research (primary studies in AER, AJS)
-
-- applied research conducted in a management context (primary studies in AMJ)
-
-- data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)
-
-- practitioner-focused outlets (articles in HBR, CMR, popular press)
-
-Where might, for example, applicability be more highly valued?  Falsifiability?
-
 # Preparation for Next Class
 
 ## Next class
 
 **Research II: Positions**
 
-1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
+1.  Huff, A. S. (1999). Writing for Scholarly Publication. \[Chs. 1, 3\]
 
-2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
+2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210.
 
 3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research. Journal of Management, 48(6), 1347-1365.
 
-4.   Tushman, M., & O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. https://doi.org/10.2307/20159888
-
-[^1]: My stance is probably better captured with the idea of post-positivism, but I don't have a great reference to share here - but here is an overview: https://en.wikipedia.org/wiki/Postpositivism.
+4.   Tushman, M., & O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. AMJ, 50, No. 4, 769-774.
 
 ## References
 

@@ -55,7 +55,7 @@ In support of these goals, we will employ the following format for the majority 
 
 -   *Part I:* Conceptual grounding and agenda setting (10 minutes)
 
--   *Part II:* Core paper discussion (45 minutes):
+-   *Part II:* Core paper discussion (50 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
@@ -63,7 +63,7 @@ In support of these goals, we will employ the following format for the majority 
 
 -   *Break* (5 minutes)
 
--   *Part III:* Activity period (40 minutes):
+-   *Part III:* Activity period (35 minutes):
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
