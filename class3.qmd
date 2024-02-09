@@ -1,7 +1,6 @@
 
- 
 ---
-title: "Class 3 - Research II: Practices"
+title: "Class 3 - Research III: Practices"
 format: 
     html: default
     beamer: 
@@ -13,70 +12,42 @@ bibliography: references.bib
 
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (45 minutes)
+-   Core paper discussion (50 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 1-4; 40 minutes)
+-   Compare-contrast presentation (Group 1-4; 35 minutes)
 
 -   Summative lecture on concepts (15 minutes)
 
-
 # Conceptual grounding
 
-## Defining a landscape for research questions
+## Building a toolbox of practices
 
-- To what end? Rigor (understanding) and relevance (use)
+- The building blocks of an article - The 5Cs
 
-- By doing what? Precision, generalizability, and realism
+- The building blocks of a design - The MIR Framework
 
-- With whom? What matters to you v. what matters to others
+- The building blocks of a study - What to do before collecting data
 
-- Means of advance? Types of knowledge claims and their level of development
-
-<!--- XXX STOPPED HERE 1.24.24 @ 3p --->
-<!--- TO-DOs:  --->
-
-
-## Today - Research design practices
-
-We must ask ourselves for a given project where we stand regarding the following:
-
-- The trilemma: generalizability, precision, and realism
-
-- A related tension: rigor vs. relevance
-
-- Conversation topic: what you want to say vs. what the audience wants to know
-
-- What claim(s) to assert: stylized facts, assumptions, critiques, and omissions
+- The building blocks of a contribution - Two complementary perspectives
 
 # Readings for Today
 
-## Readings
+## Common Readings
 
-1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
+1. Lange, D., & Pfarrer, M. D. (2017). Editors’ Comments: Sense and Structure—The Core Building Blocks of an AMR Article. Academy of Management Review, 42(3), 407-416. https://doi.org/10.5465/amr.2016.0225
 
-2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
+2. Tobi, H., & Kampen, J. K. 2018. Research design: the methodology for interdisciplinary research framework. Qual Quant, 52(3), 1209-1225.
 
-3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research. Journal of Management, 48(6), 1347-1365.
+3. Aguinis, H. & Vandenberg, R. J. (2014). An ounce of prevention is worth a pound of cure: improving research quality before data collection. Annual Review of Organizational Psychology and Organizational Behavior, 1: 569-595.
 
-4.  Tushman, M., & O'Reilly, C. (2007). Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. 
 
-## Huff (1999)
+## Lange and Pfarrer (2017)
 
-Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
+![](assets/Lange and Pfarrer 2017 summary.png)
 
-> The critical questions ot answer are these:
-
-- *Which conversations should I participate in?*
-
-- *Who are the important "conversants"?*
-
-- *What are these scholars talking about now?*
-
-- *What are the most interesting things I can add to the conversation? (p. 9)*
-
-## Huff (1999)
+## Lange and Pfarrer (2017)
 
 :::: {.columns}
 
@@ -84,27 +55,29 @@ Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
 
 Discussion Questions 
 
-- Does the perspective of "conversation" resonate?  How does this relate to academic work progressing iteratively rather than linearly?
+- Why might this method be effective?  When might this approach hinder, rather than help, exposition?  
 
-- How might you use this research diamond to inform your research question for this class?
+- How does this align with the lessons of the [Pyramid Principle](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516#:~:text=Barbara%20Minto%20reveals%20that%20the,to%20read%20and%20comprehend%20it)?
+
+- Is this the way the research process must unfold?
 
 ::: 
 
 ::: {.column width="50%"}
 
-[![](assets/Huff 1999.png)](https://www.dropbox.com/scl/fi/bbqrjd7dmz1hnq6j0dd4o/Huff-1999-79565.PDF?rlkey=4efsiiwtbtuqu3fxfn36qgr1f&dl=0) 
+[![](assets/Lange and Pfarrer 2017.png)](https://www.dropbox.com/scl/fi/tbletox1y188jxsj3p5rn/Lange-and-Pfarrer-2017-272967.pdf?rlkey=w8fy9ot49yf3kalnc34w8m7fi&dl=0) 
 
 :::
 
 ::::
 
-## McGrath (1981)
+## Tobi and Kampen (2018)
 
-Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210.
+Research design: the methodology for interdisciplinary research framework.
 
-![](assets/McGrath 1981 quote.png)
+> The MIR framework also introduces an agenda: the research team needs to carefully think through different parts of the design of their study before starting its execution (Fig. 1). First, the team discusses the conceptual design of their study which contains the ‘why’ and ‘what’ of the research. Second, the team discusses the technical design of the study which contains the ‘how’ of the research. Only after the team agrees that the complete research design is sufficiently crystalized, the execution of the work (including fieldwork) starts. (p. 1211)
 
-## McGrath (1981)
+## Tobi and Kampen (2018)
 
 :::: {.columns}
 
@@ -112,15 +85,43 @@ Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Sci
 
 Discussion Questions 
 
-- Which quadrant feels most comfortable to you? Why?
+- Does the figure help to put the various elements of research design in context?
 
-- What might you gain by combining multiple elements in a given study?
+- Do you need to perform all of these steps?  Which are essential (if any)?
 
 ::: 
 
 ::: {.column width="50%"}
 
-[![](assets/McGrath 1981.png)](https://www.dropbox.com/scl/fi/jtx0po9emxoml2ziwjz1u/McGrath-1981-250737.pdf?rlkey=yih8i90806s55cjhqz4kx5yn7&dl=0) 
+[![](assets/Tobi and Kampen 2018.png)](https://www.dropbox.com/scl/fi/re0z88amrz5g1zz6zxfpp/Tobi-and-Kampen-2018-54271.pdf?rlkey=mnkfxgtnhj7dp32npesllgmm6&dl=0) 
+
+:::
+
+::::
+
+## Aguinis and Vandenberg (2014)
+
+An ounce of prevention is worth a pound of cure: improving research quality before data collection.
+
+> The suggestions offered here are motivated by our combined experience as past journal editors, associate editors, and editorial board members. We noted, sadly, that the majority of manuscripts not accepted for publication after traversing the peer-review process could have actually been rejected before the data were collected. The problems with the majority of rejected manuscripts are related to theory, research design, and/or measurement. Rarely are data analyses grounds for rejection because weak analyses can often be fixed if all of the other components are strong. (p 1.2)
+
+## Aguinis and Vandenberg (2014)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Discussion Questions 
+
+- Tell me one recommendation that resonated with you and why. 
+
+- When might the data collection be sufficiently compelling that it would stand in contraposition to the quote on the previous slide?  Are such situations rare? 
+
+::: 
+
+::: {.column width="50%"}
+
+[![](assets/Aguinis and Vandenberg 2014.png)](https://www.dropbox.com/scl/fi/a3h98dibwbvoyfop38f4n/Aguinis-and-Vandenberg-2014.png?rlkey=l3zc91uunqwqbtuhwzs5yr3u9&dl=0) 
 
 :::
 
@@ -130,272 +131,144 @@ Discussion Questions
 
 ![](assets/break.png)
 
-## Simsek et al. (2022)
 
-Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
+## Compare / Contrast Presentations
 
-> We use knowledge weaving as a metaphor for achieving that alignment: combining the warp of distinct knowledge claims (i.e., what content is significant) with the weft of their developmental status (i.e., how to advance that content). Without both ingredients, the researcher risks shoehorning a question into the focal literature without substance. (p. 2)
+Corley, K. G., & Gioia, D. A. (2011). Building Theory about Theory Building: What Constitutes a Theoretical Contribution. Academy of Management Review, 36(1), 12-32. https://doi.org/10.5465/amr.2009.0486
 
-## Simsek et al. (2022)
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-Discussion Questions 
-
-- Does this editorial provide a feasible pathway towards asking a compelling research question (asking for a friend)?
-
-- How can a dual focus on knowledge claim type and developmental status help to position your study within the extant scholarly conversation?
-
-::: 
-
-::: {.column width="50%"}
-
-[![](assets/Simsek et al 2022.png)](https://www.dropbox.com/scl/fi/b37jho0gxxqdetjxliedv/Simsek-Heavey-Fox-and-Yu-2022.pdf?rlkey=cwnb8a0dp4r8mgwdjmro9h7af&dl=0) 
-
-:::
-
-::::
-
-## Tushman and O'Reilly (2007)
-
-
-Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. 
-
-:::: {.columns}
-
-::: {.column height="90%"}
-
-![](assets/Tushman and OReilly 2007 quote.png)
-
-:::
-
-::::
-
-## Tushman and O'Reilly (2007)
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-Discussion Questions 
-
-- Based on what you have seen so far, how is your field doing in terms of operating in Pasteur's quadrant?
-
-- What are the impediments to operating here and how might you overcome them?
-
-::: 
-
-::: {.column width="50%"}
-
-[![](assets/Tushman and OReilly 2007.png)](https://www.dropbox.com/scl/fi/7if7fjgsh1xkufdl6jiqo/Tushman-and-O-Reilly-2007-110052.pdf?rlkey=1sv4vaghzx8lfrmz4vpz9serd&dl=0) 
-
-:::
-
-::::
+David A. Whetten, 1989. What constitutes a theoretical contribution? Academy of Management Review, 14: 490-495.
 
 # Summative lecture
 
-## Defining a landscape for research questions
+## Practices you can use
 
-Dimensions we have discussed today: 
+- The MIR framework - The space of design choices and how they interrelate
 
-- Rigor and relevance
+- An ounce of prevention - Or how to avoid a wasted data collection effort
 
-- Precision, generalizability, and realism
+- The 5Cs - The introduction as a basis for paper development
 
-- What matters to you v. what matters to others
+- The contribution - And its dependence upon the other practices
 
-- Types of knowledge claims and their level of development
+## The fountainhead - Research questions
 
-## Defining a landscape for research questions
+- What is the "starting point" of the MIR framework?
 
-How might they be correlated with each other?
+- How can increase the confidence that we are tackling a theoretical or practical problem?
 
-- Rigor and relevance: 
+- How might the 5Cs help to iteratively identify or articulate a research question?
 
-  - Orthogonal (r = 0?) 
 
-  - In opposition (r = -1?)
+## Consensus creating or shifting research
 
-- Precision, generalizability, and realism:
+![](assets/Class 3 Figure 1.png)
 
-  - How do each map onto rigor and relevance?
 
-## Defining your place on that landscape
+## Crafting research questions using the 5Cs
 
-- What matters to you v. what matters to others
+![](assets/Class 3 Figure 2.png)
 
-  - What dimensions does your audience care about? 
+## What are our desiderata for "good" research questions?
+
+Let's go back through our last three classes!
+
+- Principles: 
+
+  - Knowledge-accruing: Falsifiable / has falsifiable implications
   
-  - Which do you care about and why? 
+  - Useful: Applicable / advances theoretical understanding
   
-  - What implications does this have for topic selection? Outlet selection?
+  - Generalizable: Replicable / not an ad hoc, one off, "just so" story
   
-- A potential missing piece: Novelty?
+  - Answerable: Conclusion reachable through defensible logical pathways
   
-## Defining your place on that landscape
+## What are our desiderata for "good" research questions?
 
-- Types of knowledge claims and their level of development
+Let's go back through our last three classes!
 
-  - How do different combinations of knowledge claims and development status fit on the research landscape?
+- Positions: 
+
+  - To what end? Theoretical v. practical knowledge
+
+  - By doing what? How much work required to obtain precision / realism / generality?
+
+  - With whom? Who cares about the answer?
+
+  - Means of advance? Does the answer give rise to a novel knowledge claim?
   
-    - Stable stylized facts: High in relevance, perhaps "old news" to scholars (Edison's quadrant?)
-    
-    - Unstable key assumptions: An opportunity to conduct basic research to build a new basis of understanding?
-  
-- How might your choice of knowledge claims define you as a scholar?
+## What makes a good research question **for today's purposes**?
 
-# Other thoughts
+1. Feasibility: Can it be answered with a series of 1-3 papers?  
+ 
+2. Personal interest: Is it a question that you want to know the answer to? 
 
-## Useful types of thinking when engaging in the research process
+<!--- incorporate material from 11/4/23 Tatiana lecture when I get the chance --->
 
-- Skeptical thinking
-
-- Bayesian thinking
-
-- Strategic thinking
-
-- First principles thinking
-
-## Skeptical thinking
-
-> “Science depends on organized skepticism, that is, on continual, methodical doubting. Few of us doubt our own conclusions, so science embraces its skeptical approach by rewarding those who doubt someone else’s.”
-― Neil deGrasse Tyson, Origins: Fourteen Billion Years of Cosmic Evolution
-
-## Skeptical thinking
-
-[![Tyson on Skepticism](assets/skepticism.png)](https://www.youtube.com/watch?v=io6QdGcoWMU)
-
-
-<!--- https://masterclass-notes.medium.com/summary-of-neil-degrasse-tysons-masterclass-on-scientific-thinking-and-communication-d55cba5a3843
-
-> Skepticism is not outright rejection of something just because you don’t want it to be true or you don’t think it’s true. A proper skeptic questions what they’re unsure of, but recognizes when valid evidence is presented. 
-― Neil deGrasse Tyson, Masterclass on Scientific Thinking and Communication
-
---->
-
-## Bayesian thinking
-
-Implicit in the earlier discussions is our degree of belief.
-
-- Nosek and Errington talk about how replication increases or decreases our degree of belief.
-
-- Popper uses the asymmetry of verification to achieve binary outcome of disconfirmed evidence.
-
-- But couldn't we be more subtle in our treatment of beliefs?
-  
-  - Indeed, we can through the application of Bayesian logic and Bayes' Rule.
-
-  - I will not be teaching you the statistical methods that follow from this, but        you can find them.
-
-
-## Bayesian thinking
-
-[![A Primer on Bayesian Thinking](assets/bayes.png)](https://www.youtube.com/watch?v=HZGCoVF3YvM)
-
-
-## Strategic thinking
-
-Finally, it helps to be strategic when thinking about designing and evaluating research.  By this I mean thinking that embraces three characteristics:
-
-- Rigor
-
-- Complexity
-
-- Ambiguity
-
-## Strategic thinking
-
-- Rigor
-
-  - Comprehensive – focusing attention on both the forest (a research program) and the trees (discrete methods or studies)  
-  
-  - Adaptive – balancing multiple goals and knowing what progress can be made against one or more of them simultaneously (McGrath's Trilemma)
-  
-  - Inferential – moving from what is known to what can be reasonably inferred (judicious use of multiple reasoning modes)
-
-## Strategic thinking
-
-- Complexity
-  
-  - Dynamics – accounting for first and second order effects that are material across actors, choices, and time (rigor)
-
-  - Allocentricity – outcomes often jointly determined by internal and external factors, often other parties or agents 
-  
-  
-## Strategic thinking
-
-- Ambiguity
-  
-  - Unstable – non-linear shifts across time and situations may limit generalizability and heighten the role of context (thinking about whether findings will maintain relevance)
-  
-  - Unforeseeable – many research projects are a full reinforcement learning problem, learning while doing is necessary to reveal the evolving state of the world
-
-## Strategic thinking
-
-[![Bremmer's view of strategic thinking](assets/bremmer.png)](https://www.youtube.com/watch?v=AkgsYA-LYxo)
-
-## First principles thinking
-
-> A first principle is a basic assumption that cannot be deduced any further. Over two thousand years ago, Aristotle defined a first principle as “the first basis from which a thing is known.”
-First principles thinking is a fancy way of saying “think like a scientist.” Scientists don’t assume anything. They start with questions like, What are we absolutely sure is true? What has been proven? 
-- James Clear
-
-<!--- https://jamesclear.com/first-principles#:~:text=A%20first%20principle%20is%20a,Scientists%20don't%20assume%20anything. --->
-
-# Preparation for Next Class
 
 ## Next class
 
-**Research III: Practices**
+I will have the first concept check posted to Brightspace before next class.
 
-Our first compare and contrast discussion will take place. Presenters, please reach out if you have questions or concerns!
+It is super simple, about 10 questions based on our discussions so far.
 
-1. Lange, D., & Pfarrer, M. D. (2017). Editors' Comments: Sense and Structure---The Core Building Blocks of an AMR Article. Academy of Management Review, 42(3), 407-416.
-
-2. Tobi, H., & Kampen, J. K. 2018. Research design: the methodology for interdisciplinary research framework. Qual Quant, 52(3), 1209-1225.
-
-3. Aguinis, H. & Vandenberg, R. J. (2014). An ounce of prevention is worth a pound of cure: improving research quality before data collection. 
+You will have one hour to complete the assessment once started (plenty of time)!
 
 ## Next class
 
-**Research III: Practices**
+**Elements I: Theory and phenomena**
+
+1. Bacharach, S. B. (1989). Organizational Theories: Some Criteria for Evaluation. The Academy of Management Review, 14(4), 496-515. https://doi.org/10.2307/258555
+
+2. Makadok, R., Burton, R., & Barney, J. (2018). A practical guide for making theory contributions in strategic management. Strategic Management Journal, 39(6), 1530-1545. https://doi.org/10.1002/smj.2789
+
+3. Johns, G. 2006. The Essential Impact of Context on Organizational Behavior. The Academy of Management Review, 31, No. 2, 386-408. 
+
+## Next class
+
+**Elements I: Theory and phenomena**
 
 4. Compare / Contrast
 
-- Corley, K. G., & Gioia, D. A. (2011). Building Theory about Theory Building: What Constitutes a Theoretical Contribution. Academy of Management Review, 36(1), 12-32. https://doi.org/10.5465/amr.2009.0486
+- Sutton, R. I., & Staw, B. M. (1995). What Theory is Not. Administrative Science Quarterly, 40(3), 371. https://doi.org/10.2307/2393788
 
-- David A. Whetten, 1989. What constitutes a theoretical contribution? Academy of Management Review, 14: 490-495
+- Hambrick, D. C. 2007. The field of management’s devotion to theory: Too much of a good thing? Academy of Management Journal, 50, 1346-1352.
 
-## References
 
-::: {#refs}
-:::
+  
 
 # Workshop
 
 ## Agenda
 
-- We will have a workshop session about four hours long. For the first two hours or so, students will **make a five-minute presentation about their research topic/idea** for their dissertation. 
+-   Research Question Presentations (11 - 2p, break from 12 - 1p)
 
-- This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. 
+-   Self-organized group discussions (2 - 2:30p)
 
-- The balance of the workshop will be:
+-   Faculty perspectives (2:30 - 3:30p)
 
-  - presentations by scholars regarding their first research project, and 
-  
-  - group work to discuss and advance those research questions; I will move from group to group to facilitate discussions.
-  
-## Expectations
+-   Reflections
 
-- I am NOT looking for something super polished
+## Research Presentations
 
-- I want to hear where you are at with your research question and I want your colleagues to know about it too
+![](assets/presentations.jpg)
 
-- I'll aim to reserve a minute or two for questions and comments after each presentation, but the substantive discussions will likely happen later in groups 
+## Self-organized group discussions
 
-  
-## Presentations
+## Some faculty perspectives
 
+- Brandon Smit
+
+- Rodrigo DeMello
+
+## Brandon Smit
+
+![](assets/smit.png)
+
+## Rodrigo DeMello
+
+![](assets/demello.png)
+
+
+## Questions for our presenters?
+
+## Reflections
