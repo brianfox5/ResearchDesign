@@ -1,0 +1,412 @@
+
+---
+title: "Class 4 - Elements I: Theory and phenomena"
+format: 
+    html: default
+    beamer: 
+     theme: Berlin
+bibliography: references.bib
+---
+
+## Agenda
+
+<!--- Drop RQ presentations for next go around --->
+
+-   Research Question Presentations (50 minutes)
+
+-   Conceptual grounding (10 minutes)
+
+<!--- -   Core paper discussion (50 minutes) --->
+
+-   *Break*
+
+-   Compare-contrast presentation (Group 5-8; 35 minutes)
+
+-   Summative lecture on concepts (15 minutes)
+
+# Conceptual grounding
+
+## Two complementary organizing perspectives
+
+- The world through a theory lens
+
+- The world through a phenomenological lens
+
+- The pivotal role of context
+
+# Readings for Today
+
+## Common Readings
+
+1. Bacharach, S. B. (1989). Organizational Theories: Some Criteria for Evaluation. The Academy of Management Review, 14(4), 496-515. https://doi.org/10.2307/258555
+
+2. Makadok, R., Burton, R., & Barney, J. (2018). A practical guide for making theory contributions in strategic management. Strategic Management Journal, 39(6), 1530-1545. https://doi.org/10.1002/smj.2789
+
+3. Johns, G. 2006. The Essential Impact of Context on Organizational Behavior. The Academy of Management Review, 31, No. 2, 386-408.
+
+## Bacharach (1989)
+
+![](assets/Bacharach 1989 figure.png)
+
+## Bacharach (1989)
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+Discussion Questions 
+
+- Does this paper tie together at we have seen to date? 
+
+- What does this paper assume or downplay?
+
+::: 
+
+::: {.column width="70%"}
+
+[![](assets/Bacharach 1989.png)](https://www.dropbox.com/scl/fi/7ans09sewgbx0afzbqxda/Bacharach-1989-39753.pdf?rlkey=ptz7na7xwn9e89zyx2eqm1lkg&dl=0) 
+
+:::
+
+::::
+
+## Johns (2006)
+
+[![](assets/Johns 2006.png)](https://www.dropbox.com/scl/fi/s8l06wu05ab1jlztfv5rt/Johns-2006-91924.pdf?rlkey=4wsae99bhlimg1xmtx1az4zk0&dl=0) 
+
+
+## Johns (2006)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Discussion Questions 
+
+- Let's talk through the "faces of context" and be sure we know what they mean.
+
+- How might context affect "hard science" systems, like physics?
+
+- Did this paper resonate after what we have seen so far? Why? 
+
+::: 
+
+::: {.column width="50%"}
+
+
+The Many Faces of Context:
+
+- Salience of situational features
+
+- Situational strength
+
+- Cross-level effects     
+
+- Bundle of stimuli
+
+- Discrete events 
+
+- Shaper of meaning
+
+:::
+
+::::
+
+## Makadok Burton and Barney (2018)
+
+>Rather than introducing radical new “grand theory” para- digms, most theory contributions in strategic management extend, clarify, or apply received theories in new and interesting ways. Here we offer a guide on how to make these kinds of contributions to theory. Theory usually begins with a research question, which can come from the phenomenon of interest, variations/limitations of existing theory, or intellectual creativity. Along with the question, there are a number of more craftsmanship-level aspects of a theory where contributions can be made [...] (Abstract)
+
+## Makadok Burton and Barney (2018)
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+Discussion Questions 
+
+- Did you find this useful?
+
+- Might this framework allow for an integration of theory and phenomena?
+
+
+:::
+
+
+::: {.column width="70%"}
+
+[![](assets/Makadok et al 2018.png)](https://www.dropbox.com/scl/fi/sxqhhm2fqu7zky0tdy3i7/Makadok-Burton-and-Barney-2018-77238.pdf?rlkey=jl41ybkalz0wjq0oqehn04tvb&dl=0) 
+
+:::
+
+::::
+
+## Break
+
+![](assets/break.png)
+
+## Compare / Contrast Presentations
+
+- Sutton, R. I., & Staw, B. M. (1995). What Theory is Not. Administrative Science Quarterly, 40(3), 371. https://doi.org/10.2307/2393788
+
+- Hambrick, D. C. 2007. The field of management’s devotion to theory: Too much of a good thing? Academy of Management Journal, 50, 1346-1352.
+
+# Summative lecture
+
+## Theory and phenemena: Two sides to a coin
+
+- Theory: foregrounding the parts and **asking why**
+
+- Phenomena: foregrounding the whole and **taking action**
+
+## Motivating example from high school physics
+
+:::: {.columns}
+
+::: {.column height="80%"}
+
+![](assets/parabolic motion.png)
+
+:::
+
+::::
+
+## Phenomenon - Making a free throw
+
+Let's say we know exactly how much force we need to get the ball to travel from the free throw line to the hoop horizontally and our aim is dead straight.
+
+But we don't know how much we need to loft the ball to make it in the basket. 
+
+How do we solve for the height of the ball at any given time?
+
+**Goal: We want to successfully take an action - making a free throw**
+
+## Theory - Newton's second law
+
+Newton says: The ball is being acted upon by the force of gravity, which imparts an acceleration.
+
+$$a = g = -9.8 m/s^2$$
+
+$$h(t) = h_0 + v_0t + (-9.8/2)t^2$$
+Will we get the answer right??
+
+**Goal: We want to understand - why does the ball move the way it does?**
+
+## Aside - Turtles all the way down
+
+Note this law is a mathematical expression between two quantities: the height of the ball and time. It doesn't say where the expression is coming from or what is causing it.
+
+We can say it is due to gravity since this relationship holds for any object on Earth, and thus a common gravitational field for the Earth is consistent with this explanation.  Further, celestial bodies operate with similar mechanics.  
+
+But where does gravity come from?
+
+## Aside - Turtles all the way down
+
+> A well-known scientist (some say it was Bertrand Russell) once gave a public lecture on astronomy. He described how the earth orbits around the sun and how the sun, in turn, orbits around the centre of a vast collection of stars called our galaxy. At the end of the lecture, a little old lady at the back of the room got up and said: "What you have told us is rubbish. The world is really a flat plate supported on the back of a giant tortoise." The scientist gave a superior smile before replying, "What is the tortoise standing on?" "You're very clever, young man, very clever," said the old lady. "But it's turtles all the way down!"
+- Steven Hawking, A Brief History of Time
+
+<!--- https://en.wikipedia.org/wiki/Turtles_all_the_way_down --->
+
+
+## Context - Earth
+
+- Why is $g = -9.8m/s^2 ?$
+
+- What about air resistance?
+
+- In both cases, the boundaries of the specific context are often captured by **parameters**
+
+## Context matters!
+
+[![](assets/feather and bowling ball.png)](https://www.youtube.com/watch?v=E43-CfukEgs) 
+
+## Aside: Theorizing 
+
+How would we arrive independently at the conclusion about the force of gravity? 
+
+$$a = g = -9.8 m/s^2$$
+
+What observations would we need to make?
+
+What data would we collect?
+
+What would need to be true about the data generating process to get a solid answer?
+
+## Let's generalize the example
+
+- The phenemonon is a problem we want to solve or something "real" we want to understand (score points)
+
+- We use theories to abstract away complexities and focus on core principles, which are often unobservable (the existance of gravity, and its effect)
+
+- But we need to be mindful of the context in which those theories are applied to pin down the values of relevant parameters (air resistance, gravitational force) 
+
+## Example phenomena of interest 
+
+- Acquisition premiums paid 
+
+- Likelihood of achieving an IPO
+
+- Probability of bank failure
+
+- Level of CEO overconfidence
+
+## Explaining phenomena: The tricky bits 
+
+- What theories are applicable? (There are many that could be)
+
+- What might they omit and how do you deal with that? (What must be controlled for?)
+
+- If you learn something in a particular context, how can you generalize?
+
+- If theoretical contributions are a prerequsite to publish, how do you make one?
+
+## Example theories of interest 
+
+- Social network theory
+
+- Transactions costs economics
+
+- Theory of planned behavior
+
+- Theory of constraints
+
+## Extending theory: The tricky bits 
+
+- Where can you find situations where the theory cannot be straightforwardly applied? (Potential limits?)
+
+- Why are these situations worthy of study? (Importance of the findings?)
+
+- How can you map the particulars of a theory into a specific context?
+
+## Back to our logical modes
+
+- Induction: common themes across phenomena -> gives rise to theories
+
+- Deduction: applying principles encoded as theories -> explains variation for a particular phenemonon
+
+## A third way: "Policy engineering" (my term)
+
+- Nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
+
+- But without them, how can we make precise recommendations for practice?
+
+- My hunch: These are often unstable from context to context, putting primacy on theoretical directionality versus specific values
+
+## Towards model building
+
+![](assets/Bacharach 1989 figure.png)
+
+## Towards model building
+
+Different foci, different **nomological networks**
+
+- Theory-focused: Construct / relationship / proposition centric
+
+- Phenomenon-focused: Variable / prediction / hypothesis centric 
+
+
+## Key Thinking Tool: Nomological networks 
+
+> Scientifically speaking, to "make clear what something is" means to set forth the laws in which it occurs. We shall refer to the interlocking system of laws which constitute a theory as a nomological network. - (@cronbach1955, p. 290)
+
+## Key Thinking Tool: Nomological networks 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+[![](assets/example nomological network.jpg)](https://www.sciencedirect.com/science/article/pii/S221305861630050X#fig0005)
+
+:::
+
+::::
+
+## Key Thinking Tool: Nomological networks 
+
+[![](assets/example nomological network 2.jpg)](https://www.researchgate.net/publication/40901518_Understanding_and_Exploring_Safety_Culture){height=80%}
+
+
+## Theory-focused models
+
+Objective: Make correct predictions across as many cases as possible (assuming other details rendered negligible) 
+
+How: Build out the nomological network of the theory 
+
+- Connecting more and more variables and hypotheses **across phenomena** to a core set of constructs, relationships, propositions
+
+- Expanding upon the common core of constructs (who/what)
+
+- Determining the mechanisms of actions and underlying causes (how, why)
+
+- Identifying and pushing on the boundaries of applicability (where, when)
+
+
+## Phenomenon-focused models
+
+Objective: Make the best prediction for a specific case
+
+How: Build out the nomological network of the phenemonenon (this is not how it is thought of in the literature) 
+
+- Connecting more and more constructs and relationships **across theories** to explain a core set of variables
+
+- Identifying the key variables at play and the context/parameters that matter (who/what)
+
+- Determining how theories comport and conflict in the specific situation (how, why)
+
+- Taking advantage of a specific bounds of a context to pin down predictions with precision (where, when)
+
+## What takes primacy?
+
+Bacharach (1989) places primacy on generalizability - since theory "abstracts" away from variables to constructs to predict across more situations it is given a lofty status
+
+But we could just as easily place primacy on explanatory power - here a phenemenon "focuses" attention across theories to specific variables of interest
+
+## Comparing theoretical and phenomological nomological networks
+
+[![](assets/theory phenomena nomological network.png)](https://rpubs.com/bfox/project0020)
+
+## Summary
+
+To oversimplify a lot, here is my mental model:
+
+- Phenomena specify a universe of dependent variables and independent variables
+
+- Theories provide the "rules" for how these IVs and DVs interrelate
+
+- But we also need **parameters** to capture contextual differences
+
+[Here is one way I try to keep both in mind as I read papers](http://briancfox.com/vfront/)
+
+## Next class
+
+Your concept checks are due before we start next class. 
+
+It is super simple, about 10 questions based on our discussions so far.
+
+You will have one hour to complete the assessment once started (plenty of time)!
+
+## Next class
+
+**Elements II: Models and hypotheses**
+
+1. Harris, J. D., Johnson, S. G., & Souder, D. 2013. Model-Theoretic Knowledge Accumulation: The Case of Agency Theory and Incentive Alignment. Academy of Management Review, 38(3), 442-454.
+
+2. Chamberlin, T. C. (1965). The Method of Multiple Working Hypotheses. Science, 148(3671), 754-759. https://doi.org/10.1126/science.148.3671.754
+
+3. Pearl, J. 2010. 3. The Foundations of Causal Inference. Sociological Methodology, 40(1), 75-149.
+
+## Next class
+
+**Elements II: Models and hypotheses**
+
+4. Compare / Contrast
+
+- Adner, R., Pólos, L., Ryall, M., & Sorenson, O. 2009. The Case for Formal Theory. Academy of Management Review, 34(2), 201-208.
+
+- Miller, K. D. & Tsang, E. W. K. 2011. Testing management theories: Critical realist philosophy and research methods. Strategic Management Journal, 32(2): 139-158.
+
+
+## References 
+
+:::{refs}
+:::
+  
