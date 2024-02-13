@@ -272,3 +272,8 @@ You will have one hour to complete the assessment once started (plenty of time)!
 ## Questions for our presenters?
 
 ## Reflections
+
+## References
+
+::: {#refs}
+:::
