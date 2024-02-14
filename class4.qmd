@@ -279,17 +279,30 @@ What would need to be true about the data generating process to get a solid answ
 
 ## Back to our logical modes
 
+How it is "supposed to work"
+
 - Induction: common themes across phenomena -> gives rise to theories
 
 - Deduction: applying principles encoded as theories -> explains variation for a particular phenemonon
 
+But when these steps are performed by different researchers who have difficulty understanding each other's processes (e.g., qualitative inductive work, quantitative deductive work), this process can short circuit
+
+It can also short circuit if the interesting questions aren't raised to be examined inductively in the first instance 
+
 ## A third way: "Policy engineering" (my term)
 
-- Nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
+Why not build models that synthesize theories to explain a phenomenon capitalizing on a bounded context where parameters are estimable?
 
-- But without them, how can we make precise recommendations for practice?
+- This could allow for an "engineering" orientation, where theories are rigorously applied to specific situations
+
+Issues
+
+- Unfortunately, nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
+
+- Yet without them, how can we make precise recommendations?
 
 - My hunch: These are often unstable from context to context, putting primacy on theoretical directionality versus specific values
+
 
 ## Towards model building
 
@@ -374,7 +387,43 @@ To oversimplify a lot, here is my mental model:
 
 - But we also need **parameters** to capture contextual differences
 
-[Here is one way I try to keep both in mind as I read papers](http://briancfox.com/vfront/)
+Here is one way I try to keep both in mind as I read papers: <http://briancfox.com/vfront/>
+
+## Summary
+
+Historically (in management) there was pressures for papers to "do it all" - advance and test a theory [@aguinis2014]
+
+- As our readings indicate, this thinking slowly evolving towards a more nuanced view of contribution [@makadok2018]
+
+- And @hambrick2007 noted, other fields have already found a more moderate stance 
+
+- But many outlets still require a theoretical contribution in their editorial statements
+
+- This requirement for a theoretical contribution is institutional, rather than intrinsic
+
+## Finding the balance
+
+> There  is  nothing  as  practical  as  a  good  theory - Lewin (1943), as cited in @mccain2015
+
+- Theory provides a means to generalize our observations [@bacharach1989]
+
+- But we need a place to make those observations in the first place [@hambrick2007]
+
+- And we need to think about how our study can affect understanding of an imnportant phenomenon [@tushman2007]
+
+## Finding the balance
+
+This balance can be struck within or across papers
+
+- Within a paper: targeting a narrow question that takes seriously the phenomenon and focuses on 
+
+- Across papers: some papers can focus on developing theory, others can build our understanding of the phenenemon
+
+- The rub: outlets vary in their receptivity to these different foci
+
+- There is hope: publishing in more receptive disciplines, Academy of Management Discoveries, cross-over journals
+
+- And you may be in a better position than most: Must you publish in top academic journals in Management? 
 
 ## Next class
 

@@ -10,6 +10,9 @@ bibliography: references.bib
 
 ## Agenda
 
+
+NEED TO ADD	Formal models, DAGs
+	
 <!--- Drop RQ presentations for next go around --->
 
 -   Research Question Presentations (50 minutes)
