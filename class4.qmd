@@ -10,21 +10,19 @@ bibliography: references.bib
 
 ## Agenda
 
-<!--- Drop RQ presentations for next go around --->
-
--   Research Question Presentations (50 minutes)
-
 -   Conceptual grounding (10 minutes)
 
-<!--- -   Core paper discussion (50 minutes) --->
+-   Core paper discussion (50 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 5-8; 35 minutes)
+-   Compare-contrast presentation (Group 5-8; 30 minutes)
 
 -   Summative lecture on concepts (15 minutes)
 
-# Conceptual grounding
+-   Key thinking tool: Nomological networks (15 minutes)
+
+# Grounding
 
 ## Two complementary organizing perspectives
 
@@ -44,25 +42,31 @@ bibliography: references.bib
 
 3. Johns, G. 2006. The Essential Impact of Context on Organizational Behavior. The Academy of Management Review, 31, No. 2, 386-408.
 
+## A gradual shift in focus
+
+Whereas the first three weeks entailed really broad discussions of the readings, I will start drawing out some specific items for us to talk about in the readings
+
+This is not to suppress all of the other interesting parts of the papers; rather, it is because I will want to rely or build upon specific points in the weeks to come
+
+Going forward, we may have one or two questions to warm up our discussion of the paper, and then we can dive into some key elements
+
 ## Bacharach (1989)
 
 ![](assets/Bacharach 1989 figure.png)
 
 ## Bacharach (1989)
 
-:::: {.columns}
-
-::: {.column width="30%"}
-
 Discussion Questions 
 
-- Does this paper tie together at we have seen to date? 
+- Does this paper tie together at we have seen to date?  
 
-- What does this paper assume or downplay?
+- What does this paper assume / take for granted? 
 
-::: 
+## Bacharach (1989)
 
-::: {.column width="70%"}
+:::: {.columns}
+
+::: {.column width="90%"}
 
 [![](assets/Bacharach 1989.png)](https://www.dropbox.com/scl/fi/7ans09sewgbx0afzbqxda/Bacharach-1989-39753.pdf?rlkey=ptz7na7xwn9e89zyx2eqm1lkg&dl=0) 
 
@@ -70,29 +74,30 @@ Discussion Questions
 
 ::::
 
+## Bacharach (1989)
+
+Key Points 
+
+- Falsifiability, modes of inference (logical adequacy), explanatory potential - it's all here! 
+
+- Brings to the foreground the idea of a **set of relationships between ideas**
+
+- Emphasis placed on generalizability across contexts and explanatory potential
+
+
 ## Johns (2006)
 
 [![](assets/Johns 2006.png)](https://www.dropbox.com/scl/fi/s8l06wu05ab1jlztfv5rt/Johns-2006-91924.pdf?rlkey=4wsae99bhlimg1xmtx1az4zk0&dl=0) 
 
-
 ## Johns (2006)
-
-:::: {.columns}
-
-::: {.column width="50%"}
 
 Discussion Questions 
 
-- Let's talk through the "faces of context" and be sure we know what they mean.
-
-- How might context affect "hard science" systems, like physics?
-
 - Did this paper resonate after what we have seen so far? Why? 
 
-::: 
+- How might 'discrete' context affect "hard science" systems, like physics?
 
-::: {.column width="50%"}
-
+## Johns (2006)
 
 The Many Faces of Context:
 
@@ -108,19 +113,21 @@ The Many Faces of Context:
 
 - Shaper of meaning
 
-:::
 
-::::
+## Johns (2006)
+
+Key Points 
+
+- Context (where / when) can shape the relative importance of a theory compared to other effects
+
+- It can serve as a **boundary of applicability** or can **condition theoretical effects**
+
 
 ## Makadok Burton and Barney (2018)
 
 >Rather than introducing radical new “grand theory” para- digms, most theory contributions in strategic management extend, clarify, or apply received theories in new and interesting ways. Here we offer a guide on how to make these kinds of contributions to theory. Theory usually begins with a research question, which can come from the phenomenon of interest, variations/limitations of existing theory, or intellectual creativity. Along with the question, there are a number of more craftsmanship-level aspects of a theory where contributions can be made [...] (Abstract)
 
 ## Makadok Burton and Barney (2018)
-
-:::: {.columns}
-
-::: {.column width="30%"}
 
 Discussion Questions 
 
@@ -129,16 +136,27 @@ Discussion Questions
 - Might this framework allow for an integration of theory and phenomena?
 
 
-:::
+## Makadok Burton and Barney (2018)
 
+:::: {.columns}
 
-::: {.column width="70%"}
+::: {.column width="90%"}
 
 [![](assets/Makadok et al 2018.png)](https://www.dropbox.com/scl/fi/sxqhhm2fqu7zky0tdy3i7/Makadok-Burton-and-Barney-2018-77238.pdf?rlkey=jl41ybkalz0wjq0oqehn04tvb&dl=0) 
 
 :::
 
 ::::
+
+## Makadok Burton and Barney (2018)
+
+Key Points
+
+- There are many means by which theoretical contributions can be made
+
+- Contributing to theory means **adding to our web of knowledge**, you don't need to spin the whole thing yourself
+
+- Phenomena can provide new lenses to see how a theory operates and old theories can be useful in explaining new phenomena
 
 ## Break
 
@@ -150,13 +168,13 @@ Discussion Questions
 
 - Hambrick, D. C. 2007. The field of management’s devotion to theory: Too much of a good thing? Academy of Management Journal, 50, 1346-1352.
 
-# Summative lecture
+# Lecture - Theory and phenomena
 
-## Theory and phenemena: Two sides to a coin
+## Theory and phenomena: Two sides to a coin
 
 - Theory: foregrounding the parts and **asking why**
 
-- Phenomena: foregrounding the whole and **taking action**
+- Phenomena: foregrounding the whole and **successfully taking action**
 
 ## Motivating example from high school physics
 
@@ -299,14 +317,9 @@ Issues
 
 - Unfortunately, nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
 
-- Yet without them, how can we make precise recommendations?
+- Yet without them, how can we make recommendations?
 
-- My hunch: These are often unstable from context to context, putting primacy on theoretical directionality versus specific values
-
-
-## Towards model building
-
-![](assets/Bacharach 1989 figure.png)
+- My hunch: These are often unstable, putting primacy on theoretical directionality 
 
 ## Towards model building
 
@@ -316,6 +329,7 @@ Different foci, different **nomological networks**
 
 - Phenomenon-focused: Variable / prediction / hypothesis centric 
 
+# Nomological networks
 
 ## Key Thinking Tool: Nomological networks 
 
@@ -333,11 +347,6 @@ Different foci, different **nomological networks**
 
 ::::
 
-## Key Thinking Tool: Nomological networks 
-
-[![](assets/example nomological network 2.jpg)](https://www.researchgate.net/publication/40901518_Understanding_and_Exploring_Safety_Culture){height=80%}
-
-
 ## Theory-focused models
 
 Objective: Make correct predictions across as many cases as possible (assuming other details rendered negligible) 
@@ -351,7 +360,6 @@ How: Build out the nomological network of the theory
 - Determining the mechanisms of actions and underlying causes (how, why)
 
 - Identifying and pushing on the boundaries of applicability (where, when)
-
 
 ## Phenomenon-focused models
 
@@ -367,25 +375,28 @@ How: Build out the nomological network of the phenemonenon (this is not how it i
 
 - Taking advantage of a specific bounds of a context to pin down predictions with precision (where, when)
 
-## What takes primacy?
+ 
+## Which takes primacy?
 
 Bacharach (1989) places primacy on generalizability - since theory "abstracts" away from variables to constructs to predict across more situations it is given a lofty status
 
-But we could just as easily place primacy on explanatory power - here a phenemenon "focuses" attention across theories to specific variables of interest
+But we could just as easily place primacy on predictive power - here a phenemenon "focuses" attention across theories to specific variables of interest
+
 
 ## Comparing theoretical and phenomological nomological networks
 
 [![](assets/theory phenomena nomological network.png)](https://rpubs.com/bfox/project0020)
 
+
 ## Summary
 
 To oversimplify a lot, here is my mental model:
 
-- Phenomena specify a universe of dependent variables and independent variables
+- Phenomena specify a universe of dependent variables and independent variables to define a particular context
 
-- Theories provide the "rules" for how these IVs and DVs interrelate
+- Theories provide the "rules" for how a specific set of IVs and DVs interrelate across contexts
 
-- But we also need **parameters** to capture contextual differences
+- But we also need **parameters** to capture differences across contexts
 
 Here is one way I try to keep both in mind as I read papers: <http://briancfox.com/vfront/>
 
@@ -409,21 +420,23 @@ Historically (in management) there was pressures for papers to "do it all" - adv
 
 - But we need a place to make those observations in the first place [@hambrick2007]
 
-- And we need to think about how our study can affect understanding of an imnportant phenomenon [@tushman2007]
+- And we need to think about how our study can affect understanding of an important phenomenon [@tushman2007]
 
 ## Finding the balance
 
 This balance can be struck within or across papers
 
-- Within a paper: targeting a narrow question that takes seriously the phenomenon and focuses on 
+- Within a paper: targeting a narrow question that takes seriously the phenomenon and focuses on modifying extant theory
 
 - Across papers: some papers can focus on developing theory, others can build our understanding of the phenenemon
 
-- The rub: outlets vary in their receptivity to these different foci
+The rub: outlets vary in their receptivity to these different foci
 
 - There is hope: publishing in more receptive disciplines, Academy of Management Discoveries, cross-over journals
 
-- And you may be in a better position than most: Must you publish in top academic journals in Management? 
+- And you may be in a better position than most: Must you publish in top academic journals in Management?
+
+# Preparation for next class 
 
 ## Next class
 
