@@ -6,7 +6,7 @@ format:
 ::: page-schedule
 Links to the lecture notes are provided below. I have also provided links to the relevant syllabus sections for the in-class activities and deliverables for your convenience, too.
 
-Note that the Dropbox link for access to the readings to prepare for each week is available on the Brightspace site for your convenience.[class6.pdf](class6.pdf)
+Note that the Dropbox link for access to the readings to prepare for each week is available on the Brightspace site for your convenience.
 
 +-----------+--------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | **Date**  | **Topic**                                                                                                                      | **Lecture notes**                                          | **In-class activity**                                                                                                            | **Deliverables**                                                                                                                   |
