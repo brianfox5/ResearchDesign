@@ -9,7 +9,7 @@ bibliography: references.bib
 
 ## Agenda
 
--   Key thinking tool: DAGs x formal theory (15 minutes)
+-   Key thinking tool: DAGs x formal theory (10 minutes)
 
 -   Conceptual grounding (5 minutes)
 
@@ -64,6 +64,8 @@ And at a minimum, they force us to **write out our model explicitly** in terms o
 - DAGs can make clear how a model fits within a larger set of nomological networks, be they theoretical or phenemenonological
 
 - Formal theorizing provides the tools to consider more complex relationships and nth-order effects than verbal theorizing readily affords, which tends to capture first-order, linear[^1] chains of logic
+
+- Note that the final paper may not showcase this work, but it can be the scaffolding to facilitate deep thinking
 
 
 [^1]: Note that linearity is not as technically constraining as it may seem.  Linearity means that a tested function must be linear with respect to its **parameters**, not its **arguments**.  Thus, $y  = \beta x^2$ is permissable but $y = \beta^2x$ is not.  The issue is not so much a technical issue but straight-line thinking
