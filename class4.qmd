@@ -12,25 +12,29 @@ bibliography: references.bib
 
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (50 minutes)
+-   Core paper discussion (45 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 5-8; 30 minutes)
+-   Compare-contrast presentation (Group 5-8; 40 minutes)
 
--   Summative lecture on concepts (15 minutes)
+-   Summative lecture on concepts (10 minutes)
 
--   Key thinking tool: Nomological networks (15 minutes)
+-   Key thinking tool: Nomological networks (10 minutes)
 
 # Grounding
 
 ## Two complementary organizing perspectives
 
-- The world through a theory lens
+Two sides to the same coin:
 
-- The world through a phenomenological lens
+- Theory: Focusing on generalizable mechanisms and the "why"
 
-- The pivotal role of context
+- Phenomena: Focusing on real world outcomes and taking action
+
+A missing ingredient to bind them together:
+
+- Parameters: Critical differences between contexts 
 
 # Readings for Today
 
@@ -257,69 +261,18 @@ What would need to be true about the data generating process to get a solid answ
 
 - But we need to be mindful of the context in which those theories are applied to pin down the values of relevant parameters (air resistance, gravitational force) 
 
-## Example phenomena of interest 
+## Summary
 
-- Acquisition premiums paid 
+To oversimplify, here is my mental model:
 
-- Likelihood of achieving an IPO
+- Phenomena specify a universe of dependent variables and independent variables to define a particular context
 
-- Probability of bank failure
+- Theories provide the "rules" for how a specific set of IVs and DVs interrelate across contexts
 
-- Level of CEO overconfidence
+- But we also need **parameters** to capture differences across contexts
 
-## Explaining phenomena: The tricky bits 
+Here is one way I try to keep both in mind as I read papers: <http://briancfox.com/vfront/>
 
-- What theories are applicable? (There are many that could be)
-
-- What might they omit and how do you deal with that? (What must be controlled for?)
-
-- If you learn something in a particular context, how can you generalize?
-
-- If theoretical contributions are a prerequsite to publish, how do you make one?
-
-## Example theories of interest 
-
-- Social network theory
-
-- Transactions costs economics
-
-- Theory of planned behavior
-
-- Theory of constraints
-
-## Extending theory: The tricky bits 
-
-- Where can you find situations where the theory cannot be straightforwardly applied? (Potential limits?)
-
-- Why are these situations worthy of study? (Importance of the findings?)
-
-- How can you map the particulars of a theory into a specific context?
-
-## Back to our logical modes
-
-How it is "supposed to work"
-
-- Induction: common themes across phenomena -> gives rise to theories
-
-- Deduction: applying principles encoded as theories -> explains variation for a particular phenemonon
-
-But when these steps are performed by different researchers who have difficulty understanding each other's processes (e.g., qualitative inductive work, quantitative deductive work), this process can short circuit
-
-It can also short circuit if the interesting questions aren't raised to be examined inductively in the first instance 
-
-## A third way: "Policy engineering" (my term)
-
-Why not build models that synthesize theories to explain a phenomenon capitalizing on a bounded context where parameters are estimable?
-
-- This could allow for an "engineering" orientation, where theories are rigorously applied to specific situations
-
-Issues
-
-- Unfortunately, nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
-
-- Yet without them, how can we make recommendations?
-
-- My hunch: These are often unstable, putting primacy on theoretical directionality 
 
 ## Towards model building
 
@@ -375,66 +328,11 @@ How: Build out the nomological network of the phenemonenon (this is not how it i
 
 - Taking advantage of a specific bounds of a context to pin down predictions with precision (where, when)
 
- 
-## Which takes primacy?
-
-Bacharach (1989) places primacy on generalizability - since theory "abstracts" away from variables to constructs to predict across more situations it is given a lofty status
-
-But we could just as easily place primacy on predictive power - here a phenemenon "focuses" attention across theories to specific variables of interest
-
 
 ## Comparing theoretical and phenomological nomological networks
 
 [![](assets/theory phenomena nomological network.png)](https://rpubs.com/bfox/project0020)
 
-
-## Summary
-
-To oversimplify a lot, here is my mental model:
-
-- Phenomena specify a universe of dependent variables and independent variables to define a particular context
-
-- Theories provide the "rules" for how a specific set of IVs and DVs interrelate across contexts
-
-- But we also need **parameters** to capture differences across contexts
-
-Here is one way I try to keep both in mind as I read papers: <http://briancfox.com/vfront/>
-
-## Summary
-
-Historically (in management) there was pressures for papers to "do it all" - advance and test a theory [@aguinis2014]
-
-- As our readings indicate, this thinking slowly evolving towards a more nuanced view of contribution [@makadok2018]
-
-- And @hambrick2007 noted, other fields have already found a more moderate stance 
-
-- But many outlets still require a theoretical contribution in their editorial statements
-
-- This requirement for a theoretical contribution is institutional, rather than intrinsic
-
-## Finding the balance
-
-> There  is  nothing  as  practical  as  a  good  theory - Lewin (1943), as cited in @mccain2015
-
-- Theory provides a means to generalize our observations [@bacharach1989]
-
-- But we need a place to make those observations in the first place [@hambrick2007]
-
-- And we need to think about how our study can affect understanding of an important phenomenon [@tushman2007]
-
-## Finding the balance
-
-This balance can be struck within or across papers
-
-- Within a paper: targeting a narrow question that takes seriously the phenomenon and focuses on modifying extant theory
-
-- Across papers: some papers can focus on developing theory, others can build our understanding of the phenenemon
-
-The rub: outlets vary in their receptivity to these different foci
-
-- There is hope: publishing in more receptive disciplines, Academy of Management Discoveries, cross-over journals
-
-- And you may be in a better position than most: Must you publish in top academic journals in Management?
 
 # Preparation for next class 
 
@@ -472,3 +370,118 @@ You will have one hour to complete the assessment once started (plenty of time)!
 :::{refs}
 :::
   
+<!---
+
+# Supplemental Material 
+
+## Back to our logical modes
+
+How theory and phenomenona are "supposed to interact"
+
+- Induction: common themes across phenomena -> gives rise to theories
+
+- Deduction: applying principles encoded as theories -> explains variation for a particular phenemonon
+
+But when these steps are performed by different researchers who have difficulty understanding each other's processes (e.g., qualitative inductive work, quantitative deductive work), this process can short circuit
+
+It can also short circuit if the interesting questions aren't raised to be examined inductively in the first instance 
+
+## A third way: "Policy engineering" (my term)
+
+Why not build models that synthesize theories to explain a phenomenon capitalizing on a bounded context where parameters are estimable?
+
+- This could allow for an "engineering" orientation, where theories are rigorously applied to specific situations
+
+Issues
+
+- Unfortunately, nailing down parameters is (in my view, somewhat derisively) known as being "an empirical question"
+
+- Yet without them, how can we make recommendations?
+
+- My hunch: These are often unstable, putting primacy on theoretical directionality 
+
+ 
+## Which takes primacy?
+
+Bacharach (1989) places primacy on generalizability - since theory "abstracts" away from variables to constructs to predict across more situations it is given a lofty status
+
+But we could just as easily place primacy on predictive power - here a phenemenon "focuses" attention across theories to specific variables of interest
+
+
+## examples of building papers from a theory or phenomenon lens 
+
+## Example phenomena of interest 
+
+- Acquisition premiums paid 
+
+- Likelihood of achieving an IPO
+
+- Probability of bank failure
+
+- Level of CEO overconfidence
+
+## Explaining phenomena: The tricky bits 
+
+- What theories are applicable? (There are many that could be)
+
+- What might they omit and how do you deal with that? (What must be controlled for?)
+
+- If you learn something in a particular context, how can you generalize?
+
+- If theoretical contributions are a prerequsite to publish, how do you make one?
+
+## Example theories of interest 
+
+- Social network theory
+
+- Transactions costs economics
+
+- Theory of planned behavior
+
+- Theory of constraints
+
+## Extending theory: The tricky bits 
+
+- Where can you find situations where the theory cannot be straightforwardly applied? (Potential limits?)
+
+- Why are these situations worthy of study? (Importance of the findings?)
+
+- How can you map the particulars of a theory into a specific context?
+
+## Summary
+
+Historically (in management) there was pressures for papers to "do it all" - advance and test a theory [@aguinis2014]
+
+- As our readings indicate, this thinking slowly evolving towards a more nuanced view of contribution [@makadok2018]
+
+- And @hambrick2007 noted, other fields have already found a more moderate stance 
+
+- But many outlets still require a theoretical contribution in their editorial statements
+
+- This requirement for a theoretical contribution is institutional, rather than intrinsic
+
+## Finding the balance
+
+> There  is  nothing  as  practical  as  a  good  theory - Lewin (1943), as cited in @mccain2015
+
+- Theory provides a means to generalize our observations [@bacharach1989]
+
+- But we need a place to make those observations in the first place [@hambrick2007]
+
+- And we need to think about how our study can affect understanding of an important phenomenon [@tushman2007]
+
+## Finding the balance
+
+This balance can be struck within or across papers
+
+- Within a paper: targeting a narrow question that takes seriously the phenomenon and focuses on modifying extant theory
+
+- Across papers: some papers can focus on developing theory, others can build our understanding of the phenenemon
+
+The rub: outlets vary in their receptivity to these different foci
+
+- There is hope: publishing in more receptive disciplines, Academy of Management Discoveries, cross-over journals
+
+- And you may be in a better position than most: Must you publish in top academic journals in Management?
+
+--->

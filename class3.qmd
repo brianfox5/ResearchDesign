@@ -12,11 +12,11 @@ bibliography: references.bib
 
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (50 minutes)
+-   Core paper discussion (45 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 1-4; 30 minutes)
+-   Compare-contrast presentation (Group 1-4; 40 minutes)
 
 -   Summative lecture on concepts (20 minutes)
 

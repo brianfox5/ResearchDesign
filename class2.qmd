@@ -9,20 +9,17 @@ bibliography: references.bib
 
 ## Agenda
 
--   *Spillover from last class (10 minutes)*
-<!--- Drop for next semester and allocate this time to the core paper discussion +10 min  --->
-
--   Summative lecture for last class (20 minutes)
+-   Summative lecture for last class materials (20 minutes)
 
     -   Key principles
 
--   Core paper discussion (65 minutes, with break in middle)
+-   Core paper discussion (70 minutes, including break)
 
--   Summative lecture (15 minutes)
+-   Summative lecture on concepts (15 minutes)
 
     -   Defining a research landscape
     
--   Thinking about thinking (10 minutes)
+-   Thinking about thinking (15 minutes)
 
 # Lecture - principles
 

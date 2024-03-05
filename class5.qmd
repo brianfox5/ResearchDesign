@@ -10,23 +10,15 @@ bibliography: references.bib
 
 ## Agenda
 
-<!--- Drop RQ presentations for next go around --->
-
--   Wrap-up and Research Question Presentations (40 minutes)
-
 -   Conceptual grounding (10 minutes)
 
--   Quick introduction to this week's papers (10 minutes)
-
-<!--- -   Core paper discussion (50 minutes) --->
+-   Core paper discussion (45 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 9-12; 30 minutes)
+-   Compare-contrast presentation (Group 9-12; 40 minutes)
 
--   Summative lecture on concepts (15 minutes)
-
--   Key thinking tool: Directed acyclic graphs (15 minutes)
+-   Summative lecture on concepts (20 minutes)
 
 # Grounding
 
@@ -131,8 +123,6 @@ Key points
 
 - Experimental designs allow for a "do X" operation which make identification easier
 
-- What is perhaps more subtle is that ***each relationship is technically a hypothesis***, but you will focus your attention on the focal relationships of interest
-
 
 ## Break
 
@@ -144,9 +134,27 @@ Key points
 
 - Miller, K. D. & Tsang, E. W. K. 2011. Testing management theories: Critical realist philosophy and research methods. Strategic Management Journal, 32(2): 139-158.
 
-# Lecture - Models and hypotheses
+# Lecture - Hypotheses and models
 
-## Model building styles
+## Hypotheses: A method for accumulating knowledge
+
+> Knowledge accumulates through refining the theoretical statements at the top of the diagram, but it also accumulates as scholars cobble to- gether a better understanding of reality (Cart- wright, 1999) by improving their ability to de- velop and use representational models. Empirical support for hypotheses derived from a representational model demonstrates the use- fulness of that model in the proscribed context. [@harris2013, p. 447]
+
+## Hypotheses: A foundational element
+
+Given that hypotheses are so fundamental to model building, you would expect that I would have given you a reading about how to write them, right?
+
+Despite trying, I could not find a great one - the best I could find (drawn upon below is @neuman2014 in concert with @pearl2001 - both books)
+
+## Hypotheses: Some desiderata
+
+![Selected desiderata](assets/desiderata for hypotheses.png)
+
+## Hypotheses: Some anti-criteria
+
+![Selected anti-criteria](assets/anti-criteria for hypotheses.png)
+
+## Models: Styles of construction
 
 - Verbal theorizing: the standard method employed by most papers
 
@@ -154,33 +162,10 @@ Key points
 
 - Formal theory: use varies significantly by discipline
 
-## Hypotheses as a means to accumulate knowledge
+- Subtle point: ***Each relationship in a model   is technically a hypothesis***; you elect to focus on certain relationships of interest (e.g., the novel ones)
 
-> Bhaskar (2008) distinguishes between the domains of the real, actual, and empirical. The real domain consists of generative mechanisms, which refer to ‘the ways of acting of things’ (Bhaskar, 2008: 14).4 Through enabling or preventing change, mecha- nisms give rise to events in the actual domain. Some events are experienced, and some are not. The empirical domain is made up of events expe- rienced through direct or indirect observation [@miller2011, p. 144]
 
-## Hypotheses as a means to accumulate knowledge
-
-> Knowledge accumulates through refining the theoretical statements at the top of the diagram, but it also accumulates as scholars cobble to- gether a better understanding of reality (Cart- wright, 1999) by improving their ability to de- velop and use representational models. Empirical support for hypotheses derived from a representational model demonstrates the use- fulness of that model in the proscribed context. [@harris2013, p. 447]
-
-## Hypotheses as a means to test model validity
-
-![A model / theory testing process [@miller2011]](assets/theory testing.png)
-
-## Hypotheses as a foundational element
-
-Given that hypotheses are so fundamental to model building, you would expect that I would have given you a reading about how to write them, right?
-
-Despite trying, I could not find a great one - the best I could find (drawn upon below is @neuman2014 in concert with @pearl2001 - both books)
-
-## Hypotheses - some desiderata
-
-![Selected desiderata](assets/desiderata for hypotheses.png)
-
-## Hypotheses - some anti-criteria
-
-![Selected anti-criteria](assets/anti-criteria for hypotheses.png)
-
-## Progressing your final project - building a model 
+## Progressing your final project: Building a model 
 
 This week's readings should help start launching you on a trajectory to convert your research question into a **model** with associated **hypotheses**
 
@@ -194,70 +179,39 @@ These hypotheses are often one of three flavors:
 
 **Given the nature of this class, my preference is (1)**
 
+## Some example models
+
+
+![A tested model with results shown @fox2022](assets/example model 1.png)
+
+## Some example models
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+![A theoretical model that could be tested @simsek2022](assets/example model 2.png)
+:::
+
+::::
+
+## A counter-example
+
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+![A framework, not a model @simsek2015](assets/example framework.png)
+:::
+
+::::
+
+
 ## Preparation for next workshop
 
 > During our second in-person meeting, we will have another workshop session about four hours long. For the first two hours or so, **students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea.** Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
 
-# DAGs and formal theory
-
-## Key Thinking Tool: DAGs
-
-### [Directed]{.underline} *acyclic* **graph**
-
-**has nodes (constructs) and edges (relationships) **
-
-*there are no loops*
-
-[the relationships have a direction of influence (correlations are bidirectional)]{.underline}
-
-## Key Thinking Tool: DAGs
-
-![A Bayesian DAG model courtesy of [@pearl2001]](assets/Pearl 2001.png)
-
-
-## Why DAGs?
-
-They provide a visual tool to determine if the claims we make can possibly be causal [@pearl2010]
-
-They provide a scaffold upon which future researchers can more easily build
-
-And at a minimum, they force us to **write out our model explicitly** in terms of constructs and relationships 
-
-## Key Thinking Tool: Formal theory
-
-![An example analytic model from [@fox2021]](assets/formal theory example.png)
-
-## Why formal theory?
-
-1. precision and transparency 
-
-2. logical consistency, and 
-
-3. an ability to identify unanticipated implications [@adner2009, p. 202]
-
-
-## Integrating DAGs with formal theory
-
-- DAGs can make clear how a model fits within a larger set of nomological networks, be they theoretical or phenemenonological
-
-- Formal theorizing provides the tools to consider more complex relationships and nth-order effects than verbal theorizing readily affords, which tends to capture first-order, linear chains of logic [^1]
-
-
-[^1]: Note that linearity is not as constraining as it seems.  Linearity means that a tested function must be linear with respect to its **parameters**, not its **arguments**.  Thus, $y  = \beta x^2$ is permissable but $y = \beta^2x$ is not
-
-## Integrating DAGs with formal theory
-
-When might they be used together?
-
-- Empirical models of complex phenomena with many interactions
-
-- Seeking to isolate the causal effect of a subtle mechanism 
-
-When might they be better separated?
-
-- When theory development and empirical analyses are separated across papers
-
-When might they both be unnecessary?
 
 # Preparation for next class
 
@@ -288,3 +242,16 @@ When might they both be unnecessary?
 
 :::
   
+<!--- SCRAP
+
+
+## Hypotheses: Extracting knowledge from observations
+
+> Bhaskar (2008) distinguishes between the domains of the real, actual, and empirical. The real domain consists of generative mechanisms, which refer to ‘the ways of acting of things’ (Bhaskar, 2008: 14).4 Through enabling or preventing change, mecha- nisms give rise to events in the actual domain. Some events are experienced, and some are not. The empirical domain is made up of events expe- rienced through direct or indirect observation [@miller2011, p. 144]
+
+
+## Hypotheses: A means to validate a model
+
+![A model / theory testing process [@miller2011]](assets/theory testing.png)
+
+--->

@@ -55,7 +55,7 @@ In support of these goals, we will employ the following format for the majority 
 
 -   *Part I:* Conceptual grounding and agenda setting (10 minutes)
 
--   *Part II:* Core paper discussion (50 minutes):
+-   *Part II:* Core paper discussion (45 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
@@ -63,19 +63,17 @@ In support of these goals, we will employ the following format for the majority 
 
 -   *Break* (5 minutes)
 
--   *Part III:* Activity period (35 minutes):
+-   *Part III:* Activity period (40 minutes):
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
     -   (Weeks 8 -- 14) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and show the class the process
 
--   *Part IV:* Summative lecture on concepts (15 minutes):
+-   *Part IV:* Summative lecture on concepts (20 minutes):
 
     -   I will make a brief presentation to tie together and highlight key concepts
 
     -   Elements missed in the general discussion will be given greater focus
-
--   *Part V:* Open discussion (5 minutes)
 
 -   *Part VI:* Workshop (4 hours, in-person meetings only):
 
@@ -311,7 +309,7 @@ Please feel free to reach out to me with questions as you work on this assignmen
 
 ## APPENDIX B -- READINGS BY TOPIC
 
-A Dropbox link is available on Brightspace, which provides access to all of these readings by class, including book chapters (where applicable). Additional readings for each week for those of you who are interested in learning more about particular topics are available [here](assets/PHD 1506 further readings by week.docx).
+A Dropbox link is available on Brightspace, which provides access to all of these readings by class, including book chapters (where applicable). Additional readings for each week for those of you who are interested in learning more about particular topics are available [here](assets/PHD%201506%20further%20readings%20by%20week.docx).
 
 ### Research I: Principles
 

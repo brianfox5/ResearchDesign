@@ -1,0 +1,304 @@
+---
+title: "Class 6 - Elements III: Constructs and variables"
+format: 
+    html: default
+    beamer: 
+     theme: Berlin
+bibliography: references.bib
+---
+
+## Agenda
+
+-   Key thinking tool: DAGs x formal theory (15 minutes)
+
+-   Conceptual grounding (5 minutes)
+
+-   Core paper discussion (45 minutes)
+
+-   *Break*
+
+-   Compare-contrast presentation (Group 13-16; 40 minutes)
+
+-   Key thinking tool: Validity assessments (15 minutes)
+
+
+# DAGs and formal theory
+
+## Key Thinking Tool: DAGs
+
+### [Directed]{.underline} *acyclic* **graph**
+
+**has nodes (constructs) and edges (relationships) **
+
+*there are no loops*
+
+[the relationships have a direction of influence (correlations are bidirectional)]{.underline}
+
+## Key Thinking Tool: DAGs
+
+![A Bayesian DAG model courtesy of [@pearl2001]](assets/Pearl 2001.png)
+
+
+## Why DAGs?
+
+They provide a visual tool to determine if the claims we make can possibly be causal [@pearl2010]
+
+They provide a scaffold upon which future researchers can more easily build
+
+And at a minimum, they force us to **write out our model explicitly** in terms of constructs and relationships 
+
+## Key Thinking Tool: Formal theory
+
+![An example analytic model from [@fox2021]](assets/formal theory example.png)
+
+## Why formal theory?
+
+1. precision and transparency 
+
+2. logical consistency, and 
+
+3. an ability to identify unanticipated implications [@adner2009, p. 202]
+
+## Integrating DAGs with formal theory
+
+- DAGs can make clear how a model fits within a larger set of nomological networks, be they theoretical or phenemenonological
+
+- Formal theorizing provides the tools to consider more complex relationships and nth-order effects than verbal theorizing readily affords, which tends to capture first-order, linear[^1] chains of logic
+
+
+[^1]: Note that linearity is not as technically constraining as it may seem.  Linearity means that a tested function must be linear with respect to its **parameters**, not its **arguments**.  Thus, $y  = \beta x^2$ is permissable but $y = \beta^2x$ is not.  The issue is not so much a technical issue but straight-line thinking
+
+# Grounding
+
+## Making things real
+
+- Constructs: Bounding ideas to give them form
+
+- Variables: (Imperfectly) reifying constructs to make them observable
+
+# Readings for Today
+
+## Common Readings
+
+1. Suddaby, R. (2010). Editor’s Comments: Construct Clarity in Theories of Management and Organization. Academy of Management Review, 35(3), 346-357. https://doi.org/10.5465/amr.35.3.zok346
+
+2. Van Maanen, J., Sorensen, J. B., & Mitchell, T. R. 2007. The interplay between theory and method. Academy of Management Review 32(4): 1145-1154.
+
+3. Bagozzi, R. P., Yi, Y., & Phillips, L. W. (1991). Assessing Construct Validity in Organizational Research. Administrative Science Quarterly, 36, No. 3, 421-458. https://doi.org/10.2307/2393203
+
+
+## Suddaby (2010)
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+> Clear constructs are simply robust categories that distill phenomena into sharp distinctions that are comprehensible to a community of researchers — that is, animal, mineral, or vegetable; gas, liquid, or solid. [@suddaby2010, 346]
+
+:::
+
+:::{.column width="40%"}
+
+[![](assets/Suddaby 2010.png)](https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&dl=0)
+:::
+
+:::: 
+
+## Suddaby (2010)
+
+Discussion Questions 
+
+- Do you agree with Suddaby's definition of a construct?
+
+- Can you provide an example of a clear construct from your readings? Why is it so?
+
+- How about a construct that is completely unclear?  How could we make it better?
+
+## Suddaby (2010)
+
+The essence of construct clarity comprises four basic elements [@suddaby2010, 347]. 
+
+- Definitions: skillful use of language to persuasively create precise and parsimonious categorical distinctions 
+
+- Scope conditions: circumstances under which a construct will or will not apply 
+
+- Semantic relationships: how does the construct relate to others 
+
+- Coherence: consistency with relation to overall theoretical argument
+
+
+## Van Maanen Sorensen and Mitchell (2007)
+
+::::{.columns}
+
+:::{.column height="100%"}
+
+[![](assets/Van Maanen 2007.png)](https://www.dropbox.com/scl/fi/lq2pxgx5hl7gomoxnbyev/Van-Maanen-S-rensen-and-Mitchell-2007-84045.pdf?rlkey=4u0iuvwm9z12jnwfejmqe7lql&dl=0)
+
+:::
+
+::::
+
+## Van Maanen Sorensen and Mitchell (2007)
+
+Discussion Questions 
+
+- How does the interplay of theory and method play out when thinking about constructs and hypotheses?
+
+- How might constructs enable or constrain variable identification and vice versa?
+
+
+## Van Maanen Sorensen and Mitchell (2007)
+
+Key Points [@maanen2007,1147]
+
+Theory can drive method via:
+
+  - its stage of articulation 
+  
+  - the types of **constructs** it proposes
+  
+  - its descriptive or pre scriptive nature. 
+  
+Method can drive theory: 
+
+- analysis of configurations
+
+- simulation modeling
+
+- analysis of surprising or unexpected data (**variables**)
+
+
+## Bagozzi Yi and Phillips (1991)
+
+::::{.columns}
+
+::: {.column height="100%"}
+
+[![An example of an MTMM-centric CFA](assets/bagozzi et al 1991.png)](https://www.dropbox.com/scl/fi/s3t7p0kj9u09wwv1bim4m/Bagozzi-Yi-and-Phillips-1991-90392.pdf?rlkey=9weo660pk6cxc0x6sdqq2bqs4&dl=0)
+
+:::
+
+::::
+
+## Bagozzi Yi and Phillips (1991)
+
+Discussion questions
+
+- I know this was dense, what did you get out of this paper?
+
+- Based on this paper, how can we demonstrate construct validity?
+
+- Is this logic of all this just circular?
+
+
+## Bagozzi Yi and Phillips (1991)
+
+Key Points
+
+- Psychometric theory is predicated on a linkage between constructs and variables, different methods have different assumptions about their relationship
+
+- Variables have multiple sources of relevant variation - construct/trait, method/measurement tool, and idiosyncratic error
+
+- There are many ways to assess construct validity, each with its benefits and drawbacks
+
+## Break
+
+![](assets/break.png)
+
+## Compare / Contrast Presentations
+
+- Schaffer, J. A., DeGeest, D., & Li, A. 2016. Tackling the problem of construct proliferation: A guide to assessing discriminant validity of conceptually related constructs. Organizational Research Methods, 19: 80- 110.
+
+- Law, K. S., Wong, C.-S., & Mobley, W. H. (1998). Toward a Taxonomy of Multidimensional Constructs. The Academy of Management Review, 23(4), 741. https://doi.org/10.2307/259060
+
+
+# Validity assessments
+
+## Moving from a summation to tutorial focus
+ 
+Going forward, our "lecture" period will move away from tying the various papers together and rather using them as a gateway for us to talk about different tools and techniques for performing  analyses 
+
+## Types of validity: Construct-centric
+
+- Criterion validity: The extent to which an operationalization of a construct relates to, or predicts, a theoretically related behaviour or outcome [@cronbach1955 p. 282] (i.e., semantic relationships and coherence)
+
+- Content or "Face" validity: The extent to which the construct is comprises a sample of a universe in which the investigator is interested (does it look like a duck and quack like a duck?) (i.e., defintion and scope conditions) [@cronbach1955]
+
+## Types of validity: Construct-variable interface
+
+- "Dimensional" validity: The dimension of the constructs and the measures are appropriately specified with due attention paid in operationalization [@law1998]
+
+- Construct validity: The extent to which an operationalization measures the concept it is supposed to measure [@bagozzi1991, 421]
+
+## Types of validity: Variable-centric
+
+- Convergent validity: The degree to which multiple attempts to measure the same concept are in agreement [@bagozzi1991, 425]
+
+- Discriminant validity: The extent to which measures of theoretically distinct constructs are unrelated empirically to one another (Campbell & Fiske, 1959) [@shaffer2016]
+
+## One possible visualization of validity elements
+
+![](assets/validity elements.png)
+
+
+## Common tools for assessing validity
+
+- Cronbach's alpha (convergent validity) 
+
+  - there are many other "congeneric" tests
+
+- Multi-trait, multi-method matrices (MTMM) (convergent + divergent)
+  
+  - this is the canonical approach but relatively inflexible
+
+- Confirmatory factor analyses (convergent + divergent)
+
+  - As [@bagozzi1991] notes, there are many versions of this 
+
+- A whole bevy of tools for multi-level constructs 
+
+  - Some examples include ICC, Rwg, among others
+
+## Where does qualitative work fit into all of this?
+
+One interpretation is that qualitative work helps to ascertain the bounds of a construct of interest are and the face validity of any constructs that are subjected to quantitative analyses
+
+## Where does actual data fit into all of this?
+
+Where are our measures coming from?
+
+How might data availability enable or constrain the our ability to successfully explore the various elements of the above diagram?
+
+# Preparation for next class
+
+## Next class
+
+**Elements IV: Data and measures**
+
+1. Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+
+2. Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+
+3. Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+
+## Next class
+
+**Elements IV: Data and measures**
+
+4. Compare / Contrast
+
+- Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+
+- Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+
+
+
+
+## References 
+
+:::{refs}
+
+:::
+
+<!--- Note: should probably swap out the van Maanen paper for something else more on target next time and make it reading for the theory / phenonemna day - not sure if better than the existing required readings or if it should be in the supplement --->

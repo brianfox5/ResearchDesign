@@ -10,7 +10,7 @@ bibliography: references.bib
 
 ## Agenda
 
--   Introductions (45 minutes)
+-   Introductions (55 minutes)
 
     -   Getting to know each other
     -   Syllabus and materials overview
@@ -18,7 +18,7 @@ bibliography: references.bib
   
 -   Break (5 minutes)
 
--   Readings for today (70 minutes)
+-   Readings for today (60 minutes)
 
 # Introductions
 
@@ -66,19 +66,19 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
 ## Typical class flow
 
--   *Part I:* Conceptual grounding and agenda setting (10 minutes)
+-   *Part I:* Conceptual grounding and agenda setting
 
--   *Part II:* Core paper discussion (50 minutes):
+-   *Part II:* Core paper discussion
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 
     -   These papers typically will provide a mix of conceptual background and how-to guides
     
--   *Break* (5 minutes)
+-   *Break* 
 
 ## Typical class flow
 
--   *Part III:* Activity period (35 minutes):
+-   *Part III:* Activity period
 
     -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
@@ -86,14 +86,12 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
 ## Typical class flow
 
--   *Part IV:* Summative lecture on concepts (15 minutes):
+-   *Part IV:* Summative lecture on concepts
 
     -   I will make a brief presentation to tie together and highlight key concepts
 
     -   Elements missed in the general discussion will be given greater focus
   
--   *Part V:* Open discussion (5 minutes)
-
 
 # Readings for Today
 
