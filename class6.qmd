@@ -84,7 +84,7 @@ And at a minimum, they force us to **write out our model explicitly** in terms o
 
 1. Suddaby, R. (2010). Editor’s Comments: Construct Clarity in Theories of Management and Organization. Academy of Management Review, 35(3), 346-357. https://doi.org/10.5465/amr.35.3.zok346
 
-2. Van Maanen, J., Sorensen, J. B., & Mitchell, T. R. 2007. The interplay between theory and method. Academy of Management Review 32(4): 1145-1154.
+2. Larsen, K, Bong, CH. 2016. A tool for addressing construct identity in literature reviews and meta-analyses. MIS Quarterly 40, No. 3: 529-552.
 
 3. Bagozzi, R. P., Yi, Y., & Phillips, L. W. (1991). Assessing Construct Validity in Organizational Research. Administrative Science Quarterly, 36, No. 3, 421-458. https://doi.org/10.2307/2393203
 
@@ -129,46 +129,29 @@ The essence of construct clarity comprises four basic elements [@suddaby2010, 34
 - Coherence: consistency with relation to overall theoretical argument
 
 
-## Van Maanen Sorensen and Mitchell (2007)
+## Larsen and Bong (2016)
 
 ::::{.columns}
 
 :::{.column height="100%"}
 
-[![](assets/Van Maanen 2007.png)](https://www.dropbox.com/scl/fi/lq2pxgx5hl7gomoxnbyev/Van-Maanen-S-rensen-and-Mitchell-2007-84045.pdf?rlkey=4u0iuvwm9z12jnwfejmqe7lql&dl=0)
+REPLACE
 
 :::
 
 ::::
 
-## Van Maanen Sorensen and Mitchell (2007)
+## Larsen and Bong (2016)
 
 Discussion Questions 
 
-- How does the interplay of theory and method play out when thinking about constructs and hypotheses?
-
-- How might constructs enable or constrain variable identification and vice versa?
+REPLACE
 
 
-## Van Maanen Sorensen and Mitchell (2007)
 
-Key Points [@maanen2007,1147]
+## Larsen and Bong (2016)
 
-Theory can drive method via:
-
-  - its stage of articulation 
-  
-  - the types of **constructs** it proposes
-  
-  - its descriptive or pre scriptive nature. 
-  
-Method can drive theory: 
-
-- analysis of configurations
-
-- simulation modeling
-
-- analysis of surprising or unexpected data (**variables**)
+REPLACE
 
 
 ## Bagozzi Yi and Phillips (1991)

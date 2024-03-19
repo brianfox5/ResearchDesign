@@ -131,11 +131,14 @@ Appendix B includes a list of required readings for the topics that we discuss. 
 
 #### *Electronic textbooks built with R Markdown (nice quick-access references):*
 
+-   https://theeffectbook.net/ch-TheDesignofResearch.html
+
+-   https://book.declaredesign.org/declaration-diagnosis-redesign/specifying-model.html 
+
 -   https://bookdown.org/ejvanholm/Textbook/
 
--   https://book.declaredesign.org/declaration-diagnosis-redesign/specifying-model.html
-
 -   https://www.econometrics-with-r.org/
+
 
 ### VI. SCHOOL POLICIES
 
@@ -377,7 +380,7 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 1.  Suddaby, R. (2010). Editor's Comments: Construct Clarity in Theories of Management and Organization. Academy of Management Review, 35(3), 346-357. https://doi.org/10.5465/amr.35.3.zok346
 
-2.  Van Maanen, J., Sorensen, J. B., & Mitchell, T. R. 2007. The interplay between theory and method. Academy of Management Review 32(4): 1145-1154.
+2.  Larsen, K, Bong, CH. 2016. A tool for addressing construct identity in literature reviews and meta-analyses. MIS Quarterly 40, No. 3: 529-552.
 
 3.  Bagozzi, R. P., Yi, Y., & Phillips, L. W. (1991). Assessing Construct Validity in Organizational Research. Administrative Science Quarterly, 36, No. 3, 421-458. https://doi.org/10.2307/2393203
 
@@ -445,7 +448,8 @@ Applications:
 
 Applications:
 
-3.  Angrist, J. D., & Krueger, A. B. 1991. Does Compulsory School Attendance Affect Schooling and Earnings. The Quarterly Journal of Economics, 106(4), 979-1014.
+3. Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.
+
 4.  Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
 ### Design I: (Quasi-)experimental data
@@ -464,9 +468,10 @@ Applications:
 
 1.  Ployhart, R.E. and R.J. Vandenberg. 2010. Longitudinal Research: The Theory, Design and Analysis of Change. Journal of Management, 36(1): 94-120.
 
-2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548. Applications:
+2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548. 
 
 Applications:
 
 3.  Certo, S. T., Withers, M. C., & Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.
+
 4.  Replication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)

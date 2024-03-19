@@ -1,0 +1,16 @@
+---
+title: "Proposed changes"
+format: 
+    html: default
+
+---
+
+Swap Cinelli et al 2022 for the Pearl 2010 article in Week 5
+
+Swap out van maanen et al 2007 for a different article in Week 6
+
+most of the other content changes and simplifications have been taking place on the fly, but reading changes need to wait until the end of the semester 
+
+
+
+

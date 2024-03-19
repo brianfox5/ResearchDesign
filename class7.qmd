@@ -1,0 +1,514 @@
+---
+title: "Class 7 - Elements IV: Measures and data"
+format: 
+    html: default
+    beamer: 
+     theme: Berlin
+bibliography: references.bib
+---
+
+## Agenda
+
+-   Conceptual grounding (10 minutes)
+
+-   Core paper discussion (30 minutes)
+
+-   Key thinking tool: Descriptive statistics (15 minutes)
+
+-   *Break*
+
+-   Final Compare-contrast presentation (Group 17-20; 40 minutes)
+
+-   Tying it together: From elements to execution (15 minutes)
+
+# Grounding
+
+## The rubber meets the road
+
+- Measures: Translating our variables into concrete measures (these do not need to be 1 to 1)
+
+- (Sourcing) Data: Where are we going to find these measures?
+
+# Readings for Today
+
+## Common Readings
+
+1. Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+
+2. Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+
+3. Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+
+
+## Stevens (1946)
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+> Paraphrasing N. R. Campbell (Final Report, p. 340),. we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. The fact that numerals can be assigned under different rules leads to different kinds of scales and different kinds of
+measurement. [@stevens1946, 677]
+
+:::
+
+:::{.column width="40%"}
+
+[![](assets/Stevens 1946.png)](https://www.dropbox.com/scl/fi/3lfx85tfizkb6henemnfq/Stevens-1946-198797.pdf?rlkey=8ofyudwtbv4fj5txuvewq06jp&dl=0)
+:::
+
+:::: 
+
+## Stevens (1946)
+
+Discussion Questions 
+
+- Are there types of measurements that are not discussed in this article?
+
+- What would happen if you make inferences about a measurement using the wrong type of scale?
+
+
+## Stevens (1946)
+
+Basically, I grabbed this seminal paper to show where the different scales of measurement originated from: these are commonly referenced categories.
+
+![](assets/Stevens 1946 scales.png)
+
+
+## Heggestad et al (2019)
+
+::::{.columns}
+
+::: {.column height="100%"}
+
+[![](assets/Heggestad et al 2019.png)](https://www.dropbox.com/scl/fi/nqxuttbuymt4hjzxwa7dn/Heggestad-et-al.-2019-260864.pdf?rlkey=fhpcma39vk6rje8n4dua5cdb1&dl=0)
+
+:::
+
+::::
+
+## Heggestad et al (2019)
+
+Discussion questions
+
+- What is a scale, again?
+
+- Why would you want to change one that is already in the literature?
+
+## Heggestad et al (2019)
+
+Key points
+
+- Scales are very common, particularly in micro research
+
+- They are a common basis to establish construct validity
+
+- They are an example of where data and variables are not 1 to 1, and thus adaptations are possible
+
+- While I would argue some of this concern is a bit overblown, the point is conceded that material changes to a scale may unmoor it from its validated basis
+
+## Bedian (2014)
+
+Discussion Questions 
+
+- Did you know you could extract so much information from a single table?
+
+- While this is a nice list of 'sanity checks', is this really all that descriptive statistics can tell us? 
+
+## Bedian (2014)
+
+The 12-point checklist
+
+1. Disclosed Mean, SD, Correlations
+2. Sensible frequency distributions 
+3. Feasible standard deviations
+4. Reported reliabilities (multi-item scales)
+5. Feasible correlations
+6. Wonky looking scatterplots
+
+## Bedian (2014)
+
+The 12-point checklist
+
+7. Accounted for common data collection methods
+8. "Correct" signs (see also @kennedy2008)
+9. Assessment of collinearity (e.g., VIFs)
+10. Sensible "point-biserial" (e.g., binary) correlations?
+11. Disclosed data missingness
+12. Disclosed sampling procedure
+
+
+# Descriptive statistics
+
+## The power of descriptives
+
+Quick reminder:
+
+- [Descriptive statistics](https://dictionary.apa.org/descriptive-statistics): Procedures for depicting the main aspects of sample data, without necessarily inferring to a larger population 
+
+- [Inferential statistics](https://dictionary.apa.org/inferential-statistics): Techniques that allow inferences about characteristics of a population to be drawn from a sample of data from that population 
+
+## The power of descriptives
+
+Descriptive statistics help you understand and tell the **story** of your data and the sample it is drawn from
+
+Inferential statistics provide you the means to generalize that story beyond your sample given certain assumptoins (often, but not always, by appealing to a parametric model)
+
+## Essentials: Distributions and summary statistics
+
+[Probability distribution](https://en.wikipedia.org/wiki/Probability_distribution): A mathematical description of a random phenomenon in terms of its sample space and the probabilities of events (subsets of the sample space)
+
+Many of the properties of a distribution can be summarized by its [moments](https://en.wikipedia.org/wiki/Random_variable#Moments):
+
+- Mean or expected value
+
+- Variance (or deviations from the mean)
+
+But other descriptives are often very informative, such as interquartile range (IQR), range (Max - Min), and others.
+
+## Example 1: A normal distribution
+
+:::: {.columns}
+
+::: {.column height="90%"}
+
+```{r}
+#| label: fig-normal
+#| echo: false
+#| fig-cap: A normal distribution
+
+library(ggplot2)
+library(tidyverse)
+
+
+set.seed(100)
+
+normal10 <- rnorm(n = 10, mean = 0, sd = 1)
+normal100 <- rnorm(n = 100, mean = 0, sd = 1)
+normal1000 <- rnorm(n=1000,mean=0, sd = 1)
+
+uniform <- runif(n = 100, min = -2, max = 2)
+uniformskew <- runif(n = 100, min = 2, max = 10)
+lognormal <- exp(normal1000)
+
+
+
+meanlogn <- summary(lognormal)[4]
+medianlogn <- summary(lognormal)[3]
+sdlogn <- sd(lognormal)
+sdpluslogn <- meanlogn + sdlogn
+sdminuslogn <- meanlogn - sdlogn
+
+normal <- normal1000
+meann <- summary(normal1000)[4]
+mediann <- summary(normal1000)[3]
+sdn <- sd(normal1000)
+sdplusn <- meann + sdn
+sdminusn <- meann - sdn
+groupvar <- c(rep(1,333),rep(2,333),rep(3,334))
+yearvar <- c(rep(1:10,100))
+normaltrend <- normal1000*1.1*yearvar
+             
+
+distributions <- as_tibble(cbind(normal10,normal100,normal1000,uniform,lognormal,yearvar,normaltrend))
+
+distributions$groupvar <- as.factor(groupvar)
+
+ggplot(distributions, aes(x=normal1000)) + geom_histogram(bins=100) + geom_vline(xintercept=meann,color="red") + geom_vline(xintercept=mediann,color="blue") +
+geom_vline(xintercept=sdplusn,color="green") +  
+geom_vline(xintercept=sdminusn,color="green") +
+  geom_density(alpha = .9)
+
+```
+
+:::
+
+::::
+
+Note the mean (red), median (blue), and standard deviations (green).  A normal distribution can be completely summarized by its mean and variance.
+
+
+## Example 2: A log-normal distribution
+
+:::: {.columns}
+
+::: {.column height="90%"}
+
+```{r}
+#| label: fig-lognormal
+#| echo: false
+#| fig-cap: A log-normal distribution
+
+ggplot(distributions, aes(x=lognormal)) + geom_histogram(bins=100) + geom_vline(xintercept=meanlogn, color="red") + geom_vline(xintercept=medianlogn,color="blue") +
+geom_vline(xintercept=sdpluslogn,color="green") +  
+geom_vline(xintercept=sdminuslogn,color="green") +
+  geom_density(alpha = .9)
+
+```
+
+:::
+
+::::
+
+By contrast, in this distribution the mean and median diverge, and the standard deviations are wonky - more information is required to characterize this distribution. 
+
+
+## Essentials: Distributions and summary statistics
+
+Note how the summary statistics distill key features without seeing the whole thing.
+
+```{r}
+
+paste("Normal Distribution")
+summary(normal)
+paste("SD:", round(sd(normal),3))
+
+paste("Log-Normal Distribution")
+summary(lognormal)
+paste("SD:", round(sd(lognormal),3))
+
+```
+
+## Essentials: Univariate visualizations
+
+Histograms (shown above) are very useful, but other tools like boxplots can be just as helpful to identify issues, such as outliers.
+
+:::: {.columns}
+
+::: {.column height="90%"}
+
+```{r}
+
+ggplot(data=distributions,aes(x=normal,fill=groupvar))+geom_boxplot()
+
+```
+:::
+
+::::
+## Essentials: Correlation matrices
+
+When we move to multiple variables, correlation matrices take center stage, often complemented by scatterplots [@bedian2014].
+
+![](assets/Bedian 2014.png)
+
+## Essentials: Scatterplots and trendlines
+
+Here is an example **multi-graph**, with "marginal" rug plot, scatterplot, and linear trend.  
+
+
+:::: {.columns}
+
+::: {.column height="100%"}
+
+```{r}
+
+ggplot(data=distributions,aes(x=yearvar,y=normaltrend))+geom_rug()+geom_smooth(method="lm", se=T)+geom_point()
+
+```
+:::
+
+::::
+
+## Catching issues
+
+Doing a thorough review of your data through a descriptive lens can help identify issues that will turn up in your analysis, such as:
+
+- Deceptive descriptives - a.k.a. [the datasaurus dozen](https://blog.revolutionanalytics.com/2017/05/the-datasaurus-dozen.html)
+
+- Range restriction or selection issues - no data for certain conditions
+
+- Non-linearity - potential cut-off or non-linear effects
+
+- Heteroskedasticity - uneven variances across the distribution or group-level effects
+
+- Outliers - influential observations that throw off a trendline (n.b.: [when are outliers noise and when are they the signal](https://pubsonline.informs.org/doi/abs/10.1287/stsc.2018.0064)?)
+
+## Catching issues: Anscombe's quartet
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+![Anscombes' Quartet](assets/anscombes quartet.png)
+
+:::
+
+:::{.column width="50%"}
+
+![The Datasaurus Dozen](assets/datasaurus dozen.png)
+
+:::
+
+::::
+
+## Catching issues: Simpson's paradox
+
+
+![Simpson's Paradox](assets/simpsons_paradox.png)
+
+## Telling stories with data
+
+Beyond being a prelude to inferential analyses, descriptives can also help to tell your story directly
+
+- Cross-tabulations (i.e., 2x2s)
+
+- Group comparisons (e.g., pre- / post- intervention)
+
+- "Existence proofs" (presence and/or variation of a construct)
+
+## Telling stories: Cross-tabulations
+
+![Cross-tab example](assets/crosstabexample.png)
+
+## Telling stories: Group comparisons
+
+![Showing, not telling the results of a regression discontinuity design](assets/rdd_hoekstra1.jpg)
+
+
+
+## Break
+
+![](assets/break.png)
+
+# Readings for Today II
+
+
+## Compare / Contrast Presentations
+
+- Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+
+- Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+
+## Sourcing data
+
+Given the variation in your interests and topics, it is not productive to talk at length about data sourcing since it is unique to your circumstances
+
+But here are some ideas on the following two slides
+
+## Sourcing data - Primary sources
+
+Collecting specifically what you need for a study
+
+- Field surveys 
+
+- Experiments (lab or field)
+
+- Interviews / focus groups 
+
+- Direct observation / ethnographic methods
+
+## Sourcing data - Secondary sources
+
+Relying upon others to collect data or using 'unobstrusive' measures
+
+- Archival datasets (e.g., Factiva, COMPUSTAT, Biocentury, SDC)
+
+- Publicly available survey data (e.g., Kauffman Firm Survey, Census ACS)
+
+- Industry reports (e.g., Wohler's Reports)
+
+- Video, audio, or written artifacts (CEO speeches, earnings calls, 10-Ks, website scraping)
+
+- Cliometric methods (historical archives)
+
+# From elements to execution
+
+## A pictoral representation of the research process
+
+On the following slide, I illustrate how the class fits together
+
+- Note that it assumes that the intent is to complete a quantitative, empirical project, but I have indicated "offramps" to other types of contributions in red
+
+- Class content is indicated in blue
+
+- Information relied upon from 'outside the system' is shown in green
+
+## A pictoral representation of the research process
+
+![](assets/researchprocess.png){width=80%}
+
+## Our paradigm going forward
+
+
+ The balance of the class is rooted in a paradigm 
+
+Not sure what elements are necessary or sufficient  conditions 
+
+We built a model
+
+
+Three layers to a model
+
+
+Assume: we want to recover causal effect 
+
+Truth and estimation:
+
+Accuracy of Estimate
+Unbiasedness
+Backup plan: consistency
+
+Precision of estimate 
+“Efficiency”
+
+
+Theoretical model
+Broader phenomenological reality
+Statistical requirements for inference
+
+Why regression 
+
+CEF
+
+RUBINS Potential outcomes
+
+
+
+## How your model fits within this paradigm
+
+On the following slide, I illustrate how your focal model compares to the wider system of relationships
+
+- Note that you may need to include elements outside of your model of interest to specify the causal system (as discussed in Class 5: Models + Hypotheses)
+
+- Also note that our model may be influenced by observable and unobservable factors (as we discussed in Class 6: Constructs + Variables)
+
+- This presumes you have a story you want to understand rather than trying to maximize the predictability of the DV (a different question to answer)
+
+## How your model fits in the big picture
+
+![](assets/modelofinterest.png){width=80%}
+
+
+# Preparation for next class
+
+## Next class
+
+**Techniques I: Regression**
+
+1.  Kennedy, P. 2008. A Guide to Econometrics (6th Edition ed.). Malden, MA: Blackwell. \[Chs. 3 and 4\]
+
+2.  Carlson, K. D., & Wu, J. 2012. The illusion of statistical control: Control variable practice in management.
+
+## Next class
+
+**Techniques I: Regression**
+
+Applications:
+
+3.  Replication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+
+4.  Katila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.
+
+## How it will work
+
+Everyone should read the first two articles in detail, they provide grounding
+
+Everyone should have a working familiarity with the application papers (what the study is about, how the tests were performed, key findings)
+
+One group will actively **try to replicate** the findings with data and code that I provide and report out the process 
+
+
+## References 
+
+:::{refs}
+
+:::

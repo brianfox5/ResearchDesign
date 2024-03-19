@@ -1,0 +1,49 @@
+---
+title: "Class 14 - Concluding Remarks"
+format: 
+    html: default
+    beamer: 
+     theme: Berlin
+bibliography: references.bib
+---
+
+## Agenda
+
+No gos - common errors in analysis
+
+Lagged dv + mixed effects of any type 
+
+Forbidden regression 
+
+No exclusion condition or instrument for heckman / 2sls
+
+No checking for where inflection point is for u shaped relationships
+
+Not checking mediation conditions per Mathieu and Taylor
+
+Not checking the validity of difference scores per edwards
+
+Bad controls 
+
+Outliers and diagostics
+
+## Next class
+
+**Elements IV: Data and measures**
+
+4. Compare / Contrast
+
+- Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+
+- Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+
+
+
+
+## References 
+
+:::{refs}
+
+:::
+
+<!--- Note: should probably swap out the van Maanen paper for something else more on target next time and make it reading for the theory / phenonemna day - not sure if better than the existing required readings or if it should be in the supplement --->
