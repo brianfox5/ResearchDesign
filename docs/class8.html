@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PhD 1506 - Research Design - Class 8 - Techniques I - Regression</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PhD 1506 - Research Design</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./classes.html" rel="" target="">
+ <span class="menu-text">Classes</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link active" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#the-logic-of-regression" id="toc-the-logic-of-regression" class="nav-link" data-scroll-target="#the-logic-of-regression">The logic of regression</a>
+  <ul class="collapse">
+  <li><a href="#preamble" id="toc-preamble" class="nav-link" data-scroll-target="#preamble">Preamble</a></li>
+  <li><a href="#what-is-a-regression" id="toc-what-is-a-regression" class="nav-link" data-scroll-target="#what-is-a-regression">What is a regression?</a></li>
+  <li><a href="#what-is-a-beta-coefficient" id="toc-what-is-a-beta-coefficient" class="nav-link" data-scroll-target="#what-is-a-beta-coefficient">What is a beta coefficient?</a></li>
+  <li><a href="#whats-with-the-name-regression" id="toc-whats-with-the-name-regression" class="nav-link" data-scroll-target="#whats-with-the-name-regression">What’s with the name “regression”?</a></li>
+  <li><a href="#what-do-we-usually-mean-when-we-say-regression" id="toc-what-do-we-usually-mean-when-we-say-regression" class="nav-link" data-scroll-target="#what-do-we-usually-mean-when-we-say-regression">What do we usually mean when we say “regression”?</a></li>
+  <li><a href="#what-is-ols-doing" id="toc-what-is-ols-doing" class="nav-link" data-scroll-target="#what-is-ols-doing">What is OLS doing?</a></li>
+  <li><a href="#a-sample-data-generating-process" id="toc-a-sample-data-generating-process" class="nav-link" data-scroll-target="#a-sample-data-generating-process">A sample data generating process</a></li>
+  <li><a href="#a-sample-data-generating-process-1" id="toc-a-sample-data-generating-process-1" class="nav-link" data-scroll-target="#a-sample-data-generating-process-1">A sample data generating process</a></li>
+  <li><a href="#ols-as-a-mathematical-procedure" id="toc-ols-as-a-mathematical-procedure" class="nav-link" data-scroll-target="#ols-as-a-mathematical-procedure">OLS as a mathematical procedure</a></li>
+  <li><a href="#ols-as-a-mathematical-procedure-1" id="toc-ols-as-a-mathematical-procedure-1" class="nav-link" data-scroll-target="#ols-as-a-mathematical-procedure-1">OLS as a mathematical procedure</a></li>
+  <li><a href="#ols-as-an-estimator" id="toc-ols-as-an-estimator" class="nav-link" data-scroll-target="#ols-as-an-estimator">OLS as an “estimator”</a></li>
+  <li><a href="#ols-as-an-estimator-1" id="toc-ols-as-an-estimator-1" class="nav-link" data-scroll-target="#ols-as-an-estimator-1">OLS as an “estimator”</a></li>
+  <li><a href="#ols---estimation-v.-reality" id="toc-ols---estimation-v.-reality" class="nav-link" data-scroll-target="#ols---estimation-v.-reality">OLS - Estimation v. reality</a></li>
+  <li><a href="#verifying-our-beta-coefficient-formula" id="toc-verifying-our-beta-coefficient-formula" class="nav-link" data-scroll-target="#verifying-our-beta-coefficient-formula">Verifying our beta coefficient formula</a></li>
+  <li><a href="#what-is-a-regression---prediction-versus-explanation" id="toc-what-is-a-regression---prediction-versus-explanation" class="nav-link" data-scroll-target="#what-is-a-regression---prediction-versus-explanation">What is a regression? - Prediction versus explanation</a></li>
+  <li><a href="#why-linear-regression-and-ols-in-particular" id="toc-why-linear-regression-and-ols-in-particular" class="nav-link" data-scroll-target="#why-linear-regression-and-ols-in-particular">Why linear regression and OLS in particular?</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function" id="toc-approximates-the-conditional-expectation-function" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function-1" id="toc-approximates-the-conditional-expectation-function-1" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function-1">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function-2" id="toc-approximates-the-conditional-expectation-function-2" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function-2">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#best-linear-unbiased-estimator-blue" id="toc-best-linear-unbiased-estimator-blue" class="nav-link" data-scroll-target="#best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</a></li>
+  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions" id="toc-equivalent-to-mle-and-map-under-certain-conditions" class="nav-link" data-scroll-target="#equivalent-to-mle-and-map-under-certain-conditions">“Equivalent to MLE and MAP under certain conditions”</a></li>
+  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions-1" id="toc-equivalent-to-mle-and-map-under-certain-conditions-1" class="nav-link" data-scroll-target="#equivalent-to-mle-and-map-under-certain-conditions-1">“Equivalent to MLE and MAP under certain conditions”</a></li>
+  <li><a href="#aside-an-example-of-how-likelihood-functions-work" id="toc-aside-an-example-of-how-likelihood-functions-work" class="nav-link" data-scroll-target="#aside-an-example-of-how-likelihood-functions-work">Aside: An example of how likelihood functions work</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal" id="toc-when-is-linear-regression-appropriate-and-or-optimal" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-1" id="toc-when-is-linear-regression-appropriate-and-or-optimal-1" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-1">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-2" id="toc-when-is-linear-regression-appropriate-and-or-optimal-2" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-2">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-3" id="toc-when-is-linear-regression-appropriate-and-or-optimal-3" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#aside-alternative-estimators-when-olsgls-not-applicable" id="toc-aside-alternative-estimators-when-olsgls-not-applicable" class="nav-link" data-scroll-target="#aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</a></li>
+  </ul></li>
+  <li><a href="#performing-a-regression-analysis" id="toc-performing-a-regression-analysis" class="nav-link" data-scroll-target="#performing-a-regression-analysis">Performing a regression analysis</a>
+  <ul class="collapse">
+  <li><a href="#how-to-properly-perform-a-regression-analysis" id="toc-how-to-properly-perform-a-regression-analysis" class="nav-link" data-scroll-target="#how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</a></li>
+  <li><a href="#the-column-variable-perspective" id="toc-the-column-variable-perspective" class="nav-link" data-scroll-target="#the-column-variable-perspective">The column (variable) perspective</a></li>
+  <li><a href="#the-row-observation-perspective" id="toc-the-row-observation-perspective" class="nav-link" data-scroll-target="#the-row-observation-perspective">The row (observation) perspective</a></li>
+  <li><a href="#deep-dive-do-we-have-the-right-variables" id="toc-deep-dive-do-we-have-the-right-variables" class="nav-link" data-scroll-target="#deep-dive-do-we-have-the-right-variables">Deep dive: Do we have the right variables?</a></li>
+  <li><a href="#the-issue-omitted-variable-bias" id="toc-the-issue-omitted-variable-bias" class="nav-link" data-scroll-target="#the-issue-omitted-variable-bias">The issue: Omitted variable bias</a></li>
+  <li><a href="#the-issue-omitted-variable-bias-1" id="toc-the-issue-omitted-variable-bias-1" class="nav-link" data-scroll-target="#the-issue-omitted-variable-bias-1">The issue: Omitted variable bias</a></li>
+  <li><a href="#the-flip-side-the-illusion-of-statistical-control" id="toc-the-flip-side-the-illusion-of-statistical-control" class="nav-link" data-scroll-target="#the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</a></li>
+  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</a></li>
+  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</a></li>
+  <li><a href="#statistical-inference" id="toc-statistical-inference" class="nav-link" data-scroll-target="#statistical-inference">Statistical inference</a></li>
+  <li><a href="#statistical-inference-1" id="toc-statistical-inference-1" class="nav-link" data-scroll-target="#statistical-inference-1">Statistical inference</a></li>
+  <li><a href="#statistical-inferences-you-can-draw" id="toc-statistical-inferences-you-can-draw" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw">Statistical inferences you can draw</a></li>
+  <li><a href="#statistical-inferences-you-can-draw-1" id="toc-statistical-inferences-you-can-draw-1" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw-1">Statistical inferences you can draw</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples:</a></li>
+  <li><a href="#aside-statistical-inference-and-p-hacking" id="toc-aside-statistical-inference-and-p-hacking" class="nav-link" data-scroll-target="#aside-statistical-inference-and-p-hacking">Aside: Statistical inference and p-hacking</a></li>
+  <li><a href="#statistical-inferences-and-p-hacking" id="toc-statistical-inferences-and-p-hacking" class="nav-link" data-scroll-target="#statistical-inferences-and-p-hacking">Statistical inferences and p-hacking</a></li>
+  <li><a href="#the-flip-side-of-significance-statistical-power" id="toc-the-flip-side-of-significance-statistical-power" class="nav-link" data-scroll-target="#the-flip-side-of-significance-statistical-power">The flip side of significance: Statistical power</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
+  <ul class="collapse">
+  <li><a href="#application-readings" id="toc-application-readings" class="nav-link" data-scroll-target="#application-readings">Application readings</a></li>
+  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002" class="nav-link" data-scroll-target="#katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
+  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021" class="nav-link" data-scroll-target="#simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
+  <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
+  <li><a href="#replication-presentation" id="toc-replication-presentation" class="nav-link" data-scroll-target="#replication-presentation">Replication Presentation</a></li>
+  </ul></li>
+  <li><a href="#general-discussion" id="toc-general-discussion" class="nav-link" data-scroll-target="#general-discussion">General Discussion</a></li>
+  <li><a href="#preparation-for-next-class" id="toc-preparation-for-next-class" class="nav-link" data-scroll-target="#preparation-for-next-class">Preparation for next class</a>
+  <ul class="collapse">
+  <li><a href="#next-class" id="toc-next-class" class="nav-link" data-scroll-target="#next-class">Next class</a></li>
+  <li><a href="#next-class-1" id="toc-next-class-1" class="nav-link" data-scroll-target="#next-class-1">Next class</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="class8.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Class 8 - Techniques I - Regression</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="agenda" class="level2">
+<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<ul>
+<li><p>The logic of regression: what, why, when, how (40 minutes)</p></li>
+<li><p>Application paper discussion (20 minutes)</p></li>
+<li><p><em>Break</em></p></li>
+<li><p>Replication presentation (Group 1-3-5; 40 minutes)</p></li>
+<li><p>General discussion (15 minutes)</p></li>
+</ul>
+</section>
+<section id="the-logic-of-regression" class="level1">
+<h1>The logic of regression</h1>
+<section id="preamble" class="level2">
+<h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
+<p>I will weave in the “core” papers as needed in my remarks later, but we will not discuss them in detail per se</p>
+<p>WARNING: I am going deeper into the weeds this week, but we will come back up to a higher level soon</p>
+</section>
+<section id="what-is-a-regression" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-regression">What is a regression?</h2>
+<p>The multiple linear regression <strong>model</strong> is used to study the relationship between a dependent variable (<span class="math inline">\(y\)</span>) and one or more independent variables (<span class="math inline">\(X\)</span>). The generic form of the linear regression model is <span class="citation" data-cites="greene2012">(<a href="#ref-greene2012" role="doc-biblioref">Greene 2012</a>)</span>:</p>
+<p><span class="math display">\[\pmb y = \pmb X\pmb\beta + \pmb\epsilon\]</span></p>
+<p>where <span class="math inline">\(\beta\)</span> is computed as follows:</p>
+<p><span class="math display">\[(\pmb X^T\pmb X)^{-1}(\pmb X^T\pmb y)=\pmb \beta\]</span></p>
+<p>Let’s figure out why…</p>
+</section>
+<section id="what-is-a-beta-coefficient" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-beta-coefficient">What is a beta coefficient?</h2>
+<p>Small aside: Note that in a “simple” (bivariate) regression with just one predictor and an intercept</p>
+<p><span class="math display">\[y = \beta_0+\beta_1x + \epsilon\]</span></p>
+<p>this funky formula is essentially:</p>
+<p><span class="math display">\[Cov(x,y)/Var(x)=\beta_1\]</span></p>
+<p>Note that in the multiple regression case, the same logic applies but to covariances and variances that have been “residualized” by accounting for all of the other X variables in the equation <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span></p>
+</section>
+<section id="whats-with-the-name-regression" class="level2">
+<h2 class="anchored" data-anchor-id="whats-with-the-name-regression">What’s with the name “regression”?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>“<a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean">Galton</a> observed that extreme characteristics (e.g., height) in parents are not passed on completely to their offspring. Rather, the characteristics in the offspring <strong>regress</strong> toward a mediocre point (a point which has since been identified as the mean)” (Wikipedia)</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean#/media/File:Galton's_correlation_diagram_1875.jpg"><img src="assets/galtondiagram.jpeg" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="what-do-we-usually-mean-when-we-say-regression" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-we-usually-mean-when-we-say-regression">What do we usually mean when we say “regression”?</h2>
+<p>The term “regression” is often used synonomously with a particular technique: <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">ordinary least squares</a> (OLS).</p>
+<ul>
+<li><p>Essentially, OLS and its generalizations (e.g., WLS, GLS, discussed later) seek to minimize the distance between observed and predicted values</p></li>
+<li><p>It is constrained in this task in that only the data provided by X can be used, and that there are too many observations to simply interpolate</p></li>
+</ul>
+</section>
+<section id="what-is-ols-doing" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-ols-doing">What is OLS doing?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>The data in X forms a (hyper)-plane, and each X variable is <strong>weighted</strong> by <span class="math inline">\(\beta\)</span>, resulting in a prediction</p></li>
+<li><p>The discrepency between this predicted value <span class="math inline">\(X\beta\)</span> and <span class="math inline">\(y\)</span> is the error term <span class="math inline">\(\epsilon\)</span>, which by definition is unrelated to the X variables</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img src="assets/OLS_geometric_interpretation.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="a-sample-data-generating-process" class="level2">
+<h2 class="anchored" data-anchor-id="a-sample-data-generating-process">A sample data generating process</h2>
+<p>Let’s say we <strong>know</strong> that the relationship between X and Y is as follows:</p>
+<p><span class="math display">\[y = (\beta_0=0)+(\beta_1=2)x + \epsilon\]</span></p>
+<p>and that <span class="math inline">\(\epsilon\)</span> is randomly distributed with mean of 0 and a standard deviation of 3.</p>
+<p>This is an example <strong>data generating process</strong>, what might such data look like?</p>
+</section>
+<section id="a-sample-data-generating-process-1" class="level2">
+<h2 class="anchored" data-anchor-id="a-sample-data-generating-process-1">A sample data generating process</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4352</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>),<span class="dv">7</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="dv">2</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="fu">rnorm</span>(<span class="dv">49</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as_tibble</span>(<span class="fu">cbind</span>(x,y))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 2
+       x      y
+   &lt;dbl&gt;  &lt;dbl&gt;
+ 1     1 -0.714
+ 2     2  7.28 
+ 3     3  3.00 
+ 4     4  6.05 
+ 5     5 10.6  
+ 6     6 10.2  
+ 7     7 13.4  
+ 8     1 -2.31 
+ 9     2  3.78 
+10     3  7.14 </code></pre>
+</div>
+</div>
+</section>
+<section id="ols-as-a-mathematical-procedure" class="level2">
+<h2 class="anchored" data-anchor-id="ols-as-a-mathematical-procedure">OLS as a mathematical procedure</h2>
+<p>The population regression equation applies to each observation (thus the matrix form):</p>
+<p><span class="math display">\[\pmb y = \pmb X \pmb \beta +  \pmb \epsilon\]</span></p>
+<p>and beta is <strong>selected / defined</strong> to minimize the sum of the squared errors (i.e., positive and negative errors don’t cancel out):</p>
+<p><span class="math display">\[min(\pmb \epsilon^T\pmb \epsilon) = (\pmb y - \pmb X \pmb \beta )^T(\pmb y - \pmb X \pmb \beta ) \]</span></p>
+<p>In other words, we ask; what value of beta should we select to minimize the LHS?</p>
+</section>
+<section id="ols-as-a-mathematical-procedure-1" class="level2">
+<h2 class="anchored" data-anchor-id="ols-as-a-mathematical-procedure-1">OLS as a mathematical procedure</h2>
+<p>This minimization problem (with respect to beta) leads to the <a href="https://gregorygundersen.com/blog/2020/01/04/ols/#a1-normal-equation">“normal equations”</a> &lt;- clink on the link for a full derivation.</p>
+<p><span class="math display">\[(\pmb X^T\pmb X)^{-1}(\pmb X^T\pmb y)=\pmb \beta\]</span></p>
+<p>Comments:</p>
+<ul>
+<li><p>What would happen the if error/disturbance term was always zero?</p></li>
+<li><p>Notice, this equation is agnostic to the form / distribution of the errors</p></li>
+</ul>
+</section>
+<section id="ols-as-an-estimator" class="level2">
+<h2 class="anchored" data-anchor-id="ols-as-an-estimator">OLS as an “estimator”</h2>
+<p>Remember, we don’t have the whole population, we just have a sample. Thus, the <strong>residuals</strong> we get from an OLS estimation are different from the underlying <strong>errors</strong> in the population due to <strong>sampling error</strong> in our estimate of <span class="math inline">\(\beta\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/OLS_population_v_sample.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Source: Gregory Gundersen’s Blog</figcaption>
+</figure>
+</div>
+</section>
+<section id="ols-as-an-estimator-1" class="level2">
+<h2 class="anchored" data-anchor-id="ols-as-an-estimator-1">OLS as an “estimator”</h2>
+<p>Here is another example of this distinction with the data we generated earlier. Recall the “true” parameters: <span class="math inline">\(y = (\beta_0=0)+(\beta_1=2)x + \epsilon\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              Estimate Std. Error    t value     Pr(&gt;|t|)
+(Intercept) -0.7233802  0.8190561 -0.8831876 3.816302e-01
+x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
+</div>
+</div>
+</section>
+<section id="ols---estimation-v.-reality" class="level2">
+<h2 class="anchored" data-anchor-id="ols---estimation-v.-reality">OLS - Estimation v. reality</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data,<span class="fu">aes</span>(x,y))<span class="sc">+</span><span class="fu">geom_point</span>()<span class="sc">+</span><span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">'lm'</span>,<span class="at">se=</span>T)<span class="sc">+</span><span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">6</span>,<span class="at">y=</span><span class="dv">2</span>,<span class="at">label =</span> <span class="st">"Regression output: y=-.72+1.92x"</span>,<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">3</span>,<span class="at">y=</span><span class="dv">12</span>,<span class="at">label =</span> <span class="st">"True equation: y=0+2x+N(0,3)"</span>) <span class="sc">+</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">slope =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="class8_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="verifying-our-beta-coefficient-formula" class="level2">
+<h2 class="anchored" data-anchor-id="verifying-our-beta-coefficient-formula">Verifying our beta coefficient formula</h2>
+<p>Let’s verify that our simple equation for <span class="math inline">\(\hat b\)</span> works out:</p>
+<p><span class="math display">\[\hat Cov(x,y)/\hat Var(x)=\hat b_1\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"cov(x,y)"</span>, <span class="fu">cov</span>(x,y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "cov(x,y) 7.8695885474943"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"var(x)"</span>, <span class="fu">var</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "var(x) 4.08333333333333"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"beta-hat"</span>, <span class="fu">cov</span>(x,y)<span class="sc">/</span><span class="fu">var</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "beta-hat 1.92724617489656"</code></pre>
+</div>
+</div>
+</section>
+<section id="what-is-a-regression---prediction-versus-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-regression---prediction-versus-explanation">What is a regression? - Prediction versus explanation</h2>
+<p>Notice a few things:</p>
+<ul>
+<li><p>OLS regression on a sample, by construction, minimizes the sum of the squared residuals</p></li>
+<li><p>This means that it seeks to maximize the amount explained by the regression to maximize the chances of correctly predicting the data <strong>in the sample</strong></p></li>
+<li><p>By implication, it is NOT trying to find some true value of <span class="math inline">\(\beta\)</span> such that we can make good <strong>out of sample</strong> predictions; issues with the sample will contaminate beta</p></li>
+<li><p>It also does NOT imply an causal interpretation or explanation</p></li>
+</ul>
+</section>
+<section id="why-linear-regression-and-ols-in-particular" class="level2">
+<h2 class="anchored" data-anchor-id="why-linear-regression-and-ols-in-particular">Why linear regression and OLS in particular?</h2>
+<p>OK, then why are regressions ubiquitous?</p>
+<ol type="1">
+<li><p>Approximates the conditional expectation function <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span></p></li>
+<li><p>The “best linear unbiased estimator” or BLUE, when the Gauss-Markov assumptions met <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span></p></li>
+<li><p>Equivalent to maximium likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (<span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span>, p.&nbsp;43) and with a <a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">uniform prior</a></p></li>
+</ol>
+<p>Let’s consider each in turn.</p>
+</section>
+<section id="approximates-the-conditional-expectation-function" class="level2">
+<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function">“Approximates the conditional expectation function”</h2>
+<p>Recall that much of the information we want to extract from a distribution is summarized in its first two moments: mean and variance</p>
+<p>The conditional expectation function [CEF] expresses the expected value (or mean) of a variable (Y) as a function of another variable (X)</p>
+<p>The CEF is often not linear, but the OLS estimator is the best linear approximation to the CEF function <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>, Theorem 3.1.6)</span></p>
+</section>
+<section id="approximates-the-conditional-expectation-function-1" class="level2">
+<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function-1">“Approximates the conditional expectation function”</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/CEF.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><span class="citation" data-cites="angrist2008">Angrist and Pischke (<a href="#ref-angrist2008" role="doc-biblioref">2008</a>)</span>, Ch. 3</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Note what this picture is showing you - it highlights the fact that Y has a distribution at each level of X, and what OLS can do is determine how that distribution “shifts” as you change X</p>
+</div>
+</div>
+</section>
+<section id="approximates-the-conditional-expectation-function-2" class="level2">
+<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function-2">“Approximates the conditional expectation function”</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The “standard”, unmodified form of OLS assumes that the distribution of Y remains the same across all levels of X (i.e., the distribution is homoskedastic or possesses “spherical errors”), and that the only difference is a shift in where the mean is placed</p>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' scaled_dnorm</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>scaled_dnorm <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>, scale) <span class="fu">dnorm</span>(x, mean, sd) <span class="sc">*</span> scale</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' geom_norm_density</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>geom_norm_density <span class="ot">&lt;-</span> <span class="cf">function</span>(mean, sd, fun, args, y_offset, color, fill,</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                              alpha, scale) {</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_area</span>(</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">stat =</span> <span class="st">"function"</span>,</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> fun,</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> mean, <span class="at">sd =</span> sd, <span class="at">scale =</span> scale),</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">xlim =</span> <span class="fu">c</span>(mean <span class="sc">-</span> <span class="dv">3</span> <span class="sc">*</span> sd, mean <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> sd),</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> ggplot2<span class="sc">::</span><span class="fu">position_nudge</span>(<span class="at">y =</span> y_offset),</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> color,</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> fill,</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> alpha</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>plot_alpha <span class="ot">&lt;-</span> .<span class="dv">50</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plot_fill <span class="ot">&lt;-</span> <span class="st">"#3F72AF"</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>plot_color <span class="ot">&lt;-</span> <span class="st">"#112D4E"</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>plot_xlim <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">18</span>, <span class="dv">18</span>)</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, n, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>var_xb <span class="ot">&lt;-</span> <span class="fu">var</span>(x<span class="sc">*</span>b)</span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>std_error <span class="ot">&lt;-</span> <span class="dv">9</span></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> b<span class="sc">*</span>x  <span class="sc">+</span> <span class="fu">rnorm</span>(n, <span class="at">sd =</span> <span class="fu">sqrt</span>(std_error))</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> </span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> x,</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> y</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_cond_mean =</span> <span class="dv">2</span> <span class="sc">+</span> x</span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> data,</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">aes</span>(<span class="at">x =</span> y, <span class="at">y =</span> x)</span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> </span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">3</span>,</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">1</span>,</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">4</span>,</span>
+<span id="cb15-61"><a href="#cb15-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-62"><a href="#cb15-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-63"><a href="#cb15-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-64"><a href="#cb15-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">2</span>,</span>
+<span id="cb15-65"><a href="#cb15-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-66"><a href="#cb15-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-67"><a href="#cb15-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-68"><a href="#cb15-68" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-69"><a href="#cb15-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-70"><a href="#cb15-70" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">5</span>,</span>
+<span id="cb15-71"><a href="#cb15-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-72"><a href="#cb15-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-73"><a href="#cb15-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-74"><a href="#cb15-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">3</span>,</span>
+<span id="cb15-75"><a href="#cb15-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-76"><a href="#cb15-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-77"><a href="#cb15-77" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-78"><a href="#cb15-78" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-79"><a href="#cb15-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-80"><a href="#cb15-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">6</span>,</span>
+<span id="cb15-81"><a href="#cb15-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-82"><a href="#cb15-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-83"><a href="#cb15-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-84"><a href="#cb15-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">4</span>,</span>
+<span id="cb15-85"><a href="#cb15-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-86"><a href="#cb15-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-87"><a href="#cb15-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-88"><a href="#cb15-88" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-89"><a href="#cb15-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-90"><a href="#cb15-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">7</span>,</span>
+<span id="cb15-91"><a href="#cb15-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-92"><a href="#cb15-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-93"><a href="#cb15-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-94"><a href="#cb15-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">5</span>,</span>
+<span id="cb15-95"><a href="#cb15-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-96"><a href="#cb15-96" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-97"><a href="#cb15-97" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-98"><a href="#cb15-98" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-99"><a href="#cb15-99" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-100"><a href="#cb15-100" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">8</span>,</span>
+<span id="cb15-101"><a href="#cb15-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-102"><a href="#cb15-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-103"><a href="#cb15-103" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-104"><a href="#cb15-104" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">6</span>,</span>
+<span id="cb15-105"><a href="#cb15-105" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-106"><a href="#cb15-106" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-107"><a href="#cb15-107" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-108"><a href="#cb15-108" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-109"><a href="#cb15-109" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_norm_density</span>(</span>
+<span id="cb15-110"><a href="#cb15-110" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="dv">9</span>,</span>
+<span id="cb15-111"><a href="#cb15-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sqrt</span>(<span class="dv">9</span>),</span>
+<span id="cb15-112"><a href="#cb15-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="dv">5</span>,</span>
+<span id="cb15-113"><a href="#cb15-113" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> scaled_dnorm,</span>
+<span id="cb15-114"><a href="#cb15-114" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_offset =</span> <span class="dv">7</span>,</span>
+<span id="cb15-115"><a href="#cb15-115" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-116"><a href="#cb15-116" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_fill,</span>
+<span id="cb15-117"><a href="#cb15-117" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> plot_alpha</span>
+<span id="cb15-118"><a href="#cb15-118" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-119"><a href="#cb15-119" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb15-120"><a href="#cb15-120" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_line</span>(</span>
+<span id="cb15-121"><a href="#cb15-121" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">y =</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">8</span>),</span>
+<span id="cb15-122"><a href="#cb15-122" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_color,</span>
+<span id="cb15-123"><a href="#cb15-123" aria-hidden="true" tabindex="-1"></a>    <span class="at">lwd =</span> <span class="fl">1.5</span></span>
+<span id="cb15-124"><a href="#cb15-124" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
+<span id="cb15-125"><a href="#cb15-125" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_point</span>(</span>
+<span id="cb15-126"><a href="#cb15-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, <span class="at">y =</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>),</span>
+<span id="cb15-127"><a href="#cb15-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">4</span>,</span>
+<span id="cb15-128"><a href="#cb15-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">"circle"</span>,</span>
+<span id="cb15-129"><a href="#cb15-129" aria-hidden="true" tabindex="-1"></a>    <span class="at">group =</span> <span class="dv">1</span>,</span>
+<span id="cb15-130"><a href="#cb15-130" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_fill,</span>
+<span id="cb15-131"><a href="#cb15-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_color</span>
+<span id="cb15-132"><a href="#cb15-132" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-133"><a href="#cb15-133" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">theme</span>(</span>
+<span id="cb15-134"><a href="#cb15-134" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F9F7F7"</span>, <span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
+<span id="cb15-135"><a href="#cb15-135" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F9F7F7"</span>),</span>
+<span id="cb15-136"><a href="#cb15-136" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line.x =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#3D3C42"</span>),</span>
+<span id="cb15-137"><a href="#cb15-137" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-138"><a href="#cb15-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
+<span id="cb15-139"><a href="#cb15-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
+<span id="cb15-140"><a href="#cb15-140" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">0</span>),</span>
+<span id="cb15-141"><a href="#cb15-141" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-142"><a href="#cb15-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>()</span>
+<span id="cb15-143"><a href="#cb15-143" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
+<span id="cb15-144"><a href="#cb15-144" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">labs</span>(</span>
+<span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">""</span>,</span>
+<span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span></span>
+<span id="cb15-147"><a href="#cb15-147" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="class8_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="best-linear-unbiased-estimator-blue" class="level2">
+<h2 class="anchored" data-anchor-id="best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</h2>
+<p>If the <a href="https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/">Gauss-Markov assumptions</a> are satisified, then OLS is the:</p>
+<ul>
+<li><p><strong>Best</strong> (minimum variance among alternative estimators)</p></li>
+<li><p><strong>Linear</strong>(the estimator is of the form <span class="math inline">\(A(X)y\)</span>)</p></li>
+<li><p><strong>Unbiased</strong> (the expected value is equal to the population parameter)</p></li>
+<li><p><strong>Estimator</strong> (employs data from a sample to make inferences about the population)</p></li>
+</ul>
+<p>Recent research seems to suggest that it might actually be the <a href="https://users.ssc.wisc.edu/~bhansen/papers/ecnmt_2022.pdf">best unbiased estimator</a> if these assumptions hold</p>
+</section>
+<section id="equivalent-to-mle-and-map-under-certain-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="equivalent-to-mle-and-map-under-certain-conditions">“Equivalent to MLE and MAP under certain conditions”</h2>
+<p>There are other modeling frameworks to help make sense of data.</p>
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">Maximum likelihood estimation</a> or MLE: What parameter values make the data most likely, GIVEN an assumed distribution?</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">Maximum a posteriori</a> (Bayesian) or MAP estimation: MLE that explicitly incorporates prior beliefs</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Generalized_method_of_moments">Generalized method of moments</a>: A <a href="https://marcfbellemare.com/wordpress/13385">“generalization” of MLE</a> that focuses on moments rather than distributions</p></li>
+</ul>
+<p>Note that MLE and GMM are the primary alternatives in our field to OLS/WLS/GLS: they are used for SEM, HLM, panel data estimators, logit, probit, and other models</p>
+</section>
+<section id="equivalent-to-mle-and-map-under-certain-conditions-1" class="level2">
+<h2 class="anchored" data-anchor-id="equivalent-to-mle-and-map-under-certain-conditions-1">“Equivalent to MLE and MAP under certain conditions”</h2>
+<p>When we have a uniform prior (all parameter values within an interval are equally likely) and when the error term is normally distributed, OLS provides the same estimate as MLE and MAP.</p>
+<p>This should be somewhat comforting, since it implies:</p>
+<ul>
+<li><p>The OLS estimate b is the most likely value for <span class="math inline">\(\beta\)</span>, given the data and assuming the distribution is normal</p></li>
+<li><p>The OLS estimate is what we should update our beliefs to be if we did not have an informative prior</p></li>
+</ul>
+</section>
+<section id="aside-an-example-of-how-likelihood-functions-work" class="level2">
+<h2 class="anchored" data-anchor-id="aside-an-example-of-how-likelihood-functions-work">Aside: An example of how likelihood functions work</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q"><img src="assets/likelihood.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">An example of a likelihood function</figcaption>
+</figure>
+</div>
+</section>
+<section id="when-is-linear-regression-appropriate-and-or-optimal" class="level2">
+<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal">When is linear regression appropriate and / or optimal?</h2>
+<p>When the assumptions are satisfied!</p>
+<p>And what are those assumptions? There are two <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares#Assumptions">“flavors”</a>:</p>
+<ul>
+<li><p>Fixed design</p></li>
+<li><p>Random design</p></li>
+</ul>
+<p>I’ve tried to align the numbering so that they correspond, where possible.</p>
+</section>
+<section id="when-is-linear-regression-appropriate-and-or-optimal-1" class="level2">
+<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-1">When is linear regression appropriate and / or optimal?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/fixed design.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">“Fixed design” <span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="when-is-linear-regression-appropriate-and-or-optimal-2" class="level2">
+<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-2">When is linear regression appropriate and / or optimal?</h2>
+<p><a href="https://gregorygundersen.com/blog/2021/08/26/ols-estimator-sampling-distribution/#standard-ols-assumptions">“Random design”</a></p>
+<ol type="1">
+<li><p>Linearity (model is correctly specified)</p></li>
+<li></li>
+<li><p>Spherical errors <span class="math inline">\(V[\pmb \epsilon|\pmb X] = \sigma^2\pmb I\)</span></p></li>
+</ol>
+<ul>
+<li><p>implies: Homoskedaticity <span class="math inline">\(V[\epsilon|\pmb X] = \sigma^2\)</span></p></li>
+<li><p>implies: No serial correlation <span class="math inline">\(V[\epsilon_i\epsilon_j|\pmb X] = 0; i \ne j\)</span></p></li>
+</ul>
+<ol start="4" type="1">
+<li><p>Strict exogeneity <span class="math inline">\(E[\epsilon|\pmb X] = 0\)</span></p></li>
+<li><p>No multicollinearity (X is invertible)</p></li>
+<li><p>Normality (optional) - allows us to make inferences about the sampling distribution of b</p></li>
+</ol>
+</section>
+<section id="when-is-linear-regression-appropriate-and-or-optimal-3" class="level2">
+<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem">Gauss-Markov theorem</a> proves that, given these assumptions, the OLS estimator is the BLUE</p>
+<ul>
+<li><p>It becomes the best unbiased estimator if normality is assumed (it reaches the <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound">Cramer-Rao lower bound</a>)</p></li>
+<li><p>The assumption of a spherical errors can be relaxed via <a href="https://gregorygundersen.com/blog/2022/03/03/generalized-least-squares/">Aitken’s theorem</a>, known as weighted (WLS) or generalized (GLS) least squares</p></li>
+<li><p>GLS often performs a transformation of the raw data to take into consideration the variance structure</p></li>
+</ul>
+</section>
+<section id="aside-alternative-estimators-when-olsgls-not-applicable" class="level2">
+<h2 class="anchored" data-anchor-id="aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</h2>
+<ul>
+<li><p>Maximum likelihood estimation (MLE)</p></li>
+<li><p>Bayesian / maximium a posteriori (MAP) techniques</p></li>
+<li><p>Generalized method of moments (GMM) estimators</p></li>
+<li><p>Quantile regression</p></li>
+<li><p>Machine learning (e.g.,random forest models)</p></li>
+<li><p>LASSO (least absolute shrinkage and selection operation)</p></li>
+<li><p>Markov Chain Monte Carlo simulation and bootstrapping</p></li>
+<li><p>K-L divergence based metrics (e.g., Expectation-Maximization algorithms)</p></li>
+</ul>
+</section>
+</section>
+<section id="performing-a-regression-analysis" class="level1">
+<h1>Performing a regression analysis</h1>
+<section id="how-to-properly-perform-a-regression-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</h2>
+<ol type="1">
+<li>We determine the appropriateness of regression for our model and data from two angles:</li>
+</ol>
+<ul>
+<li><p>Column (variable) perspective</p></li>
+<li><p>Row (observation) perspective</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Once we are satisified that there are no issues (or that they have been addressed), run a “final, publication ready” regression.</p></li>
+<li><p>Interpret the results using the tools of statistical inference (discussed later today).</p></li>
+</ol>
+</section>
+<section id="the-column-variable-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="the-column-variable-perspective">The column (variable) perspective</h2>
+<p>Conditional mean structure</p>
+<ol type="1">
+<li><p>Do we have the right variables? (DAGs, theory)</p></li>
+<li><p>Is the model in the correct functional form specified? (<a href="https://en.wikipedia.org/wiki/Ramsey_RESET_test">RESET</a>,<a href="https://en.wikipedia.org/wiki/Chow_test">Chow tests</a>)</p></li>
+<li><p>Are the variables exogenous? (<a href="https://en.wikipedia.org/wiki/Sargan%E2%80%93Hansen_test">Sargen-Hansen</a>, <a href="https://en.wikipedia.org/wiki/Durbin%E2%80%93Wu%E2%80%93Hausman_test">Durbin-Wu-Hausman</a>)</p></li>
+<li><p>Are your models well-conditioned? (<a href="https://en.wikipedia.org/wiki/Variance_inflation_factor">VIF</a>)</p></li>
+</ol>
+<p>Variance structure</p>
+<ol start="5" type="1">
+<li><p>Is the mean structure correct? (see above)</p></li>
+<li><p>Tests of heteroskedasticity and auto-correlation (e.g., <a href="https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic">Durbin-Watson</a>, White tests)</p></li>
+</ol>
+</section>
+<section id="the-row-observation-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="the-row-observation-perspective">The row (observation) perspective</h2>
+<p>Conditional mean structure</p>
+<ol type="1">
+<li><p>Are there outliers present? (<a href="https://en.wikipedia.org/wiki/Cook%27s_distance">Cook’s distance</a>)</p></li>
+<li><p>Are there influential observations? (<a href="https://en.wikipedia.org/wiki/Leverage_(statistics)">hat matrix</a>)</p></li>
+<li><p>Are certain observations missing or partially missing? (<a href="https://en.wikipedia.org/wiki/Censoring_(statistics)">Censoring and truncation</a></p></li>
+<li><p>Is the model dynamic in nature? (<a href="https://en.wikipedia.org/wiki/Arellano%E2%80%93Bond_estimator">Arellano-Bond estimators</a>)</p></li>
+</ol>
+<p>Variance structure</p>
+<ol start="5" type="1">
+<li>Is there a nested structure to the data? (<a href="https://en.wikipedia.org/wiki/Level_of_analysis">Level of analysis</a>)</li>
+</ol>
+</section>
+<section id="deep-dive-do-we-have-the-right-variables" class="level2">
+<h2 class="anchored" data-anchor-id="deep-dive-do-we-have-the-right-variables">Deep dive: Do we have the right variables?</h2>
+<p>Note that we don’t really have a “test” to apply here, but the assumption of proper specification is critical (including the right variables)</p>
+<p>Why? Because if it is violated we don’t only lose the “best” part of BLUE, we also lose the “unbiased” part, and then we are just “LE”</p>
+<p>And furthermore, the estimator isn’t even “consistent” -&gt; i.e., gets closer to the true value as we increase the size of the sample, which is a “fall-back” position we can take if we don’t have an unbiased estimator for smaller samples</p>
+</section>
+<section id="the-issue-omitted-variable-bias" class="level2">
+<h2 class="anchored" data-anchor-id="the-issue-omitted-variable-bias">The issue: Omitted variable bias</h2>
+<p><a href="https://www.econometrics-with-r.org/6.1-omitted-variable-bias.html">Omitted variable bias</a> causes <strong>ALL</strong> of the beta estimates in a model to be biased in proportion the correlation between the regressors and the omitted variable left in the error term</p>
+<p>This bias can be expressed in terms of “short” and “long” regression estimates, where short means a relevant variable <span class="math inline">\(b_2\)</span> has been omitted and the long is where it has been included (and it is assumed that the error term is truly uncorrelated in the case of the long equation):</p>
+<p>In the simple case, the upshot is the short regression coefficient <span class="math inline">\(b_1\)</span> <a href="https://www3.nd.edu/~rwilliam/stats2/l41.pdf">will be biased</a> in the following manner:</p>
+<p><span class="math display">\[b_{1short} = b_{1long} + b_{2omitted}(cov(b_1,b_2)/var(b_1))\]</span></p>
+</section>
+<section id="the-issue-omitted-variable-bias-1" class="level2">
+<h2 class="anchored" data-anchor-id="the-issue-omitted-variable-bias-1">The issue: Omitted variable bias</h2>
+<p>The problem: remember that OLS <strong>assumes by construction</strong> that the error term and the X variables are uncorrelated, so we can’t rely on a quick test of their correlation to draw conclusions. You need to <strong>know from theory or experience</strong> that you are missing the variable and then can run the test of including it to see if it changes the results (assuming it is something you can measure!)</p>
+<p>What can you do if this variable is unobservable? [See our endogeneity day!]</p>
+</section>
+<section id="the-flip-side-the-illusion-of-statistical-control" class="level2">
+<h2 class="anchored" data-anchor-id="the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</h2>
+<blockquote class="blockquote">
+<p>By mapping practices to these purposes, we demonstrate why current CV practice struggles to accomplish any of them effectively while potentially reducing the interpretability of results. Empirically, we examine correlations between CVs and independent variables (IVs)—relationships that receive little consideration in standard CV practice—demonstrating these relationships can and do influence the magnitude and sign of regression coefficients, sometimes dramatically—just not very often. In fact, the CVs in the studies we reviewed most often have little if any impact on research find- ings or interpretations, creating the illusion of statistical control when little control actually occurs. <span class="citation" data-cites="carlson2012">(<a href="#ref-carlson2012" role="doc-biblioref">Carlson and Wu 2012, 415</a>)</span></p>
+</blockquote>
+</section>
+<section id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</h2>
+<blockquote class="blockquote">
+<p>An econometrics textbook can be characterized as a catalog of which estimators are most desirable in what estimating situations. Thus, a researcher facing a particular estimating problem simply turns to the catalog to determine which estimator is most appropriate for him or her to employ in that situation. The purpose of this chapter is to explain how this catalog is structured. <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008, 40</a>)</span></p>
+</blockquote>
+</section>
+<section id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</h2>
+<p>But note that:</p>
+<blockquote class="blockquote">
+<p>If more than one of the CLR model assumptions is violated at the same time, econometricians often find themselves in trouble because their catalogs usually tell them what to do if only one of the CLR model assumptions is violated. Much recent econometric research examines situations in which two assumptions of the CLR model are violated simultaneously. These situations will be discussed when appropriate. <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008, 44</a>)</span></p>
+</blockquote>
+</section>
+<section id="statistical-inference" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inference">Statistical inference</h2>
+<p>Once we have an estimate for <span class="math inline">\(\beta\)</span>, here are two approaches to statistical inference <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span>:</p>
+<ul>
+<li><p>Explicitly assume that the error term is distributed normally (t-tests and F-tests are appropriate straight away, even for small samples)</p></li>
+<li><p>Rely on the central limit theorem and large-N asymptotics (since the sampling distribution of beta will often convergence to a normal distribution due to the central limit theorem)</p></li>
+</ul>
+</section>
+<section id="statistical-inference-1" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inference-1">Statistical inference</h2>
+<p>Questions about the variance structure also need to be settled:</p>
+<ul>
+<li><p>Are errors spherical?</p></li>
+<li><p>If not, do you want to incorporate the error structure information into the estimates (using GLS) or use OLS and <a href="https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors">“robust” statistics”</a>?</p></li>
+<li><p>Two schools of thought: Feasible GLS has <a href="https://en.wikipedia.org/wiki/Generalized_least_squares">no guarantees of improvement</a>, but “Simply computing a robust covariance matrix for an otherwise inconsistent estimator does not give it redemption” <span class="citation" data-cites="greene2012">(<a href="#ref-greene2012" role="doc-biblioref">Greene 2012, 692</a>)</span></p></li>
+</ul>
+</section>
+<section id="statistical-inferences-you-can-draw" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inferences-you-can-draw">Statistical inferences you can draw</h2>
+<p>The simplest test:</p>
+<ul>
+<li>Is <span class="math inline">\(\beta \ne 0\)</span>?: Use t-tests</li>
+</ul>
+<p>Intuition: We assume a null distribution that <span class="math inline">\(\beta = 0\)</span>, and then see where our estimated value falls within that distribution. The more extreme it is, the more likely the assumption that <span class="math inline">\(\beta = 0\)</span> is false</p>
+</section>
+<section id="statistical-inferences-you-can-draw-1" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inferences-you-can-draw-1">Statistical inferences you can draw</h2>
+<p>A more powerful set of tests: linear hypotheses</p>
+<ul>
+<li><p>Is <span class="math inline">\(\beta_1 = \beta_2\)</span>?</p></li>
+<li><p>Is <span class="math inline">\(\beta_1 = - \beta_2 + 2\beta_3\)</span>?</p></li>
+<li><p>Is <span class="math inline">\(\beta_1 = \beta_2 = \beta_3 = 0\)</span>?</p></li>
+</ul>
+<p>A restriction matrix is constructed to run an F-test (Wald test), Likelihood Ratio (LR) or LaGrange Multiplier (LM) test <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>, ch.&nbsp;4)</span></p>
+<p>Intuition: Unconstrained optimization (remember we are minimizing least squares) is easier than constrained. We ask whether there is a significant difference in model fit after imposing the restriction: If yes, then the restriction is probably false.</p>
+</section>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples:</h2>
+<p>“Linear hypothesis tests fail to reject the assertion that growth and reductions in either team size (<span class="math inline">\(\chi^2\)</span>(1) = 0.39, p &gt; 0.10) or within- industry experiences (<span class="math inline">\(\chi^2\)</span>(1) = 0.17, p &gt; 0.10) have equal and opposite effects” <span class="citation" data-cites="fox2023">(<a href="#ref-fox2023" role="doc-biblioref">Fox, Simsek, and Heavey 2023, 17</a>)</span></p>
+<p>“A Wald test indicates that the hypothesis that both variables are simultaneously zero is rejected (<span class="math inline">\(\chi^2\)</span>(2) = 7.50, p = .02)” <span class="citation" data-cites="fox2022">(<a href="#ref-fox2022" role="doc-biblioref">Fox, Simsek, and Heavey 2022, 18</a>, FN)</span></p>
+</section>
+<section id="aside-statistical-inference-and-p-hacking" class="level2">
+<h2 class="anchored" data-anchor-id="aside-statistical-inference-and-p-hacking">Aside: Statistical inference and p-hacking</h2>
+<ul>
+<li><p><a href="https://onlinelibrary.wiley.com/doi/10.1002/smj.975">“Searching for asterisks”</a> is all about demonstrating that a beta coefficient is “statistically significant” and differs from 0.</p></li>
+<li><p>It does not consider economic / practical effect size</p></li>
+<li><p>There are many tools in the toolbox to “manage” statistical significance</p></li>
+<li><p>More useful things to focus on are effect size, confidence intervals, and robustness to different specifications of mean and variance structures</p></li>
+</ul>
+</section>
+<section id="statistical-inferences-and-p-hacking" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inferences-and-p-hacking">Statistical inferences and p-hacking</h2>
+<p>On the flip side, being careful when performing your analyses can stop you from making faulty inferences - even if it is painful in the short run.</p>
+<blockquote class="blockquote">
+<p>T-stat looks too good. Use standard errors- significance gone. -Keisuke Hirano <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008, 6</a>)</span></p>
+</blockquote>
+</section>
+<section id="the-flip-side-of-significance-statistical-power" class="level2">
+<h2 class="anchored" data-anchor-id="the-flip-side-of-significance-statistical-power">The flip side of significance: Statistical power</h2>
+<p>Don’t forget to give yourself a fighting chance to find the effect you are looking for!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://towardsdatascience.com/5-ways-to-increase-statistical-power-377c00dd0214"><img src="assets/statisticalpower.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Source: Yao 2021</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="applications" class="level1">
+<h1>Applications</h1>
+<section id="application-readings" class="level2">
+<h2 class="anchored" data-anchor-id="application-readings">Application readings</h2>
+<p>Let’s level-set people’s familiarity with these pieces.</p>
+<ul>
+<li><p>Katila, R., &amp; Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.</p></li>
+<li><p>Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</p></li>
+</ul>
+</section>
+<section id="katila-and-ahuja-2002" class="level2">
+<h2 class="anchored" data-anchor-id="katila-and-ahuja-2002">Katila and Ahuja (2002)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>What was this paper about?</p></li>
+<li><p>What were the findings?</p></li>
+<li><p>What was the method?</p></li>
+<li><p>What makes sense? What was confusing?</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.dropbox.com/scl/fi/sp4dt3v7znny3j4n6ujs7/Katila-and-Ahuja-2002-18485.pdf?rlkey=3am094251e9t6ep1rcp1mdzhw&amp;dl=0"><img src="assets/Katila and Ahuja 2002.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="simsek-fox-and-heavey-2021" class="level2">
+<h2 class="anchored" data-anchor-id="simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>What was this paper about?</p></li>
+<li><p>What were the findings?</p></li>
+<li><p>What was the method?</p></li>
+<li><p>What makes sense? What was confusing?</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.dropbox.com/scl/fi/3w4fswnzn9eos49gbv55h/Simsek-Fox-and-Heavey-2023-7346.pdf?rlkey=kznw7glqg1i40ssiawhiik30z&amp;dl=0"><img src="assets/Simsek et al 2023.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="break" class="level2">
+<h2 class="anchored" data-anchor-id="break">Break</h2>
+<p><img src="assets/break.png" class="img-fluid"></p>
+</section>
+<section id="replication-presentation" class="level2">
+<h2 class="anchored" data-anchor-id="replication-presentation">Replication Presentation</h2>
+<ul>
+<li>Replication: Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</li>
+</ul>
+</section>
+</section>
+<section id="general-discussion" class="level1">
+<h1>General Discussion</h1>
+</section>
+<section id="preparation-for-next-class" class="level1">
+<h1>Preparation for next class</h1>
+<section id="next-class" class="level2">
+<h2 class="anchored" data-anchor-id="next-class">Next class</h2>
+<p><strong>Techniques II: Moderation</strong></p>
+<ol type="1">
+<li><p>Dawson, J. F. 2014. Moderation in Management Research: What, Why, When, and How. Journal of Business and Psychology, 29(1), 1-19.</p></li>
+<li><p>Hitt, M. A., Beamish, P. W., Jackson, S. E., &amp; Mathieu, J. E. 2007. Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management. Academy of Management Journal, 50(6), 1385-1399.</p></li>
+</ol>
+</section>
+<section id="next-class-1" class="level2">
+<h2 class="anchored" data-anchor-id="next-class-1">Next class</h2>
+<p><strong>Techniques II: Moderation</strong></p>
+<p>Applications:</p>
+<ol start="3" type="1">
+<li><p>Replication: Heavey, C., Simsek, Z., &amp; Fox, B. C. 2015. Managerial Social Networks and Ambidexterity of SMEs: The Moderating Role of a Proactive Commitment to Innovation. Human Resource Management, 54(S1).</p></li>
+<li><p>Wolfson, M. A., &amp; Mathieu, J. E. 2018. Sprinting to the finish: Toward a theory of Human Capital Resource Complementarity. J Appl Psychol, 103(11), 1165-1180.</p></li>
+</ol>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div class="{refs}">
+
+</div>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-angrist2008" class="csl-entry" role="listitem">
+Angrist, J. D., and J. S Pischke. 2008. <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-carlson2012" class="csl-entry" role="listitem">
+Carlson, Kevin D., and Jinpei Wu. 2012. <span>“The Illusion of Statistical Control.”</span> <em>Organizational Research Methods</em> 15 (3): 413–35.
+</div>
+<div id="ref-fox2022" class="csl-entry" role="listitem">
+Fox, Brian C., Zeki Simsek, and Ciaran Heavey. 2022. <span>“Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017).”</span> <em>Academy of Management Journal</em> 65 (2): 545–76.
+</div>
+<div id="ref-fox2023" class="csl-entry" role="listitem">
+———. 2023. <span>“Venture Team Membership Dynamics and New Venture Innovation.”</span> <em>Strategic Entrepreneurship Journal</em>.
+</div>
+<div id="ref-greene2012" class="csl-entry" role="listitem">
+Greene, William H. 2012. <span>“Econometric Analysis.”</span>
+</div>
+<div id="ref-kennedy2008" class="csl-entry" role="listitem">
+Kennedy, Peter. 2008. <em>A Guide to Econometrics</em>. Malden, MA: Blackwell.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

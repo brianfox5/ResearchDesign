@@ -25,6 +25,8 @@ bibliography: references.bib
 
 I will weave in the "core" papers as needed in my remarks later, but we will not discuss them in detail per se
 
+WARNING: I am going deeper into the weeds this week, but we will come back up to a higher level soon
+
 ##  What is a regression?
 
 The multiple linear regression **model** is used to study the relationship between a dependent variable ($y$) and one or more independent variables ($X$). The generic form of the linear regression model is [@greene2012]:
@@ -512,47 +514,53 @@ The [Gauss-Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_th
 
 - K-L divergence based metrics (e.g., Expectation-Maximization algorithms)
 
+# Performing a regression analysis
+
 ##  How to properly perform a regression analysis?
 
-We can determine the appropriateness of a regression approach from two angles:
+1. We determine the appropriateness of regression for our model and data from two angles:
 
 - Column (variable) perspective
 
 - Row (observation) perspective 
 
+2. Once we are satisified that there are no issues (or that they have been addressed), run a "final, publication ready" regression.
+
+3. Interpret the results using the tools of statistical inference (discussed later today).
+
 ##  The column (variable) perspective
 
 Conditional mean structure
 
-- Do we have the right variables? (DAGs, theory)
+1. Do we have the right variables? (DAGs, theory)
 
-- Is the model in the correct functional form specified? ([RESET](https://en.wikipedia.org/wiki/Ramsey_RESET_test),[Chow tests](https://en.wikipedia.org/wiki/Chow_test))
+2. Is the model in the correct functional form specified? ([RESET](https://en.wikipedia.org/wiki/Ramsey_RESET_test),[Chow tests](https://en.wikipedia.org/wiki/Chow_test))
 
-- Are the variables exogenous? ([Sargen-Hansen](https://en.wikipedia.org/wiki/Sargan%E2%80%93Hansen_test), [Durbin-Wu-Hausman](https://en.wikipedia.org/wiki/Durbin%E2%80%93Wu%E2%80%93Hausman_test))
+3. Are the variables exogenous? ([Sargen-Hansen](https://en.wikipedia.org/wiki/Sargan%E2%80%93Hansen_test), [Durbin-Wu-Hausman](https://en.wikipedia.org/wiki/Durbin%E2%80%93Wu%E2%80%93Hausman_test))
 
-- Are you models well-conditioned? ([VIF](https://en.wikipedia.org/wiki/Variance_inflation_factor))
+4. Are your models well-conditioned? ([VIF](https://en.wikipedia.org/wiki/Variance_inflation_factor))
 
 Variance structure
 
-- Is the mean structure correct? (see above)
+5. Is the mean structure correct? (see above)
 
-- Tests of heteroskedasticity and auto-correlation (e.g., [Durbin-Watson](https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic), White tests)
+6. Tests of heteroskedasticity and auto-correlation (e.g., [Durbin-Watson](https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic), White tests)
 
 ##  The row (observation) perspective
 
 Conditional mean structure
 
-- Are there outliers present? ([Cook's distance](https://en.wikipedia.org/wiki/Cook%27s_distance))
+1. Are there outliers present? ([Cook's distance](https://en.wikipedia.org/wiki/Cook%27s_distance))
 
-- Are there influential observations? ([hat matrix](https://en.wikipedia.org/wiki/Leverage_(statistics)))
+2. Are there influential observations? ([hat matrix](https://en.wikipedia.org/wiki/Leverage_(statistics)))
 
-- Are certain observations missing or partially missing? ([Censoring and truncation](https://en.wikipedia.org/wiki/Censoring_(statistics))
+3. Are certain observations missing or partially missing? ([Censoring and truncation](https://en.wikipedia.org/wiki/Censoring_(statistics))
 
-- Is the model dynamic in nature? ([Arellano-Bond estimators](https://en.wikipedia.org/wiki/Arellano%E2%80%93Bond_estimator))
+4. Is the model dynamic in nature? ([Arellano-Bond estimators](https://en.wikipedia.org/wiki/Arellano%E2%80%93Bond_estimator))
 
 Variance structure
 
-- Is there a nested structure to the data? ([Level of analysis](https://en.wikipedia.org/wiki/Level_of_analysis))
+5. Is there a nested structure to the data? ([Level of analysis](https://en.wikipedia.org/wiki/Level_of_analysis))
 
 ##  Deep dive: Do we have the right variables?
 
@@ -568,7 +576,7 @@ And furthermore, the estimator isn't even "consistent" -> i.e., gets closer to t
 
 This bias can be expressed in terms of "short" and "long" regression estimates, where short means a relevant variable $b_2$ has been omitted and the long is where it has been included (and it is assumed that the error term is truly uncorrelated in the case of the long equation):
 
-In the simple case, the upshot is that the short regression coefficient for the remaining variable $b_1$  [will be biased](https://www3.nd.edu/~rwilliam/stats2/l41.pdf) in the following manner:
+In the simple case, the upshot is the short regression coefficient $b_1$  [will be biased](https://www3.nd.edu/~rwilliam/stats2/l41.pdf) in the following manner:
 
 $$b_{1short} = b_{1long} + b_{2omitted}(cov(b_1,b_2)/var(b_1))$$
 
@@ -642,7 +650,7 @@ Intuition:  Unconstrained optimization (remember we are minimizing least squares
 
 ## Aside: Statistical inference and p-hacking
 
-- ["Searching for asterisks"] (https://onlinelibrary.wiley.com/doi/10.1002/smj.975) is all about demonstrating that a beta coefficient is "statistically significant" and differs from 0.
+- ["Searching for asterisks"](https://onlinelibrary.wiley.com/doi/10.1002/smj.975) is all about demonstrating that a beta coefficient is "statistically significant" and differs from 0.
 
 - It does not consider economic / practical effect size
 
@@ -654,9 +662,16 @@ Intuition:  Unconstrained optimization (remember we are minimizing least squares
 
 On the flip side, being careful when performing your analyses can stop you from making faulty inferences - even if it is painful in the short run.
 
+
 >T-stat looks too good.
 Use standard errors-
 significance gone. -Keisuke Hirano [@angrist2008, p. 6]
+
+## The flip side of significance: Statistical power
+
+Don't forget to give yourself a fighting chance to find the effect you are looking for!
+
+[![Source: Yao 2021](assets/statisticalpower.png)](https://towardsdatascience.com/5-ways-to-increase-statistical-power-377c00dd0214)
 
 # Applications
 

@@ -19,16 +19,32 @@ bibliography: references.bib
 
 -   General discussion (15 minutes)
 
-# The perils of endogeneity
+## What is endogeneity?
+
+> quote
 
 ## What is endogeneity?
 
+nomological network view
+
+regression model view
 
 ##  Why is endogeneity problematic?
 
-##  When is endogeneity present?
+- A theoretical problem
+
+  - xxx
+
+- An empirical problem
+
+  - xxx
+  
+  - xxx
+  
 
 ## How can you correct for endogeneity?
+
+Tools from Bascle
 
 ## An essential ingredient: Instruments and exogenous variation
 

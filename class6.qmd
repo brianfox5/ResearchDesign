@@ -131,27 +131,28 @@ The essence of construct clarity comprises four basic elements [@suddaby2010, 34
 
 ## Larsen and Bong (2016)
 
-::::{.columns}
 
-:::{.column height="100%"}
+![](assets/larsen and bong 2016.png)
 
-REPLACE
-
-:::
-
-::::
 
 ## Larsen and Bong (2016)
 
 Discussion Questions 
 
-REPLACE
+- What are the jingle / jangle fallacies?
 
+- Have you seen something like this in your work or research to date?
 
 
 ## Larsen and Bong (2016)
 
-REPLACE
+Key points
+
+- There are tools to help you find and locate constructs 
+
+- You can help future research by taking the time to determine whether you need to create a new construct to make your point
+
+- Aside: This paper also is a nice example of weaving quantitative analysis into a literature review by drawing on the sensitivity/specificity framework (TP/FP, TN/FN)
 
 
 ## Bagozzi Yi and Phillips (1991)
