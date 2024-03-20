@@ -21,98 +21,102 @@ bibliography: references.bib
 
 # The logic of mediation
 
-## What is moderation?
+## What is mediation?
 
-> quote
+> In all instances, mediational models advance an X -> M -> Y causal sequence, and seek to illustrate the mechanisms through which X and Y are related. [@mathieu2006]
 
-## What is moderation?
+## What is medition?
 
 Nomological network view:
 
-![](assets/moderator nomological network.png)
-
-
+![](assets/mediator nomological network.png)
 Regression model view:
 
-$Y = \beta_0 + \beta_1X + \beta_2Z+ \beta_3XZ + \epsilon$
+$Y = \beta_0 + \beta_1X + \beta_2M + \epsilon$
 
-##  Why moderation?
+$M = \beta_3 + \beta_{4}X + \epsilon_M$
 
-- Solves a theoretical problem
 
-  - xxx
+##  Why mediation?
 
-- New tools are available for modeling
+- Provides direct evidence for a theoretical claim
 
-  - xxx
+  - "We submit that inferences of mediation are founded first and foremost in terms of theory, research design, and the construct validity of measures employed, and second in terms of statistical evidence of relationships." [@mathieu2006, p. 1032]
+
+  - Allows for assessment of causal effects via the front door criterion [@pearl2001, p. 81]
   
-  - xxx
+- Sophisticated tools allow for complex inferences
+
+  - Establishment of direct and indirect effects for latent variables [@williams2009]
+  
+  - Partitioning of effects through multiple causal pathways
   
 ##  When is mediation appropriate?
 
-Explaining "how" and showcasing mechanisms
+Explaining "how" and showcasing mechanisms: $Y = \beta_0 + \beta_1X + \beta_2M + \epsilon$
 
-Partitioning direct and indirect effects
+Partitioning total and indirect effects: Comparing effect sizes between $Y = \beta_0 + \beta_1X + \beta_2M + \epsilon$ and $Y = \beta_0 + \beta_1X + \epsilon$
 
-Transmitting the influence of instruments
+Transmitting the influence of instruments: $Innovation = \beta_0 + \beta_1(EquitySplits) + \beta_2(MembershipChange) + \epsilon$ ;  $MembershipChange = \beta_3 + \beta_4EquitySplit + \epsilon$
 
-Isolating mechanisms through interventions:  $y_{ij} = \beta_0 + \beta_{1j}x + \epsilon_{ij}$; $\beta_{1j} = \gamma_{10} + \nu_j$
+Isolating mechanisms through interventions:  $Light On = \beta_0 + \beta_1Power + \beta_2(Switch=on) + \epsilon$
 
 # Performing a mediation analysis
 
 ## How do you perform a (basic) meditation analysis?
 
-1. **Clearly** make your prediction as a hypothesis.
+1. Articulate the theoretical justification for a mediational inference.
 
-2. (Optional). Center and scale variables
+2. **Clearly** make your prediction as a hypothesis.
 
-3. Run regression with "main effects" only (including the moderator!)
+3. Run a sequence of regressions in line with your intended inference [@mathieu2006] and extract relevant effects
 
-4. Include interaction effects
+4. Perform statistical inference (t-tests, indirect effect tests)
 
-5. Perform statistical inference (t-tests, $\Delta R^2$, F-tests)
+5. Illustrate direct and indirect effects
 
-6. Plot interaction and assess marginal effects
+## Deep dive: Articulate your theoretical justification
 
-7. Run supplemental tests (e.g., tests of curvature [@haans2016], simple slopes [@dawson2014], regions of significance)
+>In short, no statistical analysis can unequivocally differentiate one causal sequence from another. Theorists and researchers must then rely on other means to justify the sequence of effects. The most valuable bases to advance such inference come from: (1) experimental design features; (2) temporal precedence; and (3) theoretical rationales. [@mathieu2006, p. 1033]
 
 
 ## Deep dive: Clearly make your prediction as a hypothesis
 
-It is critical when making an argument for moderation that you specify what you mean.  Is it:
+It is critical when making an argument for mediation that you specify what you mean.  Following @mathieu2006, are you proposing:
 
-- A pre-existing (positive / negative) main effect will become (stronger / weaker) in the presence of the moderator?
+- A full mediation, where the mediating variable fully captures the effect of the IV on the DV?
 
-- An (existing/null) effect will become (absent/present) in the presence of the moderator?
+- A partial mediation, where the mediating variable captures, some but not all, of the effect?
 
-- The moderator has such an influence that it will flip the sign of the effect, depending on its level?
-
-- Which is the main effect and what is the moderator?
-
-- Will the moderator have an indepedent influence (i.e., a mean shift)?
+- An indirect effect, whereby the IV only has an effect on the DV through its influence on the mediator?
 
 ## Illustrating a mediation: Indirect effects
 
+![@ling2008](assets/example mediation.png)
+
 ## Things can get crazy (again)! 
 
-Multiple mediators
+- Multiple mediators (either in parallel [@ling2008] or in sequence)
 
-Mediated moderation and moderated mediation
+- [Mediated moderation and moderated mediation](https://en.wikipedia.org/wiki/Mediation_(statistics))
 
-Again, can you explain what you are doing?
-
+- As with complex moderation models, can you explain what you are doing?
 
 ## "Generalizing" mediation: SEM
 
-I have given you two readings (@hitt2007 and @wolfson2018) to help you dip your toes into the waters of hierarchical linear modeling (HLM) / a.k.a. random coefficients modeling (RCM)
+I have given you two readings (@williams2009 and @ling2008) to help you dip your toes into the waters of structural equation model (SEM)
 
-This can be viewed as a "generalization" of moderation, where slope coefficients (betas) and intercepts can not only be dependent on a third variable but may have their own *random distribution*
+This is a fundamentally different way of looking at data, which seeks to compare an observed covariance matrix versus a "model implied" covariance matrix built from the relationships included or excluded from an SEM model (which can include a structural as well as a measurement model component)
 
-This technique allows you to naturally model nested settings [@hitt2007], but gets complicated quickly
+The technique involves asking how many connections can be "pruned" without making the model fit worse - in other words, the more $\beta_i = 0$, the better!
 
 ## Alternative analyses
 
-are there any?
+- Structural equation modeling (@williams2009)
+
+- [Non-linear causal models](https://en.wikipedia.org/wiki/Causal_model) and [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network) (@pearl2001)
+
+- [Hidden Markov models](https://en.wikipedia.org/wiki/Hidden_Markov_model)
 
 # Applications
 
@@ -120,11 +124,11 @@ are there any?
 
 Let's level-set people's familiarity with these pieces. 
 
-- Katila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.
+- Ling, Y., Simsek, Z., Lubatkin, M. H., & Veiga, J. F. 2008. Transformational Leadership’s Role in Promoting Corporate Entrepreneurship: Examining the CEO-TMT Interface. Academy of Management Journal, 51(3), 557-576.
 
-- Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+- Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017). Academy of Management Journal, 65(2), 545-576.
 
-##  Katila and Ahuja (2002)
+##  Ling et al (2008)
 
 ::::{.columns}
 
@@ -143,18 +147,17 @@ Let's level-set people's familiarity with these pieces.
 :::{.column width="50%"}
 
 
-[![](assets/Suddaby 2010.png)](https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&dl=0)
+[![](assets/Ling et al 2008.png)](https://www.dropbox.com/scl/fi/4xnuxebu9j2f957ih6nzn/Ling-et-al.-2008-30117.pdf?rlkey=z4ybahs1hcc1eol4qpmazu7e1&dl=0)
 
 :::
 
 ::::
 
-##  Simsek Fox and Heavey (2021)
+##  Fox et al. (2022)
 
 ::::{.columns}
 
 :::{.column width="50%"}
-
 
 - What was this paper about? 
 
@@ -168,8 +171,7 @@ Let's level-set people's familiarity with these pieces.
 
 :::{.column width="50%"}
 
-
-[![](assets/Suddaby 2010.png)](https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&dl=0)
+[![](assets/Fox Simsek and Heavey 2022.png)](https://www.dropbox.com/scl/fi/vgh79g904yvw140oekxl8/Fox-Simsek-and-Heavey-2022-127506.pdf?rlkey=w2dqkegpof4zulh71jhzm3bbo&dl=0)
 
 :::
 
@@ -182,37 +184,29 @@ Let's level-set people's familiarity with these pieces.
 
 ## Replication Presentation
 
-- Replication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+- Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017). Academy of Management Journal, 65(2), 545-576.
 
 # General Discussion
 
-## point 1 
-
-## point 2
-
-## point 3 
-
 # Preparation for next class
 
+## Next class
 
+**Techniques IV: Endogeneity**
+
+1. Cuervo-Cazurra, A., Andersson, U., Brannen, M. Y., Nielsen, B. B., & Reuber, R. A. 2016. From the Editors: Can I trust your findings? Ruling out alternative explanations in international business research. Journal of International Business Studies, 47(8), 881-897.
+
+2. Hamilton, B. H., & Nickerson, J. A. 2003. Correcting for endogeneity in strategic management research. Strategic Organization, 1(1): 51-78.
 
 ## Next class
 
-**Techniques II: Moderation**
-
-1. Dawson, J. F. 2014. Moderation in Management Research: What, Why, When, and How. Journal of Business and Psychology, 29(1), 1-19.
-
-2. Hitt, M. A., Beamish, P. W., Jackson, S. E., & Mathieu, J. E. 2007. Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management. Academy of Management Journal, 50(6), 1385-1399.
-
-## Next class
-
-**Techniques II: Moderation**
+**Techniques IV: Endogeneity**
 
 Applications:
 
-3. Replication: Heavey, C., Simsek, Z., & Fox, B. C. 2015. Managerial Social Networks and Ambidexterity of SMEs: The Moderating Role of a Proactive Commitment to Innovation. Human Resource Management, 54(S1).
+3. Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.
 
-4. Wolfson, M. A., & Mathieu, J. E. 2018. Sprinting to the finish: Toward a theory of Human Capital Resource Complementarity. J Appl Psychol, 103(11), 1165-1180.
+4. Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
 
 ## References 

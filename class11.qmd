@@ -9,46 +9,146 @@ bibliography: references.bib
 
 ## Agenda
 
--   The perils of endogeneity: what, why, when, how (40 minutes)
+-   The perils of endogeneity: what, why, when, how (30 minutes)
 
--   Application paper discussion (20 minutes)
+-   Application paper discussion (30 minutes)
 
 -   *Break*
 
--   Replication presentation (Group 1-3-5; 40 minutes)
+-   Replication presentation (Group 8-10-12; 40 minutes)
 
 -   General discussion (15 minutes)
 
-## What is endogeneity?
-
-> quote
+# The perils of endogeneity
 
 ## What is endogeneity?
 
-nomological network view
+> Endogeneity arises when a regressor is correlated with the error term, thereby violating the most important OLS estimation assumption, the exogeneity condition, specifying that u has an expected value of 0. [@bascle2008, p. 288]
 
-regression model view
+## What is endogeneity?
+
+Nomological network view:
+
+![](assets/endogeneity nomological network.png)
+
+Regression model view:
+
+$Y = \beta_0 + \beta_1X + \epsilon$; $E[\epsilon|X \ne 0]$
 
 ##  Why is endogeneity problematic?
 
 - A theoretical problem
 
-  - xxx
-
+  - We fail to capture the underlying dynamics of the process
+  
+  - We draw the wrong conclusions from our analyses about which variables matter or the direction of causal flow
+  
 - An empirical problem
 
-  - xxx
+  - We cannot recover causal effects due to a lack of ["identification"](http://fmwww.bc.edu/EC-P/wp957.pdf)
   
-  - xxx
+  - We may not even be able to come up with estimates at all if the model is structurally unidentified (e.g., supply and demand models)
   
+  - Our effect estimates can be **significantly** biased, and even in the wrong direction without correction
+
+## What issues can cause endogeneity?
+
+![](assets/catalog of endogeneity problems.png)
+
+## What issues result in endogeneity?
+
+1. Unobserved heterogeneity: Individual idiosyncratic deviations from the overall mean of the DV in a manner that is correlated with the IVs  (e.g., firm "quality" likely correlates with size)
+
+2. (Observed) omitted variable: We have left out an observable variable (omitted variable, OV) that is correlated with the IV and DV (e.g., OV = average temperature, IV = gunshots, DV = ice cream sales)
+
+3. (Unobserved) omitted variable: We have left out an unobservable variable that is correlated with the IV and DV (e.g., IV = study hours, DV = GPA, OV = g (general mental ability))
+
+## What issues result in endogeneity?
+
+4. Simultaneous / reverse causality: either we have the direction of causality wrong (Y -> X) or they cause each other / are codetermined (X <-> Y) (e.g., price and quantity in a market setting)
+
+5. Non-random selection in groups: Individuals self-select into a state or treatment or there are differences in surivival or attrition (e.g., IV = hospitalization, DV = general health, selection effect = need for treatment)
+
+6. Measurement error in X: We cannot measure X perfectly, which at a minimum [attenuates the relationship between X and Y](), but if the measurement error in X is correlated with Y, we come back to the omitted variable bias problem
 
 ## How can you correct for endogeneity?
 
-Tools from Bascle
+**Approach 1: Isolate exogenous variation in X**
 
-## An essential ingredient: Instruments and exogenous variation
+- Instrumental variables (IV) / Two stage least squares (2SLS): Can address all of these issues, but finding relevant and exogenous instruments is tough [@bascle2008] 
 
-## A common tool: Two-stage least squares (2SLS)
+- Heckman selection / Tobit-2 / Tobit-5 models: Can address (5), possible to perform using functional form alone but stronger when with an [exclusion condition](https://en.wikipedia.org/wiki/Heckman_correction) (i.e., an instrumental variable)
+
+## How can you correct for endogeneity?
+
+**Approach 2: Excise or extract endogenous elements from e**
+
+- Include omitted variables: Can address (2), the essence of adding control variables to a model [@carlson2012]
+
+- Fixed effects panel specifications: Can address (1),(2),(3) if the OVs are [time invariant], but can exacerbate (6) [@bascle2008]
+
+- Dynamic model specifications: Can address (4), but caution required since this can introduce other endogeneity problems, especially with panel data (known as the [Nickell bias](http://fmwww.bc.edu/EC-C/S2013/823/EC823.S2013.nn05.slides.pdf))
+
+## How can you correct for endogeneity?
+
+**Approach 3: Punt on fixing and instead assess threat to inference**
+
+- Impact Threshold of Confounding Variables [(ITCV)](https://journals.sagepub.com/doi/full/10.1177/01492063211006458) and Robustness of Inference to Replacement (RIR) ask the question: How big of a confounding effect would an endogeneous problem need to have to overturn the inference in a model where it is not modeled?
+
+- This can be a nice tool to have in the back pocket for reviewers 
+
+# Analyzing data in the presence of endogeneity
+
+## How do you perform a (basic) endogeneity analysis?
+
+1. Proactively identify the potential cause(s) of endogeneity.
+
+2. Run your models in a typical fashion.
+
+3. Run alternative models (discussed above) that are consistent in the presence of endogeneity (example of 2SLS on next slide).
+
+4. Use appropriate tests to determine which model is preferred (e.g., Durbin-Wu-Hausman, exogeneity, relevance tests). [@bascle2008]
+
+5. Perform typical statistical inference based on the preferred model. 
+
+6. It often helps to report test statistics, and space permitting, the results from alternative models to give the reader confidence in the robustness of the results.
+
+## Example: Running 2SLS
+
+1. **(Hard part)** Find instrument(s) for each of your endogenous variables.
+
+2. If you are lucky enough to have an embarrassment of riches with multiple instruments for each, use them so you can test for exogeneity!
+
+3. Verify the instruments are sufficiently strong (e.g., first stage F test)
+
+4. Run the 2SLS procedure (next slide)
+
+## Example: Running 2SLS
+
+[What is 2SLS doing?](https://en.wikipedia.org/wiki/Instrumental_variables_estimation) In essence, the following[^1]: $Y = \beta \hat X + e$
+
+Such that: $\hat X =  W\hat\delta$
+
+And $\hat\delta = (W^TW)^{-1}W^TX$
+
+Where W is the set of the exogenous variables + instruments, and X is set of exogenous and (instrumented) endogenous variables.
+
+This procedure "purges" X of its endogenous part and only relies on the **exogenous variation** present in W. 
+
+[^1]: Don't run this yourself since the standard errors will be wonky!  Use the output from the software which makes the necessary corrections. Also note that in regular OLS, X "instruments" for itself.
+
+
+## Why not just use the models robust to endogeneity always?
+
+- Multiple endogeneity issues: each may require non-compatible solutions.
+
+- No free lunch: models robust to endogeneity pay a price (typically small-sample bias and efficiency).
+
+- Many endogeneity tests compare two estimators - one that accounts for endogeneity and one that does not.
+
+- If the test fails, endogeneity is a problem and you need to use the estimator that is "consistent" in the presence of endogeneity.
+
+- If the test passes, it is better to use the 'standard' estimator: it is has more power and is more precise (tighter sampling distribution).
 
 
 # Applications
@@ -57,11 +157,11 @@ Tools from Bascle
 
 Let's level-set people's familiarity with these pieces. 
 
-- Katila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.
+- Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.
 
-- Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+- Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
-##  Katila and Ahuja (2002)
+##  Bascle (2008)
 
 ::::{.columns}
 
@@ -80,13 +180,13 @@ Let's level-set people's familiarity with these pieces.
 :::{.column width="50%"}
 
 
-[![](assets/Suddaby 2010.png)](https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&dl=0)
+[![](assets/Bascle 2008.png)](https://www.dropbox.com/scl/fi/yzozwlagvwwyjvjpk3zhl/Bascle-2008-28608.pdf?rlkey=9v32hqfmg93v6nn49ijd0f534&dl=0)
 
 :::
 
 ::::
 
-##  Simsek Fox and Heavey (2021)
+##  Fox Simsek and Heavey (2023)
 
 ::::{.columns}
 
@@ -106,7 +206,7 @@ Let's level-set people's familiarity with these pieces.
 :::{.column width="50%"}
 
 
-[![](assets/Suddaby 2010.png)](https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&dl=0)
+[![](assets/Fox Simsek and Heavey 2023.png)](https://www.dropbox.com/scl/fi/jyxuggc1awapgxbddkjs3/Fox-Simsek-and-Heavey-2023-170690.pdf?rlkey=66cuyqk18w2gbdupbhqp9cu2n&dl=0)
 
 :::
 
@@ -119,37 +219,33 @@ Let's level-set people's familiarity with these pieces.
 
 ## Replication Presentation
 
-- Replication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
+- Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
 # General Discussion
 
-## point 1 
-
-## point 2
-
-## point 3 
-
 # Preparation for next class
 
+## Next class
 
+Your draft paper is due before we meet for our final workshop and the final paper is due by May 3.
 
 ## Next class
 
-**Techniques II: Moderation**
+**Design I: Quasi-experimental data**
 
-1. Dawson, J. F. 2014. Moderation in Management Research: What, Why, When, and How. Journal of Business and Psychology, 29(1), 1-19.
+1. Grant, A. M., & Wall, T. D. 2009. The Neglected Science and Art of Quasi-Experimentation. Organizational Research Methods, 12(4), 653-686.
 
-2. Hitt, M. A., Beamish, P. W., Jackson, S. E., & Mathieu, J. E. 2007. Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management. Academy of Management Journal, 50(6), 1385-1399.
+2. Shadish, W. R., & Cook, T. D. 2009. The renaissance of field experimentation in evaluating interventions. Annu Rev Psychol, 60, 607-629.
 
 ## Next class
 
-**Techniques II: Moderation**
+**Design I: Quasi-experimental data**
 
 Applications:
 
-3. Replication: Heavey, C., Simsek, Z., & Fox, B. C. 2015. Managerial Social Networks and Ambidexterity of SMEs: The Moderating Role of a Proactive Commitment to Innovation. Human Resource Management, 54(S1).
+3. Shu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197–15200. doi:10.1073/pnas.1209746109 (see also https://datacolada.org/109)
 
-4. Wolfson, M. A., & Mathieu, J. E. 2018. Sprinting to the finish: Toward a theory of Human Capital Resource Complementarity. J Appl Psychol, 103(11), 1165-1180.
+4. Replication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)
 
 
 ## References 

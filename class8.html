@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.3.450" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
-<title>PhD 1506 - Research Design - Class 8 - Techniques I - Regression</title>
+<title>PhD 1506 - Research Design – Class 8 - Techniques I - Regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,23 +77,7 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,29 +104,31 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-fixed">
+<body>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="/index.html">
     <span class="navbar-title">PhD 1506 - Research Design</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
+    <a class="nav-link" href="/syllabus.html" rel="" target="">
  <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./classes.html" rel="" target="">
+    <a class="nav-link" href="/classes.html" rel="" target="">
  <span class="menu-text">Classes</span></a>
   </li>  
 </ul>
@@ -155,80 +143,7 @@ div.csl-indent {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#agenda" id="toc-agenda" class="nav-link active" data-scroll-target="#agenda">Agenda</a></li>
-  <li><a href="#the-logic-of-regression" id="toc-the-logic-of-regression" class="nav-link" data-scroll-target="#the-logic-of-regression">The logic of regression</a>
-  <ul class="collapse">
-  <li><a href="#preamble" id="toc-preamble" class="nav-link" data-scroll-target="#preamble">Preamble</a></li>
-  <li><a href="#what-is-a-regression" id="toc-what-is-a-regression" class="nav-link" data-scroll-target="#what-is-a-regression">What is a regression?</a></li>
-  <li><a href="#what-is-a-beta-coefficient" id="toc-what-is-a-beta-coefficient" class="nav-link" data-scroll-target="#what-is-a-beta-coefficient">What is a beta coefficient?</a></li>
-  <li><a href="#whats-with-the-name-regression" id="toc-whats-with-the-name-regression" class="nav-link" data-scroll-target="#whats-with-the-name-regression">What’s with the name “regression”?</a></li>
-  <li><a href="#what-do-we-usually-mean-when-we-say-regression" id="toc-what-do-we-usually-mean-when-we-say-regression" class="nav-link" data-scroll-target="#what-do-we-usually-mean-when-we-say-regression">What do we usually mean when we say “regression”?</a></li>
-  <li><a href="#what-is-ols-doing" id="toc-what-is-ols-doing" class="nav-link" data-scroll-target="#what-is-ols-doing">What is OLS doing?</a></li>
-  <li><a href="#a-sample-data-generating-process" id="toc-a-sample-data-generating-process" class="nav-link" data-scroll-target="#a-sample-data-generating-process">A sample data generating process</a></li>
-  <li><a href="#a-sample-data-generating-process-1" id="toc-a-sample-data-generating-process-1" class="nav-link" data-scroll-target="#a-sample-data-generating-process-1">A sample data generating process</a></li>
-  <li><a href="#ols-as-a-mathematical-procedure" id="toc-ols-as-a-mathematical-procedure" class="nav-link" data-scroll-target="#ols-as-a-mathematical-procedure">OLS as a mathematical procedure</a></li>
-  <li><a href="#ols-as-a-mathematical-procedure-1" id="toc-ols-as-a-mathematical-procedure-1" class="nav-link" data-scroll-target="#ols-as-a-mathematical-procedure-1">OLS as a mathematical procedure</a></li>
-  <li><a href="#ols-as-an-estimator" id="toc-ols-as-an-estimator" class="nav-link" data-scroll-target="#ols-as-an-estimator">OLS as an “estimator”</a></li>
-  <li><a href="#ols-as-an-estimator-1" id="toc-ols-as-an-estimator-1" class="nav-link" data-scroll-target="#ols-as-an-estimator-1">OLS as an “estimator”</a></li>
-  <li><a href="#ols---estimation-v.-reality" id="toc-ols---estimation-v.-reality" class="nav-link" data-scroll-target="#ols---estimation-v.-reality">OLS - Estimation v. reality</a></li>
-  <li><a href="#verifying-our-beta-coefficient-formula" id="toc-verifying-our-beta-coefficient-formula" class="nav-link" data-scroll-target="#verifying-our-beta-coefficient-formula">Verifying our beta coefficient formula</a></li>
-  <li><a href="#what-is-a-regression---prediction-versus-explanation" id="toc-what-is-a-regression---prediction-versus-explanation" class="nav-link" data-scroll-target="#what-is-a-regression---prediction-versus-explanation">What is a regression? - Prediction versus explanation</a></li>
-  <li><a href="#why-linear-regression-and-ols-in-particular" id="toc-why-linear-regression-and-ols-in-particular" class="nav-link" data-scroll-target="#why-linear-regression-and-ols-in-particular">Why linear regression and OLS in particular?</a></li>
-  <li><a href="#approximates-the-conditional-expectation-function" id="toc-approximates-the-conditional-expectation-function" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function">“Approximates the conditional expectation function”</a></li>
-  <li><a href="#approximates-the-conditional-expectation-function-1" id="toc-approximates-the-conditional-expectation-function-1" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function-1">“Approximates the conditional expectation function”</a></li>
-  <li><a href="#approximates-the-conditional-expectation-function-2" id="toc-approximates-the-conditional-expectation-function-2" class="nav-link" data-scroll-target="#approximates-the-conditional-expectation-function-2">“Approximates the conditional expectation function”</a></li>
-  <li><a href="#best-linear-unbiased-estimator-blue" id="toc-best-linear-unbiased-estimator-blue" class="nav-link" data-scroll-target="#best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</a></li>
-  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions" id="toc-equivalent-to-mle-and-map-under-certain-conditions" class="nav-link" data-scroll-target="#equivalent-to-mle-and-map-under-certain-conditions">“Equivalent to MLE and MAP under certain conditions”</a></li>
-  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions-1" id="toc-equivalent-to-mle-and-map-under-certain-conditions-1" class="nav-link" data-scroll-target="#equivalent-to-mle-and-map-under-certain-conditions-1">“Equivalent to MLE and MAP under certain conditions”</a></li>
-  <li><a href="#aside-an-example-of-how-likelihood-functions-work" id="toc-aside-an-example-of-how-likelihood-functions-work" class="nav-link" data-scroll-target="#aside-an-example-of-how-likelihood-functions-work">Aside: An example of how likelihood functions work</a></li>
-  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal" id="toc-when-is-linear-regression-appropriate-and-or-optimal" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal">When is linear regression appropriate and / or optimal?</a></li>
-  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-1" id="toc-when-is-linear-regression-appropriate-and-or-optimal-1" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-1">When is linear regression appropriate and / or optimal?</a></li>
-  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-2" id="toc-when-is-linear-regression-appropriate-and-or-optimal-2" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-2">When is linear regression appropriate and / or optimal?</a></li>
-  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-3" id="toc-when-is-linear-regression-appropriate-and-or-optimal-3" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</a></li>
-  <li><a href="#aside-alternative-estimators-when-olsgls-not-applicable" id="toc-aside-alternative-estimators-when-olsgls-not-applicable" class="nav-link" data-scroll-target="#aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</a></li>
-  </ul></li>
-  <li><a href="#performing-a-regression-analysis" id="toc-performing-a-regression-analysis" class="nav-link" data-scroll-target="#performing-a-regression-analysis">Performing a regression analysis</a>
-  <ul class="collapse">
-  <li><a href="#how-to-properly-perform-a-regression-analysis" id="toc-how-to-properly-perform-a-regression-analysis" class="nav-link" data-scroll-target="#how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</a></li>
-  <li><a href="#the-column-variable-perspective" id="toc-the-column-variable-perspective" class="nav-link" data-scroll-target="#the-column-variable-perspective">The column (variable) perspective</a></li>
-  <li><a href="#the-row-observation-perspective" id="toc-the-row-observation-perspective" class="nav-link" data-scroll-target="#the-row-observation-perspective">The row (observation) perspective</a></li>
-  <li><a href="#deep-dive-do-we-have-the-right-variables" id="toc-deep-dive-do-we-have-the-right-variables" class="nav-link" data-scroll-target="#deep-dive-do-we-have-the-right-variables">Deep dive: Do we have the right variables?</a></li>
-  <li><a href="#the-issue-omitted-variable-bias" id="toc-the-issue-omitted-variable-bias" class="nav-link" data-scroll-target="#the-issue-omitted-variable-bias">The issue: Omitted variable bias</a></li>
-  <li><a href="#the-issue-omitted-variable-bias-1" id="toc-the-issue-omitted-variable-bias-1" class="nav-link" data-scroll-target="#the-issue-omitted-variable-bias-1">The issue: Omitted variable bias</a></li>
-  <li><a href="#the-flip-side-the-illusion-of-statistical-control" id="toc-the-flip-side-the-illusion-of-statistical-control" class="nav-link" data-scroll-target="#the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</a></li>
-  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</a></li>
-  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</a></li>
-  <li><a href="#statistical-inference" id="toc-statistical-inference" class="nav-link" data-scroll-target="#statistical-inference">Statistical inference</a></li>
-  <li><a href="#statistical-inference-1" id="toc-statistical-inference-1" class="nav-link" data-scroll-target="#statistical-inference-1">Statistical inference</a></li>
-  <li><a href="#statistical-inferences-you-can-draw" id="toc-statistical-inferences-you-can-draw" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw">Statistical inferences you can draw</a></li>
-  <li><a href="#statistical-inferences-you-can-draw-1" id="toc-statistical-inferences-you-can-draw-1" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw-1">Statistical inferences you can draw</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples:</a></li>
-  <li><a href="#aside-statistical-inference-and-p-hacking" id="toc-aside-statistical-inference-and-p-hacking" class="nav-link" data-scroll-target="#aside-statistical-inference-and-p-hacking">Aside: Statistical inference and p-hacking</a></li>
-  <li><a href="#statistical-inferences-and-p-hacking" id="toc-statistical-inferences-and-p-hacking" class="nav-link" data-scroll-target="#statistical-inferences-and-p-hacking">Statistical inferences and p-hacking</a></li>
-  <li><a href="#the-flip-side-of-significance-statistical-power" id="toc-the-flip-side-of-significance-statistical-power" class="nav-link" data-scroll-target="#the-flip-side-of-significance-statistical-power">The flip side of significance: Statistical power</a></li>
-  </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
-  <ul class="collapse">
-  <li><a href="#application-readings" id="toc-application-readings" class="nav-link" data-scroll-target="#application-readings">Application readings</a></li>
-  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002" class="nav-link" data-scroll-target="#katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
-  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021" class="nav-link" data-scroll-target="#simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
-  <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
-  <li><a href="#replication-presentation" id="toc-replication-presentation" class="nav-link" data-scroll-target="#replication-presentation">Replication Presentation</a></li>
-  </ul></li>
-  <li><a href="#general-discussion" id="toc-general-discussion" class="nav-link" data-scroll-target="#general-discussion">General Discussion</a></li>
-  <li><a href="#preparation-for-next-class" id="toc-preparation-for-next-class" class="nav-link" data-scroll-target="#preparation-for-next-class">Preparation for next class</a>
-  <ul class="collapse">
-  <li><a href="#next-class" id="toc-next-class" class="nav-link" data-scroll-target="#next-class">Next class</a></li>
-  <li><a href="#next-class-1" id="toc-next-class-1" class="nav-link" data-scroll-target="#next-class-1">Next class</a></li>
-  <li><a href="#next-class-2" id="toc-next-class-2" class="nav-link" data-scroll-target="#next-class-2">Next class</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="class8.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
+        <div id="quarto-toc-target"></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -249,9 +164,82 @@ div.csl-indent {
   
 
 </header>
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#agenda" id="toc-agenda">Agenda</a></li>
+  <li><a href="#the-logic-of-regression" id="toc-the-logic-of-regression">The logic of regression</a>
+  <ul>
+  <li><a href="#preamble" id="toc-preamble">Preamble</a></li>
+  <li><a href="#what-is-a-regression" id="toc-what-is-a-regression">What is a regression?</a></li>
+  <li><a href="#what-is-a-beta-coefficient" id="toc-what-is-a-beta-coefficient">What is a beta coefficient?</a></li>
+  <li><a href="#whats-with-the-name-regression" id="toc-whats-with-the-name-regression">What’s with the name “regression”?</a></li>
+  <li><a href="#what-do-we-usually-mean-when-we-say-regression" id="toc-what-do-we-usually-mean-when-we-say-regression">What do we usually mean when we say “regression”?</a></li>
+  <li><a href="#what-is-ols-doing" id="toc-what-is-ols-doing">What is OLS doing?</a></li>
+  <li><a href="#a-sample-data-generating-process" id="toc-a-sample-data-generating-process">A sample data generating process</a></li>
+  <li><a href="#a-sample-data-generating-process-1" id="toc-a-sample-data-generating-process-1">A sample data generating process</a></li>
+  <li><a href="#ols-as-a-mathematical-procedure" id="toc-ols-as-a-mathematical-procedure">OLS as a mathematical procedure</a></li>
+  <li><a href="#ols-as-a-mathematical-procedure-1" id="toc-ols-as-a-mathematical-procedure-1">OLS as a mathematical procedure</a></li>
+  <li><a href="#ols-as-an-estimator" id="toc-ols-as-an-estimator">OLS as an “estimator”</a></li>
+  <li><a href="#ols-as-an-estimator-1" id="toc-ols-as-an-estimator-1">OLS as an “estimator”</a></li>
+  <li><a href="#ols---estimation-v.-reality" id="toc-ols---estimation-v.-reality">OLS - Estimation v. reality</a></li>
+  <li><a href="#verifying-our-beta-coefficient-formula" id="toc-verifying-our-beta-coefficient-formula">Verifying our beta coefficient formula</a></li>
+  <li><a href="#what-is-a-regression---prediction-versus-explanation" id="toc-what-is-a-regression---prediction-versus-explanation">What is a regression? - Prediction versus explanation</a></li>
+  <li><a href="#why-linear-regression-and-ols-in-particular" id="toc-why-linear-regression-and-ols-in-particular">Why linear regression and OLS in particular?</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function" id="toc-approximates-the-conditional-expectation-function">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function-1" id="toc-approximates-the-conditional-expectation-function-1">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#approximates-the-conditional-expectation-function-2" id="toc-approximates-the-conditional-expectation-function-2">“Approximates the conditional expectation function”</a></li>
+  <li><a href="#best-linear-unbiased-estimator-blue" id="toc-best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</a></li>
+  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions" id="toc-equivalent-to-mle-and-map-under-certain-conditions">“Equivalent to MLE and MAP under certain conditions”</a></li>
+  <li><a href="#equivalent-to-mle-and-map-under-certain-conditions-1" id="toc-equivalent-to-mle-and-map-under-certain-conditions-1">“Equivalent to MLE and MAP under certain conditions”</a></li>
+  <li><a href="#aside-an-example-of-how-likelihood-functions-work" id="toc-aside-an-example-of-how-likelihood-functions-work">Aside: An example of how likelihood functions work</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal" id="toc-when-is-linear-regression-appropriate-and-or-optimal">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-1" id="toc-when-is-linear-regression-appropriate-and-or-optimal-1">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-2" id="toc-when-is-linear-regression-appropriate-and-or-optimal-2">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-3" id="toc-when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</a></li>
+  <li><a href="#aside-alternative-estimators-when-olsgls-not-applicable" id="toc-aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</a></li>
+  </ul></li>
+  <li><a href="#performing-a-regression-analysis" id="toc-performing-a-regression-analysis">Performing a regression analysis</a>
+  <ul>
+  <li><a href="#how-to-properly-perform-a-regression-analysis" id="toc-how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</a></li>
+  <li><a href="#the-column-variable-perspective" id="toc-the-column-variable-perspective">The column (variable) perspective</a></li>
+  <li><a href="#the-row-observation-perspective" id="toc-the-row-observation-perspective">The row (observation) perspective</a></li>
+  <li><a href="#deep-dive-do-we-have-the-right-variables" id="toc-deep-dive-do-we-have-the-right-variables">Deep dive: Do we have the right variables?</a></li>
+  <li><a href="#the-issue-omitted-variable-bias" id="toc-the-issue-omitted-variable-bias">The issue: Omitted variable bias</a></li>
+  <li><a href="#the-issue-omitted-variable-bias-1" id="toc-the-issue-omitted-variable-bias-1">The issue: Omitted variable bias</a></li>
+  <li><a href="#the-flip-side-the-illusion-of-statistical-control" id="toc-the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</a></li>
+  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</a></li>
+  <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</a></li>
+  <li><a href="#statistical-inference" id="toc-statistical-inference">Statistical inference</a></li>
+  <li><a href="#statistical-inference-1" id="toc-statistical-inference-1">Statistical inference</a></li>
+  <li><a href="#statistical-inferences-you-can-draw" id="toc-statistical-inferences-you-can-draw">Statistical inferences you can draw</a></li>
+  <li><a href="#statistical-inferences-you-can-draw-1" id="toc-statistical-inferences-you-can-draw-1">Statistical inferences you can draw</a></li>
+  <li><a href="#examples" id="toc-examples">Examples:</a></li>
+  <li><a href="#aside-statistical-inference-and-p-hacking" id="toc-aside-statistical-inference-and-p-hacking">Aside: Statistical inference and p-hacking</a></li>
+  <li><a href="#statistical-inferences-and-p-hacking" id="toc-statistical-inferences-and-p-hacking">Statistical inferences and p-hacking</a></li>
+  <li><a href="#the-flip-side-of-significance-statistical-power" id="toc-the-flip-side-of-significance-statistical-power">The flip side of significance: Statistical power</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications">Applications</a>
+  <ul>
+  <li><a href="#application-readings" id="toc-application-readings">Application readings</a></li>
+  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
+  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
+  <li><a href="#break" id="toc-break">Break</a></li>
+  <li><a href="#replication-presentation" id="toc-replication-presentation">Replication Presentation</a></li>
+  </ul></li>
+  <li><a href="#general-discussion" id="toc-general-discussion">General Discussion</a></li>
+  <li><a href="#preparation-for-next-class" id="toc-preparation-for-next-class">Preparation for next class</a>
+  <ul>
+  <li><a href="#next-class" id="toc-next-class">Next class</a></li>
+  <li><a href="#next-class-1" id="toc-next-class-1">Next class</a></li>
+  <li><a href="#next-class-2" id="toc-next-class-2">Next class</a></li>
+  <li><a href="#references" id="toc-references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="agenda" class="level2">
-<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<h2>Agenda</h2>
 <ul>
 <li><p>The logic of regression: what, why, when, how (40 minutes)</p></li>
 <li><p>Application paper discussion (20 minutes)</p></li>
@@ -263,12 +251,12 @@ div.csl-indent {
 <section id="the-logic-of-regression" class="level1">
 <h1>The logic of regression</h1>
 <section id="preamble" class="level2">
-<h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
+<h2>Preamble</h2>
 <p>I will weave in the “core” papers as needed in my remarks later, but we will not discuss them in detail per se</p>
 <p>WARNING: I am going deeper into the weeds this week, but we will come back up to a higher level soon</p>
 </section>
 <section id="what-is-a-regression" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-regression">What is a regression?</h2>
+<h2>What is a regression?</h2>
 <p>The multiple linear regression <strong>model</strong> is used to study the relationship between a dependent variable (<span class="math inline">\(y\)</span>) and one or more independent variables (<span class="math inline">\(X\)</span>). The generic form of the linear regression model is <span class="citation" data-cites="greene2012">(<a href="#ref-greene2012" role="doc-biblioref">Greene 2012</a>)</span>:</p>
 <p><span class="math display">\[\pmb y = \pmb X\pmb\beta + \pmb\epsilon\]</span></p>
 <p>where <span class="math inline">\(\beta\)</span> is computed as follows:</p>
@@ -276,7 +264,7 @@ div.csl-indent {
 <p>Let’s figure out why…</p>
 </section>
 <section id="what-is-a-beta-coefficient" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-beta-coefficient">What is a beta coefficient?</h2>
+<h2>What is a beta coefficient?</h2>
 <p>Small aside: Note that in a “simple” (bivariate) regression with just one predictor and an intercept</p>
 <p><span class="math display">\[y = \beta_0+\beta_1x + \epsilon\]</span></p>
 <p>this funky formula is essentially:</p>
@@ -284,21 +272,21 @@ div.csl-indent {
 <p>Note that in the multiple regression case, the same logic applies but to covariances and variances that have been “residualized” by accounting for all of the other X variables in the equation <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span></p>
 </section>
 <section id="whats-with-the-name-regression" class="level2">
-<h2 class="anchored" data-anchor-id="whats-with-the-name-regression">What’s with the name “regression”?</h2>
+<h2>What’s with the name “regression”?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>“<a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean">Galton</a> observed that extreme characteristics (e.g., height) in parents are not passed on completely to their offspring. Rather, the characteristics in the offspring <strong>regress</strong> toward a mediocre point (a point which has since been identified as the mean)” (Wikipedia)</p>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean#/media/File:Galton's_correlation_diagram_1875.jpg"><img src="assets/galtondiagram.jpeg" class="img-fluid figure-img"></a></p>
+<figure>
+<p><a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean#/media/File:Galton&#39;s_correlation_diagram_1875.jpg"><img src="assets/galtondiagram.jpeg" class="img-fluid" /></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="what-do-we-usually-mean-when-we-say-regression" class="level2">
-<h2 class="anchored" data-anchor-id="what-do-we-usually-mean-when-we-say-regression">What do we usually mean when we say “regression”?</h2>
+<h2>What do we usually mean when we say “regression”?</h2>
 <p>The term “regression” is often used synonomously with a particular technique: <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">ordinary least squares</a> (OLS).</p>
 <ul>
 <li><p>Essentially, OLS and its generalizations (e.g., WLS, GLS, discussed later) seek to minimize the distance between observed and predicted values</p></li>
@@ -306,7 +294,7 @@ div.csl-indent {
 </ul>
 </section>
 <section id="what-is-ols-doing" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-ols-doing">What is OLS doing?</h2>
+<h2>What is OLS doing?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -314,22 +302,22 @@ div.csl-indent {
 <li><p>The discrepency between this predicted value <span class="math inline">\(X\beta\)</span> and <span class="math inline">\(y\)</span> is the error term <span class="math inline">\(\epsilon\)</span>, which by definition is unrelated to the X variables</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img src="assets/OLS_geometric_interpretation.png" class="img-fluid"></p>
+<p><img src="assets/OLS_geometric_interpretation.png" class="img-fluid" /></p>
 </div>
 </div>
 </section>
 <section id="a-sample-data-generating-process" class="level2">
-<h2 class="anchored" data-anchor-id="a-sample-data-generating-process">A sample data generating process</h2>
+<h2>A sample data generating process</h2>
 <p>Let’s say we <strong>know</strong> that the relationship between X and Y is as follows:</p>
 <p><span class="math display">\[y = (\beta_0=0)+(\beta_1=2)x + \epsilon\]</span></p>
 <p>and that <span class="math inline">\(\epsilon\)</span> is randomly distributed with mean of 0 and a standard deviation of 3.</p>
 <p>This is an example <strong>data generating process</strong>, what might such data look like?</p>
 </section>
 <section id="a-sample-data-generating-process-1" class="level2">
-<h2 class="anchored" data-anchor-id="a-sample-data-generating-process-1">A sample data generating process</h2>
+<h2>A sample data generating process</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
@@ -341,14 +329,14 @@ div.csl-indent {
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4352</span>)</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4352</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>),<span class="dv">7</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="dv">2</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="fu">rnorm</span>(<span class="dv">49</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as_tibble</span>(<span class="fu">cbind</span>(x,y))</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 2
        x      y
@@ -367,7 +355,7 @@ div.csl-indent {
 </div>
 </section>
 <section id="ols-as-a-mathematical-procedure" class="level2">
-<h2 class="anchored" data-anchor-id="ols-as-a-mathematical-procedure">OLS as a mathematical procedure</h2>
+<h2>OLS as a mathematical procedure</h2>
 <p>The population regression equation applies to each observation (thus the matrix form):</p>
 <p><span class="math display">\[\pmb y = \pmb X \pmb \beta +  \pmb \epsilon\]</span></p>
 <p>and beta is <strong>selected / defined</strong> to minimize the sum of the squared errors (i.e., positive and negative errors don’t cancel out):</p>
@@ -375,7 +363,7 @@ div.csl-indent {
 <p>In other words, we ask; what value of beta should we select to minimize the LHS?</p>
 </section>
 <section id="ols-as-a-mathematical-procedure-1" class="level2">
-<h2 class="anchored" data-anchor-id="ols-as-a-mathematical-procedure-1">OLS as a mathematical procedure</h2>
+<h2>OLS as a mathematical procedure</h2>
 <p>This minimization problem (with respect to beta) leads to the <a href="https://gregorygundersen.com/blog/2020/01/04/ols/#a1-normal-equation">“normal equations”</a> &lt;- clink on the link for a full derivation.</p>
 <p><span class="math display">\[(\pmb X^T\pmb X)^{-1}(\pmb X^T\pmb y)=\pmb \beta\]</span></p>
 <p>Comments:</p>
@@ -385,20 +373,20 @@ div.csl-indent {
 </ul>
 </section>
 <section id="ols-as-an-estimator" class="level2">
-<h2 class="anchored" data-anchor-id="ols-as-an-estimator">OLS as an “estimator”</h2>
+<h2>OLS as an “estimator”</h2>
 <p>Remember, we don’t have the whole population, we just have a sample. Thus, the <strong>residuals</strong> we get from an OLS estimation are different from the underlying <strong>errors</strong> in the population due to <strong>sampling error</strong> in our estimate of <span class="math inline">\(\beta\)</span></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/OLS_population_v_sample.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Source: Gregory Gundersen’s Blog</figcaption>
+<figure>
+<p><img src="assets/OLS_population_v_sample.png" class="img-fluid" /></p>
+<figcaption>Source: Gregory Gundersen’s Blog</figcaption>
 </figure>
 </div>
 </section>
 <section id="ols-as-an-estimator-1" class="level2">
-<h2 class="anchored" data-anchor-id="ols-as-an-estimator-1">OLS as an “estimator”</h2>
+<h2>OLS as an “estimator”</h2>
 <p>Here is another example of this distinction with the data we generated earlier. Recall the “true” parameters: <span class="math inline">\(y = (\beta_0=0)+(\beta_1=2)x + \epsilon\)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>x)))</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>              Estimate Std. Error    t value     Pr(&gt;|t|)
 (Intercept) -0.7233802  0.8190561 -0.8831876 3.816302e-01
@@ -407,40 +395,40 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </div>
 </section>
 <section id="ols---estimation-v.-reality" class="level2">
-<h2 class="anchored" data-anchor-id="ols---estimation-v.-reality">OLS - Estimation v. reality</h2>
+<h2>OLS - Estimation v. reality</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data,<span class="fu">aes</span>(x,y))<span class="sc">+</span><span class="fu">geom_point</span>()<span class="sc">+</span><span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">'lm'</span>,<span class="at">se=</span>T)<span class="sc">+</span><span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">6</span>,<span class="at">y=</span><span class="dv">2</span>,<span class="at">label =</span> <span class="st">"Regression output: y=-.72+1.92x"</span>,<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">3</span>,<span class="at">y=</span><span class="dv">12</span>,<span class="at">label =</span> <span class="st">"True equation: y=0+2x+N(0,3)"</span>) <span class="sc">+</span> </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">slope =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data,<span class="fu">aes</span>(x,y))<span class="sc">+</span><span class="fu">geom_point</span>()<span class="sc">+</span><span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&#39;lm&#39;</span>,<span class="at">se=</span>T)<span class="sc">+</span><span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">6</span>,<span class="at">y=</span><span class="dv">2</span>,<span class="at">label =</span> <span class="st">&quot;Regression output: y=-.72+1.92x&quot;</span>,<span class="at">color=</span><span class="st">&quot;blue&quot;</span>)<span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">x=</span><span class="dv">3</span>,<span class="at">y=</span><span class="dv">12</span>,<span class="at">label =</span> <span class="st">&quot;True equation: y=0+2x+N(0,3)&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">slope =</span> <span class="dv">2</span>))</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+<pre><code>`geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="class8_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="class8_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672" /></p>
 </div>
 </div>
 </section>
 <section id="verifying-our-beta-coefficient-formula" class="level2">
-<h2 class="anchored" data-anchor-id="verifying-our-beta-coefficient-formula">Verifying our beta coefficient formula</h2>
+<h2>Verifying our beta coefficient formula</h2>
 <p>Let’s verify that our simple equation for <span class="math inline">\(\hat b\)</span> works out:</p>
 <p><span class="math display">\[\hat Cov(x,y)/\hat Var(x)=\hat b_1\]</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"cov(x,y)"</span>, <span class="fu">cov</span>(x,y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;cov(x,y)&quot;</span>, <span class="fu">cov</span>(x,y))</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "cov(x,y) 7.8695885474943"</code></pre>
+<pre><code>[1] &quot;cov(x,y) 7.8695885474943&quot;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"var(x)"</span>, <span class="fu">var</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;var(x)&quot;</span>, <span class="fu">var</span>(x))</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "var(x) 4.08333333333333"</code></pre>
+<pre><code>[1] &quot;var(x) 4.08333333333333&quot;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"beta-hat"</span>, <span class="fu">cov</span>(x,y)<span class="sc">/</span><span class="fu">var</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;beta-hat&quot;</span>, <span class="fu">cov</span>(x,y)<span class="sc">/</span><span class="fu">var</span>(x))</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "beta-hat 1.92724617489656"</code></pre>
+<pre><code>[1] &quot;beta-hat 1.92724617489656&quot;</code></pre>
 </div>
 </div>
 </section>
 <section id="what-is-a-regression---prediction-versus-explanation" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-regression---prediction-versus-explanation">What is a regression? - Prediction versus explanation</h2>
+<h2>What is a regression? - Prediction versus explanation</h2>
 <p>Notice a few things:</p>
 <ul>
 <li><p>OLS regression on a sample, by construction, minimizes the sum of the squared residuals</p></li>
@@ -450,29 +438,29 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="why-linear-regression-and-ols-in-particular" class="level2">
-<h2 class="anchored" data-anchor-id="why-linear-regression-and-ols-in-particular">Why linear regression and OLS in particular?</h2>
+<h2>Why linear regression and OLS in particular?</h2>
 <p>OK, then why are regressions ubiquitous?</p>
 <ol type="1">
 <li><p>Approximates the conditional expectation function <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span></p></li>
 <li><p>The “best linear unbiased estimator” or BLUE, when the Gauss-Markov assumptions met <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span></p></li>
-<li><p>Equivalent to maximium likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (<span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span>, p.&nbsp;43) and with a <a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">uniform prior</a></p></li>
+<li><p>Equivalent to maximium likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (<span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span>, p. 43) and with a <a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">uniform prior</a></p></li>
 </ol>
 <p>Let’s consider each in turn.</p>
 </section>
 <section id="approximates-the-conditional-expectation-function" class="level2">
-<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function">“Approximates the conditional expectation function”</h2>
+<h2>“Approximates the conditional expectation function”</h2>
 <p>Recall that much of the information we want to extract from a distribution is summarized in its first two moments: mean and variance</p>
 <p>The conditional expectation function [CEF] expresses the expected value (or mean) of a variable (Y) as a function of another variable (X)</p>
 <p>The CEF is often not linear, but the OLS estimator is the best linear approximation to the CEF function <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>, Theorem 3.1.6)</span></p>
 </section>
 <section id="approximates-the-conditional-expectation-function-1" class="level2">
-<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function-1">“Approximates the conditional expectation function”</h2>
+<h2>“Approximates the conditional expectation function”</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/CEF.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><span class="citation" data-cites="angrist2008">Angrist and Pischke (<a href="#ref-angrist2008" role="doc-biblioref">2008</a>)</span>, Ch. 3</figcaption>
+<figure>
+<p><img src="assets/CEF.png" class="img-fluid" /></p>
+<figcaption><span class="citation" data-cites="angrist2008">Angrist and Pischke (<a href="#ref-angrist2008" role="doc-biblioref">2008</a>)</span>, Ch. 3</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
@@ -481,24 +469,24 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </div>
 </section>
 <section id="approximates-the-conditional-expectation-function-2" class="level2">
-<h2 class="anchored" data-anchor-id="approximates-the-conditional-expectation-function-2">“Approximates the conditional expectation function”</h2>
+<h2>“Approximates the conditional expectation function”</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>The “standard”, unmodified form of OLS assumes that the distribution of Y remains the same across all levels of X (i.e., the distribution is homoskedastic or possesses “spherical errors”), and that the only difference is a shift in where the mean is placed</p>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' scaled_dnorm</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; scaled_dnorm</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; </span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; </span></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>scaled_dnorm <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>, scale) <span class="fu">dnorm</span>(x, mean, sd) <span class="sc">*</span> scale</span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' geom_norm_density</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; geom_norm_density</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; </span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&#39; </span></span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>geom_norm_density <span class="ot">&lt;-</span> <span class="cf">function</span>(mean, sd, fun, args, y_offset, color, fill,</span>
 <span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                              alpha, scale) {</span>
 <span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_area</span>(</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">stat =</span> <span class="st">"function"</span>,</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">stat =</span> <span class="st">&quot;function&quot;</span>,</span>
 <span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> fun,</span>
 <span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> mean, <span class="at">sd =</span> sd, <span class="at">scale =</span> scale),</span>
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">xlim =</span> <span class="fu">c</span>(mean <span class="sc">-</span> <span class="dv">3</span> <span class="sc">*</span> sd, mean <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> sd),</span>
@@ -510,8 +498,8 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>plot_alpha <span class="ot">&lt;-</span> .<span class="dv">50</span></span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plot_fill <span class="ot">&lt;-</span> <span class="st">"#3F72AF"</span></span>
-<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>plot_color <span class="ot">&lt;-</span> <span class="st">"#112D4E"</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plot_fill <span class="ot">&lt;-</span> <span class="st">&quot;#3F72AF&quot;</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>plot_color <span class="ot">&lt;-</span> <span class="st">&quot;#112D4E&quot;</span></span>
 <span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>plot_xlim <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">18</span>, <span class="dv">18</span>)</span>
 <span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
@@ -614,35 +602,35 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <span id="cb15-125"><a href="#cb15-125" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_point</span>(</span>
 <span id="cb15-126"><a href="#cb15-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, <span class="at">y =</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>),</span>
 <span id="cb15-127"><a href="#cb15-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">4</span>,</span>
-<span id="cb15-128"><a href="#cb15-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">"circle"</span>,</span>
+<span id="cb15-128"><a href="#cb15-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;circle&quot;</span>,</span>
 <span id="cb15-129"><a href="#cb15-129" aria-hidden="true" tabindex="-1"></a>    <span class="at">group =</span> <span class="dv">1</span>,</span>
 <span id="cb15-130"><a href="#cb15-130" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> plot_fill,</span>
 <span id="cb15-131"><a href="#cb15-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> plot_color</span>
 <span id="cb15-132"><a href="#cb15-132" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb15-133"><a href="#cb15-133" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">theme</span>(</span>
-<span id="cb15-134"><a href="#cb15-134" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F9F7F7"</span>, <span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
-<span id="cb15-135"><a href="#cb15-135" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F9F7F7"</span>),</span>
-<span id="cb15-136"><a href="#cb15-136" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line.x =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#3D3C42"</span>),</span>
+<span id="cb15-134"><a href="#cb15-134" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;#F9F7F7&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;#F9F7F7&quot;</span>),</span>
+<span id="cb15-135"><a href="#cb15-135" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;#F9F7F7&quot;</span>),</span>
+<span id="cb15-136"><a href="#cb15-136" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line.x =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">&quot;#3D3C42&quot;</span>),</span>
 <span id="cb15-137"><a href="#cb15-137" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>(),</span>
-<span id="cb15-138"><a href="#cb15-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
-<span id="cb15-139"><a href="#cb15-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"#F9F7F7"</span>),</span>
+<span id="cb15-138"><a href="#cb15-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">&quot;#F9F7F7&quot;</span>),</span>
+<span id="cb15-139"><a href="#cb15-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">&quot;#F9F7F7&quot;</span>),</span>
 <span id="cb15-140"><a href="#cb15-140" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">0</span>),</span>
 <span id="cb15-141"><a href="#cb15-141" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>(),</span>
 <span id="cb15-142"><a href="#cb15-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>()</span>
 <span id="cb15-143"><a href="#cb15-143" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
 <span id="cb15-144"><a href="#cb15-144" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">labs</span>(</span>
-<span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">""</span>,</span>
-<span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span></span>
-<span id="cb15-147"><a href="#cb15-147" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb15-147"><a href="#cb15-147" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="class8_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<p><img src="class8_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672" /></p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <section id="best-linear-unbiased-estimator-blue" class="level2">
-<h2 class="anchored" data-anchor-id="best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</h2>
+<h2>“Best linear unbiased estimator” (BLUE)</h2>
 <p>If the <a href="https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/">Gauss-Markov assumptions</a> are satisified, then OLS is the:</p>
 <ul>
 <li><p><strong>Best</strong> (minimum variance among alternative estimators)</p></li>
@@ -653,7 +641,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <p>Recent research seems to suggest that it might actually be the <a href="https://users.ssc.wisc.edu/~bhansen/papers/ecnmt_2022.pdf">best unbiased estimator</a> if these assumptions hold</p>
 </section>
 <section id="equivalent-to-mle-and-map-under-certain-conditions" class="level2">
-<h2 class="anchored" data-anchor-id="equivalent-to-mle-and-map-under-certain-conditions">“Equivalent to MLE and MAP under certain conditions”</h2>
+<h2>“Equivalent to MLE and MAP under certain conditions”</h2>
 <p>There are other modeling frameworks to help make sense of data.</p>
 <ul>
 <li><p><a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">Maximum likelihood estimation</a> or MLE: What parameter values make the data most likely, GIVEN an assumed distribution?</p></li>
@@ -663,7 +651,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <p>Note that MLE and GMM are the primary alternatives in our field to OLS/WLS/GLS: they are used for SEM, HLM, panel data estimators, logit, probit, and other models</p>
 </section>
 <section id="equivalent-to-mle-and-map-under-certain-conditions-1" class="level2">
-<h2 class="anchored" data-anchor-id="equivalent-to-mle-and-map-under-certain-conditions-1">“Equivalent to MLE and MAP under certain conditions”</h2>
+<h2>“Equivalent to MLE and MAP under certain conditions”</h2>
 <p>When we have a uniform prior (all parameter values within an interval are equally likely) and when the error term is normally distributed, OLS provides the same estimate as MLE and MAP.</p>
 <p>This should be somewhat comforting, since it implies:</p>
 <ul>
@@ -672,16 +660,16 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="aside-an-example-of-how-likelihood-functions-work" class="level2">
-<h2 class="anchored" data-anchor-id="aside-an-example-of-how-likelihood-functions-work">Aside: An example of how likelihood functions work</h2>
+<h2>Aside: An example of how likelihood functions work</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q"><img src="assets/likelihood.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">An example of a likelihood function</figcaption>
+<figure>
+<p><a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q"><img src="assets/likelihood.png" class="img-fluid" /></a></p>
+<figcaption>An example of a likelihood function</figcaption>
 </figure>
 </div>
 </section>
 <section id="when-is-linear-regression-appropriate-and-or-optimal" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal">When is linear regression appropriate and / or optimal?</h2>
+<h2>When is linear regression appropriate and / or optimal?</h2>
 <p>When the assumptions are satisfied!</p>
 <p>And what are those assumptions? There are two <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares#Assumptions">“flavors”</a>:</p>
 <ul>
@@ -691,16 +679,16 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <p>I’ve tried to align the numbering so that they correspond, where possible.</p>
 </section>
 <section id="when-is-linear-regression-appropriate-and-or-optimal-1" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-1">When is linear regression appropriate and / or optimal?</h2>
+<h2>When is linear regression appropriate and / or optimal?</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/fixed design.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">“Fixed design” <span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span></figcaption>
+<figure>
+<p><img src="assets/fixed%20design.png" class="img-fluid" /></p>
+<figcaption>“Fixed design” <span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span></figcaption>
 </figure>
 </div>
 </section>
 <section id="when-is-linear-regression-appropriate-and-or-optimal-2" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-2">When is linear regression appropriate and / or optimal?</h2>
+<h2>When is linear regression appropriate and / or optimal?</h2>
 <p><a href="https://gregorygundersen.com/blog/2021/08/26/ols-estimator-sampling-distribution/#standard-ols-assumptions">“Random design”</a></p>
 <ol type="1">
 <li><p>Linearity (model is correctly specified)</p></li>
@@ -718,7 +706,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="when-is-linear-regression-appropriate-and-or-optimal-3" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</h2>
+<h2>When is linear regression appropriate and / or optimal?</h2>
 <p>The <a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem">Gauss-Markov theorem</a> proves that, given these assumptions, the OLS estimator is the BLUE</p>
 <ul>
 <li><p>It becomes the best unbiased estimator if normality is assumed (it reaches the <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound">Cramer-Rao lower bound</a>)</p></li>
@@ -727,7 +715,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="aside-alternative-estimators-when-olsgls-not-applicable" class="level2">
-<h2 class="anchored" data-anchor-id="aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</h2>
+<h2>Aside: alternative estimators when OLS/GLS not applicable</h2>
 <ul>
 <li><p>Maximum likelihood estimation (MLE)</p></li>
 <li><p>Bayesian / maximium a posteriori (MAP) techniques</p></li>
@@ -743,7 +731,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <section id="performing-a-regression-analysis" class="level1">
 <h1>Performing a regression analysis</h1>
 <section id="how-to-properly-perform-a-regression-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</h2>
+<h2>How to properly perform a regression analysis?</h2>
 <ol type="1">
 <li>We determine the appropriateness of regression for our model and data from two angles:</li>
 </ol>
@@ -757,7 +745,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="the-column-variable-perspective" class="level2">
-<h2 class="anchored" data-anchor-id="the-column-variable-perspective">The column (variable) perspective</h2>
+<h2>The column (variable) perspective</h2>
 <p>Conditional mean structure</p>
 <ol type="1">
 <li><p>Do we have the right variables? (DAGs, theory)</p></li>
@@ -772,7 +760,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="the-row-observation-perspective" class="level2">
-<h2 class="anchored" data-anchor-id="the-row-observation-perspective">The row (observation) perspective</h2>
+<h2>The row (observation) perspective</h2>
 <p>Conditional mean structure</p>
 <ol type="1">
 <li><p>Are there outliers present? (<a href="https://en.wikipedia.org/wiki/Cook%27s_distance">Cook’s distance</a>)</p></li>
@@ -786,44 +774,44 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="deep-dive-do-we-have-the-right-variables" class="level2">
-<h2 class="anchored" data-anchor-id="deep-dive-do-we-have-the-right-variables">Deep dive: Do we have the right variables?</h2>
+<h2>Deep dive: Do we have the right variables?</h2>
 <p>Note that we don’t really have a “test” to apply here, but the assumption of proper specification is critical (including the right variables)</p>
 <p>Why? Because if it is violated we don’t only lose the “best” part of BLUE, we also lose the “unbiased” part, and then we are just “LE”</p>
 <p>And furthermore, the estimator isn’t even “consistent” -&gt; i.e., gets closer to the true value as we increase the size of the sample, which is a “fall-back” position we can take if we don’t have an unbiased estimator for smaller samples</p>
 </section>
 <section id="the-issue-omitted-variable-bias" class="level2">
-<h2 class="anchored" data-anchor-id="the-issue-omitted-variable-bias">The issue: Omitted variable bias</h2>
+<h2>The issue: Omitted variable bias</h2>
 <p><a href="https://www.econometrics-with-r.org/6.1-omitted-variable-bias.html">Omitted variable bias</a> causes <strong>ALL</strong> of the beta estimates in a model to be biased in proportion the correlation between the regressors and the omitted variable left in the error term</p>
 <p>This bias can be expressed in terms of “short” and “long” regression estimates, where short means a relevant variable <span class="math inline">\(b_2\)</span> has been omitted and the long is where it has been included (and it is assumed that the error term is truly uncorrelated in the case of the long equation):</p>
 <p>In the simple case, the upshot is the short regression coefficient <span class="math inline">\(b_1\)</span> <a href="https://www3.nd.edu/~rwilliam/stats2/l41.pdf">will be biased</a> in the following manner:</p>
 <p><span class="math display">\[b_{1short} = b_{1long} + b_{2omitted}(cov(b_1,b_2)/var(b_1))\]</span></p>
 </section>
 <section id="the-issue-omitted-variable-bias-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-issue-omitted-variable-bias-1">The issue: Omitted variable bias</h2>
+<h2>The issue: Omitted variable bias</h2>
 <p>The problem: remember that OLS <strong>assumes by construction</strong> that the error term and the X variables are uncorrelated, so we can’t rely on a quick test of their correlation to draw conclusions. You need to <strong>know from theory or experience</strong> that you are missing the variable and then can run the test of including it to see if it changes the results (assuming it is something you can measure!)</p>
 <p>What can you do if this variable is unobservable? [See our endogeneity day!]</p>
 </section>
 <section id="the-flip-side-the-illusion-of-statistical-control" class="level2">
-<h2 class="anchored" data-anchor-id="the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</h2>
-<blockquote class="blockquote">
+<h2>The flip side: The “illusion of statistical control”</h2>
+<blockquote>
 <p>By mapping practices to these purposes, we demonstrate why current CV practice struggles to accomplish any of them effectively while potentially reducing the interpretability of results. Empirically, we examine correlations between CVs and independent variables (IVs)—relationships that receive little consideration in standard CV practice—demonstrating these relationships can and do influence the magnitude and sign of regression coefficients, sometimes dramatically—just not very often. In fact, the CVs in the studies we reviewed most often have little if any impact on research find- ings or interpretations, creating the illusion of statistical control when little control actually occurs. <span class="citation" data-cites="carlson2012">(<a href="#ref-carlson2012" role="doc-biblioref">Carlson and Wu 2012, 415</a>)</span></p>
 </blockquote>
 </section>
 <section id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions" class="level2">
-<h2 class="anchored" data-anchor-id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</h2>
-<blockquote class="blockquote">
+<h2>What if we fail to meet one or more of the assumptions?</h2>
+<blockquote>
 <p>An econometrics textbook can be characterized as a catalog of which estimators are most desirable in what estimating situations. Thus, a researcher facing a particular estimating problem simply turns to the catalog to determine which estimator is most appropriate for him or her to employ in that situation. The purpose of this chapter is to explain how this catalog is structured. <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008, 40</a>)</span></p>
 </blockquote>
 </section>
 <section id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" class="level2">
-<h2 class="anchored" data-anchor-id="what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</h2>
+<h2>What if we fail to meet one or more of the assumptions?</h2>
 <p>But note that:</p>
-<blockquote class="blockquote">
+<blockquote>
 <p>If more than one of the CLR model assumptions is violated at the same time, econometricians often find themselves in trouble because their catalogs usually tell them what to do if only one of the CLR model assumptions is violated. Much recent econometric research examines situations in which two assumptions of the CLR model are violated simultaneously. These situations will be discussed when appropriate. <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008, 44</a>)</span></p>
 </blockquote>
 </section>
 <section id="statistical-inference" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inference">Statistical inference</h2>
+<h2>Statistical inference</h2>
 <p>Once we have an estimate for <span class="math inline">\(\beta\)</span>, here are two approaches to statistical inference <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span>:</p>
 <ul>
 <li><p>Explicitly assume that the error term is distributed normally (t-tests and F-tests are appropriate straight away, even for small samples)</p></li>
@@ -831,7 +819,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="statistical-inference-1" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inference-1">Statistical inference</h2>
+<h2>Statistical inference</h2>
 <p>Questions about the variance structure also need to be settled:</p>
 <ul>
 <li><p>Are errors spherical?</p></li>
@@ -840,7 +828,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="statistical-inferences-you-can-draw" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inferences-you-can-draw">Statistical inferences you can draw</h2>
+<h2>Statistical inferences you can draw</h2>
 <p>The simplest test:</p>
 <ul>
 <li>Is <span class="math inline">\(\beta \ne 0\)</span>?: Use t-tests</li>
@@ -848,23 +836,23 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <p>Intuition: We assume a null distribution that <span class="math inline">\(\beta = 0\)</span>, and then see where our estimated value falls within that distribution. The more extreme it is, the more likely the assumption that <span class="math inline">\(\beta = 0\)</span> is false</p>
 </section>
 <section id="statistical-inferences-you-can-draw-1" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inferences-you-can-draw-1">Statistical inferences you can draw</h2>
+<h2>Statistical inferences you can draw</h2>
 <p>A more powerful set of tests: linear hypotheses</p>
 <ul>
 <li><p>Is <span class="math inline">\(\beta_1 = \beta_2\)</span>?</p></li>
 <li><p>Is <span class="math inline">\(\beta_1 = - \beta_2 + 2\beta_3\)</span>?</p></li>
 <li><p>Is <span class="math inline">\(\beta_1 = \beta_2 = \beta_3 = 0\)</span>?</p></li>
 </ul>
-<p>A restriction matrix is constructed to run an F-test (Wald test), Likelihood Ratio (LR) or LaGrange Multiplier (LM) test <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>, ch.&nbsp;4)</span></p>
+<p>A restriction matrix is constructed to run an F-test (Wald test), Likelihood Ratio (LR) or LaGrange Multiplier (LM) test <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>, ch. 4)</span></p>
 <p>Intuition: Unconstrained optimization (remember we are minimizing least squares) is easier than constrained. We ask whether there is a significant difference in model fit after imposing the restriction: If yes, then the restriction is probably false.</p>
 </section>
 <section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples:</h2>
+<h2>Examples:</h2>
 <p>“Linear hypothesis tests fail to reject the assertion that growth and reductions in either team size (<span class="math inline">\(\chi^2\)</span>(1) = 0.39, p &gt; 0.10) or within- industry experiences (<span class="math inline">\(\chi^2\)</span>(1) = 0.17, p &gt; 0.10) have equal and opposite effects” <span class="citation" data-cites="fox2023">(<a href="#ref-fox2023" role="doc-biblioref">Fox, Simsek, and Heavey 2023, 17</a>)</span></p>
 <p>“A Wald test indicates that the hypothesis that both variables are simultaneously zero is rejected (<span class="math inline">\(\chi^2\)</span>(2) = 7.50, p = .02)” <span class="citation" data-cites="fox2022">(<a href="#ref-fox2022" role="doc-biblioref">Fox, Simsek, and Heavey 2022, 18</a>, FN)</span></p>
 </section>
 <section id="aside-statistical-inference-and-p-hacking" class="level2">
-<h2 class="anchored" data-anchor-id="aside-statistical-inference-and-p-hacking">Aside: Statistical inference and p-hacking</h2>
+<h2>Aside: Statistical inference and p-hacking</h2>
 <ul>
 <li><p><a href="https://onlinelibrary.wiley.com/doi/10.1002/smj.975">“Searching for asterisks”</a> is all about demonstrating that a beta coefficient is “statistically significant” and differs from 0.</p></li>
 <li><p>It does not consider economic / practical effect size</p></li>
@@ -873,19 +861,19 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="statistical-inferences-and-p-hacking" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inferences-and-p-hacking">Statistical inferences and p-hacking</h2>
+<h2>Statistical inferences and p-hacking</h2>
 <p>On the flip side, being careful when performing your analyses can stop you from making faulty inferences - even if it is painful in the short run.</p>
-<blockquote class="blockquote">
+<blockquote>
 <p>T-stat looks too good. Use standard errors- significance gone. -Keisuke Hirano <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008, 6</a>)</span></p>
 </blockquote>
 </section>
 <section id="the-flip-side-of-significance-statistical-power" class="level2">
-<h2 class="anchored" data-anchor-id="the-flip-side-of-significance-statistical-power">The flip side of significance: Statistical power</h2>
+<h2>The flip side of significance: Statistical power</h2>
 <p>Don’t forget to give yourself a fighting chance to find the effect you are looking for!</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://towardsdatascience.com/5-ways-to-increase-statistical-power-377c00dd0214"><img src="assets/statisticalpower.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Source: Yao 2021</figcaption>
+<figure>
+<p><a href="https://towardsdatascience.com/5-ways-to-increase-statistical-power-377c00dd0214"><img src="assets/statisticalpower.png" class="img-fluid" /></a></p>
+<figcaption>Source: Yao 2021</figcaption>
 </figure>
 </div>
 </section>
@@ -893,7 +881,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <section id="applications" class="level1">
 <h1>Applications</h1>
 <section id="application-readings" class="level2">
-<h2 class="anchored" data-anchor-id="application-readings">Application readings</h2>
+<h2>Application readings</h2>
 <p>Let’s level-set people’s familiarity with these pieces.</p>
 <ul>
 <li><p>Katila, R., &amp; Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.</p></li>
@@ -901,7 +889,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 <section id="katila-and-ahuja-2002" class="level2">
-<h2 class="anchored" data-anchor-id="katila-and-ahuja-2002">Katila and Ahuja (2002)</h2>
+<h2>Katila and Ahuja (2002)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -912,15 +900,15 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sp4dt3v7znny3j4n6ujs7/Katila-and-Ahuja-2002-18485.pdf?rlkey=3am094251e9t6ep1rcp1mdzhw&amp;dl=0"><img src="assets/Katila and Ahuja 2002.png" class="img-fluid figure-img"></a></p>
+<figure>
+<p><a href="https://www.dropbox.com/scl/fi/sp4dt3v7znny3j4n6ujs7/Katila-and-Ahuja-2002-18485.pdf?rlkey=3am094251e9t6ep1rcp1mdzhw&amp;dl=0"><img src="assets/Katila%20and%20Ahuja%202002.png" class="img-fluid" /></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="simsek-fox-and-heavey-2021" class="level2">
-<h2 class="anchored" data-anchor-id="simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</h2>
+<h2>Simsek Fox and Heavey (2021)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -931,19 +919,19 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/3w4fswnzn9eos49gbv55h/Simsek-Fox-and-Heavey-2023-7346.pdf?rlkey=kznw7glqg1i40ssiawhiik30z&amp;dl=0"><img src="assets/Simsek et al 2023.png" class="img-fluid figure-img"></a></p>
+<figure>
+<p><a href="https://www.dropbox.com/scl/fi/3w4fswnzn9eos49gbv55h/Simsek-Fox-and-Heavey-2023-7346.pdf?rlkey=kznw7glqg1i40ssiawhiik30z&amp;dl=0"><img src="assets/Simsek%20et%20al%202023.png" class="img-fluid" /></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="break" class="level2">
-<h2 class="anchored" data-anchor-id="break">Break</h2>
-<p><img src="assets/break.png" class="img-fluid"></p>
+<h2>Break</h2>
+<p><img src="assets/break.png" class="img-fluid" /></p>
 </section>
 <section id="replication-presentation" class="level2">
-<h2 class="anchored" data-anchor-id="replication-presentation">Replication Presentation</h2>
+<h2>Replication Presentation</h2>
 <ul>
 <li>Replication: Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</li>
 </ul>
@@ -955,11 +943,11 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <section id="preparation-for-next-class" class="level1">
 <h1>Preparation for next class</h1>
 <section id="next-class" class="level2">
-<h2 class="anchored" data-anchor-id="next-class">Next class</h2>
+<h2>Next class</h2>
 <p>Concept check 2 will available this evening - please complete it before next class.</p>
 </section>
 <section id="next-class-1" class="level2">
-<h2 class="anchored" data-anchor-id="next-class-1">Next class</h2>
+<h2>Next class</h2>
 <p><strong>Techniques II: Moderation</strong></p>
 <ol type="1">
 <li><p>Dawson, J. F. 2014. Moderation in Management Research: What, Why, When, and How. Journal of Business and Psychology, 29(1), 1-19.</p></li>
@@ -967,7 +955,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="next-class-2" class="level2">
-<h2 class="anchored" data-anchor-id="next-class-2">Next class</h2>
+<h2>Next class</h2>
 <p><strong>Techniques II: Moderation</strong></p>
 <p>Applications:</p>
 <ol start="3" type="1">
@@ -976,17 +964,17 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ol>
 </section>
 <section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<h2>References</h2>
 <div class="{refs}">
 
 </div>
-
-
-
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden" data-render-id="quarto-int-sidebar-title">PhD 1506 - Research Design</span> <span class="hidden" data-render-id="quarto-int-navbar-title">PhD 1506 - Research Design</span> <span class="hidden" data-render-id="quarto-int-navbar:Syllabus">Syllabus</span> <span class="hidden" data-render-id="quarto-int-navbar:/syllabus.html">/syllabus.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Classes">Classes</span> <span class="hidden" data-render-id="quarto-int-navbar:/classes.html">/classes.html</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden" data-render-id="quarto-metatitle">PhD 1506 - Research Design - Class 8 - Techniques I - Regression</span> <span class="hidden" data-render-id="quarto-twittercardtitle">PhD 1506 - Research Design - Class 8 - Techniques I - Regression</span> <span class="hidden" data-render-id="quarto-ogcardtitle">PhD 1506 - Research Design - Class 8 - Techniques I - Regression</span> <span class="hidden" data-render-id="quarto-metasitename">PhD 1506 - Research Design</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-angrist2008" class="csl-entry" role="listitem">
 Angrist, J. D., and J. S Pischke. 2008. <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton, NJ: Princeton University Press.
 </div>
@@ -1005,8 +993,12 @@ Greene, William H. 2012. <span>“Econometric Analysis.”</span>
 <div id="ref-kennedy2008" class="csl-entry" role="listitem">
 Kennedy, Peter. 2008. <em>A Guide to Econometrics</em>. Malden, MA: Blackwell.
 </div>
-</div></section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1241,6 +1233,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
+</body>
 
-
-</body></html>
+</html>
