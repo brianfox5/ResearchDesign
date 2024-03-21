@@ -488,6 +488,22 @@ Everyone should have a working familiarity with the application papers (what the
 One group will actively **try to replicate** the findings with data and code that I provide and report out the process 
 
 
+# Workshop
+
+## Preview for next class?
+
+Given the technical nature of next week's materials, would it be helpful to have a quick preview?
+
+## Agenda
+
+-   Research Question Presentations (11 - 2p; break from 12 - 1p)
+
+-   modified to leave at 11:45, please be back no later than 1:30p
+ 
+-   Breakouts (2 - 3:30p)
+
+-   Reflections 
+
 ## References 
 
 :::{refs}
