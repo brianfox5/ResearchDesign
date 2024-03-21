@@ -87,7 +87,7 @@ $Y = \beta_0 + \beta_1X + \epsilon$; $E[\epsilon|X \ne 0]$
 
 - Fixed effects panel specifications: Can address (1),(2),(3) if the OVs are [time invariant], but can exacerbate (6) [@bascle2008]
 
-- Dynamic model specifications: Can address (4), but caution required since this can introduce other endogeneity problems, especially with panel data (known as the [Nickell bias](http://fmwww.bc.edu/EC-C/S2013/823/EC823.S2013.nn05.slides.pdf))
+- Dynamic model specifications: Can address (2) (3) (4), but caution required since this can introduce other endogeneity problems, especially with panel data (known as the [Nickell bias](http://fmwww.bc.edu/EC-C/S2013/823/EC823.S2013.nn05.slides.pdf))
 
 ## How can you correct for endogeneity?
 

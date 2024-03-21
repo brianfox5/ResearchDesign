@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -60,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -107,17 +128,34 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#agenda" id="toc-agenda" class="nav-link active" data-scroll-target="#agenda">Agenda</a></li>
   <li><a href="#quasi-experimental-designs" id="toc-quasi-experimental-designs" class="nav-link" data-scroll-target="#quasi-experimental-designs">Quasi-experimental designs</a>
   <ul class="collapse">
-  <li><a href="#what-is-a-quasi-experiement" id="toc-what-is-a-quasi-experiement" class="nav-link" data-scroll-target="#what-is-a-quasi-experiement">What is a “quasi-experiement”?</a></li>
+  <li><a href="#what-is-a-quasi-experiment" id="toc-what-is-a-quasi-experiment" class="nav-link" data-scroll-target="#what-is-a-quasi-experiment">What is a “quasi-experiment”?</a></li>
+  <li><a href="#what-is-a-quasi-experiment-1" id="toc-what-is-a-quasi-experiment-1" class="nav-link" data-scroll-target="#what-is-a-quasi-experiment-1">What is a “quasi-experiment”?</a></li>
+  <li><a href="#what-is-a-quasi-experiment-2" id="toc-what-is-a-quasi-experiment-2" class="nav-link" data-scroll-target="#what-is-a-quasi-experiment-2">What is a “quasi-experiment”?</a></li>
+  <li><a href="#what-is-a-quasi-experiment-3" id="toc-what-is-a-quasi-experiment-3" class="nav-link" data-scroll-target="#what-is-a-quasi-experiment-3">What is a “quasi-experiment”?</a></li>
   <li><a href="#why-are-quasi-experiemental-designs-useful" id="toc-why-are-quasi-experiemental-designs-useful" class="nav-link" data-scroll-target="#why-are-quasi-experiemental-designs-useful">Why are quasi-experiemental designs useful?</a></li>
-  <li><a href="#when-are-quasi-experimental-designs-applicable" id="toc-when-are-quasi-experimental-designs-applicable" class="nav-link" data-scroll-target="#when-are-quasi-experimental-designs-applicable">When are quasi-experimental designs applicable?</a></li>
-  <li><a href="#how-can-you-design-a-quasi-experiement" id="toc-how-can-you-design-a-quasi-experiement" class="nav-link" data-scroll-target="#how-can-you-design-a-quasi-experiement">How can you design a quasi-experiement?</a></li>
-  <li><a href="#a-basic-setup-difference-in-difference-estimators-d-i-d" id="toc-a-basic-setup-difference-in-difference-estimators-d-i-d" class="nav-link" data-scroll-target="#a-basic-setup-difference-in-difference-estimators-d-i-d">A basic setup: Difference-in-difference estimators (D-i-D)</a></li>
+  </ul></li>
+  <li><a href="#employing-a-quasi-experiement" id="toc-employing-a-quasi-experiement" class="nav-link" data-scroll-target="#employing-a-quasi-experiement">Employing a quasi-experiement</a>
+  <ul class="collapse">
+  <li><a href="#what-are-the-common-threads-among-many-of-these-designs" id="toc-what-are-the-common-threads-among-many-of-these-designs" class="nav-link" data-scroll-target="#what-are-the-common-threads-among-many-of-these-designs">What are the common threads among many of these designs?</a></li>
+  <li><a href="#what-are-the-common-threads-among-many-of-these-designs-1" id="toc-what-are-the-common-threads-among-many-of-these-designs-1" class="nav-link" data-scroll-target="#what-are-the-common-threads-among-many-of-these-designs-1">What are the common threads among many of these designs?</a></li>
+  <li><a href="#what-are-the-common-threads-among-many-of-these-designs-2" id="toc-what-are-the-common-threads-among-many-of-these-designs-2" class="nav-link" data-scroll-target="#what-are-the-common-threads-among-many-of-these-designs-2">What are the common threads among many of these designs?</a></li>
+  <li><a href="#the-aim-the-experimental-ideal" id="toc-the-aim-the-experimental-ideal" class="nav-link" data-scroll-target="#the-aim-the-experimental-ideal">The aim: The experimental ideal</a></li>
+  <li><a href="#the-aim-the-experimental-ideal-1" id="toc-the-aim-the-experimental-ideal-1" class="nav-link" data-scroll-target="#the-aim-the-experimental-ideal-1">The aim: The experimental ideal</a></li>
+  <li><a href="#the-aim-the-experimental-ideal-2" id="toc-the-aim-the-experimental-ideal-2" class="nav-link" data-scroll-target="#the-aim-the-experimental-ideal-2">The aim: The experimental ideal</a></li>
+  </ul></li>
+  <li><a href="#how-can-you-design-a-quasi-experiement" id="toc-how-can-you-design-a-quasi-experiement" class="nav-link" data-scroll-target="#how-can-you-design-a-quasi-experiement">How can you design a quasi-experiement?</a>
+  <ul class="collapse">
+  <li><a href="#a-potential-second-best-option-difference-in-differences" id="toc-a-potential-second-best-option-difference-in-differences" class="nav-link" data-scroll-target="#a-potential-second-best-option-difference-in-differences">A potential second-best option: Difference-in-differences</a></li>
+  <li><a href="#estimating-difference-in-differences" id="toc-estimating-difference-in-differences" class="nav-link" data-scroll-target="#estimating-difference-in-differences">Estimating difference-in-differences</a></li>
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
+  <li><a href="#selected-comparisons-to-difference-in-differences" id="toc-selected-comparisons-to-difference-in-differences" class="nav-link" data-scroll-target="#selected-comparisons-to-difference-in-differences">Selected comparisons to difference-in-differences</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
   <ul class="collapse">
   <li><a href="#application-readings" id="toc-application-readings" class="nav-link" data-scroll-target="#application-readings">Application readings</a></li>
-  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002" class="nav-link" data-scroll-target="#katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
-  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021" class="nav-link" data-scroll-target="#simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
+  <li><a href="#shu-et-al-2012" id="toc-shu-et-al-2012" class="nav-link" data-scroll-target="#shu-et-al-2012">Shu et al (2012)</a></li>
+  <li><a href="#did-you-notice-anything-funny-about-this-paper" id="toc-did-you-notice-anything-funny-about-this-paper" class="nav-link" data-scroll-target="#did-you-notice-anything-funny-about-this-paper">Did you notice anything funny about this paper?</a></li>
+  <li><a href="#fox-souder-and-johnson-working-paper" id="toc-fox-souder-and-johnson-working-paper" class="nav-link" data-scroll-target="#fox-souder-and-johnson-working-paper">Fox Souder and Johnson (working paper)</a></li>
   <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
   <li><a href="#replication-presentation" id="toc-replication-presentation" class="nav-link" data-scroll-target="#replication-presentation">Replication Presentation</a></li>
   </ul></li>
@@ -154,29 +192,134 @@ ul.task-list li input[type="checkbox"] {
 <section id="agenda" class="level2">
 <h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
 <ul>
-<li><p>Quasi-experimental designs: what, why, when, how (40 minutes)</p></li>
-<li><p>Application paper discussion (20 minutes)</p></li>
+<li><p>Quasi-experimental designs: what, why, when, how (30 minutes)</p></li>
+<li><p>Application paper discussion (30 minutes)</p></li>
 <li><p><em>Break</em></p></li>
-<li><p>Replication presentation (Group 1-3-5; 40 minutes)</p></li>
+<li><p>Replication presentation (Group 13-15-17-19; 40 minutes)</p></li>
 <li><p>General discussion (15 minutes)</p></li>
 </ul>
 </section>
 <section id="quasi-experimental-designs" class="level1">
 <h1>Quasi-experimental designs</h1>
-<section id="what-is-a-quasi-experiement" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-quasi-experiement">What is a “quasi-experiement”?</h2>
+<section id="what-is-a-quasi-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-quasi-experiment">What is a “quasi-experiment”?</h2>
+<blockquote class="blockquote">
+<p>A quasi-experiment is a study that takes place in a field setting and involves a change in a key independent variable of interest but relaxes one or both of the defining criteria of laboratory and field experiments: random assignment to treatment conditions and controlled manipulation of the independent variable <span class="citation" data-cites="grant2009">(<a href="#ref-grant2009" role="doc-biblioref">Grant and Wall 2009, 655</a>)</span></p>
+</blockquote>
+</section>
+<section id="what-is-a-quasi-experiment-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-quasi-experiment-1">What is a “quasi-experiment”?</h2>
+<p>“Natural experiments” as a form of quasi-experiment:</p>
+<blockquote class="blockquote">
+<p>Quasi-experiments also include changes to an independent variable that are naturally occurring rather than manipulated <span class="citation" data-cites="grant2009">(<a href="#ref-grant2009" role="doc-biblioref">Grant and Wall 2009, 655</a>)</span></p>
+</blockquote>
+</section>
+<section id="what-is-a-quasi-experiment-2" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-quasi-experiment-2">What is a “quasi-experiment”?</h2>
+<p>What about “regression discontinuity designs”?</p>
+<blockquote class="blockquote">
+<p>Regression discontinuity designs (RDDs) are sometimes also called cutoff-based designs. They assign units to conditions based on a cut- off score on an ordered assignment variable, with units that fall on one side of the cutoff receiving treatment and those on the other side receiving the comparison condition. <span class="citation" data-cites="shadish2009">(<a href="#ref-shadish2009" role="doc-biblioref">Shadish and Cook 2009, 615</a>)</span></p>
+</blockquote>
+</section>
+<section id="what-is-a-quasi-experiment-3" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-quasi-experiment-3">What is a “quasi-experiment”?</h2>
+<p>What about “interrupted time series” or “structural breaks”?</p>
+<blockquote class="blockquote">
+<p>Similar to RDD, an effect is measured as a change in the slope or intercept of the time series at the point of treatment introduction. <span class="citation" data-cites="shadish2009">(<a href="#ref-shadish2009" role="doc-biblioref">Shadish and Cook 2009, 617</a>)</span></p>
+</blockquote>
 </section>
 <section id="why-are-quasi-experiemental-designs-useful" class="level2">
 <h2 class="anchored" data-anchor-id="why-are-quasi-experiemental-designs-useful">Why are quasi-experiemental designs useful?</h2>
+<p>Per <span class="citation" data-cites="grant2009">Grant and Wall (<a href="#ref-grant2009" role="doc-biblioref">2009</a>)</span>, the benefits include but are not limited to:</p>
+<ol type="1">
+<li><p>strengthening causal inference when random assignment and controlled manipulation are not possible or ethical; and</p></li>
+<li><p>building better theories of time and temporal progression.</p></li>
+</ol>
 </section>
-<section id="when-are-quasi-experimental-designs-applicable" class="level2">
-<h2 class="anchored" data-anchor-id="when-are-quasi-experimental-designs-applicable">When are quasi-experimental designs applicable?</h2>
 </section>
-<section id="how-can-you-design-a-quasi-experiement" class="level2">
-<h2 class="anchored" data-anchor-id="how-can-you-design-a-quasi-experiement">How can you design a quasi-experiement?</h2>
+<section id="employing-a-quasi-experiement" class="level1">
+<h1>Employing a quasi-experiement</h1>
+<section id="what-are-the-common-threads-among-many-of-these-designs" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-the-common-threads-among-many-of-these-designs">What are the common threads among many of these designs?</h2>
+<p>Two groups: treatment and control</p>
+<ul>
+<li><p>The amount of “randomness” differs across the designs</p></li>
+<li><p>The distinction between treatment and control also varies</p></li>
+</ul>
 </section>
-<section id="a-basic-setup-difference-in-difference-estimators-d-i-d" class="level2">
-<h2 class="anchored" data-anchor-id="a-basic-setup-difference-in-difference-estimators-d-i-d">A basic setup: Difference-in-difference estimators (D-i-D)</h2>
+<section id="what-are-the-common-threads-among-many-of-these-designs-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-the-common-threads-among-many-of-these-designs-1">What are the common threads among many of these designs?</h2>
+<p>Two+ time periods or comparison points: pre-/post or with/without treatment</p>
+<ul>
+<li><p>The period of followup before and after differs</p></li>
+<li><p>The “fuzziness” of the treatment can also vary</p></li>
+</ul>
+</section>
+<section id="what-are-the-common-threads-among-many-of-these-designs-2" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-the-common-threads-among-many-of-these-designs-2">What are the common threads among many of these designs?</h2>
+<p>Accounting for covariates</p>
+<ul>
+<li><p>Random assignment is used to “wash out” differences between the groups</p></li>
+<li><p>Propensity scores and control variables used to account for residual differences</p></li>
+</ul>
+</section>
+<section id="the-aim-the-experimental-ideal" class="level2">
+<h2 class="anchored" data-anchor-id="the-aim-the-experimental-ideal">The aim: The experimental ideal</h2>
+<ol type="1">
+<li><p>Experimenter intervention in selection of indepedent variable (treatment)</p></li>
+<li><p>Random assignment to treatment and control group</p></li>
+<li><p>Creation of a stark counterfactual: what would happen <strong>but for</strong> the treatment?</p></li>
+</ol>
+<p>Assuming complications like “compliance” and other experimental design concerns are addressed, this allows for a clean determination of counterfactuals</p>
+</section>
+<section id="the-aim-the-experimental-ideal-1" class="level2">
+<h2 class="anchored" data-anchor-id="the-aim-the-experimental-ideal-1">The aim: The experimental ideal</h2>
+<p>Per Rubin’s Potential Outcomes Framework <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span>:</p>
+<p><span class="math display">\[E[y_{1i}|d_i = 1] - E[y_{0i}|d_i = 0] =\]</span> <span class="math display">\[\pmb{E[y_{1i}-y_{0i}|d_i = 1]} + (E[y_{0i}|d_i = 1] - E[y_{0i}|d_i = 0])\]</span></p>
+<ul>
+<li><p>The LHS (top) is the difference between the treatment and control group in the population</p></li>
+<li><p>The bolded term is the “average treatment effect on the treated” - the causal effect that occurs for the treated group</p></li>
+<li><p>The RHS term in parentheses is the selection bias</p></li>
+</ul>
+</section>
+<section id="the-aim-the-experimental-ideal-2" class="level2">
+<h2 class="anchored" data-anchor-id="the-aim-the-experimental-ideal-2">The aim: The experimental ideal</h2>
+<p><span class="math display">\[E[y_{1i}|d_i = 1] - E[y_{0i}|d_i = 0] =\]</span> <span class="math display">\[\pmb{E[y_{1i}-y_{0i}|d_i = 1]} + (E[y_{0i}|d_i = 1] - E[y_{0i}|d_i = 0])\]</span></p>
+<p>The appeal of the experimental ideal is twofold:</p>
+<ol type="1">
+<li><p>We have a treatment and control group to estimate the LHS.</p></li>
+<li><p>We use random assignment to set the selection bias term to 0.</p></li>
+</ol>
+<p>Taken together, this allows us to <strong>identify</strong> the causal effect of interest.</p>
+</section>
+</section>
+<section id="how-can-you-design-a-quasi-experiement" class="level1">
+<h1>How can you design a quasi-experiement?</h1>
+<section id="a-potential-second-best-option-difference-in-differences" class="level2">
+<h2 class="anchored" data-anchor-id="a-potential-second-best-option-difference-in-differences">A potential second-best option: Difference-in-differences</h2>
+<p>Perhaps we can’t get to the experimental ideal.</p>
+<p>But let’s say we do have a treatment and a control group that have been selected via a “natural experiment” (e.g., close elections, change in regulations, exogenous shocks) that helps us mitigate selection bias.</p>
+<p>We can track the change in outcomes over time for both groups and get a difference before the treatment <span class="math inline">\(t_1\)</span> (pre-treatment) and after the time of treatment <span class="math inline">\(t_2\)</span> (post-treatment).</p>
+<p>We can then look at the difference-in-differences between these two groups to estimate the causal effect.</p>
+</section>
+<section id="estimating-difference-in-differences" class="level2">
+<h2 class="anchored" data-anchor-id="estimating-difference-in-differences">Estimating difference-in-differences</h2>
+<p>D-i-D as a comparison of means: <span class="math inline">\(DiD = (Y_{post,treated}-Y_{pre,treated})-(Y_{post,control}-Y_{pre,control})\)</span></p>
+<p>D-i-D in a regression framework: <span class="math inline">\(Y = \beta_0+\beta_1T+\beta_2\delta+\beta_3\delta T\)</span></p>
+<p>where <span class="math inline">\(\delta\)</span> = 0 indicates pre-treatment and <span class="math inline">\(\delta\)</span> = 1 indicates post-treatment and T = 1 indicates in the treatment group while T = 0 indicates the control group</p>
+<p>In this setup, the estimated coefficient <span class="math inline">\(\beta_3\)</span> is the D-i-D estimator</p>
+</section>
+<section id="assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
+<p>There are many <a href="https://www.publichealth.columbia.edu/research/population-health-methods/difference-difference-estimation">assumptions to make the interpretation of a difference-in-differences casual</a>:</p>
+<p><img src="assets/DiD estimators.png" class="img-fluid"></p>
+</section>
+<section id="selected-comparisons-to-difference-in-differences" class="level2">
+<h2 class="anchored" data-anchor-id="selected-comparisons-to-difference-in-differences">Selected comparisons to difference-in-differences</h2>
+<p>RDD: Does not require temporal differences, identification of effect through discontinuity in a continuous variable that determines placement in treatment group</p>
+<p>Structural breaks: Does not have a contemporaneous control group, the assumption is that the existing trend would continue but for the structural break</p>
+<p>Randomized field experiments: Closer to experimental ideal in principle but can be logistically challenging and faces hurdles of attrition, incomplete treatment , and Hawthorne effects</p>
+<p>Lab experiments (e.g.,<span class="citation" data-cites="shu2012">Shu et al. (<a href="#ref-shu2012" role="doc-biblioref">2012</a>)</span> and countless OB lab studies): Closer to experimental ideal but there could be significant issues with external validity / generalizability beyond the lab setting</p>
 </section>
 </section>
 <section id="applications" class="level1">
@@ -185,12 +328,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="application-readings">Application readings</h2>
 <p>Let’s level-set people’s familiarity with these pieces.</p>
 <ul>
-<li><p>Katila, R., &amp; Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.</p></li>
-<li><p>Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</p></li>
+<li><p>Shu, L. L., Mazar, N., Gino, F., Ariely, D., &amp; Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197–15200. doi:10.1073/pnas.1209746109 (see also https://datacolada.org/109)</p></li>
+<li><p>Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)</p></li>
 </ul>
 </section>
-<section id="katila-and-ahuja-2002" class="level2">
-<h2 class="anchored" data-anchor-id="katila-and-ahuja-2002">Katila and Ahuja (2002)</h2>
+<section id="shu-et-al-2012" class="level2">
+<h2 class="anchored" data-anchor-id="shu-et-al-2012">Shu et al (2012)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -202,14 +345,21 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/gfxma7jag5t24v7ivfj8s/Shu-et-al.-2012-208433.pdf?rlkey=efqrlbz3xfawxhii4cohg6ssx&amp;dl=0"><img src="assets/Shu et al 2012.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="simsek-fox-and-heavey-2021" class="level2">
-<h2 class="anchored" data-anchor-id="simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</h2>
+<section id="did-you-notice-anything-funny-about-this-paper" class="level2">
+<h2 class="anchored" data-anchor-id="did-you-notice-anything-funny-about-this-paper">Did you notice anything funny about this paper?</h2>
+<p>It has been retracted.</p>
+<p><a href="https://www.pnas.org/doi/10.1073/pnas.2115397118">Let’s see why and how the process unfolded</a></p>
+<p>Yay science!</p>
+<p>Yay science?</p>
+</section>
+<section id="fox-souder-and-johnson-working-paper" class="level2">
+<h2 class="anchored" data-anchor-id="fox-souder-and-johnson-working-paper">Fox Souder and Johnson (working paper)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -221,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/ktl49z8ah4k8tpmjwnmtv/Fox-Souder-and-Johnson-104608.pdf?rlkey=m5ohnwnmozqxfqg7uc3e47s82&amp;dl=0"><img src="assets/Fox Souder Johnson.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -234,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="replication-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="replication-presentation">Replication Presentation</h2>
 <ul>
-<li>Replication: Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</li>
+<li>Replication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)</li>
 </ul>
 </section>
 </section>
@@ -267,10 +417,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-angrist2008" class="csl-entry" role="listitem">
+Angrist, J. D., and J. S Pischke. 2008. <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-grant2009" class="csl-entry" role="listitem">
+Grant, Adam M., and Toby D. Wall. 2009. <span>“The Neglected Science and Art of Quasi-Experimentation.”</span> <em>Organizational Research Methods</em> 12 (4): 653–86.
+</div>
+<div id="ref-shadish2009" class="csl-entry" role="listitem">
+Shadish, WR, and TD Cook. 2009. <span>“The Renaissance of Field Experimentation in Evaluating Interventions.”</span> <em>Annu Rev Psychol</em> 60: 607–29.
+</div>
+<div id="ref-shu2012" class="csl-entry" role="listitem">
+Shu, LL, N Mazar, F Gino, D Ariely, and MH Bazerman. 2012. <span>“Signing at the Beginning Makes Ethics Salient and Decreases Dishonest Self-Reports in Comparison to Signing at the End.”</span> <em>Proc Natl Acad Sci U S A</em> 109 (38): 15197–200.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

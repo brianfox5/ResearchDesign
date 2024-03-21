@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -60,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -109,15 +130,24 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#what-is-a-longitudinal-design" id="toc-what-is-a-longitudinal-design" class="nav-link" data-scroll-target="#what-is-a-longitudinal-design">What is a longitudinal design?</a></li>
   <li><a href="#why-are-longitudinal-designs-useful" id="toc-why-are-longitudinal-designs-useful" class="nav-link" data-scroll-target="#why-are-longitudinal-designs-useful">Why are longitudinal designs useful?</a></li>
-  <li><a href="#when-are-longitudinal-designs-feasible" id="toc-when-are-longitudinal-designs-feasible" class="nav-link" data-scroll-target="#when-are-longitudinal-designs-feasible">When are longitudinal designs feasible?</a></li>
-  <li><a href="#how-can-you-design-a-longitudinal-study" id="toc-how-can-you-design-a-longitudinal-study" class="nav-link" data-scroll-target="#how-can-you-design-a-longitudinal-study">How can you design a longitudinal study?</a></li>
-  <li><a href="#a-basic-setup-panel-data-estimation" id="toc-a-basic-setup-panel-data-estimation" class="nav-link" data-scroll-target="#a-basic-setup-panel-data-estimation">A basic setup: Panel data estimation</a></li>
+  </ul></li>
+  <li><a href="#how-can-you-design-a-longitudinal-study" id="toc-how-can-you-design-a-longitudinal-study" class="nav-link" data-scroll-target="#how-can-you-design-a-longitudinal-study">How can you design a longitudinal study?</a>
+  <ul class="collapse">
+  <li><a href="#a-multitude-of-potential-designs" id="toc-a-multitude-of-potential-designs" class="nav-link" data-scroll-target="#a-multitude-of-potential-designs">A multitude of potential designs</a></li>
+  <li><a href="#a-basic-workhorse-panel-data-estimation" id="toc-a-basic-workhorse-panel-data-estimation" class="nav-link" data-scroll-target="#a-basic-workhorse-panel-data-estimation">A basic workhorse: Panel data estimation</a></li>
+  <li><a href="#a-basic-workhorse-panel-data-estimation-1" id="toc-a-basic-workhorse-panel-data-estimation-1" class="nav-link" data-scroll-target="#a-basic-workhorse-panel-data-estimation-1">A basic workhorse: Panel data estimation</a></li>
+  <li><a href="#three-ways-to-get-to-a-fixed-effects-estimator" id="toc-three-ways-to-get-to-a-fixed-effects-estimator" class="nav-link" data-scroll-target="#three-ways-to-get-to-a-fixed-effects-estimator">Three ways to get to a fixed effects estimator</a></li>
+  <li><a href="#an-alternative-workhorse-model-laged-dependent-variables" id="toc-an-alternative-workhorse-model-laged-dependent-variables" class="nav-link" data-scroll-target="#an-alternative-workhorse-model-laged-dependent-variables">An alternative workhorse model: Laged dependent variables</a></li>
+  <li><a href="#why-not-just-use-fixed-effects-and-lagged-dvs" id="toc-why-not-just-use-fixed-effects-and-lagged-dvs" class="nav-link" data-scroll-target="#why-not-just-use-fixed-effects-and-lagged-dvs">Why not just use fixed effects and lagged DVs?</a></li>
+  <li><a href="#not-all-hope-is-lost" id="toc-not-all-hope-is-lost" class="nav-link" data-scroll-target="#not-all-hope-is-lost">Not all hope is lost</a></li>
+  <li><a href="#why-i-am-focusing-on-these-two-models" id="toc-why-i-am-focusing-on-these-two-models" class="nav-link" data-scroll-target="#why-i-am-focusing-on-these-two-models">Why I am focusing on these two models?</a></li>
+  <li><a href="#quick-note-on-terminology" id="toc-quick-note-on-terminology" class="nav-link" data-scroll-target="#quick-note-on-terminology">Quick note on terminology</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
   <ul class="collapse">
   <li><a href="#application-readings" id="toc-application-readings" class="nav-link" data-scroll-target="#application-readings">Application readings</a></li>
-  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002" class="nav-link" data-scroll-target="#katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
-  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021" class="nav-link" data-scroll-target="#simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
+  <li><a href="#certo-withers-and-semadeni-2017" id="toc-certo-withers-and-semadeni-2017" class="nav-link" data-scroll-target="#certo-withers-and-semadeni-2017">Certo Withers and Semadeni (2017)</a></li>
+  <li><a href="#fox-simsek-and-souder-working-paper" id="toc-fox-simsek-and-souder-working-paper" class="nav-link" data-scroll-target="#fox-simsek-and-souder-working-paper">Fox Simsek and Souder (working paper)</a></li>
   <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
   <li><a href="#replication-presentation" id="toc-replication-presentation" class="nav-link" data-scroll-target="#replication-presentation">Replication Presentation</a></li>
   </ul></li>
@@ -153,10 +183,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="agenda" class="level2">
 <h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
 <ul>
-<li><p>Longitudinal designs: what, why, when, how (40 minutes)</p></li>
-<li><p>Application paper discussion (20 minutes)</p></li>
+<li><p>Longitudinal designs: what, why, when, how (30 minutes)</p></li>
+<li><p>Application paper discussion (30 minutes)</p></li>
 <li><p><em>Break</em></p></li>
-<li><p>Replication presentation (Group 1-3-5; 40 minutes)</p></li>
+<li><p>Replication presentation (Group 14-16-18-20; 40 minutes)</p></li>
 <li><p>General discussion (15 minutes)</p></li>
 </ul>
 </section>
@@ -164,18 +194,123 @@ ul.task-list li input[type="checkbox"] {
 <h1>Longtudinal designs</h1>
 <section id="what-is-a-longitudinal-design" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-longitudinal-design">What is a longitudinal design?</h2>
+<blockquote class="blockquote">
+<p>Taking all the above into consideration, we define longitudinal research as research emphasizing the study of change and containing at minimum three repeated observations (although more than three is better) on at least one of the substantive constructs of interest. <span class="citation" data-cites="ployhart2010">(<a href="#ref-ployhart2010" role="doc-biblioref">Ployhart and Vandenberg 2010, 97</a>)</span></p>
+</blockquote>
 </section>
 <section id="why-are-longitudinal-designs-useful" class="level2">
 <h2 class="anchored" data-anchor-id="why-are-longitudinal-designs-useful">Why are longitudinal designs useful?</h2>
+<blockquote class="blockquote">
+<p>[S]trategy researchers have not fully capitalized on the fact that longitudinal data are multilevel in nature. Longitudinal data include two types of variance: within-unit (e.g., within-firm, within-person, etc.) and between-unit (e.g., between-firm, between-person, etc.) variance1. These two types of variance correspond to two different relationships: within-firm and between-firm relationships. <span class="citation" data-cites="certo2017">(<a href="#ref-certo2017" role="doc-biblioref">Certo, Withers, and Semadeni 2017, 1536</a>)</span></p>
+</blockquote>
 </section>
-<section id="when-are-longitudinal-designs-feasible" class="level2">
-<h2 class="anchored" data-anchor-id="when-are-longitudinal-designs-feasible">When are longitudinal designs feasible?</h2>
 </section>
-<section id="how-can-you-design-a-longitudinal-study" class="level2">
-<h2 class="anchored" data-anchor-id="how-can-you-design-a-longitudinal-study">How can you design a longitudinal study?</h2>
+<section id="how-can-you-design-a-longitudinal-study" class="level1">
+<h1>How can you design a longitudinal study?</h1>
+<section id="a-multitude-of-potential-designs" class="level2">
+<h2 class="anchored" data-anchor-id="a-multitude-of-potential-designs">A multitude of potential designs</h2>
+<ul>
+<li><p>Growth curve modeling <span class="citation" data-cites="ployhart2010">(<a href="#ref-ployhart2010" role="doc-biblioref">Ployhart and Vandenberg 2010</a>)</span></p></li>
+<li><p>Moderation by causal cycle <span class="citation" data-cites="mitchell2001">(<a href="#ref-mitchell2001" role="doc-biblioref">Mitchell and James 2001</a>)</span></p></li>
+<li><p>Panel methods <span class="citation" data-cites="certo2017">(<a href="#ref-certo2017" role="doc-biblioref">Certo, Withers, and Semadeni 2017</a>)</span></p></li>
+<li><p>Dynamic panel models</p></li>
+<li><p>Dynamic SEM models (e.g., cross-lagged panel models)</p></li>
+<li><p>Time series modeling (ARIMA, GARCH)</p></li>
+<li><p>Markov chain monte carlo (MCMC)</p></li>
+<li><p>Stochastic differential equations (SDEs)</p></li>
+</ul>
 </section>
-<section id="a-basic-setup-panel-data-estimation" class="level2">
-<h2 class="anchored" data-anchor-id="a-basic-setup-panel-data-estimation">A basic setup: Panel data estimation</h2>
+<section id="a-basic-workhorse-panel-data-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="a-basic-workhorse-panel-data-estimation">A basic workhorse: Panel data estimation</h2>
+<p>Panel data methods exploit within and between entity variance, and blend some of the benefits of cross-sectional and time series designs</p>
+<p>Fixed effects estimators are also consistent in the presence of unmeasured or unobservable confounding variables that are <strong>time invariant</strong> for the period of analysis (e.g., general mental ability, firm quality, etc.)</p>
+</section>
+<section id="a-basic-workhorse-panel-data-estimation-1" class="level2">
+<h2 class="anchored" data-anchor-id="a-basic-workhorse-panel-data-estimation-1">A basic workhorse: Panel data estimation</h2>
+<p><span class="math display">\[Y_{it} = \beta X_{it} + \nu + \epsilon\]</span> There are basically two key questions in a typical panel data setup:</p>
+<ul>
+<li><p>Can the data across time be pooled (essentially is <span class="math inline">\(Var(\nu)=0\)</span>)?</p></li>
+<li><p>Is the idiosyncratic error for each entity correlated with the regressors (is <span class="math inline">\(E(\nu|X)=0\)</span>)?</p></li>
+</ul>
+<p>If the first is true, we can used “pooled OLS”. If the second is true, we can use “random effects”. Otherwise, we need to use “fixed effects”.</p>
+</section>
+<section id="three-ways-to-get-to-a-fixed-effects-estimator" class="level2">
+<h2 class="anchored" data-anchor-id="three-ways-to-get-to-a-fixed-effects-estimator">Three ways to get to a fixed effects estimator</h2>
+<ul>
+<li><p>Include a dummy variable for each entity</p></li>
+<li><p>The “within” transformation - subtract the mean from every observation</p></li>
+<li><p>First differencing - take a one period difference between each observation</p></li>
+</ul>
+<p>They will typically provide the same answer but there can be differences (particularly for the first difference operator) if there are multiple panel waves and the changes over time fluctuate about the overall average</p>
+</section>
+<section id="an-alternative-workhorse-model-laged-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="an-alternative-workhorse-model-laged-dependent-variables">An alternative workhorse model: Laged dependent variables</h2>
+<p><span class="math display">\[Y_{it} = \beta X_{it} + \theta Y_{it-1} + \epsilon\]</span></p>
+<p>Here, the model can be interpreted two ways:</p>
+<ul>
+<li><p>X predicts the incremental change in Y</p></li>
+<li><p>Y is predicted by its past history, which means:</p>
+<ul>
+<li><p>all of the X variables have a multiplier effect proportional to the coefficient on Y, and</p></li>
+<li><p>the error term likewise propogates through time</p></li>
+</ul></li>
+</ul>
+<p>(Note it is also possible to have a model where errors are autocorrelated but there are no dynamics) <a href="https://nathanjkelly.utk.edu/wp-content/uploads/2017/10/Keele-kelly-2006.pdf">(Keele and Kelly 2006)</a></p>
+</section>
+<section id="why-not-just-use-fixed-effects-and-lagged-dvs" class="level2">
+<h2 class="anchored" data-anchor-id="why-not-just-use-fixed-effects-and-lagged-dvs">Why not just use fixed effects and lagged DVs?</h2>
+<p>In short, the assumptions conflict.</p>
+<p>The conditions for consistent estimation of this model are much more demanding than those required with fixed effects or lagged dependent variables alone. […] The problem here is that the differenced residual is necessarily correlated with the lagged dependent variable because both are a function of the fixed effect in the prior period <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008, 183</a>)</span>.</p>
+<p>There are lagged panel models that incorporate instrumental variables, but they chew up several years and have the typical issues of small-sample bias.</p>
+</section>
+<section id="not-all-hope-is-lost" class="level2">
+<h2 class="anchored" data-anchor-id="not-all-hope-is-lost">Not all hope is lost</h2>
+<blockquote class="blockquote">
+<p>[W]hat ís an applied guy to do? One answer, as always, is to check the robustness of your findings using alternative identifying assumptions. That means that you would like to find broadly similar results using both models. Fixed effects and lagged dependent variables estimates also have a useful bracketing property. <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008, 184</a>)</span></p>
+</blockquote>
+<p>Also, with a long enough time panel (as <span class="math inline">\(T \rightarrow \infty\)</span>), the magnitude of the Nickell bias becomes smaller <a href="http://fmwww.bc.edu/EC-C/S2013/823/EC823.S2013.nn05.slides.pdf">(Baum 2013)</a> (but its not a perfect solution since convergence is <span class="math inline">\(O(1/T)\)</span>).</p>
+</section>
+<section id="why-i-am-focusing-on-these-two-models" class="level2">
+<h2 class="anchored" data-anchor-id="why-i-am-focusing-on-these-two-models">Why I am focusing on these two models?</h2>
+<p>Between them, they are able to address many of the endogeneity problems discussed in Week 11</p>
+<p>They also capitalize on within- and between- entity variation and can be generalized using tools like RCM and the like</p>
+<p>The drawback is their continued grounding in a regression-type framework which may not fully capture some of the nuances of longitudinal study or at a minimum impose some substantial assumptions</p>
+</section>
+<section id="quick-note-on-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="quick-note-on-terminology">Quick note on terminology</h2>
+<p>Panel data econometrics uses different terminology than statistics and other social sciences. Here is the (loose) translation guide.</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Econometrics</th>
+<th>Statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[Y_{it} = \beta X_{it} + \alpha_{i} + \epsilon_{it}\]</span></td>
+<td>Fixed effects</td>
+<td>LSDV (Least squares dummy variable)</td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[Y_{it} = \beta X_{it} + \nu + \epsilon_{it}\]</span></td>
+<td>Random effects</td>
+<td>Fixed effects</td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[Y_{it} = \beta_i X_{it} + \nu + \epsilon_{it}\]</span></td>
+<td>Random coefficient modeling (RCM)</td>
+<td>Random effects</td>
+</tr>
+</tbody>
+</table>
+<p>Confusing I know… this is what happens when different fields derive similar methods independently.</p>
 </section>
 </section>
 <section id="applications" class="level1">
@@ -184,12 +319,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="application-readings">Application readings</h2>
 <p>Let’s level-set people’s familiarity with these pieces.</p>
 <ul>
-<li><p>Katila, R., &amp; Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.</p></li>
-<li><p>Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</p></li>
+<li><p>Certo, S. T., Withers, M. C., &amp; Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.</p></li>
+<li><p>Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)</p></li>
 </ul>
 </section>
-<section id="katila-and-ahuja-2002" class="level2">
-<h2 class="anchored" data-anchor-id="katila-and-ahuja-2002">Katila and Ahuja (2002)</h2>
+<section id="certo-withers-and-semadeni-2017" class="level2">
+<h2 class="anchored" data-anchor-id="certo-withers-and-semadeni-2017">Certo Withers and Semadeni (2017)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -201,14 +336,14 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/fxdlsrqt4usy090scfcxu/Certo-Withers-and-Semadeni-2017.png?rlkey=s7igq7oai26rhj43rsqhjqhz6&amp;dl=0"><img src="assets/Certo Withers and Semadeni 2017.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="simsek-fox-and-heavey-2021" class="level2">
-<h2 class="anchored" data-anchor-id="simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</h2>
+<section id="fox-simsek-and-souder-working-paper" class="level2">
+<h2 class="anchored" data-anchor-id="fox-simsek-and-souder-working-paper">Fox Simsek and Souder (working paper)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -220,7 +355,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/0pwx46xhe2o5vizo48qn3/Fox-Simsek-and-Souder-21158.pdf?rlkey=axmub9ajm9fhhx2fr8hw760s9&amp;dl=0"><img src="assets/Fox Simsek Souder.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -232,9 +367,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="replication-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="replication-presentation">Replication Presentation</h2>
-<ul>
-<li>Replication: Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</li>
-</ul>
+<p>Replication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)</p>
 </section>
 </section>
 <section id="general-discussion" class="level1">
@@ -254,10 +387,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-angrist2008" class="csl-entry" role="listitem">
+Angrist, J. D., and J. S Pischke. 2008. <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-certo2017" class="csl-entry" role="listitem">
+Certo, S. Trevis, Michael C. Withers, and Matthew Semadeni. 2017. <span>“A Tale of Two Effects: Using Longitudinal Data to Compare Within- and Between-Firm Effects.”</span> <em>Strategic Management Journal</em> 38 (7): 1536–56.
+</div>
+<div id="ref-mitchell2001" class="csl-entry" role="listitem">
+Mitchell, Terence R., and Lawrence R. James. 2001. <span>“Building Better Theory: Time and the Specification of When Things Happen.”</span> <em>The Academy of Management Review</em> 26 (4): 530–47.
+</div>
+<div id="ref-ployhart2010" class="csl-entry" role="listitem">
+Ployhart, Robert E., and Robert J. Vandenberg. 2010. <span>“Longitudinal Research: The Theory, Design, and Analysis of Change.”</span> <em>Journal of Management</em> 36 (1): 94–120.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

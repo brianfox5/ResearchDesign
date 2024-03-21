@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -60,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -105,17 +126,30 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#agenda" id="toc-agenda" class="nav-link active" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#the-perils-of-endogeneity" id="toc-the-perils-of-endogeneity" class="nav-link" data-scroll-target="#the-perils-of-endogeneity">The perils of endogeneity</a>
+  <ul class="collapse">
   <li><a href="#what-is-endogeneity" id="toc-what-is-endogeneity" class="nav-link" data-scroll-target="#what-is-endogeneity">What is endogeneity?</a></li>
   <li><a href="#what-is-endogeneity-1" id="toc-what-is-endogeneity-1" class="nav-link" data-scroll-target="#what-is-endogeneity-1">What is endogeneity?</a></li>
   <li><a href="#why-is-endogeneity-problematic" id="toc-why-is-endogeneity-problematic" class="nav-link" data-scroll-target="#why-is-endogeneity-problematic">Why is endogeneity problematic?</a></li>
+  <li><a href="#what-issues-can-cause-endogeneity" id="toc-what-issues-can-cause-endogeneity" class="nav-link" data-scroll-target="#what-issues-can-cause-endogeneity">What issues can cause endogeneity?</a></li>
+  <li><a href="#what-issues-result-in-endogeneity" id="toc-what-issues-result-in-endogeneity" class="nav-link" data-scroll-target="#what-issues-result-in-endogeneity">What issues result in endogeneity?</a></li>
+  <li><a href="#what-issues-result-in-endogeneity-1" id="toc-what-issues-result-in-endogeneity-1" class="nav-link" data-scroll-target="#what-issues-result-in-endogeneity-1">What issues result in endogeneity?</a></li>
   <li><a href="#how-can-you-correct-for-endogeneity" id="toc-how-can-you-correct-for-endogeneity" class="nav-link" data-scroll-target="#how-can-you-correct-for-endogeneity">How can you correct for endogeneity?</a></li>
-  <li><a href="#an-essential-ingredient-instruments-and-exogenous-variation" id="toc-an-essential-ingredient-instruments-and-exogenous-variation" class="nav-link" data-scroll-target="#an-essential-ingredient-instruments-and-exogenous-variation">An essential ingredient: Instruments and exogenous variation</a></li>
-  <li><a href="#a-common-tool-two-stage-least-squares-2sls" id="toc-a-common-tool-two-stage-least-squares-2sls" class="nav-link" data-scroll-target="#a-common-tool-two-stage-least-squares-2sls">A common tool: Two-stage least squares (2SLS)</a></li>
+  <li><a href="#how-can-you-correct-for-endogeneity-1" id="toc-how-can-you-correct-for-endogeneity-1" class="nav-link" data-scroll-target="#how-can-you-correct-for-endogeneity-1">How can you correct for endogeneity?</a></li>
+  <li><a href="#how-can-you-correct-for-endogeneity-2" id="toc-how-can-you-correct-for-endogeneity-2" class="nav-link" data-scroll-target="#how-can-you-correct-for-endogeneity-2">How can you correct for endogeneity?</a></li>
+  </ul></li>
+  <li><a href="#analyzing-data-in-the-presence-of-endogeneity" id="toc-analyzing-data-in-the-presence-of-endogeneity" class="nav-link" data-scroll-target="#analyzing-data-in-the-presence-of-endogeneity">Analyzing data in the presence of endogeneity</a>
+  <ul class="collapse">
+  <li><a href="#how-do-you-perform-a-basic-endogeneity-analysis" id="toc-how-do-you-perform-a-basic-endogeneity-analysis" class="nav-link" data-scroll-target="#how-do-you-perform-a-basic-endogeneity-analysis">How do you perform a (basic) endogeneity analysis?</a></li>
+  <li><a href="#example-running-2sls" id="toc-example-running-2sls" class="nav-link" data-scroll-target="#example-running-2sls">Example: Running 2SLS</a></li>
+  <li><a href="#example-running-2sls-1" id="toc-example-running-2sls-1" class="nav-link" data-scroll-target="#example-running-2sls-1">Example: Running 2SLS</a></li>
+  <li><a href="#why-not-just-use-the-models-robust-to-endogeneity-always" id="toc-why-not-just-use-the-models-robust-to-endogeneity-always" class="nav-link" data-scroll-target="#why-not-just-use-the-models-robust-to-endogeneity-always">Why not just use the models robust to endogeneity always?</a></li>
+  </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a>
   <ul class="collapse">
   <li><a href="#application-readings" id="toc-application-readings" class="nav-link" data-scroll-target="#application-readings">Application readings</a></li>
-  <li><a href="#katila-and-ahuja-2002" id="toc-katila-and-ahuja-2002" class="nav-link" data-scroll-target="#katila-and-ahuja-2002">Katila and Ahuja (2002)</a></li>
-  <li><a href="#simsek-fox-and-heavey-2021" id="toc-simsek-fox-and-heavey-2021" class="nav-link" data-scroll-target="#simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</a></li>
+  <li><a href="#bascle-2008" id="toc-bascle-2008" class="nav-link" data-scroll-target="#bascle-2008">Bascle (2008)</a></li>
+  <li><a href="#fox-simsek-and-heavey-2023" id="toc-fox-simsek-and-heavey-2023" class="nav-link" data-scroll-target="#fox-simsek-and-heavey-2023">Fox Simsek and Heavey (2023)</a></li>
   <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
   <li><a href="#replication-presentation" id="toc-replication-presentation" class="nav-link" data-scroll-target="#replication-presentation">Replication Presentation</a></li>
   </ul></li>
@@ -153,47 +187,130 @@ ul.task-list li input[type="checkbox"] {
 <section id="agenda" class="level2">
 <h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
 <ul>
-<li><p>The perils of endogeneity: what, why, when, how (40 minutes)</p></li>
-<li><p>Application paper discussion (20 minutes)</p></li>
+<li><p>The perils of endogeneity: what, why, when, how (30 minutes)</p></li>
+<li><p>Application paper discussion (30 minutes)</p></li>
 <li><p><em>Break</em></p></li>
-<li><p>Replication presentation (Group 1-3-5; 40 minutes)</p></li>
+<li><p>Replication presentation (Group 8-10-12; 40 minutes)</p></li>
 <li><p>General discussion (15 minutes)</p></li>
 </ul>
 </section>
+<section id="the-perils-of-endogeneity" class="level1">
+<h1>The perils of endogeneity</h1>
 <section id="what-is-endogeneity" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-endogeneity">What is endogeneity?</h2>
 <blockquote class="blockquote">
-<p>quote</p>
+<p>Endogeneity arises when a regressor is correlated with the error term, thereby violating the most important OLS estimation assumption, the exogeneity condition, specifying that u has an expected value of 0. <span class="citation" data-cites="bascle2008">(<a href="#ref-bascle2008" role="doc-biblioref">Bascle 2008, 288</a>)</span></p>
 </blockquote>
 </section>
 <section id="what-is-endogeneity-1" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-endogeneity-1">What is endogeneity?</h2>
-<p>nomological network view</p>
-<p>regression model view</p>
+<p>Nomological network view:</p>
+<p><img src="assets/endogeneity nomological network.png" class="img-fluid"></p>
+<p>Regression model view:</p>
+<p><span class="math inline">\(Y = \beta_0 + \beta_1X + \epsilon\)</span>; <span class="math inline">\(E[\epsilon|X \ne 0]\)</span></p>
 </section>
 <section id="why-is-endogeneity-problematic" class="level2">
 <h2 class="anchored" data-anchor-id="why-is-endogeneity-problematic">Why is endogeneity problematic?</h2>
 <ul>
 <li><p>A theoretical problem</p>
 <ul>
-<li>xxx</li>
+<li><p>We fail to capture the underlying dynamics of the process</p></li>
+<li><p>We draw the wrong conclusions from our analyses about which variables matter or the direction of causal flow</p></li>
 </ul></li>
 <li><p>An empirical problem</p>
 <ul>
-<li><p>xxx</p></li>
-<li><p>xxx</p></li>
+<li><p>We cannot recover causal effects due to a lack of <a href="http://fmwww.bc.edu/EC-P/wp957.pdf">“identification”</a></p></li>
+<li><p>We may not even be able to come up with estimates at all if the model is structurally unidentified (e.g., supply and demand models)</p></li>
+<li><p>Our effect estimates can be <strong>significantly</strong> biased, and even in the wrong direction without correction</p></li>
 </ul></li>
 </ul>
 </section>
+<section id="what-issues-can-cause-endogeneity" class="level2">
+<h2 class="anchored" data-anchor-id="what-issues-can-cause-endogeneity">What issues can cause endogeneity?</h2>
+<p><img src="assets/catalog of endogeneity problems.png" class="img-fluid"></p>
+</section>
+<section id="what-issues-result-in-endogeneity" class="level2">
+<h2 class="anchored" data-anchor-id="what-issues-result-in-endogeneity">What issues result in endogeneity?</h2>
+<ol type="1">
+<li><p>Unobserved heterogeneity: Individual idiosyncratic deviations from the overall mean of the DV in a manner that is correlated with the IVs (e.g., firm “quality” likely correlates with size)</p></li>
+<li><p>(Observed) omitted variable: We have left out an observable variable (omitted variable, OV) that is correlated with the IV and DV (e.g., OV = average temperature, IV = gunshots, DV = ice cream sales)</p></li>
+<li><p>(Unobserved) omitted variable: We have left out an unobservable variable that is correlated with the IV and DV (e.g., IV = study hours, DV = GPA, OV = g (general mental ability))</p></li>
+</ol>
+</section>
+<section id="what-issues-result-in-endogeneity-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-issues-result-in-endogeneity-1">What issues result in endogeneity?</h2>
+<ol start="4" type="1">
+<li><p>Simultaneous / reverse causality: either we have the direction of causality wrong (Y -&gt; X) or they cause each other / are codetermined (X &lt;-&gt; Y) (e.g., price and quantity in a market setting)</p></li>
+<li><p>Non-random selection in groups: Individuals self-select into a state or treatment or there are differences in surivival or attrition (e.g., IV = hospitalization, DV = general health, selection effect = need for treatment)</p></li>
+<li><p>Measurement error in X: We cannot measure X perfectly, which at a minimum <a href="">attenuates the relationship between X and Y</a>, but if the measurement error in X is correlated with Y, we come back to the omitted variable bias problem</p></li>
+</ol>
+</section>
 <section id="how-can-you-correct-for-endogeneity" class="level2">
 <h2 class="anchored" data-anchor-id="how-can-you-correct-for-endogeneity">How can you correct for endogeneity?</h2>
-<p>Tools from Bascle</p>
+<p><strong>Approach 1: Isolate exogenous variation in X</strong></p>
+<ul>
+<li><p>Instrumental variables (IV) / Two stage least squares (2SLS): Can address all of these issues, but finding relevant and exogenous instruments is tough <span class="citation" data-cites="bascle2008">(<a href="#ref-bascle2008" role="doc-biblioref">Bascle 2008</a>)</span></p></li>
+<li><p>Heckman selection / Tobit-2 / Tobit-5 models: Can address (5), possible to perform using functional form alone but stronger when with an <a href="https://en.wikipedia.org/wiki/Heckman_correction">exclusion condition</a> (i.e., an instrumental variable)</p></li>
+</ul>
 </section>
-<section id="an-essential-ingredient-instruments-and-exogenous-variation" class="level2">
-<h2 class="anchored" data-anchor-id="an-essential-ingredient-instruments-and-exogenous-variation">An essential ingredient: Instruments and exogenous variation</h2>
+<section id="how-can-you-correct-for-endogeneity-1" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-you-correct-for-endogeneity-1">How can you correct for endogeneity?</h2>
+<p><strong>Approach 2: Excise or extract endogenous elements from e</strong></p>
+<ul>
+<li><p>Include omitted variables: Can address (2), the essence of adding control variables to a model <span class="citation" data-cites="carlson2012">(<a href="#ref-carlson2012" role="doc-biblioref">Carlson and Wu 2012</a>)</span></p></li>
+<li><p>Fixed effects panel specifications: Can address (1),(2),(3) if the OVs are [time invariant], but can exacerbate (6) <span class="citation" data-cites="bascle2008">(<a href="#ref-bascle2008" role="doc-biblioref">Bascle 2008</a>)</span></p></li>
+<li><p>Dynamic model specifications: Can address (2) (3) (4), but caution required since this can introduce other endogeneity problems, especially with panel data (known as the <a href="http://fmwww.bc.edu/EC-C/S2013/823/EC823.S2013.nn05.slides.pdf">Nickell bias</a>)</p></li>
+</ul>
 </section>
-<section id="a-common-tool-two-stage-least-squares-2sls" class="level2">
-<h2 class="anchored" data-anchor-id="a-common-tool-two-stage-least-squares-2sls">A common tool: Two-stage least squares (2SLS)</h2>
+<section id="how-can-you-correct-for-endogeneity-2" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-you-correct-for-endogeneity-2">How can you correct for endogeneity?</h2>
+<p><strong>Approach 3: Punt on fixing and instead assess threat to inference</strong></p>
+<ul>
+<li><p>Impact Threshold of Confounding Variables <a href="https://journals.sagepub.com/doi/full/10.1177/01492063211006458">(ITCV)</a> and Robustness of Inference to Replacement (RIR) ask the question: How big of a confounding effect would an endogeneous problem need to have to overturn the inference in a model where it is not modeled?</p></li>
+<li><p>This can be a nice tool to have in the back pocket for reviewers</p></li>
+</ul>
+</section>
+</section>
+<section id="analyzing-data-in-the-presence-of-endogeneity" class="level1">
+<h1>Analyzing data in the presence of endogeneity</h1>
+<section id="how-do-you-perform-a-basic-endogeneity-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-you-perform-a-basic-endogeneity-analysis">How do you perform a (basic) endogeneity analysis?</h2>
+<ol type="1">
+<li><p>Proactively identify the potential cause(s) of endogeneity.</p></li>
+<li><p>Run your models in a typical fashion.</p></li>
+<li><p>Run alternative models (discussed above) that are consistent in the presence of endogeneity (example of 2SLS on next slide).</p></li>
+<li><p>Use appropriate tests to determine which model is preferred (e.g., Durbin-Wu-Hausman, exogeneity, relevance tests). <span class="citation" data-cites="bascle2008">(<a href="#ref-bascle2008" role="doc-biblioref">Bascle 2008</a>)</span></p></li>
+<li><p>Perform typical statistical inference based on the preferred model.</p></li>
+<li><p>It often helps to report test statistics, and space permitting, the results from alternative models to give the reader confidence in the robustness of the results.</p></li>
+</ol>
+</section>
+<section id="example-running-2sls" class="level2">
+<h2 class="anchored" data-anchor-id="example-running-2sls">Example: Running 2SLS</h2>
+<ol type="1">
+<li><p><strong>(Hard part)</strong> Find instrument(s) for each of your endogenous variables.</p></li>
+<li><p>If you are lucky enough to have an embarrassment of riches with multiple instruments for each, use them so you can test for exogeneity!</p></li>
+<li><p>Verify the instruments are sufficiently strong (e.g., first stage F test)</p></li>
+<li><p>Run the 2SLS procedure (next slide)</p></li>
+</ol>
+</section>
+<section id="example-running-2sls-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-running-2sls-1">Example: Running 2SLS</h2>
+<p><a href="https://en.wikipedia.org/wiki/Instrumental_variables_estimation">What is 2SLS doing?</a> In essence, the following<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>: <span class="math inline">\(Y = \beta \hat X + e\)</span></p>
+<p>Such that: <span class="math inline">\(\hat X = W\hat\delta\)</span></p>
+<p>And <span class="math inline">\(\hat\delta = (W^TW)^{-1}W^TX\)</span></p>
+<p>Where W is the set of the exogenous variables + instruments, and X is set of exogenous and (instrumented) endogenous variables.</p>
+<p>This procedure “purges” X of its endogenous part and only relies on the <strong>exogenous variation</strong> present in W.</p>
+</section>
+<section id="why-not-just-use-the-models-robust-to-endogeneity-always" class="level2">
+<h2 class="anchored" data-anchor-id="why-not-just-use-the-models-robust-to-endogeneity-always">Why not just use the models robust to endogeneity always?</h2>
+<ul>
+<li><p>Multiple endogeneity issues: each may require non-compatible solutions.</p></li>
+<li><p>No free lunch: models robust to endogeneity pay a price (typically small-sample bias and efficiency).</p></li>
+<li><p>Many endogeneity tests compare two estimators - one that accounts for endogeneity and one that does not.</p></li>
+<li><p>If the test fails, endogeneity is a problem and you need to use the estimator that is “consistent” in the presence of endogeneity.</p></li>
+<li><p>If the test passes, it is better to use the ‘standard’ estimator: it is has more power and is more precise (tighter sampling distribution).</p></li>
+</ul>
+</section>
 </section>
 <section id="applications" class="level1">
 <h1>Applications</h1>
@@ -201,12 +318,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="application-readings">Application readings</h2>
 <p>Let’s level-set people’s familiarity with these pieces.</p>
 <ul>
-<li><p>Katila, R., &amp; Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.</p></li>
-<li><p>Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</p></li>
+<li><p>Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.</p></li>
+<li><p>Fox, B. C., Simsek, Z., &amp; Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.</p></li>
 </ul>
 </section>
-<section id="katila-and-ahuja-2002" class="level2">
-<h2 class="anchored" data-anchor-id="katila-and-ahuja-2002">Katila and Ahuja (2002)</h2>
+<section id="bascle-2008" class="level2">
+<h2 class="anchored" data-anchor-id="bascle-2008">Bascle (2008)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -218,14 +335,14 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/yzozwlagvwwyjvjpk3zhl/Bascle-2008-28608.pdf?rlkey=9v32hqfmg93v6nn49ijd0f534&amp;dl=0"><img src="assets/Bascle 2008.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="simsek-fox-and-heavey-2021" class="level2">
-<h2 class="anchored" data-anchor-id="simsek-fox-and-heavey-2021">Simsek Fox and Heavey (2021)</h2>
+<section id="fox-simsek-and-heavey-2023" class="level2">
+<h2 class="anchored" data-anchor-id="fox-simsek-and-heavey-2023">Fox Simsek and Heavey (2023)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -237,7 +354,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.dropbox.com/scl/fi/sniezizkzuxl9xv2s6qsx/Suddaby-2010-3857.pdf?rlkey=9deru05vl8yv4srujrf7jebv8&amp;dl=0"><img src="assets/Suddaby 2010.png" class="img-fluid figure-img"></a></p>
+<p><a href="https://www.dropbox.com/scl/fi/jyxuggc1awapgxbddkjs3/Fox-Simsek-and-Heavey-2023-170690.pdf?rlkey=66cuyqk18w2gbdupbhqp9cu2n&amp;dl=0"><img src="assets/Fox Simsek and Heavey 2023.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -250,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="replication-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="replication-presentation">Replication Presentation</h2>
 <ul>
-<li>Replication: Simsek, Z., Fox, B., &amp; Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.</li>
+<li>Replication: Fox, B. C., Simsek, Z., &amp; Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.</li>
 </ul>
 </section>
 </section>
@@ -287,10 +404,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bascle2008" class="csl-entry" role="listitem">
+Bascle, Guilhem. 2008. <span>“Controlling for Endogeneity with Instrumental Variables in Strategic Management Research.”</span> <em>Strategic Organization</em> 6 (3): 285–327.
+</div>
+<div id="ref-carlson2012" class="csl-entry" role="listitem">
+Carlson, Kevin D., and Jinpei Wu. 2012. <span>“The Illusion of Statistical Control.”</span> <em>Organizational Research Methods</em> 15 (3): 413–35.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Don’t run this yourself since the standard errors will be wonky! Use the output from the software which makes the necessary corrections. Also note that in regular OLS, X “instruments” for itself.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -2923,42 +2923,42 @@
     "href": "class11.html",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "",
-    "text": "The perils of endogeneity: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "The perils of endogeneity: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 8-10-12; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class11.html#agenda",
     "href": "class11.html#agenda",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "",
-    "text": "The perils of endogeneity: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "The perils of endogeneity: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 8-10-12; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class11.html#what-is-endogeneity",
     "href": "class11.html#what-is-endogeneity",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "What is endogeneity?",
-    "text": "What is endogeneity?\n\nquote"
+    "text": "What is endogeneity?\n\nEndogeneity arises when a regressor is correlated with the error term, thereby violating the most important OLS estimation assumption, the exogeneity condition, specifying that u has an expected value of 0. (Bascle 2008, 288)"
   },
   {
     "objectID": "class11.html#what-is-endogeneity-1",
     "href": "class11.html#what-is-endogeneity-1",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "What is endogeneity?",
-    "text": "What is endogeneity?\nnomological network view\nregression model view"
+    "text": "What is endogeneity?\nNomological network view:\n\nRegression model view:\n\\(Y = \\beta_0 + \\beta_1X + \\epsilon\\); \\(E[\\epsilon|X \\ne 0]\\)"
   },
   {
     "objectID": "class11.html#why-is-endogeneity-problematic",
     "href": "class11.html#why-is-endogeneity-problematic",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "Why is endogeneity problematic?",
-    "text": "Why is endogeneity problematic?\n\nA theoretical problem\n\nxxx\n\nAn empirical problem\n\nxxx\nxxx"
+    "text": "Why is endogeneity problematic?\n\nA theoretical problem\n\nWe fail to capture the underlying dynamics of the process\nWe draw the wrong conclusions from our analyses about which variables matter or the direction of causal flow\n\nAn empirical problem\n\nWe cannot recover causal effects due to a lack of “identification”\nWe may not even be able to come up with estimates at all if the model is structurally unidentified (e.g., supply and demand models)\nOur effect estimates can be significantly biased, and even in the wrong direction without correction"
   },
   {
     "objectID": "class11.html#how-can-you-correct-for-endogeneity",
     "href": "class11.html#how-can-you-correct-for-endogeneity",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "How can you correct for endogeneity?",
-    "text": "How can you correct for endogeneity?\nTools from Bascle"
+    "text": "How can you correct for endogeneity?\nApproach 1: Isolate exogenous variation in X\n\nInstrumental variables (IV) / Two stage least squares (2SLS): Can address all of these issues, but finding relevant and exogenous instruments is tough (Bascle 2008)\nHeckman selection / Tobit-2 / Tobit-5 models: Can address (5), possible to perform using functional form alone but stronger when with an exclusion condition (i.e., an instrumental variable)"
   },
   {
     "objectID": "class11.html#an-essential-ingredient-instruments-and-exogenous-variation",
@@ -2979,7 +2979,7 @@
     "href": "class11.html#application-readings",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "Application readings",
-    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nKatila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.\nSimsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nBascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.\nFox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal."
   },
   {
     "objectID": "class11.html#katila-and-ahuja-2002",
@@ -3007,7 +3007,7 @@
     "href": "class11.html#replication-presentation",
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "Replication Presentation",
-    "text": "Replication Presentation\n\nReplication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Replication Presentation\n\nReplication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal."
   },
   {
     "objectID": "class11.html#point-1",
@@ -3056,14 +3056,14 @@
     "href": "class12.html",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "",
-    "text": "Quasi-experimental designs: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 13-15-17-19; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class12.html#agenda",
     "href": "class12.html#agenda",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "",
-    "text": "Quasi-experimental designs: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 13-15-17-19; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class12.html#what-is-a-quasi-experiement",
@@ -3077,7 +3077,7 @@
     "href": "class12.html#why-are-quasi-experiemental-designs-useful",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "Why are quasi-experiemental designs useful?",
-    "text": "Why are quasi-experiemental designs useful?"
+    "text": "Why are quasi-experiemental designs useful?\nPer Grant and Wall (2009), the benefits include but are not limited to:\n\nstrengthening causal inference when random assignment and controlled manipulation are not possible or ethical; and\nbuilding better theories of time and temporal progression."
   },
   {
     "objectID": "class12.html#when-are-quasi-experimental-designs-applicable",
@@ -3105,7 +3105,7 @@
     "href": "class12.html#application-readings",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "Application readings",
-    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nKatila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.\nSimsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nShu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197–15200. doi:10.1073/pnas.1209746109 (see also https://datacolada.org/109)\nPenrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)"
   },
   {
     "objectID": "class12.html#katila-and-ahuja-2002",
@@ -3133,7 +3133,7 @@
     "href": "class12.html#replication-presentation",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "Replication Presentation",
-    "text": "Replication Presentation\n\nReplication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Replication Presentation\n\nReplication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)"
   },
   {
     "objectID": "class12.html#point-1",
@@ -3378,28 +3378,28 @@
     "href": "class13.html",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "",
-    "text": "Longitudinal designs: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 14-16-18-20; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class13.html#agenda",
     "href": "class13.html#agenda",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "",
-    "text": "Longitudinal designs: what, why, when, how (40 minutes)\nApplication paper discussion (20 minutes)\nBreak\nReplication presentation (Group 1-3-5; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 14-16-18-20; 40 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class13.html#what-is-a-longitudinal-design",
     "href": "class13.html#what-is-a-longitudinal-design",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "What is a longitudinal design?",
-    "text": "What is a longitudinal design?"
+    "text": "What is a longitudinal design?\n\nTaking all the above into consideration, we define longitudinal research as research emphasizing the study of change and containing at minimum three repeated observations (although more than three is better) on at least one of the substantive constructs of interest. (Ployhart and Vandenberg 2010, 97)"
   },
   {
     "objectID": "class13.html#why-are-longitudinal-designs-useful",
     "href": "class13.html#why-are-longitudinal-designs-useful",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "Why are longitudinal designs useful?",
-    "text": "Why are longitudinal designs useful?"
+    "text": "Why are longitudinal designs useful?\n\n[S]trategy researchers have not fully capitalized on the fact that longitudinal data are multilevel in nature. Longitudinal data include two types of variance: within-unit (e.g., within-firm, within-person, etc.) and between-unit (e.g., between-firm, between-person, etc.) variance1. These two types of variance correspond to two different relationships: within-firm and between-firm relationships. (Certo, Withers, and Semadeni 2017, 1536)"
   },
   {
     "objectID": "class13.html#when-are-longitudinal-designs-feasible",
@@ -3427,7 +3427,7 @@
     "href": "class13.html#application-readings",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "Application readings",
-    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nKatila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.\nSimsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nCerto, S. T., Withers, M. C., & Semadeni, M. 2017. A tale of two effects: Using longitudinal data to compare within- and between-firm effects. Strategic Management Journal, 38(7), 1536-1556.\nFirm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)"
   },
   {
     "objectID": "class13.html#katila-and-ahuja-2002",
@@ -3455,7 +3455,7 @@
     "href": "class13.html#replication-presentation",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "Replication Presentation",
-    "text": "Replication Presentation\n\nReplication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Replication Presentation\nReplication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)"
   },
   {
     "objectID": "class13.html#point-1",
@@ -3833,7 +3833,7 @@
     "href": "class10.html#when-is-mediation-appropriate",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "When is mediation appropriate?",
-    "text": "When is mediation appropriate?\nExplaining “how” and showcasing mechanisms\nPartitioning direct and indirect effects\nTransmitting the influence of instruments\nIsolating mechanisms through interventions: \\(y_{ij} = \\beta_0 + \\beta_{1j}x + \\epsilon_{ij}\\); \\(\\beta_{1j} = \\gamma_{10} + \\nu_j\\)"
+    "text": "When is mediation appropriate?\nExplaining “how” and showcasing mechanisms: \\(Y = \\beta_0 + \\beta_1X + \\beta_2M + \\epsilon\\)\nPartitioning total and indirect effects: Comparing effect sizes between \\(Y = \\beta_0 + \\beta_1X + \\beta_2M + \\epsilon\\) and \\(Y = \\beta_0 + \\beta_1X + \\epsilon\\)\nTransmitting the influence of instruments: \\(Innovation = \\beta_0 + \\beta_1(EquitySplits) + \\beta_2(MembershipChange) + \\epsilon\\) ; \\(MembershipChange = \\beta_3 + \\beta_4EquitySplit + \\epsilon\\)\nIsolating mechanisms through interventions: \\(Light On = \\beta_0 + \\beta_1Power + \\beta_2(Switch=on) + \\epsilon\\)"
   },
   {
     "objectID": "class10.html#how-do-you-perform-a-meditation-analysis",
@@ -3847,21 +3847,21 @@
     "href": "class10.html#illustrating-a-mediation-indirect-effects",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Illustrating a mediation: Indirect effects",
-    "text": "Illustrating a mediation: Indirect effects"
+    "text": "Illustrating a mediation: Indirect effects\n\n\n\nLing et al. (2008)"
   },
   {
     "objectID": "class10.html#generalizing-mediation-sem",
     "href": "class10.html#generalizing-mediation-sem",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "“Generalizing” mediation: SEM",
-    "text": "“Generalizing” mediation: SEM\nI have given you two readings (Hitt et al. (2007) and Wolfson and Mathieu (2018)) to help you dip your toes into the waters of hierarchical linear modeling (HLM) / a.k.a. random coefficients modeling (RCM)\nThis can be viewed as a “generalization” of moderation, where slope coefficients (betas) and intercepts can not only be dependent on a third variable but may have their own random distribution\nThis technique allows you to naturally model nested settings (Hitt et al. 2007), but gets complicated quickly"
+    "text": "“Generalizing” mediation: SEM\nI have given you two readings (Williams, Vandenberg, and Edwards (2009) and Ling et al. (2008)) to help you dip your toes into the waters of structural equation model (SEM)\nThis is a fundamentally different way of looking at data, which seeks to compare an observed covariance matrix versus a “model implied” covariance matrix built from the relationships included or excluded from an SEM model (which can include a structural as well as a measurement model component)\nThe technique involves asking how many connections can be “pruned” without making the model fit worse - in other words, the more \\(\\beta_i = 0\\), the better!"
   },
   {
     "objectID": "class10.html#application-readings",
     "href": "class10.html#application-readings",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Application readings",
-    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nKatila, R., & Ahuja, G. 2002. Something Old, Something New: A Longitudinal Study of Search Behavior and New Product Introduction. Academy of Management Journal, 45(6), 1183-1194.\nSimsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Application readings\nLet’s level-set people’s familiarity with these pieces.\n\nLing, Y., Simsek, Z., Lubatkin, M. H., & Veiga, J. F. 2008. Transformational Leadership’s Role in Promoting Corporate Entrepreneurship: Examining the CEO-TMT Interface. Academy of Management Journal, 51(3), 557-576.\nFox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017). Academy of Management Journal, 65(2), 545-576."
   },
   {
     "objectID": "class10.html#katila-and-ahuja-2002",
@@ -3889,7 +3889,7 @@
     "href": "class10.html#replication-presentation",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Replication Presentation",
-    "text": "Replication Presentation\n\nReplication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086."
+    "text": "Replication Presentation\n\nReplication: Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017). Academy of Management Journal, 65(2), 545-576."
   },
   {
     "objectID": "class10.html#point-1",
@@ -3938,28 +3938,28 @@
     "href": "class10.html#how-do-you-perform-a-basic-meditation-analysis",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "How do you perform a (basic) meditation analysis?",
-    "text": "How do you perform a (basic) meditation analysis?\n\nClearly make your prediction as a hypothesis.\n(Optional). Center and scale variables\nRun regression with “main effects” only (including the moderator!)\nInclude interaction effects\nPerform statistical inference (t-tests, \\(\\Delta R^2\\), F-tests)\nPlot interaction and assess marginal effects\nRun supplemental tests (e.g., tests of curvature (Haans, Pieters, and He 2016), simple slopes (Dawson 2014), regions of significance)"
+    "text": "How do you perform a (basic) meditation analysis?\n\nArticulate the theoretical justification for a mediational inference.\nClearly make your prediction as a hypothesis.\nRun a sequence of regressions in line with your intended inference (Mathieu and Taylor 2006) and extract relevant effects\nPerform statistical inference (t-tests, indirect effect tests)\nIllustrate direct and indirect effects"
   },
   {
     "objectID": "class10.html#deep-dive-clearly-make-your-prediction-as-a-hypothesis",
     "href": "class10.html#deep-dive-clearly-make-your-prediction-as-a-hypothesis",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Deep dive: Clearly make your prediction as a hypothesis",
-    "text": "Deep dive: Clearly make your prediction as a hypothesis\nIt is critical when making an argument for moderation that you specify what you mean. Is it:\n\nA pre-existing (positive / negative) main effect will become (stronger / weaker) in the presence of the moderator?\nAn (existing/null) effect will become (absent/present) in the presence of the moderator?\nThe moderator has such an influence that it will flip the sign of the effect, depending on its level?\nWhich is the main effect and what is the moderator?\nWill the moderator have an indepedent influence (i.e., a mean shift)?"
+    "text": "Deep dive: Clearly make your prediction as a hypothesis\nIt is critical when making an argument for mediation that you specify what you mean. Following Mathieu and Taylor (2006), are you proposing:\n\nA full mediation, where the mediating variable fully captures the effect of the IV on the DV?\nA partial mediation, where the mediating variable captures, some but not all, of the effect?\nAn indirect effect, whereby the IV only has an effect on the DV through its influence on the mediator?"
   },
   {
     "objectID": "class10.html#things-can-get-crazy-again",
     "href": "class10.html#things-can-get-crazy-again",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Things can get crazy (again)!",
-    "text": "Things can get crazy (again)!\nMultiple mediators\nMediated moderation and moderated mediation\nAgain, can you explain what you are doing?"
+    "text": "Things can get crazy (again)!\n\nMultiple mediators (either in parallel (Ling et al. 2008) or in sequence)\nMediated moderation and moderated mediation\nAs with complex moderation models, can you explain what you are doing?"
   },
   {
     "objectID": "class10.html#alternative-analyses",
     "href": "class10.html#alternative-analyses",
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Alternative analyses",
-    "text": "Alternative analyses\nare there any?"
+    "text": "Alternative analyses\n\nStructural equation modeling (Williams, Vandenberg, and Edwards (2009))\nNon-linear causal models and Bayesian networks (Pearl (2001))\nHidden Markov models"
   },
   {
     "objectID": "class8.html#next-class-2",
@@ -3981,5 +3981,327 @@
     "title": "Class 11 - Techniques IV - Endogeneity",
     "section": "Next class",
     "text": "Next class\nDesign I: Quasi-experimental data\nApplications:\n\nShu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197–15200. doi:10.1073/pnas.1209746109 (see also https://datacolada.org/109)\nReplication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)"
+  },
+  {
+    "objectID": "class11.html#what-issues-can-cause-endogeneity",
+    "href": "class11.html#what-issues-can-cause-endogeneity",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "What issues can cause endogeneity?",
+    "text": "What issues can cause endogeneity?"
+  },
+  {
+    "objectID": "class11.html#what-issues-result-in-endogeneity",
+    "href": "class11.html#what-issues-result-in-endogeneity",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "What issues result in endogeneity?",
+    "text": "What issues result in endogeneity?\n\nUnobserved heterogeneity: Individual idiosyncratic deviations from the overall mean of the DV in a manner that is correlated with the IVs (e.g., firm “quality” likely correlates with size)\n(Observed) omitted variable: We have left out an observable variable (omitted variable, OV) that is correlated with the IV and DV (e.g., OV = average temperature, IV = gunshots, DV = ice cream sales)\n(Unobserved) omitted variable: We have left out an unobservable variable that is correlated with the IV and DV (e.g., IV = study hours, DV = GPA, OV = g (general mental ability))"
+  },
+  {
+    "objectID": "class11.html#what-issues-result-in-endogeneity-1",
+    "href": "class11.html#what-issues-result-in-endogeneity-1",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "What issues result in endogeneity?",
+    "text": "What issues result in endogeneity?\n\nSimultaneous / reverse causality: either we have the direction of causality wrong (Y -&gt; X) or they cause each other / are codetermined (X &lt;-&gt; Y) (e.g., price and quantity in a market setting)\nNon-random selection in groups: Individuals self-select into a state or treatment or there are differences in surivival or attrition (e.g., IV = hospitalization, DV = general health, selection effect = need for treatment)\nMeasurement error in X: We cannot measure X perfectly, which at a minimum attenuates the relationship between X and Y, but if the measurement error in X is correlated with Y, we come back to the omitted variable bias problem"
+  },
+  {
+    "objectID": "class11.html#how-can-you-correct-for-endogeneity-1",
+    "href": "class11.html#how-can-you-correct-for-endogeneity-1",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "How can you correct for endogeneity?",
+    "text": "How can you correct for endogeneity?\nApproach 2: Excise or extract endogenous elements from e\n\nInclude omitted variables: Can address (2), the essence of adding control variables to a model (Carlson and Wu 2012)\nFixed effects panel specifications: Can address (1),(2),(3) if the OVs are [time invariant], but can exacerbate (6) (Bascle 2008)\nDynamic model specifications: Can address (2) (3) (4), but caution required since this can introduce other endogeneity problems, especially with panel data (known as the Nickell bias)"
+  },
+  {
+    "objectID": "class11.html#how-can-you-correct-for-endogeneity-2",
+    "href": "class11.html#how-can-you-correct-for-endogeneity-2",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "How can you correct for endogeneity?",
+    "text": "How can you correct for endogeneity?\nApproach 3: Punt on fixing and instead assess threat to inference\n\nImpact Threshold of Confounding Variables (ITCV) and Robustness of Inference to Replacement (RIR) ask the question: How big of a confounding effect would an endogeneous problem need to have to overturn the inference in a model where it is not modeled?\nThis can be a nice tool to have in the back pocket for reviewers"
+  },
+  {
+    "objectID": "class11.html#how-do-you-perform-a-basic-endogeneity-analysis",
+    "href": "class11.html#how-do-you-perform-a-basic-endogeneity-analysis",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "How do you perform a (basic) endogeneity analysis?",
+    "text": "How do you perform a (basic) endogeneity analysis?\n\nProactively identify the potential cause(s) of endogeneity.\nRun your models in a typical fashion.\nRun alternative models (discussed above) that are consistent in the presence of endogeneity (example of 2SLS on next slide).\nUse appropriate tests to determine which model is preferred (e.g., Durbin-Wu-Hausman, exogeneity, relevance tests). (Bascle 2008)\nPerform typical statistical inference based on the preferred model.\nIt often helps to report test statistics, and space permitting, the results from alternative models to give the reader confidence in the robustness of the results."
+  },
+  {
+    "objectID": "class11.html#example-running-2sls",
+    "href": "class11.html#example-running-2sls",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Example: Running 2SLS",
+    "text": "Example: Running 2SLS\n\n(Hard part) Find instrument(s) for each of your endogenous variables.\nIf you are lucky enough to have an embarrassment of riches with multiple instruments for each, use them so you can test for exogeneity!\nVerify the instruments are sufficiently strong (e.g., first stage F test)\nRun the 2SLS procedure (next slide)"
+  },
+  {
+    "objectID": "class11.html#example-running-2sls-1",
+    "href": "class11.html#example-running-2sls-1",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Example: Running 2SLS",
+    "text": "Example: Running 2SLS\nWhat is 2SLS doing? In essence, the following1: \\(Y = \\beta \\hat X + e\\)\nSuch that: \\(\\hat X = W\\hat\\delta\\)\nAnd \\(\\hat\\delta = (W^TW)^{-1}W^TX\\)\nWhere W is the set of the exogenous variables + instruments, and X is set of exogenous and (instrumented) endogenous variables.\nThis procedure “purges” X of its endogenous part and only relies on the exogenous variation present in W."
+  },
+  {
+    "objectID": "class11.html#why-not-just-use-the-models-robust-to-endogeneity-always",
+    "href": "class11.html#why-not-just-use-the-models-robust-to-endogeneity-always",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Why not just use the models robust to endogeneity always?",
+    "text": "Why not just use the models robust to endogeneity always?\n\nMultiple endogeneity issues: each may require non-compatible solutions.\nNo free lunch: models robust to endogeneity pay a price (typically small-sample bias and efficiency).\nMany endogeneity tests compare two estimators - one that accounts for endogeneity and one that does not.\nIf the test fails, endogeneity is a problem and you need to use the estimator that is “consistent” in the presence of endogeneity.\nIf the test passes, it is better to use the ‘standard’ estimator: it is has more power and is more precise (tighter sampling distribution)."
+  },
+  {
+    "objectID": "class11.html#bascle-2008",
+    "href": "class11.html#bascle-2008",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Bascle (2008)",
+    "text": "Bascle (2008)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class11.html#fox-simsek-and-heavey-2023",
+    "href": "class11.html#fox-simsek-and-heavey-2023",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Fox Simsek and Heavey (2023)",
+    "text": "Fox Simsek and Heavey (2023)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class11.html#footnotes",
+    "href": "class11.html#footnotes",
+    "title": "Class 11 - Techniques IV - Endogeneity",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nDon’t run this yourself since the standard errors will be wonky! Use the output from the software which makes the necessary corrections. Also note that in regular OLS, X “instruments” for itself.↩︎"
+  },
+  {
+    "objectID": "class10.html#what-is-mediation",
+    "href": "class10.html#what-is-mediation",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "What is mediation?",
+    "text": "What is mediation?\n\nIn all instances, mediational models advance an X -&gt; M -&gt; Y causal sequence, and seek to illustrate the mechanisms through which X and Y are related. (Mathieu and Taylor 2006)"
+  },
+  {
+    "objectID": "class10.html#what-is-medition",
+    "href": "class10.html#what-is-medition",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "What is medition?",
+    "text": "What is medition?\nNomological network view:\n Regression model view:\n\\(Y = \\beta_0 + \\beta_1X + \\beta_2M + \\epsilon\\)\n\\(M = \\beta_3 + \\beta_{4}X + \\epsilon_M\\)"
+  },
+  {
+    "objectID": "class10.html#why-mediation",
+    "href": "class10.html#why-mediation",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "Why mediation?",
+    "text": "Why mediation?\n\nProvides direct evidence for a theoretical claim\n\n“We submit that inferences of mediation are founded first and foremost in terms of theory, research design, and the construct validity of measures employed, and second in terms of statistical evidence of relationships.” (Mathieu and Taylor 2006, 1032)\nAllows for assessment of causal effects via the front door criterion (Pearl 2001, 81)\n\nSophisticated tools allow for complex inferences\n\nEstablishment of direct and indirect effects for latent variables (Williams, Vandenberg, and Edwards 2009)\nPartitioning of effects through multiple causal pathways"
+  },
+  {
+    "objectID": "class10.html#deep-dive-articulate-your-theoretical-justification",
+    "href": "class10.html#deep-dive-articulate-your-theoretical-justification",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "Deep dive: Articulate your theoretical justification",
+    "text": "Deep dive: Articulate your theoretical justification\n\nIn short, no statistical analysis can unequivocally differentiate one causal sequence from another. Theorists and researchers must then rely on other means to justify the sequence of effects. The most valuable bases to advance such inference come from: (1) experimental design features; (2) temporal precedence; and (3) theoretical rationales. (Mathieu and Taylor 2006, 1033)"
+  },
+  {
+    "objectID": "class10.html#ling-et-al-2008",
+    "href": "class10.html#ling-et-al-2008",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "Ling et al (2008)",
+    "text": "Ling et al (2008)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class10.html#fox-et-al.-2022",
+    "href": "class10.html#fox-et-al.-2022",
+    "title": "Class 10 - Techniques III - Mediation",
+    "section": "Fox et al. (2022)",
+    "text": "Fox et al. (2022)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class12.html#what-is-a-quasi-experiment",
+    "href": "class12.html#what-is-a-quasi-experiment",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What is a “quasi-experiment”?",
+    "text": "What is a “quasi-experiment”?\n\nA quasi-experiment is a study that takes place in a field setting and involves a change in a key independent variable of interest but relaxes one or both of the defining criteria of laboratory and field experiments: random assignment to treatment conditions and controlled manipulation of the independent variable (Grant and Wall 2009, 655)"
+  },
+  {
+    "objectID": "class12.html#what-is-a-quasi-experiment-1",
+    "href": "class12.html#what-is-a-quasi-experiment-1",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What is a “quasi-experiment”?",
+    "text": "What is a “quasi-experiment”?\n“Natural experiments” as a form of quasi-experiment:\n\nQuasi-experiments also include changes to an independent variable that are naturally occurring rather than manipulated (Grant and Wall 2009, 655)"
+  },
+  {
+    "objectID": "class12.html#what-is-a-quasi-experiment-2",
+    "href": "class12.html#what-is-a-quasi-experiment-2",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What is a “quasi-experiment”?",
+    "text": "What is a “quasi-experiment”?\nWhat about “regression discontinuity designs”?\n\nRegression discontinuity designs (RDDs) are sometimes also called cutoff-based designs. They assign units to conditions based on a cut- off score on an ordered assignment variable, with units that fall on one side of the cutoff receiving treatment and those on the other side receiving the comparison condition. (Shadish and Cook 2009, 615)"
+  },
+  {
+    "objectID": "class12.html#what-is-a-quasi-experiment-3",
+    "href": "class12.html#what-is-a-quasi-experiment-3",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What is a “quasi-experiment”?",
+    "text": "What is a “quasi-experiment”?\nWhat about “interrupted time series” or “structural breaks”?\n\nSimilar to RDD, an effect is measured as a change in the slope or intercept of the time series at the point of treatment introduction. (Shadish and Cook 2009, 617)"
+  },
+  {
+    "objectID": "class12.html#what-are-the-common-threads-among-many-of-these-designs",
+    "href": "class12.html#what-are-the-common-threads-among-many-of-these-designs",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What are the common threads among many of these designs?",
+    "text": "What are the common threads among many of these designs?\nTwo groups: treatment and control\n\nThe amount of “randomness” differs across the designs\nThe distinction between treatment and control also varies"
+  },
+  {
+    "objectID": "class12.html#what-are-the-common-threads-among-many-of-these-designs-1",
+    "href": "class12.html#what-are-the-common-threads-among-many-of-these-designs-1",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What are the common threads among many of these designs?",
+    "text": "What are the common threads among many of these designs?\nTwo+ time periods or comparison points: pre-/post or with/without treatment\n\nThe period of followup before and after differs\nThe “fuzziness” of the treatment can also vary"
+  },
+  {
+    "objectID": "class12.html#what-are-the-common-threads-among-many-of-these-designs-2",
+    "href": "class12.html#what-are-the-common-threads-among-many-of-these-designs-2",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "What are the common threads among many of these designs?",
+    "text": "What are the common threads among many of these designs?\nAccounting for covariates\n\nRandom assignment is used to “wash out” differences between the groups\nPropensity scores and control variables used to account for residual differences"
+  },
+  {
+    "objectID": "class12.html#the-aim-the-experimental-ideal",
+    "href": "class12.html#the-aim-the-experimental-ideal",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "The aim: The experimental ideal",
+    "text": "The aim: The experimental ideal\n\nExperimenter intervention in selection of indepedent variable (treatment)\nRandom assignment to treatment and control group\nCreation of a stark counterfactual: what would happen but for the treatment?\n\nAssuming complications like “compliance” and other experimental design concerns are addressed, this allows for a clean determination of counterfactuals"
+  },
+  {
+    "objectID": "class12.html#the-aim-the-experimental-ideal-1",
+    "href": "class12.html#the-aim-the-experimental-ideal-1",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "The aim: The experimental ideal",
+    "text": "The aim: The experimental ideal\nPer Rubin’s Potential Outcomes Framework (Angrist and Pischke 2008):\n\\[E[y_{1i}|d_i = 1] - E[y_{0i}|d_i = 0] =\\] \\[\\pmb{E[y_{1i}-y_{0i}|d_i = 1]} + (E[y_{0i}|d_i = 1] - E[y_{0i}|d_i = 0])\\]\n\nThe LHS (top) is the difference between the treatment and control group in the population\nThe bolded term is the “average treatment effect on the treated” - the causal effect that occurs for the treated group\nThe RHS term in parentheses is the selection bias"
+  },
+  {
+    "objectID": "class12.html#the-aim-the-experimental-ideal-2",
+    "href": "class12.html#the-aim-the-experimental-ideal-2",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "The aim: The experimental ideal",
+    "text": "The aim: The experimental ideal\n\\[E[y_{1i}|d_i = 1] - E[y_{0i}|d_i = 0] =\\] \\[\\pmb{E[y_{1i}-y_{0i}|d_i = 1]} + (E[y_{0i}|d_i = 1] - E[y_{0i}|d_i = 0])\\]\nThe appeal of the experimental ideal is twofold:\n\nWe have a treatment and control group to estimate the LHS.\nWe use random assignment to set the selection bias term to 0.\n\nTaken together, this allows us to identify the causal effect of interest."
+  },
+  {
+    "objectID": "class12.html#a-potential-second-best-option-difference-in-differences",
+    "href": "class12.html#a-potential-second-best-option-difference-in-differences",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "A potential second-best option: Difference-in-differences",
+    "text": "A potential second-best option: Difference-in-differences\nPerhaps we can’t get to the experimental ideal.\nBut let’s say we do have a treatment and a control group that have been selected via a “natural experiment” (e.g., close elections, change in regulations, exogenous shocks) that helps us mitigate selection bias.\nWe can track the change in outcomes over time for both groups and get a difference before the treatment \\(t_1\\) (pre-treatment) and after the time of treatment \\(t_2\\) (post-treatment).\nWe can then look at the difference-in-differences between these two groups to estimate the causal effect."
+  },
+  {
+    "objectID": "class12.html#estimating-difference-in-differences",
+    "href": "class12.html#estimating-difference-in-differences",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Estimating difference-in-differences",
+    "text": "Estimating difference-in-differences\nD-i-D as a comparison of means: \\(DiD = (Y_{post,treated}-Y_{pre,treated})-(Y_{post,control}-Y_{pre,control})\\)\nD-i-D in a regression framework: \\(Y = \\beta_0+\\beta_1T+\\beta_2\\delta+\\beta_3\\delta T\\)\nwhere \\(\\delta\\) = 0 indicates pre-treatment and \\(\\delta\\) = 1 indicates post-treatment and T = 1 indicates in the treatment group while T = 0 indicates the control group\nIn this setup, the estimated coefficient \\(\\beta_3\\) is the D-i-D estimator"
+  },
+  {
+    "objectID": "class12.html#assumptions",
+    "href": "class12.html#assumptions",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Assumptions",
+    "text": "Assumptions\nThere are many assumptions to make the interpretation of a difference-in-differences casual:"
+  },
+  {
+    "objectID": "class12.html#selected-comparisons-to-difference-in-differences",
+    "href": "class12.html#selected-comparisons-to-difference-in-differences",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Selected comparisons to difference-in-differences",
+    "text": "Selected comparisons to difference-in-differences\nRDD: Does not require temporal differences, identification of effect through discontinuity in a continuous variable that determines placement in treatment group\nStructural breaks: Does not have a contemporaneous control group, the assumption is that the existing trend would continue but for the structural break\nRandomized field experiments: Closer to experimental ideal in principle but can be logistically challenging and faces hurdles of attrition, incomplete treatment , and Hawthorne effects\nLab experiments (e.g.,Shu et al. (2012) and countless OB lab studies): Closer to experimental ideal but there could be significant issues with external validity / generalizability beyond the lab setting"
+  },
+  {
+    "objectID": "class12.html#shu-et-al-2012",
+    "href": "class12.html#shu-et-al-2012",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Shu et al (2012)",
+    "text": "Shu et al (2012)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class12.html#did-you-notice-anything-funny-about-this-paper",
+    "href": "class12.html#did-you-notice-anything-funny-about-this-paper",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Did you notice anything funny about this paper?",
+    "text": "Did you notice anything funny about this paper?\nIt has been retracted.\nLet’s see why and how the process unfolded\nYay science!\nYay science?"
+  },
+  {
+    "objectID": "class12.html#fox-souder-and-johnson-working-paper",
+    "href": "class12.html#fox-souder-and-johnson-working-paper",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Fox Souder and Johnson (working paper)",
+    "text": "Fox Souder and Johnson (working paper)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class13.html#a-multitude-of-potential-designs",
+    "href": "class13.html#a-multitude-of-potential-designs",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "A multitude of potential designs",
+    "text": "A multitude of potential designs\n\nGrowth curve modeling (Ployhart and Vandenberg 2010)\nModeration by causal cycle (Mitchell and James 2001)\nPanel methods (Certo, Withers, and Semadeni 2017)\nDynamic panel models\nDynamic SEM models (e.g., cross-lagged panel models)\nTime series modeling (ARIMA, GARCH)\nMarkov chain monte carlo (MCMC)\nStochastic differential equations (SDEs)"
+  },
+  {
+    "objectID": "class13.html#a-basic-workhorse-panel-data-estimation",
+    "href": "class13.html#a-basic-workhorse-panel-data-estimation",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "A basic workhorse: Panel data estimation",
+    "text": "A basic workhorse: Panel data estimation\nPanel data methods exploit within and between entity variance, and blend some of the benefits of cross-sectional and time series designs\nFixed effects estimators are also consistent in the presence of unmeasured or unobservable confounding variables that are time invariant for the period of analysis (e.g., general mental ability, firm quality, etc.)"
+  },
+  {
+    "objectID": "class13.html#a-basic-workhorse-panel-data-estimation-1",
+    "href": "class13.html#a-basic-workhorse-panel-data-estimation-1",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "A basic workhorse: Panel data estimation",
+    "text": "A basic workhorse: Panel data estimation\n\\[Y_{it} = \\beta X_{it} + \\nu + \\epsilon\\] There are basically two key questions in a typical panel data setup:\n\nCan the data across time be pooled (essentially is \\(Var(\\nu)=0\\))?\nIs the idiosyncratic error for each entity correlated with the regressors (is \\(E(\\nu|X)=0\\))?\n\nIf the first is true, we can used “pooled OLS”. If the second is true, we can use “random effects”. Otherwise, we need to use “fixed effects”."
+  },
+  {
+    "objectID": "class13.html#three-ways-to-get-to-a-fixed-effects-estimator",
+    "href": "class13.html#three-ways-to-get-to-a-fixed-effects-estimator",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Three ways to get to a fixed effects estimator",
+    "text": "Three ways to get to a fixed effects estimator\n\nInclude a dummy variable for each entity\nThe “within” transformation - subtract the mean from every observation\nFirst differencing - take a one period difference between each observation\n\nThey will typically provide the same answer but there can be differences (particularly for the first difference operator) if there are multiple panel waves and the changes over time fluctuate about the overall average"
+  },
+  {
+    "objectID": "class13.html#an-alternative-workhorse-model-laged-dependent-variables",
+    "href": "class13.html#an-alternative-workhorse-model-laged-dependent-variables",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "An alternative workhorse model: Laged dependent variables",
+    "text": "An alternative workhorse model: Laged dependent variables\n\\[Y_{it} = \\beta X_{it} + \\theta Y_{it-1} + \\epsilon\\]\nHere, the model can be interpreted two ways:\n\nX predicts the incremental change in Y\nY is predicted by its past history, which means:\n\nall of the X variables have a multiplier effect proportional to the coefficient on Y, and\nthe error term likewise propogates through time\n\n\n(Note it is also possible to have a model where errors are autocorrelated but there are no dynamics) (Keele and Kelly 2006)"
+  },
+  {
+    "objectID": "class13.html#why-not-just-use-fixed-effects-and-lagged-dvs",
+    "href": "class13.html#why-not-just-use-fixed-effects-and-lagged-dvs",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Why not just use fixed effects and lagged DVs?",
+    "text": "Why not just use fixed effects and lagged DVs?\nIn short, the assumptions conflict.\nThe conditions for consistent estimation of this model are much more demanding than those required with fixed effects or lagged dependent variables alone. […] The problem here is that the differenced residual is necessarily correlated with the lagged dependent variable because both are a function of the fixed effect in the prior period (Angrist and Pischke 2008, 183).\nThere are lagged panel models that incorporate instrumental variables, but they chew up several years and have the typical issues of small-sample bias."
+  },
+  {
+    "objectID": "class13.html#not-all-hope-is-lost",
+    "href": "class13.html#not-all-hope-is-lost",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Not all hope is lost",
+    "text": "Not all hope is lost\n\n[W]hat ís an applied guy to do? One answer, as always, is to check the robustness of your findings using alternative identifying assumptions. That means that you would like to find broadly similar results using both models. Fixed effects and lagged dependent variables estimates also have a useful bracketing property. (Angrist and Pischke 2008, 184)\n\nAlso, with a long enough time panel (as \\(T \\rightarrow \\infty\\)), the magnitude of the Nickell bias becomes smaller (Baum 2013) (but its not a perfect solution since convergence is \\(O(1/T)\\))."
+  },
+  {
+    "objectID": "class13.html#why-i-am-focusing-on-these-two-models",
+    "href": "class13.html#why-i-am-focusing-on-these-two-models",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Why I am focusing on these two models?",
+    "text": "Why I am focusing on these two models?\nBetween them, they are able to address many of the endogeneity problems discussed in Week 11\nThey also capitalize on within- and between- entity variation and can be generalized using tools like RCM and the like\nThe drawback is their continued grounding in a regression-type framework which may not fully capture some of the nuances of longitudinal study or at a minimum impose some substantial assumptions"
+  },
+  {
+    "objectID": "class13.html#quick-note-on-terminology",
+    "href": "class13.html#quick-note-on-terminology",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Quick note on terminology",
+    "text": "Quick note on terminology\nPanel data econometrics uses different terminology than statistics and other social sciences. Here is the (loose) translation guide.\n\n\n\n\n\n\n\n\nModel\nEconometrics\nStatistics\n\n\n\n\n\\[Y_{it} = \\beta X_{it} + \\alpha_{i} + \\epsilon_{it}\\]\nFixed effects\nLSDV (Least squares dummy variable)\n\n\n\\[Y_{it} = \\beta X_{it} + \\nu + \\epsilon_{it}\\]\nRandom effects\nFixed effects\n\n\n\\[Y_{it} = \\beta_i X_{it} + \\nu + \\epsilon_{it}\\]\nRandom coefficient modeling (RCM)\nRandom effects\n\n\n\nConfusing I know… this is what happens when different fields derive similar methods independently."
+  },
+  {
+    "objectID": "class13.html#certo-withers-and-semadeni-2017",
+    "href": "class13.html#certo-withers-and-semadeni-2017",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Certo Withers and Semadeni (2017)",
+    "text": "Certo Withers and Semadeni (2017)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
+  },
+  {
+    "objectID": "class13.html#fox-simsek-and-souder-working-paper",
+    "href": "class13.html#fox-simsek-and-souder-working-paper",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Fox Simsek and Souder (working paper)",
+    "text": "Fox Simsek and Souder (working paper)\n\n\n\nWhat was this paper about?\nWhat were the findings?\nWhat was the method?\nWhat makes sense? What was confusing?"
   }
 ]
