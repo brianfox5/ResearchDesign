@@ -151,7 +151,7 @@ Quick reminder:
 
 Descriptive statistics help you understand and tell the **story** of your data and the sample it is drawn from
 
-Inferential statistics provide you the means to generalize that story beyond your sample given certain assumptoins (often, but not always, by appealing to a parametric model)
+Inferential statistics provide you the means to generalize that story beyond your sample given certain assumptions (often, but not always, by appealing to a parametric model)
 
 ## Essentials: Distributions and summary statistics
 
@@ -390,7 +390,7 @@ Collecting specifically what you need for a study
 
 - Field surveys 
 
-- Experiments (lab or field)
+- Experiments (lab or field) with purpose-built collection instruments
 
 - Interviews / focus groups 
 
@@ -398,7 +398,7 @@ Collecting specifically what you need for a study
 
 ## Sourcing data - Secondary sources
 
-Relying upon others to collect data or using 'unobstrusive' measures
+Relying upon others to collect data or using 'unobtrusive' measures
 
 - Archival datasets (e.g., Factiva, COMPUSTAT, Biocentury, SDC)
 
@@ -407,6 +407,8 @@ Relying upon others to collect data or using 'unobstrusive' measures
 - Industry reports (e.g., Wohler's Reports)
 
 - Video, audio, or written artifacts (CEO speeches, earnings calls, 10-Ks, website scraping)
+
+- Company records
 
 - Cliometric methods (historical archives)
 
@@ -428,40 +430,19 @@ On the following slide, I illustrate how the class fits together
 
 ## Our paradigm going forward
 
+The balance of the class is rooted in a paradigm 
 
- The balance of the class is rooted in a paradigm 
+- We have built a model with hypotheses to answer a research question
 
-Not sure what elements are necessary or sufficient  conditions 
+- That model is nested within a causal system and empirical reality
 
-We built a model
+- Our hope is to recover a causal effect through an estimation process
 
+For this to be effective, we want this estimate to be:
 
-Three layers to a model
+- Accurate: hopefully unbiased, but at least consistent
 
-
-Assume: we want to recover causal effect 
-
-Truth and estimation:
-
-Accuracy of Estimate
-Unbiasedness
-Backup plan: consistency
-
-Precision of estimate 
-“Efficiency”
-
-
-Theoretical model
-Broader phenomenological reality
-Statistical requirements for inference
-
-Why regression 
-
-CEF
-
-RUBINS Potential outcomes
-
-
+- Precise: an "efficient" estimator which uses sample information well
 
 ## How your model fits within this paradigm
 

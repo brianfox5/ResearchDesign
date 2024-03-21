@@ -514,7 +514,7 @@ The [Gauss-Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_th
 
 - K-L divergence based metrics (e.g., Expectation-Maximization algorithms)
 
-# Performing a regression analysis
+# Running a regression
 
 ##  How to properly perform a regression analysis?
 
@@ -601,15 +601,55 @@ But note that:
 
 >If more than one of the CLR model assumptions is violated at the same time, econometricians often find themselves in trouble because their catalogs usually tell them what to do if only one of the CLR model assumptions is violated. Much recent econometric research examines situations in which two assumptions of the CLR model are violated simultaneously. These situations will be discussed when appropriate. [@kennedy2008, p. 44]
 
-## Statistical inference
+# Statistical inference 
 
-Once we have an estimate for $\beta$, here are two approaches to statistical inference [@kennedy2008]:
+## Are our results "statistically significant"?
+
+Once we have an estimate for $\beta$ (known as $\hat b$), here are two approaches to statistical inference [@kennedy2008]:
 
 - Explicitly assume that the error term is distributed normally (t-tests and F-tests are appropriate straight away, even for small samples)
 
-- Rely on the central limit theorem and large-N asymptotics (since the sampling distribution of beta will often convergence to a normal distribution due to the central limit theorem)
+- Rely on the central limit theorem and large-N asymptotics (beta is an expected value, so its distribution will convergence to a normal distribution - see [this video](https://www.youtube.com/watch?v=zeJD6dqJ5lo) to understanad why)
 
-## Statistical inference
+## The distribution of $\hat b$ 
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+When making an inference, we ask where our point estimate (what we got from the regression) sits within the distribution of the estimator conditional on some assumed true value of $\beta$
+
+:::
+
+:::{.column width="60%"}
+
+```{r}
+
+library(ggplot2)
+
+p1 <- ggplot(data = data.frame(x = c(-6, 6)), aes(x)) +
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  stat_function(fun = dnorm, n = 101, color="blue", args = list(mean = 3, sd = 1)) + ylab("") + scale_y_continuous(breaks = NULL) +
+    geom_vline(xintercept=0) +
+      geom_vline(xintercept=3, color="blue") +
+  geom_text(aes(x = -2, y = .3, label = "p(b|ß=0)"), stat = "unique") +
+  geom_text(aes(x = 5, y = .3, label = "p(b|ß=3)"), color="blue") +
+  geom_vline(xintercept=2.5, color="red") +
+  geom_text(aes(x = 4.2, y = .5, label = "point estimate of b"), color="red")
+
+
+  p1
+
+
+
+```
+
+:::
+
+::::
+
+
+## Determining appropriate standard errors
 
 Questions about the variance structure also need to be settled:
 
