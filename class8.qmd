@@ -85,7 +85,7 @@ The term "regression" is often used synonomously with a particular technique: [o
 
 - The data in X forms a (hyper)-plane, and each X variable is **weighted** by $\beta$, resulting in a prediction
 
-- The discrepency between this predicted value $X\beta$ and $y$ is the error term $\epsilon$, which by definition is unrelated to the X variables
+- The discrepancy between this predicted value $X\beta$ and $y$ is the error term $\epsilon$, which by definition is unrelated to the X variables
 
 :::
 
@@ -209,7 +209,7 @@ OK, then why are regressions ubiquitous?
 
 2. The "best linear unbiased estimator" or BLUE, when the Gauss-Markov assumptions met [@kennedy2008]
 
-3. Equivalent to maximium likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (@kennedy2008, p. 43) and with a [uniform prior](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation)
+3. Equivalent to maximum likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (@kennedy2008, p. 43) and with a [uniform prior](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation)
 
 Let's consider each in turn.
 
@@ -412,7 +412,7 @@ ggplot2::ggplot(
 
 ##  "Best linear unbiased estimator" (BLUE)
 
-If the [Gauss-Markov assumptions](https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/) are satisified, then OLS is the:
+If the [Gauss-Markov assumptions](https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/) are satisfied, then OLS is the:
 
 - **Best** (minimum variance among alternative estimators)
 
@@ -500,7 +500,7 @@ The [Gauss-Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_th
 
 - Maximum likelihood estimation (MLE)
 
-- Bayesian / maximium a posteriori (MAP) techniques
+- Bayesian / maximum a posteriori (MAP) techniques
 
 - Generalized method of moments (GMM) estimators
 
@@ -524,7 +524,7 @@ The [Gauss-Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_th
 
 - Row (observation) perspective 
 
-2. Once we are satisified that there are no issues (or that they have been addressed), run a "final, publication ready" regression.
+2. Once we are satisfied that there are no issues (or that they have been addressed), run a "final, publication ready" regression.
 
 3. Interpret the results using the tools of statistical inference (discussed later today).
 
@@ -609,7 +609,7 @@ Once we have an estimate for $\beta$ (known as $\hat b$), here are two approache
 
 - Explicitly assume that the error term is distributed normally (t-tests and F-tests are appropriate straight away, even for small samples)
 
-- Rely on the central limit theorem and large-N asymptotics (beta is an expected value, so its distribution will convergence to a normal distribution - see [this video](https://www.youtube.com/watch?v=zeJD6dqJ5lo) to understanad why)
+- Rely on the central limit theorem and large-N asymptotics (beta is an expected value, so its distribution will convergence to a normal distribution - see [this video](https://www.youtube.com/watch?v=zeJD6dqJ5lo) to understand why)
 
 ## The distribution of $\hat b$ 
 
@@ -658,6 +658,10 @@ Questions about the variance structure also need to be settled:
 - If not, do you want to incorporate the error structure information into the estimates (using GLS) or use OLS and ["robust" statistics"](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)?
 
 - Two schools of thought: Feasible GLS has [no guarantees of improvement](https://en.wikipedia.org/wiki/Generalized_least_squares), but "Simply computing a robust covariance matrix for an otherwise inconsistent estimator does not give it redemption" [@greene2012, p. 692]
+
+## Another word about "robust standard errors"
+
+Per @angrist2008, pp. 40-48 - robust standard errors are computed using the method of moments, and justified asymptotically by the law of large numbers / central limit theorem (regardless of the underlying distribution of the estimator) Thus, the results are **consistent** regardless of the covariance structure but you need to worry about finite-sample bias
 
 ## Statistical inferences you can draw
 

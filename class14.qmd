@@ -7,43 +7,152 @@ format:
 bibliography: references.bib
 ---
 
-## Agenda
+# Concluding Remarks
 
-No gos - common errors in analysis
+## 5 takeaways for designing and executing empirical quantitative research
 
-Lagged dv + mixed effects of any type 
+1. Know your question, and know what your contribution is to your audience if you answer this question (Class 1-3)
 
-Forbidden regression 
+2. Translate your question into a model (Class 4-7)
 
-No exclusion condition or instrument for heckman / 2sls
+3. Ensure your question is answerable given the model and that inferences are testable with available data (Class 8-11)
 
-No checking for where inflection point is for u shaped relationships
+4. Proactively design your empirical approach to a) capture the relevant variance or process and b) addresses potential threats to your inferences (Class 8-12)
 
-Not checking mediation conditions per Mathieu and Taylor
+5. Call your shots before running any test, but iterate towards a more accurate and useful understanding of the world (your first draft $\ne$ your published work)
 
-Not checking the validity of difference scores per edwards
+## A paper/project is as strong as its weakest link
 
-Bad controls 
+**Leans more objective**
 
-Outliers and diagostics
+1. Internal consistency of overall model, theoretical linkages, and constructs
 
-## Next class
+2. Clarity of individual hypotheses
 
-**Elements IV: Data and measures**
+3. Strong measure - construct linkages (construct validity)
 
-4. Compare / Contrast
+4. Fit between theoretical model and empirical context
 
-- Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+5. Adequacy of model specification and fit
 
-- Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+6. Appropriate inference that is robust to alternative explanations
+
+## A paper/project is as strong as its weakest link
+
+**Leans more Subjective**
+
+7. Inherent utility or interestingness of the research question
+
+8. Generalization from specific findings to broader contexts
+
+## But don't let great be the enemy of the good
+
+No paper is perfect.  Look at all of the flaws in my papers that we walked through!
+
+If you wait for a paper to be perfect, you will never submit it.
+
+At a certain point, you need to expose the work to feedback to a) identify essential shortcomings and b) understand how to mold the paper / idea towards what your audience wants / needs to hear
+
+## But don't let great be the enemy of the good
+
+My colleague David S. notes that the sweet spot is an "A-" paper, good enough that it addresses passes the usual thresholds for your field (e.g., data adequacy, appropriate methods, recent and applicable theory) but is not so over-engineered that it cannot be modified in the face of reviewer feedback or wastes your valuable time
+
+**Papers get published when they make a contribution, despite their shortcomings**
+
+## So what is good enough for publication?
+
+1. Identifying a construct or relationship we have overlooked and showing why it matters
+
+2. Sharpening or modifying our understanding about something we thought we knew
+
+3. Substantively strengthening or broadening the empirical basis that we can rely on 
+
+4. Making connections between two previously disconnected discourses
+
+5. Made non-trivial progress towards an important open problem
+
+Ultimately, your audience decides whether you have achieved one or more of these things
+
+## Consider a pragmatic orientation when deciding if a project is "ready"
+
+1. Meliorism - The point of doing our work is to help solve problems. **Does this work solve a problem?**
+
+2. Falliability - Our knowledge is imperfect, we seek to move towards the "right" answer, not get there in one shot.  **Have you moved the needle?**
+
+3. Anti-foundationalism - The buck doesn't "stop" with some set of axioms or truths. **Are you reframing how we see things?**
+
+# General advice
+
+## Keep it as simple as it can be ...
+
+> Everything should be made as simple as possible, but not simpler. - Albert Einstein
+
+
+## ... this is harder than it seems 
+
+> I didn't have time to write a short letter, so I wrote a long one instead. - Mark Twain
+
+## Really understand your argument ...
+
+> Quare non, ut intelligere possit, sed, ne omnino possit non intelligere, curandum.  - Marcus Fabius Quintilianus
+(Our aim must be not to put him in a position to understand our argument, but to force him to understand it - per Harold Edgeworth)
+
+## ... by knowing the various angles
+
+[5 Levels of Difficulty](https://www.youtube.com/watch?v=T1RJyn7qBUM&list=PLibNZv5Zd0dyCoQ6f4pdXUFnpAIlKgm3N) - a way towards achieving mastery 
+
+## Ideas take time to mature ...
+
+> In nature, some seeds lie dormant in anticipation of the season most conducive to their growth. This is true of art as well. There are ideas whose time has not yet come. Or perhaps their time has come, but you are not yet ready to engage with them. Other times, developing a different seed may shed light on a dormant one - Rick Rubin
+
+## ... but fortune favors the prepared
+
+> My approach to problem-solving is to carry around a dozen interesting problems, and a dozen interesting solutions to unrelated problems, and eventually, I’ll be able to make connections [...] You have to keep a dozen of your favorite problems constantly present in your mind, although by and large they will lay in a dormant state. - Richard Feynman
+
+## Focus your thoughts on projects that interest you ...
+
+> "Wisdom begins in wonder" - Aristotle
 
 
 
+## ... since your deep thinking time is precious 
 
-## References 
+> Time isn't the main thing - it's the only thing" - Miles Davis
 
-:::{refs}
+> It is not enough to be busy... the question is, what are we busy about? - Henry David Thoreau
 
-:::
 
-<!--- Note: should probably swap out the van Maanen paper for something else more on target next time and make it reading for the theory / phenonemna day - not sure if better than the existing required readings or if it should be in the supplement --->
+# APPENDIX - Common analytical errors
+
+## Common errors in analysis 
+
+I am providing this material for completeness rather than for me to speak to it at length - consider it a field guide for some common "don'ts" when performing analyses as part of executing on your selected research design
+
+Below is a list of subtle but common "mistakes" scholars make when performing quantitative empirical research.  For the most part, they fall into three buckets:
+
+1. Mixing models together with incompatible assumptions
+
+2. Building a model and using a technique whose assumptions are violated by the type of model or data you are employing
+
+3. Failing to verify whether assumptions are valid when such a test is possible to perform
+
+## Mixing models with incompatible assumptions
+
+- Mixing panel models arbitrarily - e.g., incorporating lagged dependent variables with subject-specific effects
+
+## Violating assumptions or preconditions
+
+- The "forbidden regression" - using a binary variable as an instrument
+
+- No exogenous variation - not having a strong instrument or exclusion condition for heckman / 2sls
+
+## Failing to test assumptions that can be verified
+
+There are many cases of this, but some examples are provided below:
+
+  a. Not checking mediation pre-conditions per Mathieu and Taylor 2006
+
+  b. Not checking the validity of difference scores per Edwards 2002
+  
+  c. Not checking for where inflection point is for U-shaped relationships per Haans et al 2016
+

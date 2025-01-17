@@ -11,7 +11,6 @@ format:
           \newcommand{\elandscape}{\end{landscape}}
 ---
 
-```{=html}
 <!--- THINGS TO ADD / UPDATE / CHANGE FOR NEXT TIME
 
 Perhaps a parallel track for the first 3ish weeks - the craft of research: how to read + write a paper + read statistics 
@@ -31,7 +30,7 @@ perhaps pull polleverywhere in for quick checks on big ideas at the beginning of
 miro is basically a virtual whiteboard - could be nice for diagramming during class
 
 --->
-```
+
 # PhD 1506 -- Research Design (Quant Research Methods I)
 
 Dr. Brian Fox
@@ -126,7 +125,7 @@ Appendix B includes a list of required readings for the topics that we discuss. 
 
 #### *Research design texts*
 
--   \[My preferred text as of today\] Saunders, M., Lewis, P., & Thornhill, A. (2016). Research Methods for Business Students. England: Pearson Education Limited.
+-   [My preferred text as of today] Saunders, M., Lewis, P., & Thornhill, A. (2016). Research Methods for Business Students. England: Pearson Education Limited.
 
 -   Creswell, J.W. 2009. Research Design: Qualitative, Quantitative, and Mixed Methods Approaches, 3rd edition. Thousand Oaks, CA: Sage Publications).
 
@@ -134,7 +133,9 @@ Appendix B includes a list of required readings for the topics that we discuss. 
 
 -   Aguinis, H. 2024. Research Methodology: Best Practices for Rigorous, Credible, and Impactful Research. Sage Publications, Incorporated.
 
--   Sekaran, U., & Bougie, R. (2010). Research methods for business: A skill-building approach (5th ed.). Haddington: John Wiley & Sons.
+- Sekaran, U., & Bougie, R. (2010). Research methods for business: A skill-building approach (5th ed.). Haddington: John Wiley & Sons.
+
+
 
 #### *Research methods texts*
 
@@ -158,11 +159,12 @@ Appendix B includes a list of required readings for the topics that we discuss. 
 
 -   https://theeffectbook.net/ch-TheDesignofResearch.html
 
--   https://book.declaredesign.org/declaration-diagnosis-redesign/specifying-model.html
+-   https://book.declaredesign.org/declaration-diagnosis-redesign/specifying-model.html 
 
 -   https://bookdown.org/ejvanholm/Textbook/
 
 -   https://www.econometrics-with-r.org/
+
 
 ### VI. SCHOOL POLICIES
 
@@ -182,59 +184,59 @@ All courses offered at Bentley University reflect our institution's commitment t
 
 ### VII. COURSE SCHEDULE
 
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| **Week**                            | **Date**         | **Topics**                                                                                                                 | **Key question** | **Tools**                  | **Deliverables**                     |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| **The Research Process**            |                  |                                                                                                                            |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 1                                   | 21-Jan           | [Research I: Principles](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-i-principles)                    | To what end?     |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 2                                   | 28-Jan           | [Research II: Positions](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-ii-positions)                    | In what way?     |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 3                                   | IN PERSON 7-Feb  | [Research III: Practices](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-iii-practices)                  | With what tools? |                            | Compare / contrast: 1-4\             |
-|                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | \                                                                                                                          |                  |                            | **Research questions**               |
-|                                     |                  | *Workshop*                                                                                                                 |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| **The Elements of Research Design** |                  |                                                                                                                            |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 4                                   | 11-Feb           | [Elements I:\                                                                                                              | Why?             | Nomological networks       | Compare / contrast: 5-8              |
-|                                     |                  | Theory and phenomena](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-i-theory-and-phenomena)             |                  |                            |                                      |
-|                                     |                  |                                                                                                                            |                  |                            | **Concept check 1\                   |
-|                                     |                  |                                                                                                                            |                  |                            | (due next class)**                   |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 5                                   | 25-Feb           | [Elements II:\                                                                                                             | Testable?        | Formal models, DAGs        | Compare / contrast: 9-12             |
-|                                     |                  | Models and hypotheses](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-ii-models-and-hypotheses)          |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 6                                   | 4-Mar            | [Elements III:\                                                                                                            | What?            | Validity assessments       | Compare / contrast: 13-16            |
-|                                     |                  | Constructs and variables](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iii-constructs-and-variables)   |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 7                                   | IN PERSON 21-Mar | [Elements IV: Data and measures](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iv-data-and-measures)    | Observable?      | Descriptive statistics     | Compare / contrast: 17-20\           |
-|                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | *Workshop*                                                                                                                 |                  |                            | **Draft model**                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| **Core models and techniques**      |                  |                                                                                                                            |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 8                                   | 25-Mar           | [Techniques I: Regression](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-i-regression)                | Valid?           | OLS, Statistical inference | Replication: 1,3,5\                  |
-|                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  |                                                                                                                            |                  |                            | **Concept check 2 (due next class)** |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 9                                   | 1-Apr            | [Techniques II: Moderation](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-ii-moderation)              | When?            | HLM, Interaction plots     | Replication: 2,4,6                   |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 10                                  | 8-Apr            | [Techniques III: Mediation](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-iii-mediation)              | How?             | SEM, Indirect effects      | Replication: 7,9,11                  |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 11                                  | 15-Apr           | [Techniques IV: Endogeneity](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-iv-endogeneity)            | Alternatives?    | 2SLS, Instruments          | Replication: 8,10,12                 |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| **Theory-empiric fit**              |                  |                                                                                                                            |                  |                            |                                      |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 12                                  | IN PERSON 25-Apr | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication: 13,15,17,19             |
-|                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | [Design II: Longitudinal data](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-ii-longitudinal-data)        | Dynamic?         | Panel data estimators      | Replication: 14,16,18,20             |
-|                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | *Workshop*                                                                                                                 |                  |                            | **Draft paper deliverable**          |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-|                                     | 6-May            | *No class*                                                                                                                 |                  |                            | **Final deliverable due 5/6**        |
-+-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| **Week**                            | **Date** | **Topics**                                                                                                                 | **Key question** | **Tools**                  | **Deliverables**                     |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Research Process**            |          |                                                                                                                            |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 1                                   | 23-Jan   | [Research I: Principles](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-i-principles)                    | To what end?     |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 2                                   | 30-Jan   | [Research II: Positions](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-ii-positions)                    | In what way?     |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 3                                   | 9-Feb    | [Research III: Practices](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-iii-practices)                  | With what tools? |                            | Compare / contrast: 1-4\             |
+|                                     |          |                                                                                                                            |                  |                            |                                      |
+|                                     |          | \                                                                                                                          |                  |                            | **Research questions**               |
+|                                     |          | *Workshop*                                                                                                                 |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| **The Elements of Research Design** |          |                                                                                                                            |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 4                                   | 13-Feb   | [Elements I:\                                                                                                              | Why?             | Nomological networks       | Compare / contrast: 5-8              |
+|                                     |          | Theory and phenomena](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-i-theory-and-phenomena)             |                  |                            |                                      |
+|                                     |          |                                                                                                                            |                  |                            | **Concept check 1\                   |
+|                                     |          |                                                                                                                            |                  |                            | (due next class)**                   |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 5                                   | 27-Feb   | [Elements II:\                                                                                                             | Testable?        | Formal models, DAGs        | Compare / contrast: 9-12             |
+|                                     |          | Models and hypotheses](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-ii-models-and-hypotheses)          |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 6                                   | 5-Mar    | [Elements III:\                                                                                                            | What?            | Validity assessments       | Compare / contrast: 13-16            |
+|                                     |          | Constructs and variables](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iii-constructs-and-variables)   |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 7                                   | 22-Mar   | [Elements IV: Data and measures](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iv-data-and-measures)    | Observable?      | Descriptive statistics     | Compare / contrast: 17-20\           |
+|                                     |          |                                                                                                                            |                  |                            |                                      |
+|                                     |          | *Workshop*                                                                                                                 |                  |                            | **Draft model**                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| **Core models and techniques**      |          |                                                                                                                            |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 8                                   | 26-Mar   | [Techniques I: Regression](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-i-regression)                | Valid?           | OLS, Statistical inference | Replication: 1,3,5\                  |
+|                                     |          |                                                                                                                            |                  |                            |                                      |
+|                                     |          |                                                                                                                            |                  |                            | **Concept check 2 (due next class)** |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 9                                   | 2-Apr    | [Techniques II: Moderation](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-ii-moderation)              | When?            | HLM, Interaction plots     | Replication: 2,4,6                   |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 10                                  | 9-Apr    | [Techniques III: Mediation](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-iii-mediation)              | How?             | SEM, Indirect effects      | Replication: 7,9,11                  |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 11                                  | 16-Apr   | [Techniques IV: Endogeneity](https://briancfox.com/ResearchDesign/docs/syllabus.html#techniques-iv-endogeneity)            | Alternatives?    | 2SLS, Instruments          | Replication: 8,10,12                 |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| **Theory-empiric fit**              |          |                                                                                                                            |                  |                            |                                      |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 12                                  | 26-Apr   | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication: 13,15,17,19             |
+|                                     |          |                                                                                                                            |                  |                            |                                      |
+|                                     |          | [Design II: Longitudinal data](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-ii-longitudinal-data)        | Dynamic?         | Panel data estimators      | Replication: 14,16,18,20             |
+|                                     |          |                                                                                                                            |                  |                            |                                      |
+|                                     |          | *Workshop*                                                                                                                 |                  |                            | **Draft paper deliverable**          |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
+| 13                                  | 3-May    | *No class*                                                                                                                 |                  |                            | **Final deliverable due 5/3**        |
++-------------------------------------+----------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 
 \elandscape
 
@@ -308,64 +310,39 @@ Your final deliverable is a drafted introduction, model development, and methods
 
 For those of you looking for a more discrete template to work from, let me spell out the rough rubric I use when evaluating the paper (which are broader the criteria I would use for evaluating the front end of a paper that I am reviewing anonymously):
 
-1.  Introduction
 
-```{=html}
-<!-- -->
-```
-a.  Articulate the research question 
+1. Introduction
 
-b.  Explain how the paper will address the research question (e.g., using the 5Cs)
+  a. Articulate the research question&nbsp;
 
-```{=html}
-<!-- -->
-```
-2.  Theory and Hypotheses
+  b. Explain how the paper will address the research question (e.g., using the 5Cs)
 
-```{=html}
-<!-- -->
-```
-a.  Present a cogent and internally consistent theoretical model (e.g. clear constructs and relationships)
+2. Theory and Hypotheses
 
-b.  Articulate and sufficiently ground your specific hypotheses
+  a. Present a cogent and internally consistent theoretical model (e.g. clear constructs and relationships)
 
-```{=html}
-<!-- -->
-```
-3.  Methods
+  b. Articulate and sufficiently ground your specific hypotheses
 
-```{=html}
-<!-- -->
-```
-a.  Describe the sample and measures you intend to use
+3. Methods
 
-b.  Explain what technique(s) you will be employing to test your model
+  a. Describe the sample and measures you intend to use
 
-```{=html}
-<!-- -->
-```
-4.  Fit
+  b. Explain what technique(s) you will be employing to test your model
 
-```{=html}
-<!-- -->
-```
-a.  Does your model flow from your research question?
+4. Fit
 
-b.  Do your model and methods align? (e.g., are you using moderation techniques to test a moderation model)
+  a. Does your model flow from your research question?
 
-```{=html}
-<!-- -->
-```
-5.  Form
+  b. Do your model and methods align? (e.g., are you using moderation techniques to test a moderation model)
 
-```{=html}
-<!-- -->
-```
-a.  Does your paper broadly "look like" the empirical papers you have seen to date in this class or others (at least up to the results section)?
+5. Form
 
-b.  Have you cited your sources and adequately drawn upon the literature to inform your argument?
+  a. Does your paper broadly "look like" the empirical papers you have seen to date in this class or others (at least up to the results section)?
+
+  b. Have you cited your sources and adequately drawn upon the literature to inform your argument?
 
 Please feel free to reach out to me with questions as you work on this assignment. If a question comes to my attention that would be useful for the whole class to talk about, I will set aside time during the following session to discuss it.
+
 
 ### Assignment table for group composition
 
@@ -531,7 +508,7 @@ Applications:
 
 Applications:
 
-3.  Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.
+3. Bascle, G. 2008. Controlling for endogeneity with instrumental variables in strategic management research. Strategic Organization 6(3): 285-327.
 
 4.  Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2023. Venture team membership dynamics and new venture innovation. Strategic Entrepreneurship Journal.
 
@@ -551,7 +528,7 @@ Applications:
 
 1.  Ployhart, R.E. and R.J. Vandenberg. 2010. Longitudinal Research: The Theory, Design and Analysis of Change. Journal of Management, 36(1): 94-120.
 
-2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548.
+2.  Mitchell, T. R. & James, L. R. 2001. Building better theory: Time and the specification of when things happen. Academy of Management Review, 26: 530-548. 
 
 Applications:
 
