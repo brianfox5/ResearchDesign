@@ -191,7 +191,7 @@ div.csl-indent {
   <li><a href="#when-is-linear-regression-appropriate-and-or-optimal-3" id="toc-when-is-linear-regression-appropriate-and-or-optimal-3" class="nav-link" data-scroll-target="#when-is-linear-regression-appropriate-and-or-optimal-3">When is linear regression appropriate and / or optimal?</a></li>
   <li><a href="#aside-alternative-estimators-when-olsgls-not-applicable" id="toc-aside-alternative-estimators-when-olsgls-not-applicable" class="nav-link" data-scroll-target="#aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</a></li>
   </ul></li>
-  <li><a href="#performing-a-regression-analysis" id="toc-performing-a-regression-analysis" class="nav-link" data-scroll-target="#performing-a-regression-analysis">Performing a regression analysis</a>
+  <li><a href="#running-a-regression" id="toc-running-a-regression" class="nav-link" data-scroll-target="#running-a-regression">Running a regression</a>
   <ul class="collapse">
   <li><a href="#how-to-properly-perform-a-regression-analysis" id="toc-how-to-properly-perform-a-regression-analysis" class="nav-link" data-scroll-target="#how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</a></li>
   <li><a href="#the-column-variable-perspective" id="toc-the-column-variable-perspective" class="nav-link" data-scroll-target="#the-column-variable-perspective">The column (variable) perspective</a></li>
@@ -202,8 +202,13 @@ div.csl-indent {
   <li><a href="#the-flip-side-the-illusion-of-statistical-control" id="toc-the-flip-side-the-illusion-of-statistical-control" class="nav-link" data-scroll-target="#the-flip-side-the-illusion-of-statistical-control">The flip side: The “illusion of statistical control”</a></li>
   <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions">What if we fail to meet one or more of the assumptions?</a></li>
   <li><a href="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" id="toc-what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1" class="nav-link" data-scroll-target="#what-if-we-fail-to-meet-one-or-more-of-the-assumptions-1">What if we fail to meet one or more of the assumptions?</a></li>
-  <li><a href="#statistical-inference" id="toc-statistical-inference" class="nav-link" data-scroll-target="#statistical-inference">Statistical inference</a></li>
-  <li><a href="#statistical-inference-1" id="toc-statistical-inference-1" class="nav-link" data-scroll-target="#statistical-inference-1">Statistical inference</a></li>
+  </ul></li>
+  <li><a href="#statistical-inference" id="toc-statistical-inference" class="nav-link" data-scroll-target="#statistical-inference">Statistical inference</a>
+  <ul class="collapse">
+  <li><a href="#are-our-results-statistically-significant" id="toc-are-our-results-statistically-significant" class="nav-link" data-scroll-target="#are-our-results-statistically-significant">Are our results “statistically significant”?</a></li>
+  <li><a href="#the-distribution-of-hat-b" id="toc-the-distribution-of-hat-b" class="nav-link" data-scroll-target="#the-distribution-of-hat-b">The distribution of <span class="math inline">\(\hat b\)</span></a></li>
+  <li><a href="#determining-appropriate-standard-errors" id="toc-determining-appropriate-standard-errors" class="nav-link" data-scroll-target="#determining-appropriate-standard-errors">Determining appropriate standard errors</a></li>
+  <li><a href="#another-word-about-robust-standard-errors" id="toc-another-word-about-robust-standard-errors" class="nav-link" data-scroll-target="#another-word-about-robust-standard-errors">Another word about “robust standard errors”</a></li>
   <li><a href="#statistical-inferences-you-can-draw" id="toc-statistical-inferences-you-can-draw" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw">Statistical inferences you can draw</a></li>
   <li><a href="#statistical-inferences-you-can-draw-1" id="toc-statistical-inferences-you-can-draw-1" class="nav-link" data-scroll-target="#statistical-inferences-you-can-draw-1">Statistical inferences you can draw</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples:</a></li>
@@ -311,7 +316,7 @@ div.csl-indent {
 <div class="column" style="width:50%;">
 <ul>
 <li><p>The data in X forms a (hyper)-plane, and each X variable is <strong>weighted</strong> by <span class="math inline">\(\beta\)</span>, resulting in a prediction</p></li>
-<li><p>The discrepency between this predicted value <span class="math inline">\(X\beta\)</span> and <span class="math inline">\(y\)</span> is the error term <span class="math inline">\(\epsilon\)</span>, which by definition is unrelated to the X variables</p></li>
+<li><p>The discrepancy between this predicted value <span class="math inline">\(X\beta\)</span> and <span class="math inline">\(y\)</span> is the error term <span class="math inline">\(\epsilon\)</span>, which by definition is unrelated to the X variables</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img src="assets/OLS_geometric_interpretation.png" class="img-fluid"></p>
@@ -455,7 +460,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <ol type="1">
 <li><p>Approximates the conditional expectation function <span class="citation" data-cites="angrist2008">(<a href="#ref-angrist2008" role="doc-biblioref">Angrist and Pischke 2008</a>)</span></p></li>
 <li><p>The “best linear unbiased estimator” or BLUE, when the Gauss-Markov assumptions met <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span></p></li>
-<li><p>Equivalent to maximium likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (<span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span>, p.&nbsp;43) and with a <a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">uniform prior</a></p></li>
+<li><p>Equivalent to maximum likelihood estimator (MLE) and maximum a posteriori estimator (MAP) when errors normally distributed (<span class="citation" data-cites="kennedy2008">Kennedy (<a href="#ref-kennedy2008" role="doc-biblioref">2008</a>)</span>, p.&nbsp;43) and with a <a href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">uniform prior</a></p></li>
 </ol>
 <p>Let’s consider each in turn.</p>
 </section>
@@ -643,7 +648,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </section>
 <section id="best-linear-unbiased-estimator-blue" class="level2">
 <h2 class="anchored" data-anchor-id="best-linear-unbiased-estimator-blue">“Best linear unbiased estimator” (BLUE)</h2>
-<p>If the <a href="https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/">Gauss-Markov assumptions</a> are satisified, then OLS is the:</p>
+<p>If the <a href="https://gregorygundersen.com/blog/2022/02/08/gauss-markov-theorem/">Gauss-Markov assumptions</a> are satisfied, then OLS is the:</p>
 <ul>
 <li><p><strong>Best</strong> (minimum variance among alternative estimators)</p></li>
 <li><p><strong>Linear</strong>(the estimator is of the form <span class="math inline">\(A(X)y\)</span>)</p></li>
@@ -730,7 +735,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <h2 class="anchored" data-anchor-id="aside-alternative-estimators-when-olsgls-not-applicable">Aside: alternative estimators when OLS/GLS not applicable</h2>
 <ul>
 <li><p>Maximum likelihood estimation (MLE)</p></li>
-<li><p>Bayesian / maximium a posteriori (MAP) techniques</p></li>
+<li><p>Bayesian / maximum a posteriori (MAP) techniques</p></li>
 <li><p>Generalized method of moments (GMM) estimators</p></li>
 <li><p>Quantile regression</p></li>
 <li><p>Machine learning (e.g.,random forest models)</p></li>
@@ -740,8 +745,8 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 </ul>
 </section>
 </section>
-<section id="performing-a-regression-analysis" class="level1">
-<h1>Performing a regression analysis</h1>
+<section id="running-a-regression" class="level1">
+<h1>Running a regression</h1>
 <section id="how-to-properly-perform-a-regression-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-properly-perform-a-regression-analysis">How to properly perform a regression analysis?</h2>
 <ol type="1">
@@ -752,7 +757,7 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <li><p>Row (observation) perspective</p></li>
 </ul>
 <ol start="2" type="1">
-<li><p>Once we are satisified that there are no issues (or that they have been addressed), run a “final, publication ready” regression.</p></li>
+<li><p>Once we are satisfied that there are no issues (or that they have been addressed), run a “final, publication ready” regression.</p></li>
 <li><p>Interpret the results using the tools of statistical inference (discussed later today).</p></li>
 </ol>
 </section>
@@ -822,22 +827,69 @@ x            1.9272462  0.1831465 10.5229748 6.023326e-14</code></pre>
 <p>If more than one of the CLR model assumptions is violated at the same time, econometricians often find themselves in trouble because their catalogs usually tell them what to do if only one of the CLR model assumptions is violated. Much recent econometric research examines situations in which two assumptions of the CLR model are violated simultaneously. These situations will be discussed when appropriate. <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008, 44</a>)</span></p>
 </blockquote>
 </section>
-<section id="statistical-inference" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inference">Statistical inference</h2>
-<p>Once we have an estimate for <span class="math inline">\(\beta\)</span>, here are two approaches to statistical inference <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span>:</p>
+</section>
+<section id="statistical-inference" class="level1">
+<h1>Statistical inference</h1>
+<section id="are-our-results-statistically-significant" class="level2">
+<h2 class="anchored" data-anchor-id="are-our-results-statistically-significant">Are our results “statistically significant”?</h2>
+<p>Once we have an estimate for <span class="math inline">\(\beta\)</span> (known as <span class="math inline">\(\hat b\)</span>), here are two approaches to statistical inference <span class="citation" data-cites="kennedy2008">(<a href="#ref-kennedy2008" role="doc-biblioref">Kennedy 2008</a>)</span>:</p>
 <ul>
 <li><p>Explicitly assume that the error term is distributed normally (t-tests and F-tests are appropriate straight away, even for small samples)</p></li>
-<li><p>Rely on the central limit theorem and large-N asymptotics (since the sampling distribution of beta will often convergence to a normal distribution due to the central limit theorem)</p></li>
+<li><p>Rely on the central limit theorem and large-N asymptotics (beta is an expected value, so its distribution will convergence to a normal distribution - see <a href="https://www.youtube.com/watch?v=zeJD6dqJ5lo">this video</a> to understand why)</p></li>
 </ul>
 </section>
-<section id="statistical-inference-1" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-inference-1">Statistical inference</h2>
+<section id="the-distribution-of-hat-b" class="level2">
+<h2 class="anchored" data-anchor-id="the-distribution-of-hat-b">The distribution of <span class="math inline">\(\hat b\)</span></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>When making an inference, we ask where our point estimate (what we got from the regression) sits within the distribution of the estimator conditional on some assumed true value of <span class="math inline">\(\beta\)</span></p>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">6</span>, <span class="dv">6</span>)), <span class="fu">aes</span>(x)) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, <span class="at">n =</span> <span class="dv">101</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, <span class="at">n =</span> <span class="dv">101</span>, <span class="at">color=</span><span class="st">"blue"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="dv">3</span>, <span class="at">sd =</span> <span class="dv">1</span>)) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept=</span><span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_vline</span>(<span class="at">xintercept=</span><span class="dv">3</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">y =</span> .<span class="dv">3</span>, <span class="at">label =</span> <span class="st">"p(b|ß=0)"</span>), <span class="at">stat =</span> <span class="st">"unique"</span>) <span class="sc">+</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">5</span>, <span class="at">y =</span> .<span class="dv">3</span>, <span class="at">label =</span> <span class="st">"p(b|ß=3)"</span>), <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept=</span><span class="fl">2.5</span>, <span class="at">color=</span><span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">4.2</span>, <span class="at">y =</span> .<span class="dv">5</span>, <span class="at">label =</span> <span class="st">"point estimate of b"</span>), <span class="at">color=</span><span class="st">"red"</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in geom_text(aes(x = -2, y = 0.3, label = "p(b|ß=0)"), stat = "unique"): All aesthetics have length 1, but the data has 2 rows.
+ℹ Did you mean to use `annotate()`?</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in geom_text(aes(x = 5, y = 0.3, label = "p(b|ß=3)"), color = "blue"): All aesthetics have length 1, but the data has 2 rows.
+ℹ Did you mean to use `annotate()`?</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in geom_text(aes(x = 4.2, y = 0.5, label = "point estimate of b"), : All aesthetics have length 1, but the data has 2 rows.
+ℹ Did you mean to use `annotate()`?</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="class8_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="determining-appropriate-standard-errors" class="level2">
+<h2 class="anchored" data-anchor-id="determining-appropriate-standard-errors">Determining appropriate standard errors</h2>
 <p>Questions about the variance structure also need to be settled:</p>
 <ul>
 <li><p>Are errors spherical?</p></li>
 <li><p>If not, do you want to incorporate the error structure information into the estimates (using GLS) or use OLS and <a href="https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors">“robust” statistics”</a>?</p></li>
 <li><p>Two schools of thought: Feasible GLS has <a href="https://en.wikipedia.org/wiki/Generalized_least_squares">no guarantees of improvement</a>, but “Simply computing a robust covariance matrix for an otherwise inconsistent estimator does not give it redemption” <span class="citation" data-cites="greene2012">(<a href="#ref-greene2012" role="doc-biblioref">Greene 2012, 692</a>)</span></p></li>
 </ul>
+</section>
+<section id="another-word-about-robust-standard-errors" class="level2">
+<h2 class="anchored" data-anchor-id="another-word-about-robust-standard-errors">Another word about “robust standard errors”</h2>
+<p>Per <span class="citation" data-cites="angrist2008">Angrist and Pischke (<a href="#ref-angrist2008" role="doc-biblioref">2008</a>)</span>, pp.&nbsp;40-48 - robust standard errors are computed using the method of moments, and justified asymptotically by the law of large numbers / central limit theorem (regardless of the underlying distribution of the estimator) Thus, the results are <strong>consistent</strong> regardless of the covariance structure but you need to worry about finite-sample bias</p>
 </section>
 <section id="statistical-inferences-you-can-draw" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-inferences-you-can-draw">Statistical inferences you can draw</h2>
