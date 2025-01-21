@@ -16,19 +16,19 @@ format:
 
 Perhaps a parallel track for the first 3ish weeks - the craft of research: how to read + write a paper + read statistics 
 
-incorporate group peer evaluations and make this part of the group grade
+NEED TO BRING IN EVAL SHEETS BUT INCORPORATED INTO GRADING - incorporate group peer evaluations and make this part of the group grade
 
-reimagine the replication assignment to add value (more hands-on R work in class) - perhaps I tell students I will provide a summary of the paper and its intent, the presentation by the students is a) a Q+A about the methods used with me and b) a live demonstration walking through the R code? (graded on preparation + )
+INCORPORATED -reimagine the replication assignment to add value (more hands-on R work in class) - perhaps I tell students I will provide a summary of the paper and its intent, the presentation by the students is a) a Q+A about the methods used with me and b) a live demonstration walking through the R code? (graded on preparation + )
 
-provide more explicit direction on the paper (use the rubric as a basis, use the craft of research section to talk about different aspects of the paper?)
+INCORPORATED - provide more explicit direction on the paper (use the rubric as a basis, use the craft of research section to talk about different aspects of the paper?)
 
-have more explicit mini-examples during week 7 - 12, and then draw more fully on the worked examples that are replications here
+INCORPORATED - have more explicit mini-examples during week 7 - 12, and then draw more fully on the worked examples that are replications here
 
-potential use of https://www.perusall.com/ for social reading and learning?
+TESTING - potential use of https://www.perusall.com/ for social reading and learning?
 padlets for reactions 
 perhaps pull polleverywhere in for quick checks on big ideas at the beginning of class?
 
-miro is basically a virtual whiteboard - could be nice for diagramming during class
+TESTING - miro is basically a virtual whiteboard - could be nice for diagramming during class
 
 --->
 ```
@@ -104,15 +104,15 @@ In support of these goals, we will employ the following format for the majority 
 
 Everyone must read all required materials prior to class. Each student is expected to fully participate. All material due should be completed on Brightspace or sent to my email, depending on assignment requirements. Details on these assignments can be found in Appendix A.
 
-| Task                                     | \% of Grade |
-|------------------------------------------|-------------|
-| Class participation -- paper discussions | 20          |
-| Compare - contrast presentation          | 15          |
-| Replication presentation                 | 15          |
-| Concept checks (2)                       | 10          |
-| Interim work on proposal                 | 15          |
-| Final research proposal                  | 25          |
-| **Total**                                | **100**     |
+| Task                                            | \% of Grade |
+|-------------------------------------------------|-------------|
+| Class participation -- paper discussions        | 20          |
+| Compare - contrast presentation, with peer eval | 15          |
+| Replication presentation, with peer eval        | 15          |
+| Concept checks (2)                              | 10          |
+| Interim work on proposal                        | 15          |
+| Final research proposal                         | 25          |
+| **Total**                                       | **100**     |
 
 ## V. Course Materials
 
@@ -191,25 +191,25 @@ All courses offered at Bentley University reflect our institution's commitment t
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 | 2                                   | 28-Jan           | [Research II: Positions](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-ii-positions)                    | In what way?     |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 3                                   | IN PERSON 7-Feb  | [Research III: Practices](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-iii-practices)                  | With what tools? |                            | Compare / contrast: 1-4\             |
+| 3                                   | IN PERSON 7-Feb  | [Research III: Practices](https://briancfox.com/ResearchDesign/docs/syllabus.html#research-iii-practices)                  | With what tools? |                            | Compare / contrast: 1-3\             |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
 |                                     |                  | \                                                                                                                          |                  |                            | **Research questions**               |
 |                                     |                  | *Workshop*                                                                                                                 |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 | **The Elements of Research Design** |                  |                                                                                                                            |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 4                                   | 11-Feb           | [Elements I:\                                                                                                              | Why?             | Nomological networks       | Compare / contrast: 5-8              |
+| 4                                   | 11-Feb           | [Elements I:\                                                                                                              | Why?             | Nomological networks       | Compare / contrast: 4-6              |
 |                                     |                  | Theory and phenomena](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-i-theory-and-phenomena)             |                  |                            |                                      |
 |                                     |                  |                                                                                                                            |                  |                            | **Concept check 1\                   |
 |                                     |                  |                                                                                                                            |                  |                            | (due next class)**                   |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 5                                   | 25-Feb           | [Elements II:\                                                                                                             | Testable?        | Formal models, DAGs        | Compare / contrast: 9-12             |
+| 5                                   | 25-Feb           | [Elements II:\                                                                                                             | Testable?        | Formal models, DAGs        | Compare / contrast: 7-9              |
 |                                     |                  | Models and hypotheses](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-ii-models-and-hypotheses)          |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 6                                   | 4-Mar            | [Elements III:\                                                                                                            | What?            | Validity assessments       | Compare / contrast: 13-16            |
+| 6                                   | 4-Mar            | [Elements III:\                                                                                                            | What?            | Validity assessments       | Compare / contrast: 10-12            |
 |                                     |                  | Constructs and variables](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iii-constructs-and-variables)   |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 7                                   | IN PERSON 21-Mar | [Elements IV: Data and measures](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iv-data-and-measures)    | Observable?      | Descriptive statistics     | Compare / contrast: 17-20\           |
+| 7                                   | IN PERSON 21-Mar | [Elements IV: Data and measures](https://briancfox.com/ResearchDesign/docs/syllabus.html#elements-iv-data-and-measures)    | Observable?      | Descriptive statistics     | Compare / contrast: 13-15\           |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
 |                                     |                  | *Workshop*                                                                                                                 |                  |                            | **Draft model**                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
@@ -227,11 +227,11 @@ All courses offered at Bentley University reflect our institution's commitment t
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 | **Theory-empiric fit**              |                  |                                                                                                                            |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 12                                  | IN PERSON 25-Apr | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication: 13,15,17,19             |
+| 12                                  | IN PERSON 25-Apr | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication (D-i-D): 13,14,15        |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | [Design II: Longitudinal data](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-ii-longitudinal-data)        | Dynamic?         | Panel data estimators      | Replication: 14,16,18,20             |
+|                                     |                  | [Design II: Longitudinal data](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-ii-longitudinal-data)        | Dynamic?         | Panel data estimators      | **Draft paper deliverable**          |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
-|                                     |                  | *Workshop*                                                                                                                 |                  |                            | **Draft paper deliverable**          |
+|                                     |                  | *Workshop*                                                                                                                 |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 |                                     | 6-May            | *No class*                                                                                                                 |                  |                            | **Final deliverable due 5/6**        |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
@@ -263,15 +263,19 @@ Collectively, your group will work together to perform a deeper reading of the t
 
 It is expected that your group will lead a discussion of these concepts in class. During that period, I will take the role of an informed participant except in cases when I need to clarify points of potential confusion. Please plan for these presentations to be 30 minutes in length, inclusive of discussion.
 
+Your group will be assigned an overall grade, which will be adjusted up or down for individual contributors based on peer evaluation feedback.
+
 ### Replication presentations
 
 As discussed above, you have been assigned a number (see the table at the end of this section for your assignment). Based on this number, you will be allocated to a different group of students (please note that the group assignments differ from the compare / contrast presentations, so that we can mix up group composition).
 
-Collectively, your group will work together to re-analyze the data for an in-progress or completed paper of mine. The objective here is for you to get hands-on experience with using the analytical tools that support these analyses and report your experience to the class. The paper will be provided to you as part of the packet of readings.
+Collectively, your group will work together to re-analyze the data for an in-progress or completed paper of mine - the data will be provided to you. The objective here is for you to get hands-on experience with using the analytical tools that support these analyses and report your experience to the class. The paper will be provided to you as part of the packet of readings. I am also happy to work with your group to walk through questions and concerns that you have in performing the assignment.
 
-I can also provide your group with the underlying data to complete your analyses, on an as-needed basis. I am also happy to work with your group to walk through questions and concerns that you have in performing the assignment.
+It is expected that your group will lead a discussion regarding your experience. This will typically involve a brief summary of what results you were trying to replicate, what went well in that experience, what didn't go as well, and questions you have for me regarding the tools in general and / or with respect to the specific application. This is NOT a book report on the paper, it is a run-down of your attempts to understand and reperform an extant analysis.
 
-It is expected that your group will lead a discussion of this effort in class and to explain what went well, what didn't go as well, and what analyses and conclusions of the paper you were able to replicate and which you could not. Please plan for these presentations to be 30 minutes in length, inclusive of discussion.
+Please plan for these presentations to be 15 minutes in length, inclusive of discussion. We will use the remaining 25 minutes in the activity period to do an hands-on R workshop (lead by me with your input) with the whole class using the data and analytical tools pertinent to this topic.
+
+Your group will be assigned an overall grade, which will be adjusted up or down for individual contributors based on peer evaluation feedback.
 
 ### Concept checks
 
@@ -306,61 +310,52 @@ Your final deliverable is a drafted introduction, model development, and methods
         -   Suddaby (2010) \[Week Elements III: Constructs and variables\] shares guidance on how to make sure that your constructs are sufficiently articulated in your theory development
         -   Mathieu and Taylor (2006) \[Week Techniques III: Mediation\] develops a checklist of steps to perform in order to draw particular mediational inferences and rule out alternative configurations
 
-For those of you looking for a more discrete template to work from, let me spell out the rough rubric I use when evaluating the paper (which are broader the criteria I would use for evaluating the front end of a paper that I am reviewing anonymously):
+For those of you looking for a more discrete template to work from, let me spell out the rough rubric I use when evaluating the paper (which are broader than criteria I would use for evaluating the front end of a paper that I am reviewing anonymously):
 
 1.  Introduction
 
-```{=html}
 <!-- -->
-```
+
 a.  Articulate the research question 
 
 b.  Explain how the paper will address the research question (e.g., using the 5Cs)
 
-```{=html}
 <!-- -->
-```
+
 2.  Theory and Hypotheses
 
-```{=html}
 <!-- -->
-```
+
 a.  Present a cogent and internally consistent theoretical model (e.g. clear constructs and relationships)
 
 b.  Articulate and sufficiently ground your specific hypotheses
 
-```{=html}
 <!-- -->
-```
+
 3.  Methods
 
-```{=html}
 <!-- -->
-```
+
 a.  Describe the sample and measures you intend to use
 
 b.  Explain what technique(s) you will be employing to test your model
 
-```{=html}
 <!-- -->
-```
+
 4.  Fit
 
-```{=html}
 <!-- -->
-```
+
 a.  Does your model flow from your research question?
 
 b.  Do your model and methods align? (e.g., are you using moderation techniques to test a moderation model)
 
-```{=html}
 <!-- -->
-```
+
 5.  Form
 
-```{=html}
 <!-- -->
-```
+
 a.  Does your paper broadly "look like" the empirical papers you have seen to date in this class or others (at least up to the results section)?
 
 b.  Have you cited your sources and adequately drawn upon the literature to inform your argument?
@@ -369,29 +364,24 @@ Please feel free to reach out to me with questions as you work on this assignmen
 
 ### Assignment table for group composition
 
-|            |                          |
-|------------|--------------------------|
-| **Number** | **Name**                 |
-| 1          | Shardul Wartikar         |
-| 2          | Ed Wogan                 |
-| 3          | Lakia Rutherford-Sargent |
-| 4          | Conor Long               |
-| 5          | Esteban Lopez Meneses    |
-| 6          | Kay Anifowose            |
-| 7          | Nicholas Svizzero        |
-| 8          | Ike Okonkwo              |
-| 9          | Reuben Brefo Marfo       |
-| 10         | Dan Berlin               |
-| 11         | Esel Shemmeri            |
-| 12         | Yulu Du                  |
-| 13         | Kali Maltese             |
-| 14         | Tammy Rose               |
-| 15         | Scott Keaney             |
-| 16         | Tarry Gutzmore           |
-| 17         | Bryan Drake              |
-| 18         | Cynthia Fernandes        |
-| 19         | Ralph Faber              |
-| 20         | Booma Yandava            |
+|            |                  |
+|------------|------------------|
+| **Number** | **Name**         |
+| 1          | Ahmadou Balde    |
+| 2          | Mike Barg        |
+| 3          | Carrie Bose      |
+| 4          | Steve Cumbia     |
+| 5          | Krystie Dickson  |
+| 6          | Michael Finer    |
+| 7          | Lisa Frusztajer  |
+| 8          | Kathi Kaiser     |
+| 9          | Jed Larkin       |
+| 10         | Alexis McQueeney |
+| 11         | June Prothmann   |
+| 12         | Deep Srivastav   |
+| 13         | Karisse Torres   |
+| 14         | Brittany Walsh   |
+| 15         | Jimmy Zhang      |
 
 ## APPENDIX B -- READINGS BY TOPIC
 
