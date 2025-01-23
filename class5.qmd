@@ -50,6 +50,20 @@ Potential correlates of quality
 
 - Your judgment (?) - improves with experience; tempered by biases you may accumulate
 
+## Finding articles to consider
+
+In rough order of "rigor" and "reach"
+
+- targeted "mini-search" (e.g., quick Google Scholar Search)
+
+- literature "scan" (quick set of keyword searches on Web of Science)
+
+- "[Insert type here] Literature Review" (capital letters) (follow a protocol)
+
+- [Some thoughts on methodological rigor](https://journals.sagepub.com/doi/abs/10.1177/01492063241237222?journalCode=joma)
+
+- [My WIP approach](https://briancfox-zettelkasten.tiddlyhost.com/#Literature%20search%20and%20file%20management)
+
 # Grounding
 
 ## Making things concrete

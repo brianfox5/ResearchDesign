@@ -492,6 +492,10 @@ One group will actively **try to replicate** the findings with data and code tha
 
 # Workshop
 
+## Class Pulse Check
+
+[Pollev.com/drfox](https://PollEv.com/drfox)
+
 ## Preview for next class?
 
 Given the technical nature of next week's materials, would it be helpful to have a quick preview?

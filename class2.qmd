@@ -23,7 +23,7 @@ bibliography: references.bib
     
 -   Thinking about thinking (15 minutes)
 
-# Skills Corner
+# Skills corner
 
 ## Strategic reading of scholarly articles
 

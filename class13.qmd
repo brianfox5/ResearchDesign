@@ -184,13 +184,18 @@ Replication: Firm Repertoires and Performance: The Influence of Complementarity 
 
 ## Skills corner - Class walkthrough in R
 
-# Preparation for next class
+# Workshop
+
+## Class Pulse Check
+
+[Pollev.com/drfox](https://PollEv.com/drfox)
 
 ## Final papers due
 
 Final papers are due by the date noted in the syllabus - I look forward to reading them.
 
 Thank you for a great class!
+
 
 ## References
 
