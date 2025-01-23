@@ -74,14 +74,14 @@
     "href": "class1.html",
     "title": "Class 1 - Research I: Principles",
     "section": "",
-    "text": "Introductions (45 minutes)\n\nGetting to know each other\nSyllabus and materials overview\nTypical class flow\n\nBreak (5 minutes)\nThe Craft of Research I (10 minutes)\nReadings for today (60 minutes)"
+    "text": "Introductions (45 minutes)\n\nGetting to know each other\nSyllabus and materials overview\nTypical class flow\n\nBreak (5 minutes)\nSkills corner: The craft of research (10 minutes)\nReadings for today (60 minutes)"
   },
   {
     "objectID": "class1.html#agenda",
     "href": "class1.html#agenda",
     "title": "Class 1 - Research I: Principles",
     "section": "",
-    "text": "Introductions (45 minutes)\n\nGetting to know each other\nSyllabus and materials overview\nTypical class flow\n\nBreak (5 minutes)\nThe Craft of Research I (10 minutes)\nReadings for today (60 minutes)"
+    "text": "Introductions (45 minutes)\n\nGetting to know each other\nSyllabus and materials overview\nTypical class flow\n\nBreak (5 minutes)\nSkills corner: The craft of research (10 minutes)\nReadings for today (60 minutes)"
   },
   {
     "objectID": "class1.html#readings-for-today",
@@ -228,7 +228,7 @@
     "href": "class1.html#typical-class-flow",
     "title": "Class 1 - Research I: Principles",
     "section": "Typical class flow",
-    "text": "Typical class flow\n\nPart I: Conceptual grounding and agenda setting\n\nIntroduction to topics covered\n5 minutes for skill development\n\nPart II: Core paper discussion\n\nWe will discuss the 2-3 papers that all students have been assigned to read in detail\nThese papers typically will provide a mix of conceptual background and how-to guides\n\nBreak"
+    "text": "Typical class flow\n\nPart I: Conceptual grounding and agenda setting\n\nIntroduction to topics covered\nSkills corner (this will migrate over the semester)\n\nPart II: Core paper discussion\n\nWe will discuss the 2-3 papers that all students have been assigned to read in detail\nThese papers typically will provide a mix of conceptual background and how-to guides\n\nBreak"
   },
   {
     "objectID": "class1.html#typical-class-flow-1",
@@ -1215,7 +1215,7 @@
     "href": "class3.html#agenda-1",
     "title": "Class 3 - Research III: Practices",
     "section": "Agenda",
-    "text": "Agenda\n\nResearch Question Presentations (11 - 2p, break from 12 - 1p)\nSelf-organized group discussions (2 - 2:30p)\nFaculty perspectives (2:30 - 3:30p)\nReflections"
+    "text": "Agenda\n\nResearch Question Presentations (11 - 2p, break from 12 - 1p)\nSelf-organized group discussions (2 - 3:30p)\nReflections"
   },
   {
     "objectID": "class3.html#expectations",
@@ -3056,14 +3056,14 @@
     "href": "class12.html",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "",
-    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 13-15-17-19; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 15 minutes)\nSkills corner - Class walkthrough in R (25 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class12.html#agenda",
     "href": "class12.html#agenda",
     "title": "Class 12 - Design I - (Quasi)-Experimental Data",
     "section": "",
-    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 13-15-17-19; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Quasi-experimental designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 15 minutes)\nSkills corner - Class walkthrough in R (25 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class12.html#what-is-a-quasi-experiement",
@@ -3378,14 +3378,14 @@
     "href": "class13.html",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "",
-    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 14-16-18-20; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (20 minutes)\nSkills corner - Class walkthrough in R (25 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class13.html#agenda",
     "href": "class13.html#agenda",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "",
-    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (Group 14-16-18-20; 40 minutes)\nGeneral discussion (15 minutes)"
+    "text": "Longitudinal designs: what, why, when, how (30 minutes)\nApplication paper discussion (30 minutes)\nBreak\nReplication presentation (20 minutes)\nSkills corner - Class walkthrough in R (25 minutes)\nGeneral discussion (15 minutes)"
   },
   {
     "objectID": "class13.html#what-is-a-longitudinal-design",
@@ -3973,7 +3973,7 @@
     "href": "class13.html#final-papers-due",
     "title": "Class 13 - Design II - Longitudinal",
     "section": "Final papers due",
-    "text": "Final papers due\nFinal papers are due by May 3 - I look forward to reading them.\nThank you for a great class!"
+    "text": "Final papers due\nFinal papers are due by the date noted in the syllabus - I look forward to reading them.\nThank you for a great class!"
   },
   {
     "objectID": "class11.html#next-class-2",
@@ -4730,5 +4730,26 @@
     "title": "Class 10 - Techniques III - Mediation",
     "section": "Class Walkthrough in R",
     "text": "Class Walkthrough in R"
+  },
+  {
+    "objectID": "class13.html#an-alternative-workhorse-model-lagged-dependent-variables",
+    "href": "class13.html#an-alternative-workhorse-model-lagged-dependent-variables",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "An alternative workhorse model: Lagged dependent variables",
+    "text": "An alternative workhorse model: Lagged dependent variables\n\\[Y_{it} = \\beta X_{it} + \\theta Y_{it-1} + \\epsilon\\]\nHere, the model can be interpreted two ways:\n\nX predicts the incremental change in Y\nY is predicted by its past history, which means:\n\nall of the X variables have a multiplier effect proportional to the coefficient on Y, and\nthe error term likewise propogates through time\n\n\n(Note it is also possible to have a model where errors are autocorrelated but there are no dynamics) (Keele and Kelly 2006)"
+  },
+  {
+    "objectID": "class13.html#skills-corner---class-walkthrough-in-r",
+    "href": "class13.html#skills-corner---class-walkthrough-in-r",
+    "title": "Class 13 - Design II - Longitudinal",
+    "section": "Skills corner - Class walkthrough in R",
+    "text": "Skills corner - Class walkthrough in R"
+  },
+  {
+    "objectID": "class12.html#skills-corner---class-walkthrough-in-r",
+    "href": "class12.html#skills-corner---class-walkthrough-in-r",
+    "title": "Class 12 - Design I - (Quasi)-Experimental Data",
+    "section": "Skills corner - Class walkthrough in R",
+    "text": "Skills corner - Class walkthrough in R"
   }
 ]
