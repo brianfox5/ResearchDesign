@@ -15,7 +15,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Replication presentation (Group 2-4-6; 40 minutes)
+-   Replication presentation (15 minutes)
+
+-   Skills corner - Class walkthrough in R (25 minutes)
 
 -   General discussion (15 minutes)
 
@@ -237,7 +239,8 @@ Let's level-set people's familiarity with these pieces.
 
 - Replication: Heavey, C., Simsek, Z., & Fox, B. C. 2015. Managerial Social Networks and Ambidexterity of SMEs: The Moderating Role of a Proactive Commitment to Innovation. Human Resource Management, 54(S1).
 
-# General Discussion
+## Class walkthrough in R
+
 
 # Preparation for next class
 

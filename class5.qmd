@@ -10,15 +10,45 @@ bibliography: references.bib
 
 ## Agenda
 
+-   Skills corner (5 minutes)
+
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (45 minutes)
+-   Core paper discussion (40 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 9-12; 40 minutes)
+-   Compare-contrast presentation (40 minutes)
 
 -   Summative lecture on concepts (20 minutes)
+
+# Skills corner
+
+## Developing discernment
+
+What makes an article credible? How can we assess its quality? Should we trust the findings?
+
+- Internal consistency - does the logic of the argument hold?
+
+- External consistency - are the arguments and data consistent with what is already known?
+
+- Craft - is the article nuanced and layered theoretically and empirically, paying attention to multiple factors?
+
+- Clarity - does the paper have a point of view and makes clear what it is adding to the conversation?
+
+- Fit - is there a reasonable connection between the argument raised and the methods used to test it? 
+
+## Developing discernment
+
+Potential correlates of quality
+
+- Journal of publication (?) - good articles may be too revolutionary; reviewers are an imperfect screen for errors 
+
+- High citation counts (?) - citations for interest, rather than correctness
+
+- Predictive validity (?) - later work that replicates and extend findings; what about Newtonian mechanics?
+
+- Your judgment (?) - improves with experience; tempered by biases you may accumulate
 
 # Grounding
 

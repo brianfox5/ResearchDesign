@@ -15,7 +15,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Replication presentation (Group 13-15-17-19; 40 minutes)
+-   Replication presentation (Group 15 minutes)
+
+-   Skills corner - Class walkthrough in R (25 minutes)
 
 -   General discussion (15 minutes)
 
@@ -236,7 +238,7 @@ Yay science?
 
 - Replication: Penrosian capacity as a constraint on entrepreneurial growth: An exploratory study employing the dot-com bubble (working paper)
 
-# General Discussion
+## Skills corner - Class walkthrough in R
 
 # Preparation for next class
 

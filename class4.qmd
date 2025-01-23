@@ -10,18 +10,51 @@ bibliography: references.bib
 
 ## Agenda
 
+-   Skills corner (5 minutes)
+
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (45 minutes)
+-   Core paper discussion (40 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 5-8; 40 minutes)
+-   Compare-contrast presentation (40 minutes)
 
 -   Summative lecture on concepts (10 minutes)
 
 -   Key thinking tool: Nomological networks (10 minutes)
 
+
+# Skills corner
+
+## Strategic synthesis of scholarly articles
+
+- We read and take notes to help us synthesize the extant literature to either "get it" and / or demonstrate that it is insufficient to tackle the problem we want to solve
+
+- Scholarly articles are complex and often have two interrelated but distinct aspects: the theoretical model and the empirical model; it is important to capture elements of both 
+
+## Inputs to strategic synthesis - Theory
+
+- What theories are being referenced explicitly or implicitly?
+
+- What is the skeleton of the argument?  Have you seen it before or is it novel?
+
+- Qualitiatively, what elements of the argument are supported?  With what evidence?
+
+- Are there any glaring oversights or omissions you notice?
+
+- What 'key words' are being used over and over again in the text? 
+
+## Inputs to strategic synthesis - Empirics
+
+- What sample are they using?  Does it have 'face' validity?  If not, why not?
+
+- What measures are they using? Keep a log of ones that might be useful for you.
+
+- Are there important results for your topics of interest? If so, note them in detail somewhere for later reference. 
+
+- How are the techniques and measures this paper used similar or different to others in the area? 
+  
 # Grounding
 
 ## Two complementary organizing perspectives

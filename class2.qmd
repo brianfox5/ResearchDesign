@@ -9,7 +9,9 @@ bibliography: references.bib
 
 ## Agenda
 
--   Summative lecture for last class materials (20 minutes)
+-   Skills corner: Reading articles (5 minutes)
+ 
+-   Summative lecture for last class materials (15 minutes)
 
     -   Key principles
 
@@ -20,6 +22,35 @@ bibliography: references.bib
     -   Defining a research landscape
     
 -   Thinking about thinking (15 minutes)
+
+# Skills Corner
+
+## Strategic reading of scholarly articles
+
+Questions to guide you
+
+- Why are you reading this article right now? [What information do you want to focus on / extract?]
+
+- What might you use the information in the article for in the future? [How 'deeply' should you read?]
+
+- Do you expect to read this piece over and over? [How do you want to allocate effort over those reads?]
+
+- What do you already know about the topic? [What information is redundent and can be skipped?]
+
+## Some resources to start from
+
+Here are some library resource guides with different strategies
+
+- [My aspirational process](http://briancfox.com/vfront/articledbhelp/articles.html)
+
+- [My WIP approach used in practice](https://briancfox-zettelkasten.tiddlyhost.com/#kms%20mapping%20tiddlymap)
+
+- [Brown University](https://libguides.brown.edu/evaluate/Read)
+
+- [U Michigan](https://guides.lib.umich.edu/c.php?g=1404624&p=10396344)
+
+- [U Wisconsin](https://learn.library.wisc.edu/reading-scholarly-articles/#/lessons/kPNr06Lw4L0dQsULIfdNhkq3Z6z-9Tok)
+
 
 # Lecture - principles
 

@@ -9,135 +9,19 @@ bibliography: references.bib
 
 ## Agenda
 
+-   Skills corner: Descriptive statistics (15 minutes)
+
 -   Conceptual grounding (10 minutes)
 
 -   Core paper discussion (30 minutes)
 
--   Key thinking tool: Descriptive statistics (15 minutes)
-
 -   *Break*
 
--   Final Compare-contrast presentation (Group 17-20; 40 minutes)
+-   Final Compare-contrast presentation (40 minutes)
 
 -   Tying it together: From elements to execution (15 minutes)
 
-# Grounding
-
-## The rubber meets the road
-
-- Measures: Translating our variables into concrete measures (these do not need to be 1 to 1)
-
-- (Sourcing) Data: Where are we going to find these measures?
-
-# Readings for Today
-
-## Common Readings
-
-1. Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
-
-2. Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
-
-3. Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
-
-
-## Stevens (1946)
-
-::::{.columns}
-
-:::{.column width="60%"}
-
-> Paraphrasing N. R. Campbell (Final Report, p. 340),. we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. The fact that numerals can be assigned under different rules leads to different kinds of scales and different kinds of
-measurement. [@stevens1946, 677]
-
-:::
-
-:::{.column width="40%"}
-
-[![](assets/Stevens 1946.png)](https://www.dropbox.com/scl/fi/3lfx85tfizkb6henemnfq/Stevens-1946-198797.pdf?rlkey=8ofyudwtbv4fj5txuvewq06jp&dl=0)
-:::
-
-:::: 
-
-## Stevens (1946)
-
-Discussion Questions 
-
-- Are there types of measurements that are not discussed in this article?
-
-- What would happen if you make inferences about a measurement using the wrong type of scale?
-
-
-## Stevens (1946)
-
-Basically, I grabbed this seminal paper to show where the different scales of measurement originated from: these are commonly referenced categories.
-
-![](assets/Stevens 1946 scales.png)
-
-
-## Heggestad et al (2019)
-
-::::{.columns}
-
-::: {.column height="100%"}
-
-[![](assets/Heggestad et al 2019.png)](https://www.dropbox.com/scl/fi/nqxuttbuymt4hjzxwa7dn/Heggestad-et-al.-2019-260864.pdf?rlkey=fhpcma39vk6rje8n4dua5cdb1&dl=0)
-
-:::
-
-::::
-
-## Heggestad et al (2019)
-
-Discussion questions
-
-- What is a scale, again?
-
-- Why would you want to change one that is already in the literature?
-
-## Heggestad et al (2019)
-
-Key points
-
-- Scales are very common, particularly in micro research
-
-- They are a common basis to establish construct validity
-
-- They are an example of where data and variables are not 1 to 1, and thus adaptations are possible
-
-- While I would argue some of this concern is a bit overblown, the point is conceded that material changes to a scale may unmoor it from its validated basis
-
-## Bedian (2014)
-
-Discussion Questions 
-
-- Did you know you could extract so much information from a single table?
-
-- While this is a nice list of 'sanity checks', is this really all that descriptive statistics can tell us? 
-
-## Bedian (2014)
-
-The 12-point checklist
-
-1. Disclosed Mean, SD, Correlations
-2. Sensible frequency distributions 
-3. Feasible standard deviations
-4. Reported reliabilities (multi-item scales)
-5. Feasible correlations
-6. Wonky looking scatterplots
-
-## Bedian (2014)
-
-The 12-point checklist
-
-7. Accounted for common data collection methods
-8. "Correct" signs (see also @kennedy2008)
-9. Assessment of collinearity (e.g., VIFs)
-10. Sensible "point-biserial" (e.g., binary) correlations?
-11. Disclosed data missingness
-12. Disclosed sampling procedure
-
-
-# Descriptive statistics
+# Skills corner
 
 ## The power of descriptives
 
@@ -362,6 +246,124 @@ Beyond being a prelude to inferential analyses, descriptives can also help to te
 ## Telling stories: Group comparisons
 
 ![Showing, not telling the results of a regression discontinuity design](assets/rdd_hoekstra1.jpg)
+
+
+
+
+# Grounding
+
+## The rubber meets the road
+
+- Measures: Translating our variables into concrete measures (these do not need to be 1 to 1)
+
+- (Sourcing) Data: Where are we going to find these measures?
+
+# Readings for Today
+
+## Common Readings
+
+1. Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+
+2. Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+
+3. Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+
+
+## Stevens (1946)
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+> Paraphrasing N. R. Campbell (Final Report, p. 340),. we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. The fact that numerals can be assigned under different rules leads to different kinds of scales and different kinds of
+measurement. [@stevens1946, 677]
+
+:::
+
+:::{.column width="40%"}
+
+[![](assets/Stevens 1946.png)](https://www.dropbox.com/scl/fi/3lfx85tfizkb6henemnfq/Stevens-1946-198797.pdf?rlkey=8ofyudwtbv4fj5txuvewq06jp&dl=0)
+:::
+
+:::: 
+
+## Stevens (1946)
+
+Discussion Questions 
+
+- Are there types of measurements that are not discussed in this article?
+
+- What would happen if you make inferences about a measurement using the wrong type of scale?
+
+
+## Stevens (1946)
+
+Basically, I grabbed this seminal paper to show where the different scales of measurement originated from: these are commonly referenced categories.
+
+![](assets/Stevens 1946 scales.png)
+
+
+## Heggestad et al (2019)
+
+::::{.columns}
+
+::: {.column height="100%"}
+
+[![](assets/Heggestad et al 2019.png)](https://www.dropbox.com/scl/fi/nqxuttbuymt4hjzxwa7dn/Heggestad-et-al.-2019-260864.pdf?rlkey=fhpcma39vk6rje8n4dua5cdb1&dl=0)
+
+:::
+
+::::
+
+## Heggestad et al (2019)
+
+Discussion questions
+
+- What is a scale, again?
+
+- Why would you want to change one that is already in the literature?
+
+## Heggestad et al (2019)
+
+Key points
+
+- Scales are very common, particularly in micro research
+
+- They are a common basis to establish construct validity
+
+- They are an example of where data and variables are not 1 to 1, and thus adaptations are possible
+
+- While I would argue some of this concern is a bit overblown, the point is conceded that material changes to a scale may unmoor it from its validated basis
+
+## Bedian (2014)
+
+Discussion Questions 
+
+- Did you know you could extract so much information from a single table?
+
+- While this is a nice list of 'sanity checks', is this really all that descriptive statistics can tell us? 
+
+## Bedian (2014)
+
+The 12-point checklist
+
+1. Disclosed Mean, SD, Correlations
+2. Sensible frequency distributions 
+3. Feasible standard deviations
+4. Reported reliabilities (multi-item scales)
+5. Feasible correlations
+6. Wonky looking scatterplots
+
+## Bedian (2014)
+
+The 12-point checklist
+
+7. Accounted for common data collection methods
+8. "Correct" signs (see also @kennedy2008)
+9. Assessment of collinearity (e.g., VIFs)
+10. Sensible "point-biserial" (e.g., binary) correlations?
+11. Disclosed data missingness
+12. Disclosed sampling procedure
 
 
 

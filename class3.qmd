@@ -10,17 +10,61 @@ bibliography: references.bib
 
 ## Agenda
 
+-   Skills corner: Note taking (5 minutes)
+
 -   Conceptual grounding (10 minutes)
 
--   Core paper discussion (45 minutes)
+-   Core paper discussion (40 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 1-4; 40 minutes)
+-   Compare-contrast presentation (40 minutes)
 
 -   Summative lecture on concepts (20 minutes)
 
-# Conceptual grounding
+# Skills corner
+
+## Strategic note taking for scholarly articles
+
+- Note taking and reading are two sides to the same coin in scholarly work
+
+- Typically note taking / highlighting happens in the 'later' passes of reading, once a applicability threshold is reached
+
+- Pro tip 1: As soon as you think a paper has any relevance, download it in annotable format and start taking notes!
+
+- Pro tip 2: Develop a system for organizing your notes and stick with it! [An example](https://www.dropbox.com/scl/fi/96tbv80c7ccqt72djlbj7/Project-Paper-Summaries-Images-Only.pdf?rlkey=0pd3m93l8rn8av64fdnkfu541&dl=0)
+
+## OK - what notes should I take?
+
+- Narrowly
+
+  - Your interpretation of what the paper is about
+  
+  - Key claims of the paper and their support (or not)
+  
+  - Connections you noticed to other papers and ideas
+  
+  - The 5Cs of the paper, the parts you could follow, and what you agree with (or not)
+  
+  - As I get on in this business, I tend to highlight and notate less
+  
+## OK - what notes should I take?
+
+- Broadly: 
+
+  - Citations related to key ideas and passages to chase down later
+  
+  - Methods and measures used that could be useful in future
+
+  - Theories and constructs that you want to learn more about 
+  
+  - Synonyms for terms that are important to you
+  
+  - The logic and supporting argumentation for key claims raised
+  
+  - Stylistic elements and ways of organizing a paper that you like
+
+# Grounding
 
 ## Building a toolbox of practices
 

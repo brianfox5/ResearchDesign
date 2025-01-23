@@ -15,7 +15,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Replication presentation (Group 14-16-18-20; 40 minutes)
+-   Replication presentation (20 minutes)
+
+-   Skills corner - Class walkthrough in R (25 minutes)
 
 -   General discussion (15 minutes)
 
@@ -76,7 +78,7 @@ If the first is true, we can used "pooled OLS". If the second is true, we can us
 
 They will typically provide the same answer but there can be differences (particularly for the first difference operator) if there are multiple panel waves and the changes over time fluctuate about the overall average
 
-## An alternative workhorse model: Laged dependent variables
+## An alternative workhorse model: Lagged dependent variables
 
 $$Y_{it} = \beta X_{it} + \theta Y_{it-1} + \epsilon$$ 
 
@@ -180,13 +182,13 @@ Let's level-set people's familiarity with these pieces.
 
 Replication: Firm Repertoires and Performance: The Influence of Complementarity and Competition (working paper)
 
-# General Discussion
+## Skills corner - Class walkthrough in R
 
 # Preparation for next class
 
 ## Final papers due
 
-Final papers are due by May 3 - I look forward to reading them.
+Final papers are due by the date noted in the syllabus - I look forward to reading them.
 
 Thank you for a great class!
 

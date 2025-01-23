@@ -14,23 +14,10 @@ format:
 ```{=html}
 <!--- THINGS TO ADD / UPDATE / CHANGE FOR NEXT TIME
 
-Perhaps a parallel track for the first 3ish weeks - the craft of research: how to read + write a paper + read statistics 
-
 NEED TO BRING IN EVAL SHEETS BUT INCORPORATED INTO GRADING - incorporate group peer evaluations and make this part of the group grade
 
-INCORPORATED -reimagine the replication assignment to add value (more hands-on R work in class) - perhaps I tell students I will provide a summary of the paper and its intent, the presentation by the students is a) a Q+A about the methods used with me and b) a live demonstration walking through the R code? (graded on preparation + )
-
-INCORPORATED - provide more explicit direction on the paper (use the rubric as a basis, use the craft of research section to talk about different aspects of the paper?)
-
-INCORPORATED - have more explicit mini-examples during week 7 - 12, and then draw more fully on the worked examples that are replications here
-
-TESTING - potential use of https://www.perusall.com/ for social reading and learning?
-padlets for reactions 
-perhaps pull polleverywhere in for quick checks on big ideas at the beginning of class?
-
-TESTING - miro is basically a virtual whiteboard - could be nice for diagramming during class
-
 --->
+
 ```
 # PhD 1506 -- Research Design (Quant Research Methods I)
 
@@ -74,9 +61,13 @@ This primary function of this course is to help advance your dissertation resear
 
 In support of these goals, we will employ the following format for the majority of our classes:
 
--   *Part I:* Conceptual grounding and agenda setting (10 minutes)
+-   *Part I:* Conceptual grounding and agenda setting (15 minutes)
 
--   *Part II:* Core paper discussion (45 minutes):
+    -   Introduction to topics covered
+    
+    -   5 minutes for skill development
+    
+-   *Part II:* Core paper discussion (40 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
 

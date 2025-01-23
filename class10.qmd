@@ -15,7 +15,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Replication presentation (Group 7-9-11; 40 minutes)
+-   Replication presentation (15 minutes)
+
+-   Skills corner - Class walkthrough in R (25 minutes)
 
 -   General discussion (15 minutes)
 
@@ -186,9 +188,10 @@ Let's level-set people's familiarity with these pieces.
 
 - Replication: Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top Management Team Experiential Variety, Competitive Repertoires, and Firm Performance: Examining the Law of Requisite Variety in the 3D Printing Industry (1986–2017). Academy of Management Journal, 65(2), 545-576.
 
-# General Discussion
+## Class Walkthrough in R
 
 # Preparation for next class
+
 
 ## Next class
 

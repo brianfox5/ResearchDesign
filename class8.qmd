@@ -15,7 +15,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Replication presentation (Group 1-3-5; 40 minutes)
+-   Replication presentation (15 minutes)
+
+-   Skills corner - Class walkthrough in R (25 minutes)
 
 -   General discussion (15 minutes)
 
@@ -514,7 +516,7 @@ The [Gauss-Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_th
 
 - K-L divergence based metrics (e.g., Expectation-Maximization algorithms)
 
-# Running a regression
+# Performing a regression analysis
 
 ##  How to properly perform a regression analysis?
 
@@ -787,7 +789,19 @@ Let's level-set people's familiarity with these pieces.
 
 - Replication: Simsek, Z., Fox, B., & Heavey, C. 2021. Systematicity in Organizational Research Literature Reviews: A Framework and Assessment. Organizational Research Methods, 109442812110086.
 
-# General Discussion
+# Skills corner
+
+## Class walkthrough in R
+
+- Our "skills corner" for the rest of the semester is embedded in two parts of the class:
+
+  - The "how to" discussion in the first hour, talking about the general process
+  
+  - The "workshop" now where we apply these ideas in the context of R
+  
+  - Let's fire up R and see how to execute
+
+## General discussion
 
 # Preparation for next class
 

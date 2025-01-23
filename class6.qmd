@@ -9,20 +9,26 @@ bibliography: references.bib
 
 ## Agenda
 
--   Key thinking tool: DAGs x formal theory (10 minutes)
+-   Skills corner: DAGs x formal theory (15 minutes)
 
 -   Conceptual grounding (5 minutes)
 
--   Core paper discussion (45 minutes)
+-   Core paper discussion (40 minutes)
 
 -   *Break*
 
--   Compare-contrast presentation (Group 13-16; 40 minutes)
+-   Compare-contrast presentation (40 minutes)
 
 -   Key thinking tool: Validity assessments (15 minutes)
 
 
-# DAGs and formal theory
+# Skills corner
+
+## Switching gears 
+
+- Up until now, we have been focused on reading and digesting information from articles
+
+- Now, we turn to developing your supporting skills for integrating theoretical and empirical models, analyzing and interpreting data, discerning what methods and inferences are appropriate
 
 ## Key Thinking Tool: DAGs
 
