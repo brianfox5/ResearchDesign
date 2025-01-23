@@ -18,7 +18,7 @@ bibliography: references.bib
   
 -   Break (5 minutes)
 
--   The Craft of Research I (10 minutes)
+-   Skills corner: The craft of research (10 minutes)
 
 -   Readings for today (60 minutes)
 
@@ -105,7 +105,7 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
     -   Elements missed in the general discussion will be given greater focus
   
-# The Craft of Research I 
+# Skills corner
 
 ## Reading, understanding, writing, crafting
 
