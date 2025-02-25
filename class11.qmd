@@ -27,6 +27,11 @@ bibliography: references.bib
 
 > Endogeneity arises when a regressor is correlated with the error term, thereby violating the most important OLS estimation assumption, the exogeneity condition, specifying that u has an expected value of 0. [@bascle2008, p. 288]
 
+## One source you are familiar with - spurious correlations
+
+https://www.tylervigen.com/spurious-correlations
+
+
 ## What is endogeneity?
 
 Nomological network view:

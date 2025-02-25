@@ -72,6 +72,19 @@ In rough order of "rigor" and "reach"
 
 - Hypotheses: Making model-based predictions and providing a basis to accumulate knowledge
 
+## Some thoughts on models and knowledge
+
+> All models are wrong, but some are useful. - George Box
+
+<!--- distillation of this paper: https://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Boxonmaths.pdf --->
+
+---
+
+> Knowledge is knowing that a tomato is a fruit. Wisdom is knowing not to put it in a fruit salad. - Brian O'Driscoll 
+
+<!--- (https://www.youtube.com/watch?v=EvniuK6I9zs) ---> 
+
+
 # Readings for Today
 
 ## Common Readings
