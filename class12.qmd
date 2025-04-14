@@ -23,6 +23,15 @@ bibliography: references.bib
 
 # Quasi-experimental designs
 
+## Preamble: Curve-fitting v. causality
+
+Two different regimes: 
+
+- Curve-fitting: Statistically identifying the parameters of a mathematical relationship between two or more variables based on the observed data, and making a law-like statement that summarizes empirical regularities
+
+- Causality: Imposing further structure to impose an if-then logical sequencing; where a change in one variable will necessarily have a causal impact on the other.  Usually couched in terms of counterfactuals or "but for" reasoning: if not for the change in X, we would have observed a different Y 
+
+
 ## What is a "quasi-experiment"?
 
 > A quasi-experiment is a study that takes place in a field setting and involves a change in a key independent variable of interest but relaxes one or both of the defining criteria of laboratory and field experiments: random assignment to treatment conditions and controlled manipulation of the independent variable [@grant2009, p. 655]

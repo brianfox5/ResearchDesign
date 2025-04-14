@@ -27,7 +27,7 @@ bibliography: references.bib
 
 > In all instances, mediational models advance an X -> M -> Y causal sequence, and seek to illustrate the mechanisms through which X and Y are related. [@mathieu2006]
 
-## What is medition?
+## What is mediation?
 
 Nomological network view:
 
@@ -65,7 +65,7 @@ Isolating mechanisms through interventions:  $Light On = \beta_0 + \beta_1Power 
 
 # Performing a mediation analysis
 
-## How do you perform a (basic) meditation analysis?
+## How do you perform a (basic) mediation analysis?
 
 1. Articulate the theoretical justification for a mediational inference.
 
