@@ -64,7 +64,7 @@ $$Y_{it} = \beta X_{it} + \nu + \epsilon$$ There are basically two key questions
 
 -   Can the data across time be pooled (essentially is $Var(\nu)=0$)?
 
--   Is the idiosyncratic error for each entity correlated with the regressors (is $E(\nu|X)=0$)?
+-   Is the idiosyncratic error for each entity uncorrelated with the regressors (is $E(\nu|X)=0$)?
 
 If the first is true, we can used "pooled OLS". If the second is true, we can use "random effects". Otherwise, we need to use "fixed effects".
 
