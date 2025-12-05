@@ -9,17 +9,18 @@ bibliography: references.bib
 
 ## Agenda
 
--   Skills corner: Descriptive statistics (15 minutes)
+-   Skills corner: Descriptive statistics (30 minutes)
 
--   Conceptual grounding (10 minutes)
+-   Conceptual grounding (5 minutes)
 
--   Core paper discussion (30 minutes)
+-   Core paper discussion (25 minutes)
 
 -   *Break*
 
 -   Final Compare-contrast presentation (40 minutes)
 
--   Tying it together: From elements to execution (15 minutes)
+-   Sourcing data: A starting point (20 minutes)
+
 
 # Skills corner
 
@@ -247,9 +248,6 @@ Beyond being a prelude to inferential analyses, descriptives can also help to te
 
 ![Showing, not telling the results of a regression discontinuity design](assets/rdd_hoekstra1.jpg)
 
-
-
-
 # Grounding
 
 ## The rubber meets the road
@@ -414,53 +412,6 @@ Relying upon others to collect data or using 'unobtrusive' measures
 
 - Cliometric methods (historical archives)
 
-# From elements to execution
-
-## A pictoral representation of the research process
-
-On the following slide, I illustrate how the class fits together
-
-- Note that it assumes that the intent is to complete a quantitative, empirical project, but I have indicated "offramps" to other types of contributions in red
-
-- Class content is indicated in blue
-
-- Information relied upon from 'outside the system' is shown in green
-
-## A pictoral representation of the research process
-
-![](assets/researchprocess.png){width=80%}
-
-## Our paradigm going forward
-
-The balance of the class is rooted in a paradigm 
-
-- We have built a model with hypotheses to answer a research question
-
-- That model is nested within a causal system and empirical reality
-
-- Our hope is to recover a causal effect through an estimation process
-
-For this to be effective, we want this estimate to be:
-
-- Accurate: hopefully unbiased, but at least consistent
-
-- Precise: an "efficient" estimator which uses sample information well
-
-## How your model fits within this paradigm
-
-On the following slide, I illustrate how your focal model compares to the wider system of relationships
-
-- Note that you may need to include elements outside of your model of interest to specify the causal system (as discussed in Class 5: Models + Hypotheses)
-
-- Also note that our model may be influenced by observable and unobservable factors (as we discussed in Class 6: Constructs + Variables)
-
-- This presumes you have a story you want to understand rather than trying to maximize the predictability of the DV (a different question to answer)
-
-## How your model fits in the big picture
-
-![](assets/modelofinterest.png){width=80%}
-
-
 # Preparation for next class
 
 ## Next class
@@ -492,23 +443,47 @@ One group will actively **try to replicate** the findings with data and code tha
 
 # Workshop
 
+
+## Workshop Agenda
+
+-   Sourcing data using WRDS (11 - 12p)
+
+-   First Pass at Class 8 Materials (1 - 1:30p)
+
+-   Research Question Presentations (1:30 - 3:30p)
+
+-   Reflections 
+
 ## Class Pulse Check
 
 [Pollev.com/drfox](https://PollEv.com/drfox)
 
-## Preview for next class?
+## WRDS set-up
 
-Given the technical nature of next week's materials, would it be helpful to have a quick preview?
+- You received an email from me to get signed up for WRDS
 
-## Agenda
+## A worked example with WRDS
 
--   Research Question Presentations (11 - 2p; break from 12 - 1p)
+- Identifying the question
 
--   modified to leave at 11:45, please be back no later than 1:30p
- 
--   Breakouts (2 - 3:30p)
+- Getting the data
 
--   Reflections 
+- Exploring in R Studio
+
+## Getting the data with WRDS
+
+[BUILD THIS OUT]
+
+## Examining the data with RStudio
+
+
+## Research Presentations
+
+![](assets/presentations.jpg)
+
+## Self-organized group discussions
+
+## Reflections
 
 ## References 
 

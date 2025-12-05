@@ -16,14 +16,18 @@ format:
 
 NEED TO BRING IN EVAL SHEETS BUT INCORPORATED INTO GRADING - incorporate group peer evaluations and make this part of the group grade
 
---->
+incorporate WRDS in some way
 
+restructure the 2nd session a bit to get regression during the meeting?
+
+--->
 ```
+
 # PhD 1506 -- Research Design (Quant Research Methods I)
 
 Dr. Brian Fox
 
-**Office:** AAC G313
+**Office:** LAC 225J
 
 **Office Hours:** By appointment
 
@@ -64,9 +68,9 @@ In support of these goals, we will employ the following format for the majority 
 -   *Part I:* Conceptual grounding and agenda setting (15 minutes)
 
     -   Introduction to topics covered
-    
+
     -   5 minutes for skill development
-    
+
 -   *Part II:* Core paper discussion (40 minutes):
 
     -   We will discuss the 2-3 papers that all students have been assigned to read in detail
@@ -98,9 +102,9 @@ Everyone must read all required materials prior to class. Each student is expect
 | Task                                            | \% of Grade |
 |-------------------------------------------------|-------------|
 | Class participation -- paper discussions        | 20          |
-| Compare - contrast presentation, with peer eval | 15          |
+| Compare - contrast presentation, with peer eval | 10          |
 | Replication presentation, with peer eval        | 15          |
-| Concept checks (2)                              | 10          |
+| Concept checks (2)                              | 15          |
 | Interim work on proposal                        | 15          |
 | Final research proposal                         | 25          |
 | **Total**                                       | **100**     |
@@ -110,6 +114,26 @@ Everyone must read all required materials prior to class. Each student is expect
 ### Reading List
 
 Appendix B includes a list of required readings for the topics that we discuss. Supplemental reading materials are available, too -- I have omitted them from the reading list for your ease of reference, but I can send you a more complete version of the syllabus with the supplemental readings included if you are interested. I will also provide a number of good reference texts below -- again, none are required for the purpose of this class, but some will be invaluable as you continue your research methods journey, depending on your areas of interest and focus.
+
+### Tools and Data Sources
+
+-   Wharton Research Data Services (WRDS): <https://wrds-www.wharton.upenn.edu/>
+
+-   RStudio and the R Programming Language: <https://posit.co/download/rstudio-desktop/>
+
+-   Tools to trawl through and distill extant literature:
+
+    -   SciSpace: <https://scispace.com/> (can perform plan text searches of abstracts, process PDFs, and other tools using generative AI)
+
+    -   SCite: <https://scite.ai/> (contextualizes citation statements to get paper valences)
+
+    -   ConnectedPapers: <https://www.connectedpapers.com/> (visualizes of citation networks)
+
+    -   ResearchRabbit: <https://www.researchrabbit.ai/> (another citation visualizer)
+
+    -   Web of Knowledge: <https://www-webofscience-com.ezp.bentley.edu/wos/woscc/smart-search> (allows for keyword searches as well as citation crawling)
+
+-   Many more can be found on my website: <https://briancfox.com/research-tools-and-data/>
 
 ### Optional Text References
 
@@ -218,7 +242,7 @@ All courses offered at Bentley University reflect our institution's commitment t
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
 | **Theory-empiric fit**              |                  |                                                                                                                            |                  |                            |                                      |
 +-------------------------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+------------------+----------------------------+--------------------------------------+
-| 12                                  | IN PERSON 25-Apr | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication (D-i-D): 13,14,15        |
+| 12/13/14                            | IN PERSON 25-Apr | [Design I: (Quasi)-experimental](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-i-quasi-experimental-data) | Causal?          | D-i-D                      | Replication (D-i-D): 13,14,15        |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
 |                                     |                  | [Design II: Longitudinal data](https://briancfox.com/ResearchDesign/docs/syllabus.html#design-ii-longitudinal-data)        | Dynamic?         | Panel data estimators      | **Draft paper deliverable**          |
 |                                     |                  |                                                                                                                            |                  |                            |                                      |
@@ -388,13 +412,15 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 4.  Rynes, S. L., & Bartunek, J. M. (2017). Evidence-Based Management: Foundations, Development, Controversies and Future. Annual Review of Organizational Psychology and Organizational Behavior, 4(1), 235-261. <https://doi.org/10.1146/annurev-orgpsych-032516-113306>
 
+5. Delios, A. et al. (2025). The insights from the crowd: Drawing inferences from many approaches to key empirical questions in international business.  Journal of International Business Studies, 56: 1102-1124.
+
 ### Research II: Positions
 
 1.  Huff, A. S. (1999). Writing for Scholarly Publication. SAGE. \[Chs. 1, 3\]
 
 2.  McGrath, Joseph E. (1981) Dilemmatics: The Study of Research Choices and Dilemmas, American Behavioral Scientist, 25, 2, 179-210
 
-3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. 2022. Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
+3.  Simsek, Z., Heavey, C., Fox, B. C., & Yu, T. (2022). Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
 
 4.  Tushman, M., & O’Reilly, C. (2007). Research and Relevance: Implications of Pasteur’s Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. <https://doi.org/10.2307/20159888>
 
@@ -402,7 +428,7 @@ A Dropbox link is available on Brightspace, which provides access to all of thes
 
 1.  Lange, D., & Pfarrer, M. D. (2017). Editors' Comments: Sense and Structure---The Core Building Blocks of an AMR Article. Academy of Management Review, 42(3), 407-416. https://doi.org/10.5465/amr.2016.0225
 
-2.  Tobi, H., & Kampen, J. K. 2018. Research design: the methodology for interdisciplinary research framework. Qual Quant, 52(3), 1209-1225.
+2.  Tobi, H., & Kampen, J. K. (2018). Research design: the methodology for interdisciplinary research framework. Qual Quant, 52(3), 1209-1225.
 
 3.  Aguinis, H. & Vandenberg, R. J. (2014). An ounce of prevention is worth a pound of cure: improving research quality before data collection. Annual Review of Organizational Psychology and Organizational Behavior, 1: 569-595.
 

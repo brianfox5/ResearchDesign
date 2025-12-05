@@ -6,11 +6,12 @@ format:
     beamer: 
      theme: Berlin
 bibliography: references.bib
+
 ---
 
 ## Agenda
 
--   Introductions (45 minutes)
+-   Introductions (30 minutes)
 
     -   Getting to know each other
     -   Syllabus and materials overview
@@ -18,7 +19,7 @@ bibliography: references.bib
   
 -   Break (5 minutes)
 
--   Skills corner: The craft of research (10 minutes)
+-   Skills corner: The craft of research (25 minutes)
 
 -   Readings for today (60 minutes)
 
@@ -31,7 +32,21 @@ bibliography: references.bib
 ## A little about me
 
 
-![](assets/alittleaboutme1.png) 
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![](assets/alittleaboutme1.jpeg)
+
+:::
+  
+::: {.column width="45%"}
+
+![](assets/alittleaboutme2.jpeg){style="transform: rotate(0deg);"}  
+
+:::
+
+::::
 
 
 
@@ -135,6 +150,25 @@ Scholarship is more or less developed in that order
 
 - Care: Exerting due time and effort in putting together your analyses and arguments
 
+## Scholarly contributions
+
+- Your task in this program is to advance human knowledge in a non-trivial way
+
+- Academics tend to prefer theoretical contributions (we will see why later)
+
+  - This means that the web of knowledge for a given theory has been modified
+
+- These contributions are often directional, with respect to a target audience
+
+  - Example: Nash equilbria (von Neumann versus economists)
+  
+<!--- https://en.wikipedia.org/wiki/Nash_equilibrium Whereas economists saw nash equilibria as a significant step forward in non-cooperative game theory, von Neumann observed that it was just a trivial case of a fixed point theorem; but the insight lay in the application of that fixed point theorem to open questions in economists.  While the extension to fixed point theory may be minor, the extension to economics theory was substantial (See Nasar 1998 - Book a beautiful mind - for the quote --->
+
+- This may run counter to your goals and preferences to make a practical contribution
+
+  - example: explain versus optimize
+
+
 ## A pictoral representation of the research process (we will revisit this in class 7)
 
 ![](assets/researchprocess.png){width=80%}
@@ -153,7 +187,28 @@ Scholarship is more or less developed in that order
 
 - Drawing inferences and explaining how these conclusions can advance the literature
 
-# Readings for Today
+## Motivating the Class: Research Methods Matter!
+
+As a case study, Let's consider the last paper assigned for today: Delios et al. 2025
+
+## Delios et al. (2025)
+
+> Analysts used a wide variety of specifications to conduct their analyses. No two analysts adopted the same approach when we consider the variables, method, and sample selec- tion simultaneously. Material 4 on OSF provides a detailed summary table describing the specifications employed by each analyst for each research question. Supplement 2 sum- marizes the control variables used by the analysts.
+
+---
+
+> To achieve a standardized measure of the effect sizes of the independent variables on dependent variables across all analyses, we computed the marginal effect sizes (Breznau et al., 2022; Fey et al., 2023), which represent the increase in a dependent variable for a unit increase in an independent variable. In Fig. 1, we present the distribution graphs of the effect size estimates found in the separate analyses for each research question. For all four research questions, the range of estimates encompasses both negative and positive values and crosses zero.
+
+---
+
+![](assets/effectsizedispersion.png)
+
+
+---
+
+> Beliefs about the research question measured at the end of the study were more strongly related to empirical esti- mates than beliefs measured before receiving the data. This is a similar pattern to that previously captured in Silberzahn et al. (2018), but with more units of observation, lending the results further credibility. It seems that scientists rationally updated their beliefs considering the evidence. We again find no apparent confirmation bias, such that researchers’ precon- ceptions strongly predict their analytic choices and results
+
+# Core Readings for Today
 
 ## Preamble
 

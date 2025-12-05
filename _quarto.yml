@@ -14,10 +14,14 @@ website:
         text: Syllabus
       - href: classes.qmd
         text: Classes
-      - href: https://miro.com/welcomeonboard/M1YrT2hMZUJpQzVXV1FsSExaQWRtaG9FSjZIc0VlVG0ySmcrSHo2WEJDZGx3aWx2MjNXQmtvY3h3cjNaK1lXQ2F3MGlGTitZL2tMMk5TRXpSeVlEKzBTMDI4STYzVjJHVTkwWFlDRkF2YUcxci9ldnYvY1h6bDVOUDNDMUt1d2UhZQ==?share_link_id=81401689235
-        text: Miro
+      - href: https://bentleyedu-my.sharepoint.com/:wb:/g/personal/bfox_bentley_edu/EU7pnqwe88pLmzLQkbkVH08Bq2WEgbuLyvHRr3Xhdq0cQA?e=obYdLO
+        text: Whiteboard
       - href: https://pollev.com/drfox
         text: PollEverywhere
+      - href: https://wrds-www.wharton.upenn.edu/pages/ 
+        text: WRDS
+      - href: currentevents.qmd
+        text: Current Events
 
 
 format:

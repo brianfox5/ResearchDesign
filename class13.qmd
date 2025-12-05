@@ -13,13 +13,13 @@ bibliography: references.bib
 
 -   Application paper discussion (30 minutes)
 
--   *Break*
-
 -   Replication presentation (20 minutes)
 
 -   Skills corner - Class walkthrough in R (25 minutes)
 
--   General discussion (15 minutes)
+-   General discussion (10 minutes)
+
+-   *Break* then concluding remarks
 
 # Longtudinal designs
 
@@ -184,18 +184,13 @@ Replication: Firm Repertoires and Performance: The Influence of Complementarity 
 
 ## Skills corner - Class walkthrough in R
 
-# Workshop
+# Preparation for next class
 
-## Class Pulse Check
+## Next class
 
-[Pollev.com/drfox](https://PollEv.com/drfox)
+- Concluding remarks
 
-## Final papers due
-
-Final papers are due by the date noted in the syllabus - I look forward to reading them.
-
-Thank you for a great class!
-
+- Final paper working session
 
 ## References
 

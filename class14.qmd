@@ -1,11 +1,22 @@
 ---
-title: "Class 14 - Concluding Remarks"
+title: "Class 14 - Final Workshop"
 format: 
     html: default
     beamer: 
      theme: Berlin
 bibliography: references.bib
 ---
+
+## Class Pulse Check
+
+[Pollev.com/drfox](https://PollEv.com/drfox)
+
+## Agenda
+
+-   Concluding remarks (1 - 2p)
+
+-   Working session (2 - 4p)
+
 
 # Concluding Remarks
 
@@ -155,4 +166,13 @@ There are many cases of this, but some examples are provided below:
   b. Not checking the validity of difference scores per Edwards 2002
   
   c. Not checking for where inflection point is for U-shaped relationships per Haans et al 2016
+
+
+# Workshop 
+
+## Final papers due
+
+Final papers are due by the date noted in the syllabus - I look forward to reading them.
+
+Thank you for a great class!
 

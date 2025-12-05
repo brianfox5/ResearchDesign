@@ -280,19 +280,91 @@ You will have one hour to complete the assessment once started (plenty of time)!
 
   
 
-# Workshop
+## Workshop Agenda
+
+-   A roadmap for the class (11 - 12p)
+
+-   Research Question Presentations (1 - 3p)
+
+-   Self-organized group discussions (3 - 3:45p)
+
+-   Reflections
 
 ## Class Pulse Check
 
 [Pollev.com/drfox](https://PollEv.com/drfox)
 
-## Agenda
 
--   Research Question Presentations (11 - 2p, break from 12 - 1p)
+# Roadmap
 
--   Self-organized group discussions (2 - 3:30p)
 
--   Reflections
+## Where are we going?
+
+On the following slide, I illustrate how the class fits together
+
+- Note that it assumes that the intent is to complete a quantitative, empirical project, but I have indicated "offramps" to other types of contributions in red
+
+- Class content is indicated in blue
+
+- Information relied upon from 'outside the system' is shown in green
+
+
+## A pictoral representation of the research process
+
+![](assets/researchprocess.png){width=80%}
+
+## The paradigm of our class
+
+This class is rooted in a paradigm 
+
+- We have a well-articulated research question (Classes 1-3)
+
+- We will build a model with hypotheses to answer this question (Classes 4-7)
+
+- That model is nested within a causal system and reality
+
+- Our hope is to recover a causal effect through an estimation process (Classes 8-12)
+
+For this to be effective, we want this estimate to be:
+
+- Accurate: hopefully unbiased, but at least consistent
+
+- Precise: "efficient", using sample information well
+
+## How your model fits within this paradigm
+
+On the following slide, I illustrate how your focal model compares to the wider system of relationships
+
+- Note that you may need to include elements outside of your model of interest to specify the causal system (as we will discuss in Class 5: Models + Hypotheses)
+
+- Also note that our model may be influenced by observable and unobservable factors (as we will discuss in Class 6: Constructs + Variables)
+
+- This presumes you have a story you want to understand rather than trying to maximize the predictability of the DV (a different question to answer)
+
+---
+
+![](assets/modelofinterest.png){width=80%}
+
+
+## How does this process help us build knowledge?
+
+
+![Building a model](assets/class3build2.png){height=70%}
+
+---
+
+![Testing a model](assets/class3build3.png){height=70%}
+
+---
+
+![Making a contribution](assets/class3build4.png){height=70%}
+
+## How does this process help us build knowledge?
+
+![The Knowledge Generation Process](assets/class3build1.png){height=70%}
+
+
+# Workshop
 
 ## Research Presentations
 

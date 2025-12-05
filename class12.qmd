@@ -13,13 +13,13 @@ bibliography: references.bib
 
 -   Application paper discussion (30 minutes)
 
--   *Break*
-
 -   Replication presentation (Group 15 minutes)
 
 -   Skills corner - Class walkthrough in R (25 minutes)
 
--   General discussion (15 minutes)
+-   General discussion (10 minutes)
+
+-   *Break* then Class 13
 
 # Quasi-experimental designs
 
@@ -211,6 +211,14 @@ It has been retracted.
 Yay science!
 
 Yay science?
+
+## Another example from Economics
+
+[![](assets/aidantonerrodgers.png)]
+
+
+[Aidan Toner-Rodgers and AI Productivity](https://www.wsj.com/economy/aidan-toner-rodgers-mit-ai-research-78753243)
+
 
 ##  Fox Souder and Johnson (working paper)
 
