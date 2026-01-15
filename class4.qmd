@@ -18,11 +18,12 @@ bibliography: references.bib
 
 -   *Break*
 
--   Compare-contrast presentation (40 minutes)
+-   Compare-contrast presentation (30 minutes)
 
--   Summative lecture on concepts (10 minutes)
+-   Summative lecture on concepts (30 minutes)
 
--   Key thinking tool: Nomological networks (10 minutes)
+    - Theory and phenomena: Two sides of a coin
+    - Key thinking tool: Nomological networks 
 
 
 # Skills corner

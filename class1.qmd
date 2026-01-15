@@ -16,12 +16,15 @@ bibliography: references.bib
     -   Getting to know each other
     -   Syllabus and materials overview
     -   Typical class flow
-  
+
+-   Skills corner: The craft of research (15 minutes)
+
 -   Break (5 minutes)
 
--   Skills corner: The craft of research (25 minutes)
+-   Core paper discussion (55 minutes)
 
--   Readings for today (60 minutes)
+-   Summative lecture (15 minutes)
+
 
 # Introductions
 
@@ -85,7 +88,9 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
 -   [PollEverywhere](https://PollEv.com/drfox)
 
--   [Miro](https://miro.com/welcomeonboard/M1YrT2hMZUJpQzVXV1FsSExaQWRtaG9FSjZIc0VlVG0ySmcrSHo2WEJDZGx3aWx2MjNXQmtvY3h3cjNaK1lXQ2F3MGlGTitZL2tMMk5TRXpSeVlEKzBTMDI4STYzVjJHVTkwWFlDRkF2YUcxci9ldnYvY1h6bDVOUDNDMUt1d2UhZQ==?share_link_id=81401689235)
+-   [Whiteboard](https://whiteboard.cloud.microsoft/me/whiteboards/p/c3BvOmh0dHBzOi8vYmVudGxleWVkdS1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9iZm94X2JlbnRsZXlfZWR1/b!HwsUH5Oyzk-Y0yDYQ73hUWeGxFZZG8VOj2t6usLJY4_dF8vzU6PfTpclBVXpMpPy/01DPHGHQKO5GPKYHXTZJFZWMWQSG4RKH2P)
+
+-   [Current Events](https://briancfox.com/ResearchDesign/docs/currentevents.html)
 
 
 ## Typical class flow
@@ -108,9 +113,9 @@ Today, let's level set on your familiarity with some key ideas: [Pollev.com/drfo
 
 -   *Part III:* Activity period
 
-    -   (Weeks 2 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
+    -   (Weeks 3 -- 7) Compare / contrast: One group tasked with reviewing two additional papers to explain their points of intersection, divergence, and ties to core papers
 
-    -   (Weeks 8 -- 14) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and comment on that process and raise questions for general awareness
+    -   (Weeks 8 -- 12) Replication: One group tasked with using data from one of my current or published papers to replicate analyses and comment on that process and raise questions for general awareness
 
 ## Typical class flow
 
@@ -164,12 +169,10 @@ Scholarship is more or less developed in that order
   
 <!--- https://en.wikipedia.org/wiki/Nash_equilibrium Whereas economists saw nash equilibria as a significant step forward in non-cooperative game theory, von Neumann observed that it was just a trivial case of a fixed point theorem; but the insight lay in the application of that fixed point theorem to open questions in economists.  While the extension to fixed point theory may be minor, the extension to economics theory was substantial (See Nasar 1998 - Book a beautiful mind - for the quote --->
 
-- This may run counter to your goals and preferences to make a practical contribution
-
-  - example: explain versus optimize
+- This may run counter to your goals and preferences to make a practical contribution (i.e., explain versus optimize)
 
 
-## A pictoral representation of the research process (we will revisit this in class 7)
+## A process representation (we will revisit this later)
 
 ![](assets/researchprocess.png){width=80%}
 
@@ -187,7 +190,7 @@ Scholarship is more or less developed in that order
 
 - Drawing inferences and explaining how these conclusions can advance the literature
 
-## Motivating the Class: Research Methods Matter!
+## Motivating the class: Research methods matter!
 
 As a case study, Let's consider the last paper assigned for today: Delios et al. 2025
 
@@ -350,6 +353,128 @@ Discussion Questions
 ::::
 
 
+# Lecture - Principles
+
+## Preamble
+
+What follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles' collective:
+  
+- richness 
+- overlap
+- distinctive features
+
+## Preamble
+
+Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.
+
+This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and that my unique (quantitative, [positivist](https://en.wikipedia.org/wiki/Positivism), deductive) lens necessarily abstracts away features from these complex discussions.[^1]  
+
+## Some key principles of research design
+
+-   Falsifiability: Can we modify our state of knowledge based on the result of our study?
+
+-   Defensibility: Do our arguments appropriately employ modes of inference?
+
+-   Applicability: Does our study actually impact the state of practice? 
+
+-   Replicability: Will our work bear re-examination in a similar or new context?
+
+
+## Falsifiability
+
+- Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning.  
+
+  - The latter is true a priori if the premises are valid. 
+  - Pure deduction can transform our understanding of the system (think theorems in math). 
+  
+  - But deduction cannot uncover truth beyond the system's universe of premises.
+
+- We must use other means (such as abduction) to draw conclusions about what our data is telling us (i.e., concluding a theory is supported or not) to determine whether our deductive premises are valid by comparing our observation to our expectation (i.e., a proof by contradiction or falsification)
+
+## Falsifiability
+
+> My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. 
+- @popper2002 [p. 19]
+
+## Defensibility
+
+- If the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
+
+- Like Mantere and Ketokivi (2013), my coauthor Zeki and I argue that the relative importance of each reasoning mode varies based on the research design employed and intended contribution.
+
+## Defensibility
+
+:::: {.columns}
+
+::: {.column width="90%"}
+
+![The relative importance of inference modes by type of research design](assets/Simsek and Fox WIP.png){#fig-defensibility}
+
+:::
+
+::::
+
+## Defensibility
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+Toulin diagrams provide one way to map out any argument, regardless of the method of inference:
+
+:::
+
+::: {.column width="60%"}
+
+[![An example Toulmin diagram](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
+
+::: 
+
+::::
+
+## Applicability
+
+But our arguments and conclusions, even if correct, are not that helpful if they aren't applicable to real-world problems.
+
+There are two corollaries to this observation:
+
+- We should pick problems that actually matter, not just intellectual curiosities.
+
+- We should not be hamstrung by our ability to tackle important problems. 
+
+## Applicability
+
+> I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research question was fascinating. It addressed an extremely interesting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collective mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” 
+- @hambrick2007
+
+
+## Replicability 
+
+-   Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. 
+
+-  Said differently, if we are to make deductive inferences based on extant literature (i.e., to test and build upon that theory), we want to feel comfortable that is well-founded and that we can make inferences about specific cases from the general rules encoded by existing theory.
+
+## Replicability 
+
+> [A]n accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. 
+- @helfat2007
+
+## The relative importance of each principle
+
+We can consider four basic "classes" of research in management: 
+
+- basic disciplinary research (primary studies in AER, AJS)
+
+- applied research conducted in a management context (primary studies in AMJ)
+
+- data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)
+
+- practitioner-focused outlets (articles in HBR, CMR, popular press)
+
+Where might, for example, applicability be more highly valued?  Falsifiability?
+
+
+
 # Preparation for Next Class
 
 ## Next class
@@ -368,3 +493,6 @@ Discussion Questions
 
 ::: {#refs}
 :::
+
+
+[^1]: My stance is probably better captured with the idea of post-positivism, but I don't have a great reference to share here - but here is an overview: https://en.wikipedia.org/wiki/Postpositivism.

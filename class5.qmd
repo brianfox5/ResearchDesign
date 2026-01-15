@@ -18,9 +18,9 @@ bibliography: references.bib
 
 -   *Break*
 
--   Compare-contrast presentation (40 minutes)
+-   Compare-contrast presentation (30 minutes)
 
--   Summative lecture on concepts (20 minutes)
+-   Summative lecture on concepts (30 minutes)
 
 # Skills corner
 
@@ -267,7 +267,7 @@ These hypotheses are often one of three flavors:
 
 ## Preparation for next workshop
 
-> During our second in-person meeting, we will have another workshop session about four hours long. For the first two hours or so, **students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea.** Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
+> During our second in-person meeting, we will have another workshop session. **Students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea.** Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
 
 
 # Preparation for next class

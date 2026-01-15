@@ -9,19 +9,18 @@ bibliography: references.bib
 
 ## Agenda
 
--   Skills corner: Reading articles (5 minutes)
- 
--   Summative lecture for last class materials (15 minutes)
+-   Skills corner: Reading articles (10 minutes)
 
-    -   Key principles
+-   Conceptual grounding (5 minutes)
 
--   Core paper discussion (70 minutes, including break)
+-   Core paper discussion (60 minutes)
 
--   Summative lecture on concepts (15 minutes)
+-   Break (5 minutes)
+
+-   Summative lecture on concepts (30 minutes)
 
     -   Defining a research landscape
-    
--   Thinking about thinking (15 minutes)
+    -   Key thinking tool: Thinking about thinking 
 
 # Skills corner
 
@@ -43,7 +42,7 @@ Here are some library resource guides with different strategies
 
 - [My aspirational process](http://briancfox.com/vfront/articledbhelp/articles.html)
 
-- [My WIP approach used in practice](https://briancfox-zettelkasten.tiddlyhost.com/#kms%20mapping%20tiddlymap)
+- [My WIP approach used in practice](https://briancfox.com/zettelkasten/#kms%20mapping%20tiddlymap)
 
 - [Brown University](https://libguides.brown.edu/evaluate/Read)
 
@@ -52,130 +51,9 @@ Here are some library resource guides with different strategies
 - [U Wisconsin](https://learn.library.wisc.edu/reading-scholarly-articles/#/lessons/kPNr06Lw4L0dQsULIfdNhkq3Z6z-9Tok)
 
 
-# Lecture - principles
+# Grounding
 
-## Preamble
-
-What follows is my personal, idiosyncratic synthesis of the pieces that we have read to date. To be clear, many interpretations are possible due to these articles' collective:
-  
-- richness 
-- overlap
-- distinctive features
-
-## Preamble
-
-Furthermore, there are multiple plausible criteria to judge quality research and a lack of universal consensus given the multiplicity of aims and epistemological orientations.
-
-This is not to say anything goes; rather, I am trying to highlight the limits of my knowledge and that my unique (quantitative, [positivist](https://en.wikipedia.org/wiki/Positivism), deductive) lens necessarily abstracts away features from these complex discussions.[^1]  
-
-## Last class - Some key principles of research design
-
--   Falsifiability: Can we modify our state of knowledge based on the result of our study?
-
--   Defensibility: Do our arguments appropriately employ modes of inference?
-
--   Applicability: Does our study actually impact the state of practice? 
-
--   Replicability: Will our work bear re-examination in a similar or new context?
-
-
-## Falsifiability
-
-- Falsifiability provides a basis for to use abductive reasoning to augment pure deductive reasoning.  
-
-  - The latter is true a priori if the premises are valid. 
-  - Pure deduction can transform our understanding of the system (think theorems in math). 
-  
-  - But deduction cannot uncover truth beyond the system's universe of premises.
-
-- We must use other means (such as abduction) to draw conclusions about what our data is telling us (i.e., concluding a theory is supported or not) to determine whether our deductive premises are valid by comparing our observation to our expectation (i.e., a proof by contradiction or falsification)
-
-## Falsifiability
-
-> My proposal is based upon an asymmetry between verifiability and falsifiability; an asymmetry which results from the logical form of universal statements. For these are never derivable from singular statements, but can be contradicted by singular statements. 
-- @popper2002 [p. 19]
-
-## Defensibility
-
-- If the logic of our arguments are defensible and the evidentiary basis is sound, we are better able to act upon the conclusions with confidence. 
-
-- Like Mantere and Ketokivi (2013), my coauthor Zeki and I argue that the relative importance of each reasoning mode varies based on the research design employed and intended contribution.
-
-## Defensibility
-
-:::: {.columns}
-
-::: {.column width="90%"}
-
-![The relative importance of inference modes by type of research design](assets/Simsek and Fox WIP.png){#fig-defensibility}
-
-:::
-
-::::
-
-## Defensibility
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-Toulin diagrams provide one way to map out any argument, regardless of the method of inference:
-
-:::
-
-::: {.column width="60%"}
-
-[![An example Toulmin diagram](assets/toulmin.png)](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)
-
-::: 
-
-::::
-
-## Applicability
-
-But our arguments and conclusions, even if correct, are not that helpful if they aren't applicable to real-world problems.
-
-There are two corollaries to this observation:
-
-- We should pick problems that actually matter, not just intellectual curiosities.
-
-- We should not be hamstrung by our ability to tackle important problems. 
-
-## Applicability
-
-> I was recently at a brown-bag seminar where a pair of management colleagues were seeking advice about a preliminary research idea. It took just a few minutes for us all to agree that their research question was fascinating. It addressed an extremely interesting issue that both academics and practicing managers would like to learn more about. The only problem: the presenters had no theory. So, we spent the entire session going through our collective mental catalogues of theories that might be invoked so that the project could proceed and have some prospect of publication. People were men- tioning theories I’d never heard of. We became frenzied, nearly desperate: “Good god, there must be a theory out there that we can latch onto.” 
-- @hambrick2007
-
-
-## Replicability 
-
--   Finally, the structure of our empirical base presumes that the research was performed in good order and that the findings are replicable within their domain of applicability. 
-
--  Said differently, if we are to make deductive inferences based on extant literature (i.e., to test and build upon that theory), we want to feel comfortable that is well-founded and that we can make inferences about specific cases from the general rules encoded by existing theory.
-
-## Replicability 
-
-> [A]n accumulation of evidence that points to empirical regularities provides us with a much broader and more generalized understanding of the world. Such empirical regularities are known as ‘stylized facts’. 
-- @helfat2007
-
-## The relative importance of each principle
-
-We can consider four basic "classes" of research in management: 
-
-- basic disciplinary research (primary studies in AER, AJS)
-
-- applied research conducted in a management context (primary studies in AMJ)
-
-- data-driven decision making derived from primary studies (systematic reviews in IJMR, JOM)
-
-- practitioner-focused outlets (articles in HBR, CMR, popular press)
-
-Where might, for example, applicability be more highly valued?  Falsifiability?
-
-
-# Readings for Today
-
-## Today's topic - Research design "positions"
+## Research design "positions"
 
 We must ask ourselves for a given project where we stand regarding the following:
 
@@ -186,6 +64,8 @@ We must ask ourselves for a given project where we stand regarding the following
 - Conversation topic: what you want to say vs. what the audience wants to know
 
 - What claim(s) to assert: stylized facts, assumptions, critiques, and omissions
+
+# Core Paper Discussion
 
 ## Readings
 
@@ -262,10 +142,6 @@ Discussion Questions
 ::::
 
 
-## Break
-
-![](assets/break.png)
-
 ## Simsek et al. (2022)
 
 Compelling Questions in Research: Seeing What Everybody Has Seen and Thinking What Nobody Has Thought. Journal of Management, 48(6), 1347-1365.
@@ -332,7 +208,11 @@ Discussion Questions
 ::::
 
 
-# Lecture - positions
+## Break
+
+![](assets/break.png)
+
+# Lecture - Positions
 
 ## Defining a landscape for research questions
 
@@ -384,10 +264,9 @@ How might they be correlated with each other?
   
 - How might your choice of knowledge claims define you as a scholar?
 
-
 # Thinking about Thinking
 
-## Useful types of thinking when engaging in the research process
+Some useful types of thinking when engaging in the research process:
 
 - Skeptical thinking
 
@@ -487,19 +366,15 @@ First principles thinking is a fancy way of saying “think like a scientist.”
 
 ## Next class - Workshop!
 
-- We will have a workshop session about four hours long. For the first two hours or so, students will **make a five-minute presentation about their research topic/idea** for their dissertation. 
+- We will have a workshop session about four hours long. For the first two hours or so, students will **make a three-minute presentation about their research topic/idea** for their dissertation. 
 
 - This can involve a few PowerPoint slides to help guide the discussion. It may be a broad topic or specific question; this will vary by student. 
 
-- The balance of the workshop will be:
-
-  - presentations by scholars regarding their first research project, and 
-  
-  - group work to discuss and advance those research questions; I will move from group to group to facilitate discussions.
+- The balance of the workshop will be group work to discuss and advance those research questions; I will move from group to group to facilitate discussions.
 
 ## Expectations
 
-- I am NOT looking for something super polished
+- I am NOT looking for something super  polished
 
 - I want to hear where you are at with your research question and I want your colleagues to know about it too
 
@@ -527,8 +402,6 @@ Our first compare and contrast discussion will take place. Presenters, please re
 
 - David A. Whetten, 1989. What constitutes a theoretical contribution? Academy of Management Review, 14: 490-495
 
-
-[^1]: My stance is probably better captured with the idea of post-positivism, but I don't have a great reference to share here - but here is an overview: https://en.wikipedia.org/wiki/Postpositivism.
 
 
 ## References

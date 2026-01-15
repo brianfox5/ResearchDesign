@@ -10,17 +10,18 @@ bibliography: references.bib
 
 ## Agenda
 
--   Skills corner: Note taking (5 minutes)
+-   Skills corner: Note taking (10 minutes)
 
 -   Conceptual grounding (10 minutes)
 
 -   Core paper discussion (40 minutes)
 
--   *Break*
+-   *Break* (5 minutes)
 
--   Compare-contrast presentation (40 minutes)
+-   Compare-contrast presentation (30 minutes)
 
--   Summative lecture on concepts (20 minutes)
+-   Summative lecture on concepts (25 minutes)
+
 
 # Skills corner
 
@@ -278,27 +279,28 @@ You will have one hour to complete the assessment once started (plenty of time)!
 - Hambrick, D. C. 2007. The field of management’s devotion to theory: Too much of a good thing? Academy of Management Journal, 50, 1346-1352.
 
 
-  
+
+# Workshop
 
 ## Workshop Agenda
 
--   A roadmap for the class (11 - 12p)
+-   Pulse Check
+
+-   A roadmap for the class (11a - 12p)
 
 -   Research Question Presentations (1 - 3p)
 
--   Self-organized group discussions (3 - 3:45p)
+-   Self-organized group discussions (3 - 4p)
 
 -   Reflections
+
 
 ## Class Pulse Check
 
 [Pollev.com/drfox](https://PollEv.com/drfox)
 
 
-# Roadmap
-
-
-## Where are we going?
+## Roadmap - Where are we going?
 
 On the following slide, I illustrate how the class fits together
 
@@ -362,9 +364,6 @@ On the following slide, I illustrate how your focal model compares to the wider 
 ## How does this process help us build knowledge?
 
 ![The Knowledge Generation Process](assets/class3build1.png){height=70%}
-
-
-# Workshop
 
 ## Research Presentations
 

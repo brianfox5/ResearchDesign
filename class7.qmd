@@ -9,18 +9,138 @@ bibliography: references.bib
 
 ## Agenda
 
--   Skills corner: Descriptive statistics (30 minutes)
-
 -   Conceptual grounding (5 minutes)
 
 -   Core paper discussion (25 minutes)
 
+-   Final Compare-contrast presentation (30 minutes)
+
 -   *Break*
 
--   Final Compare-contrast presentation (40 minutes)
+-   Skills corner: Descriptive statistics (30 minutes)
 
--   Sourcing data: A starting point (20 minutes)
+-   First pass at Class 8 materials (30 minutes)
 
+# Grounding
+
+## Switching things up a bit
+
+- This class marks our transition from a research design to research methods focus
+
+- Thus, the order of presentation is a little fluid this class, with less emphasis on discussing the core papers at length
+
+## The rubber meets the road
+
+-   Measures: Translating our variables into concrete measures (these do not need to be 1 to 1)
+
+-   (Sourcing) Data: Where are we going to find these measures? [to be discussed in workshop]
+
+# Readings for Today
+
+## Common Readings
+
+1.  Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+
+2.  Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+
+3.  Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+
+## Stevens (1946)
+
+::::: columns
+::: {.column width="60%"}
+> Paraphrasing N. R. Campbell (Final Report, p. 340),. we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. The fact that numerals can be assigned under different rules leads to different kinds of scales and different kinds of measurement. [@stevens1946, 677]
+:::
+
+::: {.column width="40%"}
+[![](assets/Stevens%201946.png)](https://www.dropbox.com/scl/fi/3lfx85tfizkb6henemnfq/Stevens-1946-198797.pdf?rlkey=8ofyudwtbv4fj5txuvewq06jp&dl=0)
+:::
+:::::
+
+## Stevens (1946)
+
+Discussion Questions (briefly)
+
+-   Are there types of measurements that are not discussed in this article?
+
+-   What would happen if you make inferences about a measurement using the wrong type of scale?
+
+## Stevens (1946)
+
+Basically, I grabbed this seminal paper to show where the different scales of measurement originated from: these are commonly referenced categories.
+
+![](assets/Stevens%201946%20scales.png)
+
+## Heggestad et al (2019)
+
+:::: columns
+::: {.column height="100%"}
+[![](assets/Heggestad%20et%20al%202019.png)](https://www.dropbox.com/scl/fi/nqxuttbuymt4hjzxwa7dn/Heggestad-et-al.-2019-260864.pdf?rlkey=fhpcma39vk6rje8n4dua5cdb1&dl=0)
+:::
+::::
+
+## Heggestad et al (2019)
+
+Discussion questions (briefly)
+
+-   What is a scale, again?
+
+-   Why would you want to change one that is already in the literature?
+
+## Heggestad et al (2019)
+
+Key points
+
+-   Scales are very common, particularly in micro research
+
+-   They are a common basis to establish construct validity
+
+-   They are an example of where data and variables are not 1 to 1, and thus adaptations are possible
+
+-   While I would argue some of this concern is a bit overblown, the point is conceded that material changes to a scale may unmoor it from its validated basis
+
+## Bedian (2014)
+
+Discussion Questions (briefly)
+
+-   Did you know you could extract so much information from a single table?
+
+-   While this is a nice list of 'sanity checks', is this really all that descriptive statistics can tell us? [more to come in a bit on this point]
+
+## Bedian (2014)
+
+The 12-point checklist
+
+1.  Disclosed Mean, SD, Correlations
+2.  Sensible frequency distributions
+3.  Feasible standard deviations
+4.  Reported reliabilities (multi-item scales)
+5.  Feasible correlations
+6.  Wonky looking scatterplots
+
+## Bedian (2014)
+
+The 12-point checklist
+
+7.  Accounted for common data collection methods
+8.  "Correct" signs (see also @kennedy2008)
+9.  Assessment of collinearity (e.g., VIFs)
+10. Sensible "point-biserial" (e.g., binary) correlations?
+11. Disclosed data missingness
+12. Disclosed sampling procedure
+
+
+# Readings for Today II
+
+## Compare / Contrast Presentations
+
+-   Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
+
+-   Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
+
+## Break
+
+![](assets/break.png)
 
 # Skills corner
 
@@ -28,9 +148,9 @@ bibliography: references.bib
 
 Quick reminder:
 
-- [Descriptive statistics](https://dictionary.apa.org/descriptive-statistics): Procedures for depicting the main aspects of sample data, without necessarily inferring to a larger population 
+-   [Descriptive statistics](https://dictionary.apa.org/descriptive-statistics): Procedures for depicting the main aspects of sample data, without necessarily inferring to a larger population
 
-- [Inferential statistics](https://dictionary.apa.org/inferential-statistics): Techniques that allow inferences about characteristics of a population to be drawn from a sample of data from that population 
+-   [Inferential statistics](https://dictionary.apa.org/inferential-statistics): Techniques that allow inferences about characteristics of a population to be drawn from a sample of data from that population
 
 ## The power of descriptives
 
@@ -44,18 +164,16 @@ Inferential statistics provide you the means to generalize that story beyond you
 
 Many of the properties of a distribution can be summarized by its [moments](https://en.wikipedia.org/wiki/Random_variable#Moments):
 
-- Mean or expected value
+-   Mean or expected value
 
-- Variance (or deviations from the mean)
+-   Variance (or deviations from the mean)
 
 But other descriptives are often very informative, such as interquartile range (IQR), range (Max - Min), and others.
 
 ## Example 1: A normal distribution
 
-:::: {.columns}
-
+:::: columns
 ::: {.column height="90%"}
-
 ```{r}
 #| label: fig-normal
 #| echo: false
@@ -104,20 +222,15 @@ geom_vline(xintercept=sdminusn,color="green") +
   geom_density(alpha = .9)
 
 ```
-
 :::
-
 ::::
 
-Note the mean (red), median (blue), and standard deviations (green).  A normal distribution can be completely summarized by its mean and variance.
-
+Note the mean (red), median (blue), and standard deviations (green). A normal distribution can be completely summarized by its mean and variance.
 
 ## Example 2: A log-normal distribution
 
-:::: {.columns}
-
+:::: columns
 ::: {.column height="90%"}
-
 ```{r}
 #| label: fig-lognormal
 #| echo: false
@@ -129,13 +242,10 @@ geom_vline(xintercept=sdminuslogn,color="green") +
   geom_density(alpha = .9)
 
 ```
-
 :::
-
 ::::
 
-By contrast, in this distribution the mean and median diverge, and the standard deviations are wonky - more information is required to characterize this distribution. 
-
+By contrast, in this distribution the mean and median diverge, and the standard deviations are wonky - more information is required to characterize this distribution.
 
 ## Essentials: Distributions and summary statistics
 
@@ -157,76 +267,63 @@ paste("SD:", round(sd(lognormal),3))
 
 Histograms (shown above) are very useful, but other tools like boxplots can be just as helpful to identify issues, such as outliers.
 
-:::: {.columns}
-
+:::: columns
 ::: {.column height="90%"}
-
 ```{r}
 
 ggplot(data=distributions,aes(x=normal,fill=groupvar))+geom_boxplot()
 
 ```
 :::
-
 ::::
+
 ## Essentials: Correlation matrices
 
 When we move to multiple variables, correlation matrices take center stage, often complemented by scatterplots [@bedian2014].
 
-![](assets/Bedian 2014.png)
+![](assets/Bedian%202014.png)
 
 ## Essentials: Scatterplots and trendlines
 
-Here is an example **multi-graph**, with "marginal" rug plot, scatterplot, and linear trend.  
+Here is an example **multi-graph**, with "marginal" rug plot, scatterplot, and linear trend.
 
-
-:::: {.columns}
-
+:::: columns
 ::: {.column height="100%"}
-
 ```{r}
 
 ggplot(data=distributions,aes(x=yearvar,y=normaltrend))+geom_rug()+geom_smooth(method="lm", se=T)+geom_point()
 
 ```
 :::
-
 ::::
 
 ## Catching issues
 
 Doing a thorough review of your data through a descriptive lens can help identify issues that will turn up in your analysis, such as:
 
-- Deceptive descriptives - a.k.a. [the datasaurus dozen](https://blog.revolutionanalytics.com/2017/05/the-datasaurus-dozen.html)
+-   Deceptive descriptives - a.k.a. [the datasaurus dozen](https://blog.revolutionanalytics.com/2017/05/the-datasaurus-dozen.html)
 
-- Range restriction or selection issues - no data for certain conditions
+-   Range restriction or selection issues - no data for certain conditions
 
-- Non-linearity - potential cut-off or non-linear effects
+-   Non-linearity - potential cut-off or non-linear effects
 
-- Heteroskedasticity - uneven variances across the distribution or group-level effects
+-   Heteroskedasticity - uneven variances across the distribution or group-level effects
 
-- Outliers - influential observations that throw off a trendline (n.b.: [when are outliers noise and when are they the signal](https://pubsonline.informs.org/doi/abs/10.1287/stsc.2018.0064)?)
+-   Outliers - influential observations that throw off a trendline (n.b.: [when are outliers noise and when are they the signal](https://pubsonline.informs.org/doi/abs/10.1287/stsc.2018.0064)?)
 
 ## Catching issues: Anscombe's quartet
 
-::::{.columns}
-
-:::{.column width="50%"}
-
-![Anscombes' Quartet](assets/anscombes quartet.png)
-
+::::: columns
+::: {.column width="50%"}
+![Anscombes' Quartet](assets/anscombes%20quartet.png)
 :::
 
-:::{.column width="50%"}
-
-![The Datasaurus Dozen](assets/datasaurus dozen.png)
-
+::: {.column width="50%"}
+![The Datasaurus Dozen](assets/datasaurus%20dozen.png)
 :::
-
-::::
+:::::
 
 ## Catching issues: Simpson's paradox
-
 
 ![Simpson's Paradox](assets/simpsons_paradox.png)
 
@@ -234,11 +331,11 @@ Doing a thorough review of your data through a descriptive lens can help identif
 
 Beyond being a prelude to inferential analyses, descriptives can also help to tell your story directly
 
-- Cross-tabulations (i.e., 2x2s)
+-   Cross-tabulations (i.e., 2x2s)
 
-- Group comparisons (e.g., pre- / post- intervention)
+-   Group comparisons (e.g., pre- / post- intervention)
 
-- "Existence proofs" (presence and/or variation of a construct)
+-   "Existence proofs" (presence and/or variation of a construct)
 
 ## Telling stories: Cross-tabulations
 
@@ -248,171 +345,51 @@ Beyond being a prelude to inferential analyses, descriptives can also help to te
 
 ![Showing, not telling the results of a regression discontinuity design](assets/rdd_hoekstra1.jpg)
 
-# Grounding
 
-## The rubber meets the road
+# Preview of next class
 
-- Measures: Translating our variables into concrete measures (these do not need to be 1 to 1)
+## From descriptives to inference
 
-- (Sourcing) Data: Where are we going to find these measures?
+- As we just covered, descriptive statistics can be very powerful, but often we want to move from the sample to the population.  
 
-# Readings for Today
+- In other words, we seek to make broader *inferences*
 
-## Common Readings
+- There are many ways to do this, but a common workhorse is *regression*, which will serve as the backbond of the next several weeks
 
-1. Stevens, S. S. 1946. On the Theory of Scales of Measurement. Science, New Series, 103, No. 2684, 677-680.
+## Recall: The paradigm of our class
 
-2. Bedian, A. G. 2014. “More Than Meets the Eye”: A Guide to Interpreting the Descriptive Statistics and Correlation Matrices Reported in Management Research. Academy of Management Learning & Education, 13, No. 1, 121-135.
+This class is rooted in a paradigm 
 
-3. Heggestad, E. D., Scheaf, D. J., Banks, G. C., Monroe Hausfeld, M., Tonidandel, S., & Williams, E. B. (2019). Scale Adaptation in Organizational Science Research: A Review and Best-Practice Recommendations. Journal of Management, 45(6), 2596-2627.
+- We have a well-articulated research question (Classes 1-3)
 
+- We will build a model with hypotheses to answer this question (Classes 4-7)
 
-## Stevens (1946)
+- That model is nested within a causal system and reality
 
-::::{.columns}
+- Our hope is to recover a causal effect through an estimation process (Classes 8-12)
 
-:::{.column width="60%"}
+For this to be effective, we want this estimate to be:
 
-> Paraphrasing N. R. Campbell (Final Report, p. 340),. we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. The fact that numerals can be assigned under different rules leads to different kinds of scales and different kinds of
-measurement. [@stevens1946, 677]
+- Accurate: hopefully unbiased, but at least consistent
 
-:::
+- Precise: "efficient", using sample information well
 
-:::{.column width="40%"}
+## How your model fits within this paradigm
 
-[![](assets/Stevens 1946.png)](https://www.dropbox.com/scl/fi/3lfx85tfizkb6henemnfq/Stevens-1946-198797.pdf?rlkey=8ofyudwtbv4fj5txuvewq06jp&dl=0)
-:::
+On the following slide, I illustrate how your focal model compares to the wider system of relationships
 
-:::: 
+- Note that you may need to include elements outside of your model of interest to specify the causal system (Class 5: Models + Hypotheses)
 
-## Stevens (1946)
+- Also note that our model may be influenced by observable and unobservable factors (Class 6: Constructs + Variables)
 
-Discussion Questions 
+- This presumes you have a story you want to understand rather than trying to maximize the predictability of the DV (a different question to answer)
 
-- Are there types of measurements that are not discussed in this article?
+---
 
-- What would happen if you make inferences about a measurement using the wrong type of scale?
+![](assets/modelofinterest.png){width=80%}
 
 
-## Stevens (1946)
-
-Basically, I grabbed this seminal paper to show where the different scales of measurement originated from: these are commonly referenced categories.
-
-![](assets/Stevens 1946 scales.png)
-
-
-## Heggestad et al (2019)
-
-::::{.columns}
-
-::: {.column height="100%"}
-
-[![](assets/Heggestad et al 2019.png)](https://www.dropbox.com/scl/fi/nqxuttbuymt4hjzxwa7dn/Heggestad-et-al.-2019-260864.pdf?rlkey=fhpcma39vk6rje8n4dua5cdb1&dl=0)
-
-:::
-
-::::
-
-## Heggestad et al (2019)
-
-Discussion questions
-
-- What is a scale, again?
-
-- Why would you want to change one that is already in the literature?
-
-## Heggestad et al (2019)
-
-Key points
-
-- Scales are very common, particularly in micro research
-
-- They are a common basis to establish construct validity
-
-- They are an example of where data and variables are not 1 to 1, and thus adaptations are possible
-
-- While I would argue some of this concern is a bit overblown, the point is conceded that material changes to a scale may unmoor it from its validated basis
-
-## Bedian (2014)
-
-Discussion Questions 
-
-- Did you know you could extract so much information from a single table?
-
-- While this is a nice list of 'sanity checks', is this really all that descriptive statistics can tell us? 
-
-## Bedian (2014)
-
-The 12-point checklist
-
-1. Disclosed Mean, SD, Correlations
-2. Sensible frequency distributions 
-3. Feasible standard deviations
-4. Reported reliabilities (multi-item scales)
-5. Feasible correlations
-6. Wonky looking scatterplots
-
-## Bedian (2014)
-
-The 12-point checklist
-
-7. Accounted for common data collection methods
-8. "Correct" signs (see also @kennedy2008)
-9. Assessment of collinearity (e.g., VIFs)
-10. Sensible "point-biserial" (e.g., binary) correlations?
-11. Disclosed data missingness
-12. Disclosed sampling procedure
-
-
-
-## Break
-
-![](assets/break.png)
-
-# Readings for Today II
-
-
-## Compare / Contrast Presentations
-
-- Combs, J. G. 2010. Big samples and small effects: Let’s not trade relevance and rigor for power. Academy of Management Journal, 53(1): 9-13.
-
-- Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
-
-## Sourcing data
-
-Given the variation in your interests and topics, it is not productive to talk at length about data sourcing since it is unique to your circumstances
-
-But here are some ideas on the following two slides
-
-## Sourcing data - Primary sources
-
-Collecting specifically what you need for a study
-
-- Field surveys 
-
-- Experiments (lab or field) with purpose-built collection instruments
-
-- Interviews / focus groups 
-
-- Direct observation / ethnographic methods
-
-## Sourcing data - Secondary sources
-
-Relying upon others to collect data or using 'unobtrusive' measures
-
-- Archival datasets (e.g., Factiva, COMPUSTAT, Biocentury, SDC)
-
-- Publicly available survey data (e.g., Kauffman Firm Survey, Census ACS)
-
-- Industry reports (e.g., Wohler's Reports)
-
-- Video, audio, or written artifacts (CEO speeches, earnings calls, 10-Ks, website scraping)
-
-- Company records
-
-- Cliometric methods (historical archives)
-
-# Preparation for next class
+## Let's take a quick preview of Class 8 now
 
 ## Next class
 
@@ -438,55 +415,124 @@ Everyone should read the first two articles in detail, they provide grounding
 
 Everyone should have a working familiarity with the application papers (what the study is about, how the tests were performed, key findings)
 
-One group will actively **try to replicate** the findings with data and code that I provide and report out the process 
-
+One group will actively **try to replicate** the findings with data and code that I provide and report out the process
 
 # Workshop
 
+## Objectives
+
+We have two objectives with our workshop today:
+
+1. Share your updated research questions and models 
+
+2. Expose you to two tools that *may* help perform your empirical work 
+    - WRDS: a goldmine of organizational level data
+    - RStudio: a powerful envirionment to perform statistical analyses
+
+Given the way the time breaks down, we will do 2. and then 1. 
 
 ## Workshop Agenda
 
--   Sourcing data using WRDS (11 - 12p)
+-   Pulse Check
 
--   First Pass at Class 8 Materials (1 - 1:30p)
+-   Sourcing data (11-12p)
 
--   Research Question Presentations (1:30 - 3:30p)
+    - Generally
+    - Worked example with WRDS and R
 
--   Reflections 
+-   Research Model Presentations (1-4p)
+
+-   Reflections
 
 ## Class Pulse Check
 
 [Pollev.com/drfox](https://PollEv.com/drfox)
 
-## WRDS set-up
 
-- You received an email from me to get signed up for WRDS
+## Sourcing data
 
-## A worked example with WRDS
+- Given the variation in your interests and topics, it is not productive to talk at length about data sourcing since it is unique to your circumstances (but we will walk through one example)
 
-- Identifying the question
+- But here are some ideas on the following two slides
 
-- Getting the data
+## Sourcing data - Primary sources
 
-- Exploring in R Studio
+Collecting specifically what you need for a study
 
-## Getting the data with WRDS
+-   Field surveys
 
-[BUILD THIS OUT]
+-   Experiments (lab or field) with purpose-built collection instruments
+
+-   Interviews / focus groups
+
+-   Direct observation / ethnographic methods
+
+## Sourcing data - Secondary sources
+
+Relying upon others to collect data or using 'unobtrusive' measures
+
+-   Archival datasets (e.g., Factiva, COMPUSTAT, Biocentury, SDC)
+
+-   Publicly available survey data (e.g., Kauffman Firm Survey, Census ACS)
+
+-   Industry reports (e.g., Wohler's Reports)
+
+-   Video, audio, or written artifacts (CEO speeches, earnings calls, 10-Ks, website scraping)
+
+-   Company records
+
+-   Cliometric methods (historical archives)
+
+
+## Example: Sourcing and analyzing data using WRDS and R
+
+- WRDS
+  - A commonly employed data source for business search, containing hundreds of databases
+  - Not all are accessable, the licenses are institution dependent
+  - Many mentioned above accessed here (e.g., CRSP, Compustat, BoardEx)
+  
+- R Studio
+  - A powerful statistical software environment that allows you to analyze, visualize, and report empirical data and results
+
+## Protocol
+
+1. Set-up RStudio and test it is working
+2. Set-up WRDS
+3. Get some data from WRDS
+4. Run some basic commands in RStudio
+
+## RStudio Setup
+
+- Install R: https://cran.rstudio.com/
+- Install R Studio: https://posit.co/download/rstudio-desktop/
+- Load up R Studio and walk through the environment using "Elementary R References" in Dropbox
+    - Principles of Econometrics in R (pp. 9-12)
+    - R for Data Science (Ch. 1)
+- Quick tour of the "mpg" dataset using ggplot (for generating graphics)
+
+## Getting new data: WRDS 
+
+- You will receive an email from me for WRDS access details
+- Use the link on the website to get to WRDS: https://wrds-www.wharton.upenn.edu/pages/
+- Login using the details provided
+- [Let's switch to a quick exercise to download some stock price data](https://wrds-www.wharton.upenn.edu/documents/1602/introduction-to-wrds-getting-started-slide-deck.pptx)
 
 ## Examining the data with RStudio
 
+1. Save your CRSP data to the desktop with name "crspdata.txt"
+2. Go to R Studio
+3. Open the "Class 7 Example" file I have provided in Dropbox
+4. Let's work from there
+
+## Questions before switching gears?
 
 ## Research Presentations
 
 ![](assets/presentations.jpg)
 
-## Self-organized group discussions
-
 ## Reflections
 
-## References 
+## References
 
-:::{refs}
-
+::: {refs}
 :::

@@ -17,9 +17,13 @@ bibliography: references.bib
 
 -   *Break*
 
--   Compare-contrast presentation (40 minutes)
+-   Compare-contrast presentation (30 minutes)
 
--   Key thinking tool: Validity assessments (15 minutes)
+-   Summative lecture (20 minutes)
+
+    - Key thinking tool: Validity assessments
+
+
 
 
 # Skills corner
@@ -285,6 +289,10 @@ How might data availability enable or constrain the our ability to successfully 
 - Simsek, Z., Vaara, E., Parachuri, S., Nadkarni, S., & Shaw, J. D. 2019. New ways of seeing big data. Academy of Management Journal, 62: 971-978.
 
 
+## Preparation for next workshop
+
+> During our second in-person meeting, we will have another workshop session. **Students will make a five-minute presentation about the draft model that they will examine for their dissertation work that builds upon their research topic/idea.** Again, this can involve a few PowerPoint slides to help guide the discussion. This will be graded by the presence or absence of your preparation for this session. The balance of the workshop will be group work to discuss and advance those research questions, where I will move from group to group to facilitate discussions.
+
 
 
 ## References 
@@ -292,5 +300,3 @@ How might data availability enable or constrain the our ability to successfully 
 :::{refs}
 
 :::
-
-<!--- Note: should probably swap out the van Maanen paper for something else more on target next time and make it reading for the theory / phenonemna day - not sure if better than the existing required readings or if it should be in the supplement --->
