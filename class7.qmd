@@ -512,7 +512,7 @@ Relying upon others to collect data or using 'unobtrusive' measures
 
 ## Getting new data: WRDS 
 
-- You will receive an email from me for WRDS access details
+- I will provide you instructions for how to set up your account with a class code in the Class 7 Workshop folder on Dropbox
 - Use the link on the website to get to WRDS: https://wrds-www.wharton.upenn.edu/pages/
 - Login using the details provided
 - [Let's switch to a quick exercise to download some stock price data](https://wrds-www.wharton.upenn.edu/documents/1602/introduction-to-wrds-getting-started-slide-deck.pptx)

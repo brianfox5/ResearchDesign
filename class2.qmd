@@ -22,6 +22,7 @@ bibliography: references.bib
     -   Defining a research landscape
     -   Key thinking tool: Thinking about thinking 
 
+
 # Skills corner
 
 ## Strategic reading of scholarly articles
@@ -172,7 +173,6 @@ Discussion Questions
 
 ## Tushman and O'Reilly (2007)
 
-
 Research and Relevance: Implications of Pasteur's Quadrant for Doctoral Programs and Faculty Development. The Academy of Management Journal, 50, No. 4, 769-774. 
 
 :::: {.columns}
@@ -265,6 +265,8 @@ How might they be correlated with each other?
 - How might your choice of knowledge claims define you as a scholar?
 
 # Thinking about Thinking
+
+## Thinking about Thinking 
 
 Some useful types of thinking when engaging in the research process:
 
